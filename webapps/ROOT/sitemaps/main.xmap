@@ -82,7 +82,7 @@
           <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml"/>
           <map:part src="cocoon://_internal/menu/main.xml?url=text/{1}.html"/>
         </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl"/>
+        <map:transform src="cocoon://_internal/template/facing.xsl"/>
         <map:serialize/>
       </map:match>
 
