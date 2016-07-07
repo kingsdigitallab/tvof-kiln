@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ONE_Royal_20_D_1_Hannah">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -19,47 +19,158 @@
   </teiHeader>
   <text>
     <body>
+
+      <!-- TEMPLATES
+         div type="1" xml:id="edRoyal20D1_00001" n="1ra">
+            <head type="rubric">xxxxx</head>
+                   <ab>
+                   <seg type="1" xml:id="edRoyal20D1_00001_01">XXX</seg>
+                   <seg type="1" xml:id="edRoyal20D1_00001_02">XXX</seg>
+                   <seg type="1" xml:id="edRoyal20D1_00001_03">XXX</seg>
+                        </ab
+             Transcribe all paratextual content
+             1) rubrics operating at book level within <head> 
+             2) explicits within a <seg> at the end of the last <div type="1">
+           => HM will add the book level division to the master file  
+        -->
+      <!-- COMMENTS on ENCODING and other QUERIES -->
       <div type="1" xml:id="edRoyal20D1_00001" n="1ra">
         <head type="rubric">[no rubric]</head>
         <ab>
-          <seg type="1" xml:id="edRoyal20D1_00001_01">Uns rois estoit adont en
+          <seg type="1" xml:id="edRoyal20D1_00001_01" corresp="#edfr20125_00393">Uns rois estoit adont en
               <placeName>thebes</placeName> riches et puissans <persName>lauis</persName> estoit
-            appelles il auoit fe[m]me de sonlignage qui <persName>iocaste fu appellee<pc rend="1"
-              /></persName></seg>
-          <seg type="1" xml:id="edRoyal20D1_00001_02"><c rend="R">C</c>is roys ot vn fil bele
+            appelles il auoit fe[m]me de sonlignage qui <persName>iocaste</persName> fu appellee<pc
+              rend="1"/><pc rend="Ø_lb"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00001_02" corresp="#edfr20125_00393"><c rend="R">C</c>is roys ot vn fil bele
             creature q[ua]nt <unclear>li</unclear> roy<unclear>s<persName>lauis</persName></unclear>
             qui m[ou]lt auoit uenir ueu de auentures sot quil auoit vn biau fil il ala a ses
             deuineours p[our] sauoir 7 pour entendre q[ue] de ce fil porroit estre et quel proesche
-            auenroit <unclear>???</unclear> uie<pc rend="1"/></seg>
-          <seg type="1" xml:id="edRoyal20D1_00001_03"><c rend="R">Q</c>[ua]nt li roys lauis entendi
-            ceste chose il ses merueilla m[ou]lt 7 ne sot q[ue] fere et ful m[ou]lt dolens en son
-              corage<pc rend="1"/> lor co[m]manda ala royne safe[m]me que cel enfant feist
-            occirre<pc rend="1"/></seg>
-          <seg type="1" xml:id="edRoyal20D1_00001_04"><c rend="R">Q</c>[ua]nt la royne oy ensi
+            auenroit <unclear reason="blot">???</unclear> uie<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00001_03" corresp="#edfr20125_00394"><c rend="R">I</c>l i fu dit que <said
+              direct="false" cert="low">cils fils <unclear>seroit</unclear> merueillous et occirroit
+              son pere</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00001_04" corresp="#edfr20125_00394"><c rend="R">Q</c>[ua]nt li roys
+              <persName>lauis</persName> entendi ceste chose il sesmerueilla m[ou]lt 7 ne sot q[ue]
+            fere et fu m[ou]lt dolens en son corage<pc rend="1"/> lor co[m]manda ala royne safe[m]me
+            que <said direct="false">cel enfant feist occirre</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00001_05" corresp="#edfr20125_00394"><c rend="R">Q</c>[ua]nt la royne oy ensi
             p[ar]ler le roi elle en fu m[ou]lt dolente<pc rend="1"/> et en la fin ne losa elle
               refuser<pc rend="1"/> ains fist prendre lenfant 7 si le co[m]manda a occirre<pc
               rend="1"/></seg>
-          <seg type="1" xml:id="edRoyal20D1_00001_05">Li sergant qui lemportent uire[n]t lenfant si
-            bel 7 si gent distrent quil ne loccirroient<pc rend="1"/> ains le pendirent p[ar] les
-            pies a un arbre pour les bestes sauuages ne le deuorassent 7 ensi le lairoient si en
-            souuenist bien as dex ou de samort ou de sauie<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00001_06">Li sergant qui lenportent uire[n]t lenfant si
+            bel 7 si gent distrent qu<said direct="false">il ne loccirroient</said><pc rend="1"/>
+            ains le pendirent p[ar] les pies a un arbre pour les bestes sauuages ne le deuorassent 7
+            ensi le lairoient si en souuenist bien as dex ou de samort ou de sauie<pc rend="1"
+            /></seg>
         </ab>
       </div>
       <div type="1" xml:id="edRoyal20D1_00002" n="1ra">
         <head type="rubric">Q[ue] li ueneor trouuere[n]t le[n]fa[n]t</head>
         <ab>
-          <seg type="1" xml:id="edRoyal20D1_00002_01">Ensi co[m]me li sergant lorent pense 7 deuise
-            ensi le<cb n="b"/> firent lors pendirent lenfant a <unclear>un? ar</unclear>bre p[ar]
-            les plantes des pies q[ue] li <unclear>p[ar]tirent</unclear> 7 ensi le laissierent et
-            <unclear>???</unclear> retournerent<pc rend="1"/></seg>
-          <seg type="1" xml:id="edRoyal20D1_00002_02"><c rend="R">E</c>t q[ua]nt il furent repartie
-            il distrent au roy quelenfant auoient mort<pc rend="1"/></seg>
-          <seg type="1" xml:id="edRoyal20D1_00002_03">Li roy le uout bien car il cuida
-              es<unclear>??tier</unclear> la male auenture quil li estoit nonchie<pc rend="1"
+          <seg type="1" xml:id="edRoyal20D1_00002_01" corresp="#edfr20125_00395">Ensi co[m]me li sergant lorent pense 7 deuise
+            ensi le <cb n="b"/>firent lors pendirent lenfant a un <unclear>ar</unclear>bre p[ar] les
+            plantes des pies q[ue] li <unclear>p[ar]tirent</unclear> 7 ensi le laissierent et
+              <unclear>sen</unclear> retournerent<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_02" corresp="#edfr20125_00395"><c rend="R">E</c>t q[ua]nt il furent repartie
+            il distrent au roy que<said direct="false">lenfant auoient mort</said><pc rend="1"
             /></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_03" corresp="#edfr20125_00395">Li roy le uout bien<pc rend="1"/> car il cuida
+              e<unclear>uitier</unclear> la male auenture qui li estoit nonchie<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_04" corresp="#edfr20125_00395"><c rend="R">M</c>es il nepuet estre
+              <unclear>ains</unclear> auint ensi co[m]me elle deuoit estre adont auint q[ue] en la
+            forest ou lenfant estoit pendus qui <persName>edupus</persName> ot anon<pc rend="1"/>
+            cachoient <unclear>le</unclear> ueneour le roy <persName>polybum</persName> de
+                <placeName><unclear>mi</unclear>cenes</placeName><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_05" corresp="#edfr20125_00395"><c rend="R">Q</c>[ua]nt il aloient p[ar] la
+            forest il oirent lenfant plorer et crier si escouterent 7 alerent cele p[ar]t<pc
+              rend="1"/> pour sauoir q[ue] ce pooit estre<pc rend="Ø_lb"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_06" corresp="#edfr20125_00395"><c rend="R">Q</c>[ua]nt il uirent lenfant
+            pendu il ses merueillierent m[ou]lt 7 tantes le desloiierent 7 si len aporterent au roy
+              <persName>pulybum</persName><pc rend="1"/> si li baillierent et li contereent
+            <!-- NB narrative account of speech act? -->lor auenture del e[n]fant<pc rend="1"/> 7
+            co[m]ment il le trouuerent<pc rend="Ø_lb"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_07" corresp="#edfr20125_00395"><c rend="R">L</c>i roys
+              <persName>pulybum</persName> en fu m[ou]lt lies car m[ou]lt uit lenfant de bele
+              faiture<pc rend="1"/> lors fist lenfant bien nourrir 7 garir de ses plantes 7 si dist
+            q[ue] <said direct="false">ce serroit ses hoirs q[ue] il nauoit aussi ne fil ne
+              fille</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_08" corresp="#edfr20125_00396"><q type="NI">Ensi co[m]me uous oes</q> fu
+              <persName>edupus</persName> nes 7 nourris p[ar] g[ra]nt diligenche<pc rend="1"/> et <q
+              type="NI">sachies q[ue]</q> li roys <persName>lauis</persName> de
+              <placeName>thebes</placeName> ne la royne <persName>iocaste</persName> sa fe[m]me ne
+            mistrent mie nom a cest enfant qui lour estoit<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_09" corresp="#edfr20125_00396"><c rend="R">M</c>es li roys
+              <persName>pulibu[m]</persName> d<placeName>archade</placeName> li mist nom
+              <persName>edupus</persName> pour ce quil ot les plantes des pies p[ar]ties<pc rend="1"
+            /></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_10" corresp="#edfr20125_00397">Li roys <persName>cadinus</persName> qui
+              pre<pb n="1v"/><cb n="a"/>miers fonda <placeName>thebes</placeName> ot <num>·ii·</num>
+            fils qui apres lui tindrent la terre<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_11" corresp="#edfr20125_00397">Li vn ot anom <persName>athamas</persName> 7
+            li autres <persName>pe[n]cheus</persName> 7 apres chiaus regna
+              <persName>lauis</persName> qui estoit de lor lignie<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_12" corresp="#edfr20125_00397"><persName>Edupus</persName> q[ui] estoit auec
+            le roy <persName>pulybu[m]</persName> d<placeName>archade</placeName>
+            <q type="NI">ensi co[m]me uous oes</q><pc rend="1"/> crut 7 enforcha 7 deuint biax a
+              merueilles<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_13" corresp="#edfr20125_00397">Li roys <persName>pulibum</persName> lama
+            m[ou]lt co[m]me celui a cui il cuidoit laissier toute sonnour 7 sasignourie<pc rend="1"
+            /></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_14" corresp="#edfr20125_00397"><persName>Edupus</persName> deui[n]t orgelous
+            7 cointes si co[m]me cils qui cuidoit estre fils au roy <persName>pulipum</persName><pc
+              rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00002_15" corresp="#edfr20125_00397">Moult deuint fel 7 malicius a ses
+            co[m]pengnons car il ne prisoit nient lor affaire 7 si uoloit estre sires 7 damoysiaus
+            sour tous les autres<pc rend="1"/></seg>
         </ab>
       </div>
-
+      <div type="1" xml:id="edRoyal20D1_00003" n="1va">
+        <head type="rubric">Q[ue] <persName>edupus</persName> sot q[ue] li roys nestoit mie ses
+            p[er]es<pc rend="Ø"/></head>
+        <ab>
+          <seg type="1" xml:id="edRoyal20D1_00003_01" corresp="#edfr20125_00398">Tant ala la chose q[ue]
+              <persName>edupus</persName> qui estoit g[ra]ns se courroucha a vn sien co[m]pengnon et
+            tant alerent les p[ar]oles q[ue] cils li dist 7 demanda <said direct="false">pour coy se
+              faisoit si orguellous</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_02" corresp="#edfr20125_00398"><persName>Edup[us]</persName> li dist <pc
+              rend="1"/><!-- NB no que -->
+            <said direct="false">pour ce quil le uoloit et deuoit fere</said></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_03" corresp="#edfr20125_00398">Et cils li dist<pc rend="1"/>
+            <said direct="true">nele fetes mie pour ce q[ue] uous cuidies estre fils du roy
+                <persName>pulibum</persName><pc rend="1"/> car bien sachies quil nelest mie<pc
+                rend="1"/> ains fus trouues en la forest obscure ne neseit on qui fu u[ost]re peres
+              ne u[ost]re mere et pour ce ne uous deues mie tant orguelir q[ue] uous
+              <!-- NB vertical stroke at line break --> mal menes moy ne les autres mes pourpenses
+              uous qui uos estes ne ne cointiies pas trop<pc rend="1"/> se li roys demoustre a uous
+              sa fran<cb n="b"/>chise</said><pc n="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_04" corresp="#edfr20125_00399">Q[ua]nt il ot ensi p[ar]le<pc rend="1"/>
+            <persName>edupus</persName> ne fu pas aise car il cuidoit estre fils au roy<pc rend="1"
+            /> et cis li auoit dittes teles nouuelles q[ue] m[ou]lt li desplaisoient 7 ne sot que
+            fere ne que dire<!-- NB vertical stroke at end of line end of seg --><pc rend="Ø_lb"
+            /></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_05" corresp="#edfr20125_00399">Lors sepourpensa quil iroit au roy 7 si le
+            co[n]iurroit de ceste chose se cestoit uoirs ou me[n]choingne q[ue] cis li auoit dit<pc
+              rend="1"/> il li feroit a g[ra]nt dolour fenir sa uie se cestoit me[n]congne<pc
+              rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_06" corresp="#edfr20125_00399">Et se li roys li disoit
+            q[ue]<!-- NB hypothetical speech --> ce sust uerites<pc rend="1"/> lors ni auoit fors du
+            cerchier tant quil sauroit q[ui] fust ses peres 7 sa mere<pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_07" corresp="#edfr20125_00400">Adont sen uint <persName>edupus</persName> au
+            roy 7 li demanda en conseil 7 le co[n]iura sour ses dex quil aouroit qu<said
+              direct="false" cert="low">il ne li celast mie<pc rend="1"/> ains li deist qui estoit
+              ses peres 7 sa mere 7 sil les co[n]nissoit</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_08" corresp="#edfr20125_00400">Li roys le regarda ou uiaire 7 li samble estre
+            moult tristes et si li dist qu<said direct="false">il auoit<pc rend="1"/> 7 ne sauoit il
+              quil estoit ses peres</said><pc rend="1"/></seg>
+          <seg type="1" xml:id="edRoyal20D1_00003_09" corresp="#edfr20125_00400"><persName>Edupus</persName> li dist <said
+              direct="true">ensi nest il mie<pc rend="1"/> mes ie uous pri q[ue] uous me dittes
+                uerite<pc rend="1"/> et se ce non<pc rend="1"/> ie serai plus en u[ost]re royaume
+              ains men <unclear reason="worm_hole">u</unclear>ai en autre contree<pc rend="1"/> pour
+              sauoir et entendre se de ceste chose porrai nient sauoir ou aprendre</said><pc
+              rend="Ø"/></seg>
+        </ab>
+      </div>
     </body>
   </text>
 </TEI>
+
