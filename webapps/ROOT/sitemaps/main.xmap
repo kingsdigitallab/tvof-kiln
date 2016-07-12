@@ -16,12 +16,12 @@
     <!-- Mount sub-sitemaps. -->
     <map:pipeline id="local-mount">
       <!-- Mount a sitemap for any admin URLs, such as editorial
-           processes like Schematron validation. -->
+      processes like Schematron validation. -->
       <map:match pattern="admin/**">
         <map:mount check-reload="yes" src="admin.xmap" uri-prefix="admin/" />
       </map:match>
       <!-- Mount a sitemap for (potentially) project-specific internal
-           pipelines. -->
+      pipelines. -->
       <map:match pattern="internal/**">
         <map:mount check-reload="yes" src="internal.xmap" uri-prefix="internal/" />
       </map:match>
@@ -103,7 +103,7 @@
       </map:match>
 
       <!-- WARNING: THIS TEMPLATE WILL STOP TEMPLATES IN PIPELINES BELOW FROM WORKING
-           BECAUSE THE FIRST WILDCARD WILL CATCH, FOR EXAMPLE, 'align/' -->
+      BECAUSE THE FIRST WILDCARD WILL CATCH, FOR EXAMPLE, 'align/' -->
 
       <!-- Example of providing content in more than one language. -->
       <!-- Nb that wildcard {1} is a language code. -->
@@ -153,13 +153,26 @@
     <!-- Kiln as backend pipeline. -->
     <map:pipeline>
       <!-- TEI content provided as HTML with internal metadata. -->
-      <map:match id="local-tei-backend-xm" pattern="backend/**.xml">
+      <map:match id="local-tei-backend-xm" pattern="backend/texts/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml" />
+          <map:part element="main" label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
           <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
-          <map:parameter name="text" value="{1}.xml" />
+          <map:parameter name="text-main" value="{1}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
+      <map:match id="local-tei-backend-xm" pattern="backend/texts/*/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="main" label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+          <map:part element="sec" label="tei" src="cocoon://internal/tei/preprocess/texts/{2}.xml" />
+          <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/backend_tei.xsl">
+          <map:parameter name="text-main" value="{1}" />
+          <map:parameter name="text-sec" value="{2}" />
         </map:transform>
         <map:serialize type="xml" />
       </map:match>
