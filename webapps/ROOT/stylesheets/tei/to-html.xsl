@@ -73,13 +73,15 @@
   </xsl:template>
 
   <xsl:template match="tei:pc">
-    <span class="pc">
-      <xsl:choose>
-        <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
-        <xsl:when test="@rend = '2'">&#x061B;</xsl:when>
-        <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
-      </xsl:choose>
-    </span>
+    <xsl:if test="@rend and contains('123', @rend)">
+      <span class="pc">
+        <xsl:choose>
+          <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
+          <xsl:when test="@rend = '2'">&#x061B;</xsl:when>
+          <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
+        </xsl:choose>
+      </span>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="tei:q">
@@ -150,22 +152,8 @@
   </xsl:template>
 
   <xsl:template match="@corresp">
-    <xsl:choose>
-      <xsl:when test="contains(., ' ')">
-        <xsl:variable name="tokens" select="tokenize(., ' ')" />
-
-        <xsl:attribute name="data-corresp-start">
-          <xsl:value-of select="normalize-space($tokens[1])" />
-        </xsl:attribute>
-        <xsl:attribute name="data-corresp-end">
-          <xsl:value-of select="normalize-space($tokens[last()])" />
-        </xsl:attribute>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:attribute name="data-corresp">
-          <xsl:value-of select="." />
-        </xsl:attribute>
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:attribute name="data-corresp">
+      <xsl:value-of select="." />
+    </xsl:attribute>
   </xsl:template>
 </xsl:stylesheet>
