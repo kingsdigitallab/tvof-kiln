@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <kiln:root xmlns:dir="http://apache.org/cocoon/directory/2.0"
   xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
-  xmlns:tei="http://www.tei-c.org/ns/1.0"
-  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-  <xsl:import
-    href="cocoon://_internal/template/xsl/stylesheets/tei/backend_tei.xsl" />
-
+  
+  <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/backend_tei.xsl" />
+  
   <data>
-    <xsl:call-template name="export-texts" />
-  </data>
+    <xsl:call-template name="export-texts" /></data>
 </kiln:root>
