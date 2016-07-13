@@ -155,24 +155,23 @@
       <!-- TEI content provided as HTML with internal metadata. -->
       <map:match id="local-tei-backend-xm" pattern="backend/texts/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part element="main" label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
           <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
-          <map:parameter name="text-main" value="{1}" />
+          <map:parameter name="texts" value="{1}" />
         </map:transform>
         <map:serialize type="xml" />
       </map:match>
 
       <map:match id="local-tei-backend-xm" pattern="backend/texts/*/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part element="main" label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
-          <map:part element="sec" label="tei" src="cocoon://internal/tei/preprocess/texts/{2}.xml" />
+          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{2}.xml" />
           <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
-          <map:parameter name="text-main" value="{1}" />
-          <map:parameter name="text-sec" value="{2}" />
+          <map:parameter name="texts" value="{1},{2}" />
         </map:transform>
         <map:serialize type="xml" />
       </map:match>

@@ -11,10 +11,6 @@
        language contexts in a multilingual site. -->
   <xsl:param name="language" select="''" />
   
-  <!-- Name of the text being displayed -->
-  <xsl:param name="text-main" />
-  <xsl:param name="text-sec" />
-
   <!-- Specify a mount path if you are mounting the webapp in a
        subdirectory rather than at the root of the domain. This path
        must either be empty or begin with a "/" and not include a
