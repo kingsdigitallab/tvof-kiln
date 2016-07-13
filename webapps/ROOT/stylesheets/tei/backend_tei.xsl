@@ -39,6 +39,13 @@
               </xsl:if>
             </xsl:for-each>
           </versions>
+          <toc>
+            <xsl:for-each select="$tei/tei:text/tei:body/tei:div[@type = 1]">
+              <item id="{@xml:id}">
+                <xsl:apply-templates select="tei:head" />
+              </item>
+            </xsl:for-each>
+          </toc>
           <content>
             <xsl:apply-templates select="$tei/tei:text/tei:body" />
           </content>
