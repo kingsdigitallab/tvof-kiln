@@ -13,6 +13,10 @@
         <ab/>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <ab type="version" subtype="semi-diplomatic"/>
+      <ab type="version" subtype="critical"/>
+    </encodingDesc>
     <revisionDesc>
       <change/>
     </revisionDesc>
