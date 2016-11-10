@@ -156,7 +156,7 @@
       <map:match id="local-tei-backend-xml-single" pattern="backend/texts/*/*/">
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
-          <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
+          <map:part src="cocoon://internal/metadata/files.xml"/>
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
           <map:parameter name="texts" value="{1}" />
@@ -169,7 +169,7 @@
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
           <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{3}.xml" />
-          <map:part src="cocoon://_internal/dirlist/content/xml/tei/texts.xml" />
+          <map:part src="cocoon://internal/metadata/files.xml"/>
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
           <map:parameter name="texts" value="{1},{3}" />
