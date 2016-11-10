@@ -10,9 +10,12 @@
 
   <!-- Comma separated names of the texts being displayed -->
   <xsl:param name="texts" />
+  <!-- Comma separated names of the versions being displayed -->
+  <xsl:param name="versions" />
 
   <xsl:template name="export-texts">
     <xsl:variable name="text-names" select="tokenize($texts, ',')" />
+    <xsl:variable name="version-names" select="tokenize($versions, ',')" />
     <xsl:variable name="aggregation">
       <xsl:sequence select="/aggregation/*" />
     </xsl:variable>
@@ -32,13 +35,16 @@
              />
           </title>
           <versions>
-            <xsl:for-each select="$aggregation//dir:directory/dir:file">
-              <xsl:variable name="name" select="substring-before(@name, '.xml')" />
-              <xsl:if test="$name != $cur-text-name">
-                <version name="{$name}" />
-              </xsl:if>
+            <xsl:for-each select="$tei/tei:teiHeader/tei:encodingDesc/tei:ab">
+              <version name="{@subtype}" />
             </xsl:for-each>
           </versions>
+          <manuscripts>
+            <xsl:for-each select="$aggregation//dir:directory/dir:file">
+              <xsl:variable name="name" select="substring-before(@name, '.xml')" />
+              <manuscript name="{$name}" />
+            </xsl:for-each>
+          </manuscripts>
           <toc>
             <xsl:for-each select="$tei/tei:text/tei:body/tei:div[@type = 1]">
               <item id="{@xml:id}">
@@ -47,7 +53,9 @@
             </xsl:for-each>
           </toc>
           <content>
-            <xsl:apply-templates select="$tei/tei:text/tei:body" />
+            <xsl:apply-templates select="$tei/tei:text/tei:body">
+              <xsl:with-param name="view" select="$version-names[position()]" tunnel="yes" />
+            </xsl:apply-templates>
           </content>
         </text>
       </xsl:for-each>
