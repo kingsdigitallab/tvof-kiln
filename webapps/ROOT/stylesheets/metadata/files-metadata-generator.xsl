@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet exclude-result-prefixes="#all"
-                version="2.0"
-                xmlns:tei="http://www.tei-c.org/ns/1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet exclude-result-prefixes="#all" version="2.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Create a file element with attributes specifying some useful
        metadata from the source TEI document.
@@ -16,9 +15,14 @@
   <xsl:param name="path" />
 
   <xsl:template match="/">
-    <file path="{replace($path, '.xml', '.html')}" xml_path="{$path}">
+    <file name="{substring-before(substring-after($path, '/'), '.xml')}"
+      path="{replace($path, '.xml', '.html')}" xml_path="{$path}">
       <xsl:attribute name="id" select="tei:TEI/@xml:id" />
       <xsl:apply-templates select="tei:TEI/tei:teiHeader" />
+      <versions>
+        <xsl:apply-templates mode="versions"
+          select="tei:TEI/tei:teiHeader/tei:encodingDesc" />
+      </versions>
     </file>
   </xsl:template>
 
@@ -29,17 +33,21 @@
   </xsl:template>
 
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:author">
-      <xsl:attribute name="author" select="normalize-space(.)" />
+    <xsl:attribute name="author" select="normalize-space(.)" />
   </xsl:template>
 
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:editor">
-      <xsl:attribute name="editor" select="normalize-space(.)" />
+    <xsl:attribute name="editor" select="normalize-space(.)" />
   </xsl:template>
 
   <xsl:template match="tei:sourceDesc//tei:publicationStmt/tei:date">
     <xsl:if test="not(preceding-sibling::tei:title)">
       <xsl:attribute name="publication_date" select="normalize-space(.)" />
     </xsl:if>
+  </xsl:template>
+
+  <xsl:template match="tei:ab" mode="versions">
+    <version name="{@subtype}" />
   </xsl:template>
 
   <xsl:template match="text()" />
