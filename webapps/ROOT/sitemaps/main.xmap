@@ -101,53 +101,6 @@
         <map:transform src="cocoon://_internal/template/epub.xsl" />
         <map:serialize type="xhtml" />
       </map:match>
-
-      <!-- WARNING: THIS TEMPLATE WILL STOP TEMPLATES IN PIPELINES BELOW FROM WORKING
-      BECAUSE THE FIRST WILDCARD WILL CATCH, FOR EXAMPLE, 'align/' -->
-
-      <!-- Example of providing content in more than one language. -->
-      <!-- Nb that wildcard {1} is a language code. -->
-      <!--<map:match id="local-generic-multilingual-html" pattern="*/**.html">
-        <map:aggregate element="aggregation" label="content">
-          <map:part src="cocoon://_internal/menu/{1}/{1}-main.xml?url={2}.html"/>
-          <map:part src="cocoon://internal/metadata/files.xml"/>
-          <map:part src="cocoon://internal/tei/preprocess/{1}/{2}.xml" label="tei"/>
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl"/>
-        <map:serialize/>
-      </map:match>-->
-    </map:pipeline>
-
-    <!-- Alignments -->
-    <map:pipeline>
-      <map:match id="local-alignments-index-display" pattern="align/">
-        <map:aggregate element="aggregation">
-          <map:part src="cocoon://_internal/menu/main.xml?url=align/" />
-          <map:part src="../content/xml/tei/TEST_alignments-list.xml" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/alignments-index.xsl" />
-        <map:serialize />
-        <!-- Debugging -->
-        <!--<map:serialize type="xml"/>-->
-        <!-- End debugging -->
-      </map:match>
-
-      <!-- NB WILL OF COURSE NEED TO REPLACE TEST FILES SOON -->
-      <map:match id="local-alignment-display-html" pattern="align/**.html">
-        <map:aggregate element="aggregation">
-          <map:part element="alignments" src="../content/xml/tei/TEST_alignments-list.xml" />
-          <map:part element="royalms" src="../content/xml/tei/TEST_Royal.xml" />
-          <map:part element="basems" src="../content/xml/tei/TEST_Fr_20125.xml" />
-          <map:part src="cocoon://_internal/menu/main.xml?url=align/{1}.html" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/alignment-to-html.xsl">
-          <map:parameter name="alid" value="{1}" />
-        </map:transform>
-        <map:serialize />
-        <!-- Debugging -->
-        <!--<map:serialize type="xml"/>-->
-        <!--End debugging-->
-      </map:match>
     </map:pipeline>
 
     <!-- Kiln as backend pipeline. -->
@@ -155,7 +108,7 @@
       <!-- TEI content provided as HTML with internal metadata. -->
       <map:match id="local-tei-backend-xml-single" pattern="backend/texts/*/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{1}.xml" />
           <map:part src="cocoon://internal/metadata/files.xml"/>
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
@@ -167,14 +120,23 @@
 
       <map:match id="local-tei-backend-xml-multiple" pattern="backend/texts/*/*/*/*/">
         <map:aggregate element="aggregation" label="content">
-          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
-          <map:part label="tei" src="cocoon://internal/tei/preprocess/texts/{3}.xml" />
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{1}.xml" />
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{3}.xml" />
           <map:part src="cocoon://internal/metadata/files.xml"/>
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/backend_tei.xsl">
           <map:parameter name="texts" value="{1},{3}" />
           <map:parameter name="versions" value="{2},{4}" />
         </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+      
+      <map:match pattern="backend/preprocess/texts/*.xml">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="alignments" src="../content/xml/tei/alists/TVOF_para_alignment.xml" />
+          <map:part element="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/add-corresp.xsl" />
         <map:serialize type="xml" />
       </map:match>
     </map:pipeline>
