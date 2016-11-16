@@ -41,8 +41,7 @@
   </xsl:template>
 
   <xsl:template match="tei:choice">
-    <xsl:param name="view" tunnel="yes">semi-diplomatic</xsl:param>
-    view: <xsl:value-of select="$view"/>
+    <xsl:param name="view" tunnel="yes"/>
     <xsl:choose>
       <xsl:when test="$view = 'critical'">
         <xsl:apply-templates mode="critical" />
@@ -51,7 +50,7 @@
         <xsl:apply-templates mode="semi-diplomatic" />
       </xsl:when>
       <xsl:otherwise>
-        <!-- do nothing -->
+        <xsl:apply-templates/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -85,11 +84,11 @@
   </xsl:template>
 
   <xsl:template match="tei:orig" mode="critical">
-    <xsl:apply-templates />
+    <!-- do nothing -->
   </xsl:template>
 
   <xsl:template match="tei:orig" mode="semi-diplomatic">
-    <!-- do nothing -->
+    <xsl:apply-templates />
   </xsl:template>
 
   <xsl:template match="tei:pb">
@@ -118,6 +117,14 @@
       <xsl:apply-templates />
     </span>
   </xsl:template>
+  
+  <xsl:template match="tei:reg" mode="critical">
+    <xsl:apply-templates/>
+  </xsl:template>
+  
+  <xsl:template match="tei:reg" mode="semi-diplomatic">
+    <!-- do nothing -->
+  </xsl:template>
 
   <xsl:template match="tei:seg[@type = 'ms_name']">
     <span class="ms-name">
@@ -134,12 +141,16 @@
       <xsl:text> </xsl:text>
     </span>
   </xsl:template>
-
+  
+  <!-- ********************************* -->
   <!-- critical / semi-diplomatic <seg>s -->
+  <!-- ********************************* -->
   <xsl:template match="tei:seg[@type = 'crit']" mode="critical">
     <span>
       <xsl:if test="@subtype = 'toUpper'">
         <xsl:attribute name="class">critToUpper</xsl:attribute>
+        
+        <xsl:attribute name="style">text-transform:uppercase;background-color:yellow;</xsl:attribute>
       </xsl:if>
       <xsl:apply-templates />
     </span>
@@ -156,7 +167,9 @@
   <xsl:template match="tei:seg[@type = 'semi-dip']" mode="critical">
     <!-- do nothing -->
   </xsl:template>
+  <!-- ********************************* -->
   <!-- end -->
+  <!-- ********************************* -->
 
   <xsl:template match="tei:seg[@type = 'rubric' and @xml:id]">
     <span class="rubric">
@@ -165,7 +178,7 @@
     </span>
   </xsl:template>
 
-  <xsl:template match="tei:seg[@type = '1']">
+  <xsl:template match="tei:seg[@type = ('1', '2', '3', '4', '5')]">
     <xsl:choose>
       <xsl:when
         test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
@@ -200,7 +213,7 @@
   
   <!-- if the seg has no type, do nothing -->
   <xsl:template match="tei:seg">
-    <!-- do nothing --><span>NODDY!</span>
+    <!-- do nothing -->
   </xsl:template>
 
   <xsl:template match="tei:unclear">
