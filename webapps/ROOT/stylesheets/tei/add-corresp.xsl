@@ -53,13 +53,15 @@
       <xsl:if test="normalize-space($corresp)">
         <xsl:attribute name="corresp" select="normalize-space($corresp)" />
       </xsl:if>
-      <xsl:apply-templates />
+      <xsl:apply-templates
+        select="tei:* | processing-instruction() | comment()" />
     </xsl:copy>
   </xsl:template>
 
   <xsl:template match="tei:* | @* | processing-instruction() | comment()">
     <xsl:copy>
-      <xsl:apply-templates />
+      <xsl:apply-templates
+        select="tei:* | @* | processing-instruction() | comment()" />
     </xsl:copy>
   </xsl:template>
 </xsl:stylesheet>
