@@ -9,6 +9,8 @@
        to-html.xsl (which should not be changed). -->
 
   <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl" />
+  
+
 
   <xsl:template match="tei:ab">
     <div class="ab">
@@ -40,13 +42,16 @@
 
   <xsl:template match="tei:choice">
     <xsl:param name="view" tunnel="yes">semi-diplomatic</xsl:param>
-
+    view: <xsl:value-of select="$view"/>
     <xsl:choose>
       <xsl:when test="$view = 'critical'">
         <xsl:apply-templates mode="critical" />
       </xsl:when>
-      <xsl:otherwise>
+      <xsl:when test="$view = 'semi-diplomatic'">
         <xsl:apply-templates mode="semi-diplomatic" />
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- do nothing -->
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -191,6 +196,11 @@
       <xsl:apply-templates select="@*" />
       <xsl:apply-templates />
     </span>
+  </xsl:template>
+  
+  <!-- if the seg has no type, do nothing -->
+  <xsl:template match="tei:seg">
+    <!-- do nothing --><span>NODDY!</span>
   </xsl:template>
 
   <xsl:template match="tei:unclear">
