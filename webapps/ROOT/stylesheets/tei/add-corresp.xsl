@@ -58,34 +58,35 @@
     </xsl:copy>
   </xsl:template>
 
-  <!--
-  <xsl:template match="tei:seg[@xml:id]">
+
+  <xsl:template
+    match="tei:seg[string(@type) = ('1', '2', '3', '4', '5')][@xml:id]">
     <xsl:variable name="id" select="concat('#', @xml:id)" />
-    
+
     <xsl:variable name="alignment">
       <xsl:sequence
-        select="$alignments/*[tei:ab[@type = 'ms_instance'][1]/@corresp = $id]"
-      />
+        select="$alignments/*[tei:ab[@type = 'ms_instance'][position() > 1][contains(@computed-corresp, $id)]]"
+       />
     </xsl:variable>
-    
+
     <xsl:variable name="corresp">
-      <xsl:for-each
-        select="$alignment//tei:ab[(@type = 'ms_instance')][(position() > 1)]/@corresp">
+      <xsl:for-each select="$alignment//tei:ab[1]/@corresp">
         <xsl:value-of select="." />
         <xsl:text> </xsl:text>
       </xsl:for-each>
     </xsl:variable>
-    
+
     <xsl:copy>
       <xsl:sequence select="@*" />
       <xsl:if test="normalize-space($corresp)">
-        <xsl:attribute name="corresp" select="normalize-space($corresp)" />
+        <xsl:attribute name="corresp">
+          <xsl:value-of select="$corresp" />
+        </xsl:attribute>
       </xsl:if>
-      <xsl:apply-templates
-        select="tei:* | processing-instruction() | comment()" />
+      <xsl:apply-templates select="tei:* | processing-instruction() | comment()"
+       />
     </xsl:copy>
   </xsl:template>
-  -->
 
   <xsl:template match="tei:* | @* | processing-instruction() | comment()">
     <xsl:copy>
