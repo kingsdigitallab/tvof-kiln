@@ -83,7 +83,7 @@
           <xsl:value-of select="$corresp" />
         </xsl:attribute>
       </xsl:if>
-      <xsl:apply-templates select="tei:* | processing-instruction() | comment()"
+      <xsl:apply-templates select="tei:* | text() | processing-instruction() | comment()"
        />
     </xsl:copy>
   </xsl:template>
