@@ -1,5 +1,6 @@
 *.xpr
 *~
+.DS_Store
 sw/jetty/logs
 sw/jetty/temp
 webapps/openrdf-sesame/app_dir
