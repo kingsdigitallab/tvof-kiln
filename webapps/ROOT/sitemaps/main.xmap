@@ -137,6 +137,7 @@
           <map:part element="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
         </map:aggregate>
         <map:transform src="../stylesheets/tei/add-corresp.xsl" />
+        <map:transform src="../stylesheets/tei/add-case-markers.xsl" />
         <map:serialize type="xml" />
       </map:match>
       
