@@ -23,7 +23,7 @@
       <div type="1" xml:id="edfr20125_00588" n="148rb">
         <head type="rubric">Ci comence d<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName> qui <choice><seg type="semi-dip">separti</seg><seg type="crit">se parti</seg></choice> de
             <placeName>troies</placeName> [et] coment il s<choice><orig></orig><reg>'</reg></choice>en ala en <placeName>itale</placeName><pc
-            rend="5"/></head>
+              rend="5"/><anchor type="sourceNote" corresp="#edfr20125_0588_note_01"/></head>
         <ab>
           <seg type="5" xml:id="edfr20125_00588_01"><q type="NI">Segnors [et] dames</q><choice><orig></orig><reg>,</reg></choice> quant
               <placeName>troies</placeName> la grande fu arse [et] destruite<choice><orig></orig><reg>,</reg></choice> ne mie encore tote<pc
@@ -48,7 +48,7 @@
       </div>
       <div type="1" xml:id="edfr20125_00589" n="148va">
         <head type="rubric">Q[ue] de <persName>friga</persName> le frere <persName>eneas</persName>
-          fu la seme[n]ce des <name type="people">fransois</name> premeraine<pc rend="1"/></head>
+          fu la seme[n]ce des <name type="people">fransois</name> premeraine<pc rend="1"/><anchor type="sourceNote" corresp="#edfr20125_0589_note_02"/></head>
         <ab>
           <seg type="5" xml:id="edfr20125_00589_01"><rs type="metatext">Ci dient li pluisor</rs>
               qu<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName> ot un frere<choice><orig></orig><reg>,</reg></choice> <persName>friga</persName> fu nom<choice><orig>e</orig><reg>é</reg></choice>s<choice><orig></orig><reg>,</reg></choice> qui
@@ -100,7 +100,7 @@
         </ab>
       </div>
       <div type="1" xml:id="edfr20125_00590" n="149ra">
-        <head type="rubric">Q[ue] mout fu <persName>eneas</persName> de grande lignee</head>
+        <head type="rubric">Q[ue] mout fu <persName>eneas</persName> de grande lignee<pc rend="1"/><anchor type="sourceNote" corresp="#edfr20125_0590_note_01"/></head>
         <ab>
           <seg type="5" xml:id="edfr20125_00590_01">Ansois qu<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName>
             p[ar]me<choice><orig>u</orig><reg>ü</reg></choice>st<choice><orig></orig><reg>,</reg></choice> fist il a ses deus sacrefices por a<choice><orig>u</orig><reg>v</reg></choice>oir respons en q[ue]l terre il
@@ -875,6 +875,30 @@
               <persName>eneas</persName> les larmes des oils<choice><orig></orig><reg>,</reg></choice> si laissa [et] fina sa parole<pc
               rend="5"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
         </ab>
+      </div>
+      <div type="notes" subtype="sourceNotes" xml:id="edfr20125_sourceNotes">
+        <div type="note" subtype="source" xml:id="edfr20125_0588_note_01">
+          <head type="noteLabel">1</head>
+          <p xml:id="edfr20125_0588_note_01a"><ref type="bibliography" corresp="TBC">Daretis
+            Phrigii, <hi rend="i">De excidio Troiae historia</hi>, XLIII et XLIV</ref>
+            (voir <ref type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
+              238</ref>).</p>
+        </div>
+        <div type="note" subtype="source" xml:id="edfr20125_0589_note_01">
+          <head type="noteLabel">1</head>
+          <p xml:id="edfr20125_0589_note_01a">Pseudo-Frédégaire [MORE SPECIFIC?] (voir <ref
+            type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
+            238</ref>).</p>
+        </div>
+        <div type="note" subtype="source" xml:id="edfr20125_0590_note_01">
+          <head type="noteLabel">1</head>
+          <p xml:id="edfr20125_0590_note_01a">Voir Monfrin sur les differences entre §590 et
+            l’<hi rend="i">Aeneid</hi> II, 620, 781-782, III, 161, 356 ; <hi rend="i"
+              >Excidium Troiae</hi>, 20, 10 ; ‘la généalogie est traditionelle, mais ne
+            vient pas directement de Servius’ ; Isidore, <hi rend="i">Etymologiae</hi>, IX,
+            67 (<ref type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
+              238</ref>).</p>
+        </div>
       </div>
     </body>
   </text>
