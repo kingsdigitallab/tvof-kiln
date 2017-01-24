@@ -90,7 +90,7 @@
       <!-- do nothing -->
   </xsl:template>
 
-  <xsl:template match="tei:orig" mode="semi-diplomatic">
+    <xsl:template match="tei:orig" mode="semi-diplomatic">
       <xsl:apply-templates />
   </xsl:template>
 
@@ -125,6 +125,10 @@
           <xsl:otherwise><!-- do nothing --></xsl:otherwise>
       </xsl:choose>
   </xsl:template>
+    
+    <xsl:template match="tei:persName">
+            <xsl:apply-templates />
+    </xsl:template>
 
   <xsl:template match="tei:q">
       <span class="quoted">
@@ -133,6 +137,7 @@
   </xsl:template>
 
   <xsl:template match="tei:reg" mode="critical">
+      <span style="color:red;">TEI:REG MODE="CRITICAL"</span>
       <xsl:apply-templates />
   </xsl:template>
 
@@ -239,7 +244,7 @@
       </xsl:attribute>
   </xsl:template>
 
-  <xsl:template match="text()">
+  <!--<xsl:template match="text()">
       <xsl:param name="view" tunnel="yes" />
       <xsl:choose>
           <xsl:when test="$view = 'critical'">
@@ -249,7 +254,7 @@
               <xsl:value-of select="." />
           </xsl:otherwise>
       </xsl:choose>
-  </xsl:template>
+  </xsl:template>-->
 
   <!-- Notes -->
   <xsl:template match="tei:div[@type = 'notes']" />
