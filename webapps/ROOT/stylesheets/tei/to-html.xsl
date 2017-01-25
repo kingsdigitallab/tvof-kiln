@@ -52,6 +52,14 @@
           </xsl:otherwise>
       </xsl:choose>
   </xsl:template>
+    
+    <xsl:template match="tei:corr" mode="critical">
+        <span style="color:orange;"><xsl:apply-templates /></span>
+    </xsl:template>
+        
+    <xsl:template match="tei:corr" mode="semi-diplomatic">
+        <!-- do nothing -->
+    </xsl:template>
 
   <xsl:template match="tei:del">
       <span class="del">
@@ -137,7 +145,6 @@
   </xsl:template>
 
   <xsl:template match="tei:reg" mode="critical">
-      <span style="color:red;">TEI:REG MODE="CRITICAL"</span>
       <xsl:apply-templates />
   </xsl:template>
 
@@ -231,6 +238,14 @@
   <xsl:template match="tei:seg">
       <!-- do nothing -->
   </xsl:template>
+    
+    <xsl:template match="tei:sic" mode="critical">
+        <!-- do nothing -->
+    </xsl:template>
+    
+    <xsl:template match="tei:sic" mode="semi-diplomatic">
+        <xsl:apply-templates/>
+    </xsl:template>
 
   <xsl:template match="tei:unclear">
       <span class="unclear">
