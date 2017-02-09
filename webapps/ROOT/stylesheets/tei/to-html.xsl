@@ -29,14 +29,25 @@
           <xsl:apply-templates />
       </span>
   </xsl:template>
+    
+    <xsl:template match="tei:cb">
+        <xsl:choose>
+            <xsl:when test="(@n != 'a') and (ends-with(preceding::text()[1], ' '))">
+                <span class="cb" style="color:teal;">[<xsl:value-of select="@n" />] </span>
+            </xsl:when>
+            <xsl:when test="(@n != 'a') and (not(ends-with(preceding::text()[1], ' ')))">
+                <span class="cb" style="color:teal;">-[<xsl:value-of select="@n" />]-</span>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
 
-  <xsl:template match="tei:cb">
+  <!--PREV<xsl:template match="tei:cb">
       <xsl:choose>
           <xsl:when test="@n != 'a'">
               <span class="cb">[<xsl:value-of select="@n" />]</span>
           </xsl:when>
       </xsl:choose>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template match="tei:choice">
       <xsl:param name="view" tunnel="yes" />
@@ -61,10 +72,18 @@
         <!-- do nothing -->
     </xsl:template>
 
-  <xsl:template match="tei:del">
-      <span class="del">
-          <xsl:apply-templates />
-      </span>
+    <xsl:template match="tei:del">
+        <xsl:param name="view" tunnel="yes" />
+        <xsl:choose>
+            <xsl:when test="$view = 'critical'">
+                <!-- do nothing -->
+            </xsl:when>
+            <xsl:when test="$view = 'semi-diplomatic'">
+                <span class="del" style="text-decoration:strikethrough;">
+                    <xsl:apply-templates />
+                </span>
+            </xsl:when>
+        </xsl:choose>
   </xsl:template>
 
   <xsl:template match="tei:div[@type = '1']">
@@ -75,7 +94,7 @@
   </xsl:template>
 
   <xsl:template match="tei:head[@type = 'rubric']">
-      <h4 class="rubric">
+      <h4 class="rubric" style="color:red;">
           <span class="seg-num">
               <xsl:value-of
                   select="number(substring-after(parent::tei:div/@xml:id, '_'))" />.
@@ -101,13 +120,26 @@
     <xsl:template match="tei:orig" mode="semi-diplomatic">
       <xsl:apply-templates />
   </xsl:template>
+    
+    <xsl:template match="tei:pb">
+        <xsl:choose>
+            <xsl:when test="ends-with(preceding::text()[1], ' ')">
+                <span class="pb" style="color:teal;">[<xsl:value-of select="@n"/><xsl:if
+                    test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
+                        select="following-sibling::tei:cb[1]/@n"/></xsl:if>] </span>
+            </xsl:when>
+            <xsl:otherwise><span class="pb" style="color:teal;">-[<xsl:value-of select="@n"/><xsl:if
+                test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
+                    select="following-sibling::tei:cb[1]/@n"/></xsl:if>]-</span></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
-  <xsl:template match="tei:pb">
+  <!--PREV<xsl:template match="tei:pb">
       <span class="pb">[<xsl:value-of select="@n" /><xsl:if
               test="following-sibling::tei:cb[1][@n = 'a']"
               ><xsl:text> </xsl:text><xsl:value-of
                   select="following-sibling::tei:cb[1]/@n" /></xsl:if>]</span>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template match="tei:pc">
       <xsl:param name="view" tunnel="yes" />
@@ -195,7 +227,11 @@
   </xsl:template>
   <!-- ********************************* -->
   <!-- end -->
-  <!-- ********************************* -->
+    <!-- ********************************* -->
+    
+    <xsl:template match="tei:seg[@type = 'stripFirstLetter']">
+        <xsl:value-of select="substring-after(., substring(., 1, 1))"/>
+    </xsl:template>
 
   <xsl:template match="tei:seg[@type = 'rubric' and @xml:id]">
       <span class="rubric">
