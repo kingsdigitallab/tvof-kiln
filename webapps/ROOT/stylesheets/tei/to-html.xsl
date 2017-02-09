@@ -72,7 +72,7 @@
     </xsl:template>
 
     <xsl:template match="tei:corr" mode="critical">
-        <span class="orange;">
+        <span class="orange">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -103,6 +103,18 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'notes']"/>
+    
+    <xsl:template match="tei:fw">
+        <xsl:param name="view" tunnel="yes"/>
+        <xsl:choose>
+            <xsl:when test="$view = 'critical'">
+                <!-- do nothing -->
+            </xsl:when>
+            <xsl:when test="$view = 'semi-diplomatic'">
+                <span class="cb" style="color:green;">-[<xsl:if test="@type='quire_no'"><xsl:text>quire number: </xsl:text></xsl:if><xsl:value-of select="."/>]-</span>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
 
     <xsl:template match="tei:head[@type = 'rubric']">
         <h4 class="red">
