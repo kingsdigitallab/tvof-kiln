@@ -315,7 +315,7 @@
       <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head" />
 
       <a data-toggle="{$corresp}">
-          <sup><xsl:value-of select="$note-head" /></sup>
+          <sup class="note"><xsl:value-of select="$note-head" /></sup>
       </a>
       <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
           <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p" />
