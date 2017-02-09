@@ -13,15 +13,14 @@
         </xd:desc>
     </xd:doc>
 
-
     <xsl:template match="tei:* | @* | processing-instruction() | comment()">
         <xsl:choose>
-
+            
             <xsl:when
                 test="self::tei:persName or self::tei:placeName or self::tei:geogName or self::tei:name">
                 <xsl:variable name="firstLetter" select="substring(., 1, 1)"/>
                 <xsl:choose>
-                    <xsl:when test="child::tei:choice/position() = 1">
+                    <xsl:when test="local-name(child::node()[1])='choice'">
                         <xsl:copy>
                             <xsl:apply-templates
                                 select="tei:* | @* | text() | processing-instruction() | comment()"/>
@@ -29,7 +28,7 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:copy>
-                            <tei:choice>
+                            <tei:choice xsl:xpath-default-namespace="">
                                 <tei:seg type="crit" subtype="toUpper">
                                     <xsl:value-of select="$firstLetter"/>
                                 </tei:seg>
@@ -37,19 +36,21 @@
                                     <xsl:value-of select="$firstLetter"/>
                                 </tei:seg>
                             </tei:choice>
-                            <xsl:value-of select="substring-after(., $firstLetter)"/>
+                            <tei:seg type="stripFirstLetter" xmlns:tei="http://www.tei-c.org/ns/1.0"><xsl:sequence select="child::node()[position()=1]"/></tei:seg>
+                            <xsl:sequence select="child::node()[not(position()=1)]"/>
                         </xsl:copy>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-
+            
             <xsl:otherwise>
                 <xsl:copy>
                     <xsl:apply-templates
                         select="tei:* | @* | text() | processing-instruction() | comment()"/>
                 </xsl:copy>
             </xsl:otherwise>
-
+            
         </xsl:choose>
     </xsl:template>
+    
 </xsl:stylesheet>
