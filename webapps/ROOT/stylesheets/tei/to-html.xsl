@@ -118,10 +118,8 @@
 
     <xsl:template match="tei:head[@type = 'rubric']">
         <h4 class="red">
-            <span class="seg-num">
                 <xsl:value-of select="number(substring-after(parent::tei:div/@xml:id, '_'))"/>.
                 <xsl:text> </xsl:text>
-            </span>
             <xsl:apply-templates/>
         </h4>
     </xsl:template>
