@@ -32,7 +32,7 @@
             </sup>
         </a>
         <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-            <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+            <xsl:value-of select="//tei:div[@xml:id = $corresp]/@subtype"/> note: <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -72,9 +72,15 @@
     </xsl:template>
 
     <xsl:template match="tei:corr" mode="critical">
-        <span class="orange">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="myID" select="generate-id()"/>
+        <xsl:apply-templates/><a data-toggle="{$myID}"><sup class="corr"/></a>
+        
+        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
+            <em>sic</em>: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            <button class="close-button" data-close="" aria-label="Close note" type="button">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
     </xsl:template>
 
     <xsl:template match="tei:corr" mode="semi-diplomatic">
@@ -314,9 +320,15 @@
     </xsl:template>
 
     <xsl:template match="tei:unclear">
-        <span class="unclear">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="myID" select="generate-id()"/>
+        <xsl:apply-templates/><a data-toggle="{$myID}"><sup class="note"/></a>
+        
+        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
+            text unclear <xsl:if test="@reason">due to  <xsl:value-of select="@reason"/></xsl:if>
+            <button class="close-button" data-close="" aria-label="Close note" type="button">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
     </xsl:template>
 
     <xsl:template match="@corresp">
