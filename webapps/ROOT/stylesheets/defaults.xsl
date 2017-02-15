@@ -10,7 +10,7 @@
   <!-- $language is the language code used to distinguish between
        language contexts in a multilingual site. -->
   <xsl:param name="language" select="''" />
-
+  
   <!-- Specify a mount path if you are mounting the webapp in a
        subdirectory rather than at the root of the domain. This path
        must either be empty or begin with a "/" and not include a
@@ -65,5 +65,4 @@
     </xsl:if>
     <xsl:value-of select="$kiln:images-url" />
   </xsl:variable>
-
 </xsl:stylesheet>

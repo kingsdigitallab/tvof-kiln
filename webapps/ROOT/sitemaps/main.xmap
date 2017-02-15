@@ -16,15 +16,14 @@
     <!-- Mount sub-sitemaps. -->
     <map:pipeline id="local-mount">
       <!-- Mount a sitemap for any admin URLs, such as editorial
-           processes like Schematron validation. -->
+      processes like Schematron validation. -->
       <map:match pattern="admin/**">
         <map:mount check-reload="yes" src="admin.xmap" uri-prefix="admin/" />
       </map:match>
       <!-- Mount a sitemap for (potentially) project-specific internal
-           pipelines. -->
+      pipelines. -->
       <map:match pattern="internal/**">
-        <map:mount check-reload="yes" src="internal.xmap"
-                   uri-prefix="internal/" />
+        <map:mount check-reload="yes" src="internal.xmap" uri-prefix="internal/" />
       </map:match>
     </map:pipeline>
 
@@ -83,51 +82,69 @@
           <map:part label="tei" src="cocoon://internal/tei/preprocess/{1}.xml" />
           <map:part src="cocoon://_internal/menu/main.xml?url=text/{1}.html" />
         </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl" />
+        <map:transform src="cocoon://_internal/template/facing.xsl" />
         <map:serialize />
       </map:match>
 
       <map:match id="local-tei-display-xml" pattern="text/**.xml">
-        <map:read mime-type="application/tei+xml"
-                  src="../content/xml/tei/{1}.xml" />
+        <map:read mime-type="application/tei+xml" src="../content/xml/tei/{1}.xml" />
       </map:match>
 
       <map:match id="local-tei-display-pdf" pattern="text/**.pdf">
-        <map:generate src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
-                      label="tei" />
+        <map:generate label="tei" src="cocoon://internal/tei/preprocess/{1}/{2}.xml" />
         <map:transform src="cocoon://_internal/template/pdf.xsl" />
         <map:serialize type="fo2pdf" />
       </map:match>
 
       <map:match id="local-tei-display-epub" pattern="text/**.epub">
-        <map:generate src="cocon://internal/tei/preprocess/{1}/{2}.xml"
-                      label="tei" />
+        <map:generate label="tei" src="cocon://internal/tei/preprocess/{1}/{2}.xml" />
         <map:transform src="cocoon://_internal/template/epub.xsl" />
         <map:serialize type="xhtml" />
-      </map:match>
-
-      <!-- Example of providing content in more than one language. -->
-      <map:match id="local-generic-multilingual-html" pattern="*/**.html">
-        <!-- {1} is a language code. -->
-        <map:aggregate element="aggregation" label="content">
-          <map:part src="cocoon://_internal/menu/{1}/{1}-main.xml?url={2}.html" />
-          <map:part src="cocoon://internal/metadata/files.xml" />
-          <map:part src="cocoon://internal/tei/preprocess/{1}/{2}.xml"
-                    label="tei" />
-        </map:aggregate>
-        <map:transform src="cocoon://_internal/template/tei.xsl" />
-        <map:serialize />
       </map:match>
     </map:pipeline>
 
     <!-- Kiln as backend pipeline. -->
     <map:pipeline>
       <!-- TEI content provided as HTML with internal metadata. -->
-      <map:match id="local-tei-backend-xml" pattern="text/*.xml">
-        <map:generate src="cocoon://internal/tei/preprocess/{1}.xml"
-                      label="tei" />
-        <map:transform src="cocoon://_internal/template/backend_tei.xsl" />
-        <map:serialize type="xml_nodecl" />
+      <map:match id="local-tei-backend-xml-single" pattern="backend/texts/*/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{1}.xml" />
+          <map:part src="cocoon://internal/metadata/files.xml"/>
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/backend_tei.xsl">
+          <map:parameter name="texts" value="{1}" />
+          <map:parameter name="versions" value="{2}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+
+      <map:match id="local-tei-backend-xml-multiple" pattern="backend/texts/*/*/*/*/">
+        <map:aggregate element="aggregation" label="content">
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{1}.xml" />
+          <map:part label="tei" src="cocoon:/backend/preprocess/texts/{3}.xml" />
+          <map:part src="cocoon://internal/metadata/files.xml"/>
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/backend_tei.xsl">
+          <map:parameter name="texts" value="{1},{3}" />
+          <map:parameter name="versions" value="{2},{4}" />
+        </map:transform>
+        <map:serialize type="xml" />
+      </map:match>
+      
+      <map:match pattern="backend/preprocess/texts/*.xml">
+        <map:aggregate element="aggregation" label="content">
+          <map:part element="alignments" src="cocoon:/backend/preprocess/alists/TVOF_para_alignment.xml" />
+          <map:part element="tei" src="cocoon://internal/tei/preprocess/texts/{1}.xml" />
+        </map:aggregate>
+        <map:transform src="../stylesheets/tei/add-corresp.xsl" />
+        <map:transform src="../stylesheets/tei/add-case-markers.xsl" />
+        <map:serialize type="xml" />
+      </map:match>
+      
+      <map:match pattern="backend/preprocess/alists/TVOF_para_alignment.xml">
+        <map:generate src="../content/xml/tei/alists/TVOF_para_alignment.xml" />
+        <map:transform src="../stylesheets/alists/compute-corresp.xsl" />
+        <map:serialize type="xml" />
       </map:match>
     </map:pipeline>
 

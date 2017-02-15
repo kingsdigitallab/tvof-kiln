@@ -176,7 +176,9 @@
       +-->
     <map:serializers default="html">
       <map:serializer logger="sitemap.serializer.links" name="links" src="org.apache.cocoon.serialization.LinkSerializer" />
-      <map:serializer logger="sitemap.serializer.xml" mime-type="text/xml" name="xml" src="org.apache.cocoon.serialization.XMLSerializer" />
+      <map:serializer logger="sitemap.serializer.xml" mime-type="text/xml; charset=utf-8" name="xml" src="org.apache.cocoon.serialization.XMLSerializer">
+        <encoding>UTF-8</encoding>
+      </map:serializer> 
 
       <map:serializer logger="sitemap.serializer.html" mime-type="text/html" name="html" pool-max="${html-serializer.pool-max}"
         src="org.apache.cocoon.serialization.HTMLSerializer">

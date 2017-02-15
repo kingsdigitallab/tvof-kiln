@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Royal 20 D I</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Published by KDL</p>
+            </publicationStmt>
+            <sourceDesc>
+                <ab>
+                    <seg/>
+                </ab>
+                <ab/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <ab type="version" subtype="semi-diplomatic"/>
+        </encodingDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!-- TEMPLATE
+            <div type="1" xml:id="edRoyal20D1_00001" n="1ra">
+            <head type="rubric">xxxxx</head>
+                   <ab>
+                   <seg type="1" xml:id="edRoyal20D1_00001_01">XXX</seg>
+                   <seg type="1" xml:id="edRoyal20D1_00001_02">XXX</seg>
+                   <seg type="1" xml:id="edRoyal20D1_00001_03">XXX</seg>
+                        </ab> </div>
+             Transcribe all paratextual content
+             1) rubrics operating at book level within <head> 
+             2) explicits within a <seg> at the end of the last <div type="1">
+           => HM will add the book-level division to the master file  
+            -->
+            <div type="1" xml:id="edRoyal20D1_00532" n="194ra">
+                <head type="rubric">Ci come[n]ce de <persName>Eneas</persName> qui se parti
+                        de<placeName>troies</placeName> et ala en <placeName>ytaliee</placeName><pc
+                        rend="1"/></head>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00532_01">Qvant <placeName>troie</placeName>
+                        la g[ra]nt <unclear>fu arse [et]</unclear> destruite non pas toutemes tant
+                        que li <name type="people">greu</name> uirent bien [et] sorent que iames ne
+                        porroit estre rescousse<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_02">Il sap[ar]rellierent pour entrer en
+                            mer<pc rend="1"/> anchois co[m]manda <persName>agamenon</persName> a
+                            <persName>Eneas</persName> qui uuidast tantost le paiis<pc rend="1"/>
+                        [et] le co[n]tree<pc rend="1"/> car moult le haoit de ce q[ui]l auoit
+                            <persName>polixene</persName> reprise pour qui amour
+                            <persName>achilles</persName> auoit este occis<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_03"><persName>Eneas</persName> uit bien
+                        quil encontre lui ne pooit estre si fist atourner [et] app[ar]relier les nes
+                        ou <persName>paris</persName> auoit este en<placeName>grece</placeName>
+                        <num>·xxij·</num> en iauoit p[ar] nonbre<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_04">Q[ua]nt elles furent app[ar]relies
+                        bien de toutes coses<pc rend="1"/> il fist dedens entier
+                            <persName>anchises</persName> son pere [et] son fil [et] toute sa mesnie
+                        qui furent sans les fe[m]mes <num>·iij^m·[et]·v^c·</num> p[ar] nombre<pc
+                            rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_05">Or dient li pluisour que
+                            <persName>Eneas</persName> ot un frere<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_06"><persName>Friga</persName> fu apeles
+                        qui ne sen ala mie auec <persName>Eneas</persName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_07">Ains remest en
+                            <placeName>frige</placeName><pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_08">Cest en la terre de
+                            <placeName>troye</placeName> [et] olui sa mesnie<pc rend="1"/> mes
+                        q[ua]nt il uit quil ni porroit arest[er]<pc rend="1"/> quil ne li couuenist
+                        sous <cb n="b"/>autrui signourie estre<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_09">Il se p[ar]ti [et] olui g[ra]nt
+                        conpe[n]gnie il se mistrent es nes [et] errerent tant q[ue] a maint leu se
+                        conbatirent pour ce quil ne uoloient estre sous autrui<pc rend="Ø_lb"
+                        /></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_10">Endementres fu mors
+                            <persName>friga</persName> [et] il firent roy un sien fil qui ot nom
+                            <persName>franchio[n]</persName> q[ui] moult ert preus ch[eualie]rs<pc
+                            rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_11"><persName>franchion</persName> erra
+                        tant quil uint en <placeName>europe</placeName> [et] la pourprist il le
+                        regne entre <geogName>le rin</geogName> [et] <geogName>la dunee</geogName>
+                        ou nuls nauoit onq[ue]s abite<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_12">Il peuplerent cele terre<pc rend="1"
+                        /> car il issi diaus m[ou]lt g[ra]nt lignie<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_13">Et de ciaus dient li pluisour q[ue]
+                        li <name type="people">francois</name> issirent [et] orrent no[m] <name
+                            type="people">francois</name> pour <persName>franchion</persName> q[ui]
+                        estoit preus [et] hardis [et] tels ia qui dient quil uindre[n]t dune terre
+                        qui <placeName>saint ieha[n]</placeName> est appelee [et] si moustrere[n]t
+                        cil qui ce dient celle raison que celle terre estoit auq[ue]s uoisine au
+                        regne qui fu au roy <persName>latin</persName> qui fu peres
+                            <persName>lauine</persName> q[ue] <persName>Eneas</persName> ot a
+                            fe[m]me<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_14">Et <persName>Eneas</persName> enuoia
+                        les <name type="people">latins</name>
+                        <name type="people">fra[n]chois</name> pour ce que li erent en aide<pc
+                            rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_15">Car a ce tenps iariuerent m[ou]lt
+                        [et] dune p[ar]t [et] dautre<pc rend="1"/> mes nest mie certe cose a sauoir
+                        qui en ot le signourie<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_16">Ancois q[ue]
+                            <persName>Eneas</persName> uieust fist il sacrefices as dex p[our] auoir
+                        respons en quel terre il ariuereoit pour fere demo<pc rend="1"/><pb n="194v"
+                            /><cb n="a"/>ranche<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_17">Li deu distrent quil ariueroit en
+                            <placeName>ytalie</placeName> et sa lignie qui de g[ra]nt nom serroit
+                        [et] de g[ra]nt puissance<pc rend="1"/> q[ua]nt <persName>Eneas</persName>
+                        qui ert de g[ra]nt lignie sot en quel terre il deuroit traire<pc rend="1"
+                        /></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_18">Il entra en sa nef [et] se mist a le
+                            uoie<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_19">Li marinier quil ne sauoie[n]t quel
+                        p[ar]t il deuoient aler<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00532_20">Ains aloient uoilles estendues<pc
+                            rend="1"/> la ou fortune les meneroit<pc rend="1"/> mes norrent mies
+                        loing ale q[ua]nt une g[ra]nt te[m]peste uint m[ou]lt orrible [et]
+                        co[m]menca a tonner [et] a fere pesme tenps q[ue] nuls ne le porroit
+                            croire<pc rend="1"/></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00533" n="194va">
+                <head type="rubric">do[n]t li roi de <placeName>fra[n]ce</placeName> orent
+                    [com]me[n]ceme[n]t</head>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00533_01"><q type="NI">Anchois que de
+                                <persName>Eneas</persName> plus uous conte uous dirai</q> q[ui]
+                        premierem[en]t fu roys de <placeName>france</placeName><pc rend="1"/> il est
+                        uoirs que de <persName>iaphet</persName> le fil <persName>noe</persName>
+                        [et] de <persName>fluua</persName> sa fe[m]me issi
+                            <persName>goumer</persName> issi un peuples qui <name type="people"
+                            >gallate</name> fu appellee <gloss>pour ce quil estoient bla[n]c [et]
+                            blonde</gloss><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_02">Car <rs type="metaling">en grec</rs>
+                        est li leus apelles <placeName>gaya</placeName> de qui il auoient samblanche
+                        [et] ces gens estorerent une cite qui ot a nom
+                            <placeName>gallantie</placeName> de chiaus issirent li <name
+                            type="people">troien</name>
+                        <q type="NI">si co[m]me uous aues oi arieres</q><pc rend="1"/>
+                        <q type="NI">pour ce uous di ie que</q> de <persName>iaphet</persName> [et]
+                        des <name type="people">troyens</name> issirent li <name type="people"
+                            >franchois</name>
+                        <cb n="b"/>et orrent co[m]menchement<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_03">Q[ua]nt
+                            <persName>anchenor</persName> se p[ar]ti de
+                            <placeName>troyes</placeName> la destruite<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_04">Il en mena auec lui un fil le roy
+                            <persName>priam[us]</persName> qui ne fu mies occis auec le autres<pc
+                            rend="1"/> car li enfes estoit si biaus [et] amiables q[ue] nus ne sen
+                        prist onq[ue]s garde cis ot nom <persName>pryans</persName> qui ne fu mies
+                        occis auec son pere<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_05">Q[ua]nt
+                            <persName>Anthenor</persName> ot tant ale q[ue] les gens furent creues
+                        en pene en alerent si estorerent une cite [et] lappelerent
+                            <placeName>siu/n?cambria</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_06">Apres lors mors tindrent lor lignie
+                        cele cite <num>·mil·ccc·xl·</num> ans iusq[ue] tant que
+                            <persName>ualentins</persName> fu emp[er]eres de
+                            <placeName>ro[m]me</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_07">En cel te[m]ps estoient une gens
+                        crueuse [et] hardie qui habitoient es darrai[n]nes p[ar]ties de
+                            <placeName>ponone</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_08">Ceste gens fu appellee <name
+                            type="people">alani</name><pc rend="1"/> [et] p[ar] lor force terre ne
+                        cremoient chiaus de <placeName>ro[m]me</placeName> qui adont auoient p[ar]
+                        tout<!-- HM: marginal note:'p[ar] tout' --> le monde signourie ains lor
+                        faisoient m[ou]lt de maus<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_09">Q[ua]nt li emp[er]eres
+                            <persName>ualentins</persName> uit quil ne li porroit destraindre<pc
+                            rend="1"/> manda as <name type="people">troye[n]s</name> qui en
+                            <placeName>sicambria</placeName> manoie[n]t que de ces gens le
+                        uengassent [et] il serroient quite <num>·x·</num> du treu quil deuoient a
+                            <placeName>ro[m]me</placeName><pc rend="1"/> tantost co[m]me il
+                        oirre[n]t ces nouuelles<pc rend="1"/> il courure[n]t sus a ceste gent [et]
+                        si les mi<pb n="195r"/><cb n="a"/>istrent hors du paiis [et] les
+                        desconfirent si que puis noserent de riens mesprendre uers
+                            <placeName>ro[m]me</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_10">Q[ua]nt li emp[er]ereres
+                            <persName>ualentins</persName> sot que ces gens auoient mors [et] pris
+                        si les noma [et] apella <name type="people">franchois</name>
+                        <gloss>cest aussi co[m]me crueuls [et] hardis</gloss><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_11">Et q[ua]nt ui[n]t au chief de
+                            <num>·x·</num> ans<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_12">Lemp[er]eres
+                            <persName>ualentins</persName> enuoia as <name type="people"
+                            >franchois</name> cui il auoit tes noms do[n]nes [et] lor manda qu<said
+                            direct="false">il li enuoiassent le treu ensi co[m]me il
+                            soloient</said><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_13">Li <name type="people"
+                            >fra[n]cois</name> li respondirent as mesagies [et] distrent<pc rend="1"
+                        /></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_14"><said direct="true">A moult g[ra]nt
+                            tort uos demande le[m]peres le treuage que nos combatimes as gens qui li
+                            tolloient son regne [et] les occeimes [et] ieumes g[ra]nt pene</said><pc
+                            rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_15">Q[ua]nt il orrent ce dit il
+                        pristrent les messages [et] si les occistrent<pc rend="1"/> tantost co[m]me
+                        li emp[er]eres sot ces noueles<pc rend="1"/> il fist appa[ar]relier
+                            sach[euale]rie<pc rend="1"/> [et] si lor comanda que <said
+                            direct="false">sour les <name type="people">franchois</name> alaisse[n]t
+                            [et] si les destruisissent a lor cite</said><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_16">Lors meurent li <name type="people"
+                            >roumain</name> [et] alerent tant q[ui]l uindrent a cele cite si
+                        lenuairent [et] assaillirent ta[n]t quil a force le pristrent [et]
+                        occistrent moult de chiax qui ihabitoient<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_17">Cil qui en escamperent se
+                        rasemblerent [et] furent m[ou]lt ge[n]t<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_18">Il se p[ar]tirent de celle Cite [et]
+                            <cb n="b"/>alerent tant quil uindrent en
+                            <placeName>germa[n]nnie</placeName> [et] se h[er]berent sour
+                            <geogName>le rin</geogName> [et] idemourent <num>·xlv·</num> ans·</seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_19">Q[ua]nt
+                            <persName>thodosius</persName> estoit emp[er]erent de
+                            <placeName>ro[m]me</placeName> si fu fes rois [et] sires de ces <name
+                            type="people">franchois</name>
+                        <persName>feremaus</persName> qui estoit de la lignie
+                            <persName>priant</persName>
+                        <q type="NI">dont uous aues oi</q><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_20">Cis <persName>feramo[n]s</persName>
+                        fu li premiers rois de <placeName>fra[n]ce</placeName> qui premiers le
+                            conquist<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_21">Cest au plus haut <q type="NI">que
+                            no[u]s en poons trouuer</q><pc rend="1"/> [et] de cesti uint [et]
+                        descendi de la lignie de <placeName>france</placeName><pc rend="1"/>
+                        <q type="NI">ensi co[m]me ie uos deuise</q><pc rend="1"/>
+                        <q type="NI">mes trop me lairai</q> de le matere de
+                            <persName>Eneas</persName> [et] des <name type="people">romains</name>
+                        q[ui] m[ou]lt furent<pc rend="1"/>
+                        <q type="NI">mes uous en ai tant touchie</q> p[our] ce q[ue] <name
+                            type="people">franchois</name> issirent de <placeName>troye</placeName>
+                        le p[re]miere semenche<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00533_22"><q type="NI">Et sachies que</q>
+                        <persName>ferramons</persName> enfu p[re]miers rois si estoit la
+                            <placeName>france</placeName> gra[n]ment peuplee mes elle nauoit mies
+                        nom <placeName>franche</placeName><pc rend="1"/> mes
+                            <placeName>gaule</placeName>
+                        <gloss>pour la blancour des gens [et] p[our] ce quil estoient uenu de
+                                <placeName>gallance</placeName></gloss> [et] p[ar] les <name
+                            type="people">francois</name> p[er]di elle son nom de
+                            <placeName>galle</placeName> [et] fu appellee
+                            <placeName>franche</placeName><pc rend="1"/></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00534" n="195rb">
+                <head type="rubric">Q[ue] <persName>eneas</persName> ot lonc te[m]ps q[ue]l fu
+                    ag[ra]ues de te[m]pestre<pc rend="1"/></head>
+                <ab><seg type="1" xml:id="edRoyal20D1_00534_01"><q type="NI">Or lairai de ce [et]
+                            dirai</q> de <persName>Eneas</persName> qui encore estoit e[n] mer a
+                        g[ra]nt tourment<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_02">Il ot m[ou]lt g[ra]nt paour [et]
+                        tendi ses mains uers le ciel [et] dist as deus<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_03"><said direct="true">Co[m]me furent
+                            ores bon eureus<pc rend="1"/>
+                            <persName>hector</persName> [et] <persName>paris</persName>
+                            <pb n="195v"/><cb n="a"/><persName>troylus</persName> [et]
+                                <persName>serpedon</persName> qui furent mort a
+                                <placeName>troye</placeName> qui si estoient preu [et] hardi [et]
+                            aussi puisse ie estre mors<pc rend="1"/></said> dementiers quil ensi se
+                        complegnoit la tempeste plonga une de ses nes dont la dolour fu g[ra]nt [et]
+                        tantost furent les autres si deseurees que li un ne sorent que li autre
+                            deuindrent<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_04">Apres ce ressale tempeste [et] les
+                        aigues amenuisirent<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_05">Lors p[er]churent li maronnier terre
+                        queon on appelloit <placeName>libie</placeName> qui est es darraines
+                        p[ar]ties d<placeName>aufrique</placeName> la se traistrent li maro[n]nier
+                        au plus tost quil poirent<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_06">Q[ua]nt il aprochierent terre il
+                        trouerent un port m[ou]lt bel [et] m[ou]lt delitable<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_07">Enco[n]tre <num>·ij·</num> roces en
+                        un port entra <persName>Eneas</persName> atout <num>·vij·</num> nes qui li
+                        estoient remes de <num>xxij·</num> tantost co[m]me les ancres furent getees
+                        il issire[n]t des nes en terre [et] si ses baudirent [et] esioirent car
+                        m[ou]lt g[ra]nt forest auoit entour le port<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_08">Dementiers quil saisissoient<pc
+                            rend="1"/>
+                        <persName>Eneas</persName> monta sor une roche pour regarder sil uerroit nul
+                        de ses co[n]pe[n]gons quil auoit p[er]dus en lamer<pc rend="1"/> dementier
+                        quil esgardoit [et] ne uenoit il se torna [et] uit pestres pres de li une
+                        g[ra]nt co[m]pegnie de cerf<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_09">Lor prist <persName>Eneas</persName>
+                        un arc et saiettes si trest as cerf a ta[n]t <cb n="b"/>quil en abati quil
+                        en a <num>·vij·</num> et sentourna tantost uers ses conpegnons si en do[n]na
+                        a cascu[n]e de ses nes un entier [et] m[ou]lt les reconforta [et] lor dist
+                            qu<said direct="false">il estoient apries bien de pene souffrir [et]
+                            m[ou]lt en auoient eues q[ui]l auoient trespasses</said><pc rend="1"/>
+                        <said direct="true">[et] sacies q[ue] dex metra fin en cesti fet<pc rend="1"
+                            /> que nous auons ores or ne uous esmaiies mies<pc rend="1"/> mes soiies
+                            fort [et] segur a souffrir trauaus<pc rend="1"/> car ap[re]s uenront
+                            gr[an]t ioie<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_10">Q[ua]nt il furent aisie il
+                        co[m]me[n]chierent ap[ar]ler de lor conpegnons quil auoient p[er]du [et] ne
+                        sauoient sil estoient ou mort ou uif<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_11"><persName>Eneas</persName> le
+                        regretoit m[ou]lt [et] de ior [et] de muit [et] la nuit ne dormi guaires
+                        pour ses copengno[n]s [et] fu a malaise<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_12">Q[ua]nt uint la matinee il dist quil
+                        iroit cerchier sil trouuroit ne ho[m]me ne fe[m]me qui li deist en quel
+                        terre le uent lauoit amene [et] qui en estoit sires [et] sil en trouuoyt
+                        uolentiers lor renoncheroit [et] a ses co[n]pe[n]gnons<pc rend="1"/> car
+                        m[ou]lt li sambloit te[r]re sauuage<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_13">Atant sen p[ar]ti [et] olui un sien
+                        co[n]pe[n]gno[n] a toutes lor armes<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_14"><persName>Eneas</persName> erra
+                        g[ra]nt pieche [et] tant q[ui]l uint a une g[ra]nt monte[n]gne <pb n="196r"
+                            /><cb n="a"/>dont il uit terres plenes [et] les murs tou[r]s de
+                            <placeName>cartage</placeName></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_15">Celle cite estoit nouuellement
+                        co[m]menchie car encore i ouuroient li ouurier as murs [et] as fortereches
+                        si le faisoit fermer une dame<pc rend="1"/>
+                        <persName>dido</persName> estoit apelee qui la estoit uenue destre[n]ge
+                            contree<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_16">Cele <persName>dido</persName> fu
+                        fille le roy <persName>belus</persName> qui <placeName>sydonie</placeName>
+                        [et] <placeName>tir</placeName> tint<pc rend="1"/> [et] toute le terre de
+                            <placeName>saiete</placeName><pc rend="1"/> [et] si ot un baron
+                            <persName>pigmalio</persName> ert no[m]mes<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_17">Apres ce que li roys
+                            <persName>pellus</persName> fu mors tint <persName>pigmalio</persName>
+                        le regne [et] si deuint maleurus si que nuls ne le porroit dire<pc rend="1"
+                        /> il murtri le baron <persName>dido</persName> qui
+                            <persName>sichions</persName> auoit nom pour couuoitisse dauoir tout le
+                            regne<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_18">Q[ua]nt il lot fet enfoir tout
+                            coiement<pc rend="1"/> il dist a sa serour qu<said direct="false">il
+                            estoit ales en <placeName>sire</placeName> si reuendroit q[ua]nt il
+                            auroit fet sa besonne</said> mes ne demora mies gra[n]ment que
+                            <persName>dido</persName> estoit enso[n] lit [et] que ses barons li
+                        aparut en auision [et] li dist <said direct="false">co[m]ment ses freres
+                            lauoit mu[r]tri [et] quele ne le ratendist mie ne ni demorast mie ca[r]
+                            aussi le ferroit occirre [et] si se p[ar]tist coyement de la co[n]tree
+                            que ses freres nen seust nens<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00534_19">Q[ua]nt <persName>dido</persName> fu
+                        reueillie elle elle crut bien lauision ta[n]tost assembla auoir [et] g[ra]nt
+                            <cb n="b"/>co[n]pengnie pour mener auec li<pc rend="1"/></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00535" n="196rb">
+                <head type="rubric">Co[m]me[n]t la royne <persName>dido</persName> ui[n]t e[n]
+                        <placeName>libe</placeName><pc rend="1"/></head>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00535_01">Q[ua]nt <persName>dido fu bien
+                        </persName> app[ar]elie et pourueue de g[ra]nt auoir q[ue] fu de son pere
+                        elle entra en mer [et] naga tant que elle arriva en
+                            <placeName>libe</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_02">Elle achata a chiaus de la contree
+                        tant de terre co[m]me elle porroit auiro[n]ner dun cuir de buef<pc rend="1"
+                        /></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_03">Cil quidierent que ce ne fust gueres
+                        de chose [et] que ce ne fust se tant no[n] co[m]me se peust seoir [et]
+                            reposer<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_04">Et ele fist prendre le plus g[ra]nt
+                        cuir de de buef quele pout trouer<pc rend="1"/> si le fist retrenchier tout
+                        en tout p[er] aussi delies co[r]roies co[m]me un fil apres ce ele regarda le
+                        plus bel leu de toute le terre si en auiro[n]ne tant co[m]me ele puet de ces
+                        corroies [et] dedens si fist elle co[m]menchier les hautes tours [et] les
+                        murs de <placeName>cartaie</placeName> [et] encore i faisoit elle ouure[r]
+                        q[ua]nt <persName>Eneas</persName> ui[n]t premierem[en]t la<pc rend="1"/>
+                        qui a cele part ala lui et seu co[n]pengnon<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_05">Q[ua]nt <persName>Eneas</persName>
+                        fu uenus a <placeName>cartage</placeName> il regar[r]da amerueilles les
+                        rices portes nouuelles ouurees et les beles rues [et] uit les ge[n]s qui
+                        encore estoient a g[ra]nt pene douurer es fosses dentor<pc rend="Ø_lb"/>
+                        q[ua]nt <persName>Eneas</persName> uit ce<pc rend="1"/> il entra en le uille
+                        [et] demande <said direct="false">qui en tenoit la signourie<pc rend="1"
+                            /></said> On <pb n="196v"/><cb n="a"/> li dist que <said direct="false"
+                            >dame [et] royne en estoit <persName>dido</persName><pc rend="1"/> qui
+                            de <placeName>tir</placeName> estoit uenue a nauie [et] quele nauoit
+                            baron ne fil ne fille<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_06">En mi la cite auoit un bel leu
+                        danbre precieus<pc rend="1"/> en mi leu faisoit la royne fere un m[ou]lt bel
+                        temple en lonnour de <persName>Juno</persName> lor deesse [et] si ot fet une
+                        g[ra]nt ymage a or [et] de pierres p[re]cieuses [et] encore ifaisoit ele
+                        ouurer pour embellir<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_07">La uint <persName>Eneas</persName>
+                        tantost co[m]me il uit le g[ra]nt ouurage<pc rend="1"/> il uit en la
+                        pointure dor [et] dassur fetes les batailles de
+                            <placeName>troie</placeName><pc rend="1"/> co[m]me la cite estoit
+                        g[ra]nt [et] riche [et] co[m]ment li <name type="people">griu</name>
+                        lasistrent [et] deuers quel p[ar]tie les logest estoient [et] coment li rois
+                            <persName>priamus</persName> admo[n]nestoit sa gent de bien fere [et]
+                        co[m]ment <persName>hector</persName> i faisoit [et] les autres aussi qui
+                        dedens estoient [et] dehors [et] co[m]ment <persName>accilles</persName>
+                        occist <persName>hector</persName> [et] co[m]m[en]t en la fin la cite fu
+                            destruite<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_08">Q]ua]nt <persName>Eneas</persName>
+                        ot tout ce regarde il co[m]mencha aplorer [et] si dist a
+                            <persName>achaite</persName> son co[n]pe[n]gnon<pc rend="1"/>
+                        <said direct="true">ha biaus amis<pc rend="1"/> non est terre ne regions en
+                            tout le monde que n[ost]re pene ne n[ost]re dolour ne soit seue<pc
+                                rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_09"><said direct="true">Or
+                            esgardes</said> fet il <said direct="true">uees chi le rou roy
+                                <persName>priamus</persName> [et] toutes ses proesces [et] decha
+                            pues tu ueoir les choses dont on doit plorer<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_10"><said direct="true">Et qui</said>
+                        sendit <said direct="true">ce <cb n="a"/> les garderoit [et] nen auroit
+                                tristece<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_11">Ensi ploroit
+                            <persName>Eneas</persName> en regardant les pointures [et] li couroient
+                        les lermes des iex<pc rend="1"/> car toutes ueoit les batalles [et]
+                        co[m]ment le royne <persName>pantheselee</persName> i esoit uenue [et] les
+                        ch[euale]ries quelle [et] auoit fetes<pc rend="1"/> o ses damoiselles a ce
+                        que <persName>Eneas</persName> regardoit ces coses<pc rend="1"/> la royne
+                            <persName>dido</persName> uint au temple a g[ra]nt co[n]pe[n]gnie de
+                        ch[eualie]rs [et] de iouenciax qui olui estoit<pc rend="1"/>
+                        <q type="NI">sachies co[m]me</q> il estoit si bele <unclear
+                            reason="illegible">cor</unclear>ne nulle creature<pc rend="1"/> puis
+                        sasist elle pour les oeures regarder<pc rend="1"/> maintenant q[ua]nt
+                            <persName>Eneas</persName> lot ueue il esgarda et uit ses co[n]engnons
+                        que en lamer quistoit auoir p[er]dus entrer ou temple et lor nes estoient en
+                        port de la cite armees<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_12">Tantost co[m]me il les conut dont il
+                        ot m[ou]lt g[ra]nt ioie<pc rend="1"/> mes cil qui <persName>eneas</persName>
+                        trouuerent <del>orrent g[ra]nt paour</del> orrent g[ra]nt paour de ses autre
+                        conpe[n]gnons q[ui] en la mer cuidoie[n]t auoir p[er]du<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_13">Lor leur co[n]ta
+                            <persName>Eneas</persName> co[m]ment il estoit uenus la [et] que ses nes
+                        estoient au port sour le forest as autres [et] tuis ses co[n]e[n]gnons fors
+                        que cil dune nes qui estoient p[er]du [et] p[e]ri<pc rend="Ø_lb"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_14">Lors p[ar]lerent en semble [et]
+                        distrent que a le roine <pb n="19[et]r"/><cb n="a"
+                            /><persName>dido</persName> demanderent quil fuissent asseur a son port
+                        [et] distrent entraus que <persName>Eneas</persName> ne demostreroit mie
+                        quil fust <persName>Eneas</persName> iusque tant quil resauroient dela royne
+                        la uolente<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00535_15">Ensi furent li <name type="people"
+                            >troien</name> deuant la royne tuit ense[m]ble [et] ne distrent mie
+                        liq[ue]ls estoit <persName>Eneas</persName> qui bien senbloit estre sires
+                        daus [et] rois<pc rend="1"/></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00536" n="19[et]ra">
+                <head type="rubric">Q[ue] <persName>eneas</persName> [et] si co[n]pe[n]gno[n]
+                    ui[n]dre[n]t deua[n]t la roine<pc rend="1"/></head>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00536_01">Q[ua]nt il fure[n]t uenu deuant
+                            <persName>dido</persName> il lenclinerent [et] saluerent et lors p[ar]la
+                            <persName>ydoneus</persName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_02"><said direct="true">O tu royne dame
+                            a cui li deu o[n]t donne poeste [et] signourie de ceste cite fere a
+                            emplir les peuples [et] les regions estrenges<pc rend="1"/> saces q[ue]
+                            nous so[m]mes <name type="people">troyen</name> cui uent et tempeste nos
+                            ont amene a ton port<pc rend="1"/> pour ce te prions nous dame que tu
+                            defentes a ta gent que ne nos fachent nul mal ne a nos nes<pc rend="1"
+                            /></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_03"><said direct="true">Aues merchi de
+                            n[ost]re lignie [et] si esga[r]des les dolours q[ue] nous auo[n]s
+                                souffertes<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_04"><said direct="true">Nos ne so[m]mes
+                            mies uenu pour prendre proise<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_05"><said direct="true">Car nos nen
+                            auo[n]s uolente ne pooir<pc rend="1"/> mes saces dame que nous estiens
+                            meu pour aler que[r]re une terre que <placeName>ytalie</placeName> est
+                            appellee [et] ou li roys <persName>yta<cb n="b"/>lus</persName> habita
+                            cha en arierre [et] chi fu de n[ost]re lignie<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_06"><said direct="true">Or so[m]mes ci
+                            ariue en u[ost]re contree si uodrons en pes refere nos nes<pc rend="1"
+                            /></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_07"><said direct="true">Et nos
+                            co[n]pegngnons [et] no signour <persName>Eneas</persName> encore
+                                atendre<pc rend="1"/> pour sauoir sil so[n]t en uie<pc rend="1"
+                            /></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_08">Q[ua]nt la royne ot entendu ces
+                        p[ar]oles elle baisse un petit son uiaire [et] dist as <name type="troyens"
+                            /><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_09"><said direct="true">Naues nulle
+                                doutance<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_10"><said direct="true">Car sachies
+                            q[ue] moy meismes sont auenues maintes diuerses coses il nest nul regne
+                            ou laue[n]ture de <placeName>troye</placeName> ne soit co[n]neue [et]
+                            sachies quel p[ar]t uous uoles aler<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_11"><said direct="true">Je uous aiderai
+                            dauoir [et] de gent<pc rend="1"/> [et] se uous uoles demorer ceste riche
+                            ricte ert u[ost]re<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_12"><said direct="true">Or refetes uos
+                            nes a u[ost]re uolente<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_13"><said direct="true">Et sacies q[ue]
+                            ie uosise q[ue] u[ost]re sires <persName>eneas</persName> fust cha
+                            ariues [et] si enuoierai mes mesages p[ar] toutes les parties de lyle de
+                                <placeName>libie</placeName> por sauoir se la g[ra]nt tempeste
+                            lauroit gete enforest ne en cite estrenge<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_14">Lors furent lie li <name
+                            type="people">troyen</name> q[ua]nt ensi oire[n]t p[ar]ler le royne<pc
+                            rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00536_15"><persName>Achaites</persName>
+                        p[ar]la p[ri]miers a <persName>eneas</persName> [et] si li dist <said
+                            direct="true">Sire nos tu dela royne [et] q[ue] nos so[m]mes asegure
+                            [et] sia uous tous nos conpe[n]gno[n]s fors chiaus que nous ueimes
+                                perir<pc rend="1"/></said></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00537" n="19[et]rb">
+                <head type="rubric">Q[ue] la royne <persName>dido</persName> fist gr[an]t ioie de
+                        <persName>eneas</persName><pc rend="1"/></head>
+                <pb n="19[et]v"/>
+                <cb n="a"/>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00537_01">Tantost trest aua[n]t
+                            <persName>Eneas</persName> [et] dist a la royne<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_02"><said direct="true">Dame ie sui
+                                <persName>Eneas</persName> que uous demandes [et] sacies qeu a
+                            g[ra]nt pene sui ie escapes de lamer d<placeName>aufrique</placeName>
+                            [et] arriues en ceste co[n]tree<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_03"><said direct="true">Or so[m]mes en
+                            ta terre de quoi tues royne<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_04">Q[ua]nt <persName>dido</persName>
+                        uit <persName>Eneas</persName> elle fu toute esbahie car m[ou]lt li samble
+                        de g[ra]nt signourie [et] li dist <said direct="true">ha sire de g[ra]nt
+                            auenture qui de cha uous a amenes<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_05"><said direct="true">Jai oi maintes
+                            fois p[ar]ler de uous [et] de u[ost]re <del rend="scraped">an</del> pere
+                                <persName>anchises</persName> [et] des autres princes de
+                                <persName>troye</persName><pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_06">Lors e[m]mena la roine
+                            <persName>Eneas</persName> et ses co[n]pengnons en ses salles [et] lor
+                        fist g[ra]nt ioie<pc rend="1"/>
+                    </seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_07">Lor demanda
+                            <persName>dido</persName> maintena[n]t a <persName>eneas</persName> ou
+                        ses nes estoient ariuees [et] il li dist entre <num>·ij·</num> monte[n]gnes
+                        en le forest<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_08">Tantost co[m]me elle le sot<pc
+                            rend="1"/> elle i auoie <num>·xx·</num> bues [et] <num>·c·</num> pors
+                        [et] <num>·c·</num> moutons et <num>·c·</num> agniaus<pc rend="1"/> pour ce
+                        q[ui]l euissent nouuelles mandees [et] si lor enuoia pain [et] uin a g[ra]nt
+                            plente<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_09">Q[ua]nt <persName>dido</persName> fu
+                        uenue en ses salles m[ou]lt iot g[ra]nt ioie<pc rend="1"/> lo[r]s sasistrent
+                        la royne [et] <persName>Eneas</persName> au mengier<pc rend="1"/> [et] tuit
+                        li autre<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_10">Ap[re]s co][m]manda son fil que
+                        m[ou]lt amoit a aler querre<pc rend="1"/> [et] quil aportast auec lui le
+                        rice mantel que la royne auoit aporte q[ua]nt elle uit a
+                            <placeName>troye</placeName><pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_11">Cils ma[n]tiaus etoit dor [et] de
+                        pierres precieuses [et] si aportast le septre [et] la rice couro[n]ne dor
+                        qui fu du roy <persName>pryamus</persName> [et] tout ce pour do[n]ner ale
+                        royne qui moult se penoit de lui aisier<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_12"><persName>Ascanius</persName> uint a
+                        tout ce p[re]sent [et] enclina [et] salua la royne [et] puis ala basier son
+                            pere<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_13">Q[ua]nt esgardoit la royne
+                            <persName>Eneas</persName> plus ses p[re]noit de samour<pc rend="1"
+                        /></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_14"> Elle baisoit lenfant por lamor du
+                            pere<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_15">Q[ua]nt les tables furent ostees il
+                        demenerent g[ra]nt ioie<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_16">La royne <persName>dido</persName>
+                        q[ui] ia estoit si sourprise de lamour <persName>Eneas</persName> quele
+                        uousist toute le nuit estre auece lui li dist<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_17"><said direct="true">Sire car nous
+                            co[n]tes toute le uerite co[m]ment li <name type="people">grius</name>
+                            uindrent sour <placeName>troyes</placeName> [et] co[m]ment il asistrent
+                            le roy <persName>priamus</persName> [et] ses rices barnages le
+                                deffendire[n]t<pc rend="Ø_lb"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_18">Atant fu la noise abaisier pour
+                            <persName>Eneas</persName> escouter<pc rend="1"/></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_19">Et <persName>Eneas</persName>
+                            dist<pc rend="1"/>
+                        <said direct="true">dame uous me co[m]mandes a renouueler ma g[ra]nt
+                                dolour<pc rend="1"/> cest q[ue] ie conte co[m]me li <name
+                                type="people">griu</name> destruirent <placeName>troye</placeName>
+                            [et] tout le regne<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_20"><said direct="true">Dame qui ce
+                            porroit <pb n="198r"/><cb n="a"/> conter qui ne conuenist plorer<pc
+                                rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_21"><said direct="true">Sachies que por
+                                <num>iij·</num> choses pooit estre n[ost]re cite garnie [et]
+                            garantie q[ue]le ne fust destruite<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_22"><said direct="true">Et se lune des
+                                <num>·iij·</num> choses ifust ia ne fuissiens uaincu ne la uile
+                                perie<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_23"><said direct="true">Lune si estoit
+                            la uie de <persName>troillus</persName>
+                            <num>·xx·</num> ans<pc rend="1"/> mes <persName>achilles</persName> le
+                            nos tollu<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_24"><said direct="true">Lautre si estoit
+                            le <name type="building">palladion</name> que
+                                <persName>ulixes</persName> [et] <persName>dyomedes</persName>
+                                emblerent<pc rend="1"/></said></seg>
+                    <seg type="1" xml:id="edRoyal20D1_00537_25"><said direct="true">La tierce si
+                            estoit le <name type="building">tours de
+                                <persName>laomedo[n]</persName></name> le roi qui estoit mis ou
+                                mur<pc rend="1"/> de la porte [et] tant co[m]me il fust la cite
+                                prise<pc rend="1"/> mes le cors fu remues a n[ost]re g[ra]nt
+                                pesance<pc rend="1"/></said></seg>
+                </ab>
+            </div>
+            <div type="1" xml:id="edRoyal20D1_00538" n="198ra">
+                <head type="rubric">Q[ue] <persName>eneas</persName> conte a le roine la
+                    destructio[n] de<placeName>troie</placeName><pc rend="1"/></head>
+                <ab>
+                    <seg type="1" xml:id="edRoyal20D1_00538_01">Apres ce co[m]m[en]cha <persName><c
+                                rend="R">E</c>neas</persName> a raconter ala royne <choice>
+                            <orig>conmencha</orig>
+                            <reg/>
+                        </choice> co[m]ment li <name type="people">greu</name> assemblerent lor ost
+                        [et] <choice>
+                            <orig>co[m]ment</orig>
+                            <reg/>
+                        </choice> pour quoi il se p[ar]tirent du port
+                            d<placeName>athenes</placeName> [et] co[m]ment il uindre[n]t a
+                            <placeName>thenedon</placeName> [et] com[m]ent il arriuerent a
+                            <placeName>thenedon</placeName> [et] tous les estours [et] les batailles
+                        que li uns enuers lautre orrent [et] co[m]bien le siege dura [et]
+                        co[m]me[n]t il p[er]di sa fe[m]me<pc rend="1"/> [et] co[m]ment aparut puis a
+                        lui [et] li dist ce quil souffer<cb n="b"/>oit encore de pen [et] co[m]me
+                        elle li pria quil tenist <persName>ascanius</persName> son fill chier<pc
+                            rend="1"/> [et] conta co[m]me la uille fu prise [et] co[m]ment li <name
+                            type="people"> le ardirent [et] li conta tout de chief en cief toutes
+                            ses auentures [et] en ce conta[n]t li cheoient les larmes des iex [et]
+                            fina se p[ar]ole<pc rend="1"/></name></seg>
+                </ab>
+            </div>
+        </body>
+    </text>
+</TEI>

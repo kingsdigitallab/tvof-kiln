@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/facing.xsl"/>
+
+    <xsl:variable name="work-title"
+        select="/aggregation/entity/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+    
+
+    <kiln:parent>
+        <xi:include href="tei.xml"/>
+    </kiln:parent>
+
+    <kiln:child>
+        <kiln:block name="title">
+            <xsl:value-of select="$work-title"/>
+            <kiln:super/>
+        </kiln:block>
+
+        <kiln:block name="page-heading">
+            <xsl:value-of select="$work-title"/>
+        </kiln:block>
+
+        <kiln:block name="js">
+            <kiln:super/>
+            <script src="{$xmg:assets-path}/textviewer/js/textviewer.js">&#160;</script>
+            <script src="{$xmg:assets-path}/scripts/textviewer-init.js">&#160;</script>
+            <script src="{$xmg:assets-path}/scripts/joyride.js">&#160;</script>
+        </kiln:block>
+        
+        <kiln:block name="css">
+            <kiln:super/>
+            <link href="{$xmg:assets-path}/textviewer/css/textviewer.css" rel="stylesheet"
+                type="text/css"/>
+        </kiln:block>
+
+        <kiln:block name="local-navigation"/>
+
+        <kiln:block name="content">
+            <div class="large-10 columns">
+                <div id="text-viewer">
+                    <div class="row" id="viewer-tool-bar">
+                        <div class="large-8 columns">
+                            <dl class="sub-nav">
+                                <dt>View options:</dt>
+                                <dd>
+                                    <a class="ctrl" data-tooltip="" href="#" id="sync"
+                                        title="Toggle panel synchronisation">
+                                        <i class="icon-refresh" id="second-stop">&#160;</i>
+                                        <xsl:text>Synchronise texts</xsl:text>
+                                    </a>
+                                </dd>
+                                <dd class="active">
+                                    <a class="ctrl" data-tooltip="" href="#" id="collation"
+                                        title="Toggle collation notes">
+                                        <i class="icon-tags">&#160;</i>
+                                        <xsl:text>Collation notes</xsl:text>
+                                    </a>
+                                </dd>
+                                <dd class="active">
+                                    <a class="ctrl" data-tooltip="" href="#" id="commentary"
+                                        title="Toggle commentary notes">
+                                        <i class="icon-comments" id="third-stop">&#160;</i>
+                                        <xsl:text>Commentary</xsl:text>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="large-2 columns">
+                            <div id="facing-pages-help">
+                                <a class="ctrl help" href="#"
+                                    onclick="$(document).foundation('joyride','start')">
+                                    <i class="icon-question-sign">&#160;</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-5 columns viewer-panel" id="viewer-left-panel">
+                            <div class="panel-tool-bar">
+                                <label>Current View</label>
+                                <xsl:call-template name="text-view-html-select">
+                                    <xsl:with-param name="class" select="'dropdown textSelection'"/>
+                                    <xsl:with-param name="selected" select="''"/>
+                                </xsl:call-template>
+                                <a class="expand expand-left" href="#"
+                                    id="text-viewer-left-full-screen">
+                                    <span class="icon-resize-full" id="first-stop"/>
+                                </a>
+                            </div>
+                            <div class="viewer-text-box" id="viewer-left-box">
+                                <div class="spinner">&#160;</div>
+                            </div>
+                        </div>
+
+                        <div class="large-5 columns viewer-panel" id="viewer-right-panel">
+                            <div class="panel-tool-bar">
+                                <label>Current View</label>
+                                <xsl:call-template name="text-view-html-select">
+                                    <xsl:with-param name="class" select="'dropdown textSelection'"/>
+                                    <xsl:with-param name="selected" select="'*empty*'"/>
+                                </xsl:call-template>
+                                <a class="expand expand-right" href="#"
+                                    id="text-viewer-right-full-screen">
+                                    <span class="icon-resize-full"/>
+                                </a>
+                            </div>
+                            <div class="viewer-text-box" id="viewer-right-box">&#160;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ol class="joyride-list" data-joyride="data-joyride" id="joyride-tour">
+                <li class="joyride-expand-offset" data-id="first-stop"
+                    data-options="tipLocation:left; nubPosition:right" data-text="Next"
+                    id="fp-joyride">
+                    <p>Use this control to toggle between single page view and "facing pages" where
+                        you can view texts side-by-side.</p>
+                </li>
+                <li class="joyride-left-offset" data-id="second-stop"
+                    data-options="tipLocation:right; nubPosition:left">
+                    <p>Synchronise scrolling between texts in "facing pages" mode.</p>
+                </li>
+                <li class="joyride-collation-offset" data-id="third-stop"
+                    data-options="tipLocation:right; nubPosition:left; nextButton: false">
+                    <p>Toggle collation and commentary notes on and off.</p>
+                </li>
+            </ol>
+        </kiln:block>
+
+        <kiln:block name="breadcrumbs">
+            <li>
+                <a class="active" href="{$xmg:base-context-path}/k/browse/works/"
+                    id="breadcrumb-menu-works">Works</a>
+            </li>
+            <li>
+                <span class="divider">/</span>
+            </li>
+        </kiln:block>
+    </kiln:child>
+    
+</kiln:root>
+
