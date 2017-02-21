@@ -247,6 +247,16 @@
 
                 <xsl:attribute name="style">text-transform:uppercase;</xsl:attribute>
             </xsl:if>
+            <xsl:if test="@subtype = 'toLower'">
+                <xsl:attribute name="class">critToLower</xsl:attribute>
+                
+                <xsl:attribute name="style">text-transform:lowercase;</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@subtype = 'toSup'">
+                <xsl:attribute name="class">critToSup</xsl:attribute>
+                
+                <xsl:attribute name="style">font-size:smaller;vertical-align:super;</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
