@@ -31,7 +31,7 @@
                 <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
                 
                 <a data-toggle="{$corresp}">
-                    <sup class="{$note-type}">
+                    <sup class="{concat('tei-', $note-type)}">
                         <xsl:value-of select="$note-head"/>
                     </sup>
                 </a>
