@@ -29,14 +29,20 @@
                 <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
                 <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head"/>
                 <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
+                <xsl:variable name="note-type-text">
+                    <xsl:choose>
+                        <xsl:when test="$note-type='gen'">General note:</xsl:when>
+                        <xsl:when test="$note-type='source'">Source note:</xsl:when>
+                        <xsl:when test="$note-type='trad'">Tradition note:</xsl:when>
+                    </xsl:choose> 
+                </xsl:variable>
                 
                 <a data-toggle="{$corresp}">
-                    <sup class="{concat('tei-', $note-type)}">
-                        <xsl:value-of select="$note-head"/>
+                    <sup class="{concat('note tei-', $note-type)}">
                     </sup>
                 </a>
                 <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-                    <xsl:value-of select="//tei:div[@xml:id = $corresp]/@subtype"/> note: <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+                    <xsl:value-of select="$note-type-text"/> <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
                     <button class="close-button" data-close="" aria-label="Close note" type="button">
                         <span aria-hidden="true">&#215;</span>
                     </button>
