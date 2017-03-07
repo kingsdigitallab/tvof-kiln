@@ -102,16 +102,15 @@
 
     <!-- Kiln as backend pipeline. -->
     <map:pipeline>
-      
+
       <map:match id="local-tei-backend-bibliography" pattern="backend/bibliography/">
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei" src="../content/xml/tei/bibliography.xml" />
-          <map:part src="cocoon://internal/metadata/files.xml"/>
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/bibliography.xsl"/>
-        <map:serialize type="xhtml" />
+        <map:serialize type="xml" />
       </map:match>
-          
+
       <map:match id="local-tei-backend-xml-single" pattern="backend/texts/*/*/">
         <map:aggregate element="aggregation" label="content">
           <map:part label="tei" src="cocoon:/backend/preprocess/texts/{1}.xml" />
@@ -136,7 +135,7 @@
         </map:transform>
         <map:serialize type="xml" />
       </map:match>
-      
+
       <map:match pattern="backend/preprocess/texts/*.xml">
         <map:aggregate element="aggregation" label="content">
           <map:part element="alignments" src="cocoon:/backend/preprocess/alists/TVOF_para_alignment.xml" />
@@ -146,7 +145,7 @@
         <map:transform src="../stylesheets/tei/add-case-markers.xsl" />
         <map:serialize type="xml" />
       </map:match>
-      
+
       <map:match pattern="backend/preprocess/alists/TVOF_para_alignment.xml">
         <map:generate src="../content/xml/tei/alists/TVOF_para_alignment.xml" />
         <map:transform src="../stylesheets/alists/compute-corresp.xsl" />
