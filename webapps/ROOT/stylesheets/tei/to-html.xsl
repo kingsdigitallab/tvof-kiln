@@ -223,10 +223,8 @@
         </span>
     </xsl:template>
     
-    <xsl:template match="tei:ref[@type = 'bibliography']/@corresp">
-        <xsl:attribute name="data-biblio-corresp">
-            <xsl:value-of select="."/>
-        </xsl:attribute>
+    <xsl:template match="tei:ref[@type = 'bibliography']">
+        <a href="{@corresp}"><xsl:apply-templates/></a>
     </xsl:template>
 
     <xsl:template match="tei:reg" mode="critical">
