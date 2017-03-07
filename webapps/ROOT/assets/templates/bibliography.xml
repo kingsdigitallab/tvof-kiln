@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xmtp:root xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xmg="http://www.cch.kcl.ac.uk/xmod/global/1.0"
-    xmlns:xmtp="http://www.cch.kcl.ac.uk/xmod/template/1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
+<kiln:root xmlns:dir="http://apache.org/cocoon/directory/2.0"
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
     <!-- Imports stylesheet to convert TEI into HTML. -->
     <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/bibliography.xsl" />
-    
-    <xmtp:parent>
-        <xi:include href="base.xml" />
-    </xmtp:parent>
-    
-    <xmtp:child>
-        <xmtp:block name="title">
-            <!--<xsl:value-of
-                select="/aggregation/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)]" />-->
-            <h2>Bibliography</h2>
-            <xmtp:super />
-        </xmtp:block>
-        
-        <xmtp:block name="page-heading">
-            <!--<xsl:value-of
-                select="/aggregation/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)]"
-            />-->
-            <h2>Bibliography</h2>
-        </xmtp:block>
-        
-        <xmtp:block name="content">
-            <div class="large-8 columns">
-                <xsl:apply-templates select="/aggregation/tei:TEI" />
-            </div>
-        </xmtp:block>
-        
-        <xmtp:block name="breadcrumbs">
-            <li>
-                <a href="{$xmg:base-context-path}/histoire-ancienne/" id="breadcrumb-menu-reference">L'Historie ancienne</a>
-            </li>
-            <li>
-                <span class="divider">/</span>
-            </li>
-            <li>
-                <a href="{$xmg:base-context-path}/histoire-ancienne/k/bibliography/"
-                    id="breadcrumb-menu-bibliography">Bibliography</a>
-            </li>
-            <li>
-                <span class="divider">/</span>
-            </li>
-        </xmtp:block>
-    </xmtp:child>
-</xmtp:root>
+
+    <data>
+        <xsl:apply-templates select="/aggregation/tei:TEI" />
+    </data>
+</kiln:root>
