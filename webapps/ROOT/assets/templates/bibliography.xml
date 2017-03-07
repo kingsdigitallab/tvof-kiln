@@ -13,15 +13,17 @@
     
     <xmtp:child>
         <xmtp:block name="title">
-            <xsl:value-of
-                select="/aggregation/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)]" />
+            <!--<xsl:value-of
+                select="/aggregation/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)]" />-->
+            <h2>Bibliography</h2>
             <xmtp:super />
         </xmtp:block>
         
         <xmtp:block name="page-heading">
-            <xsl:value-of
+            <!--<xsl:value-of
                 select="/aggregation/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)]"
-            />
+            />-->
+            <h2>Bibliography</h2>
         </xmtp:block>
         
         <xmtp:block name="content">

@@ -7,105 +7,63 @@
 
   <xsl:template match="tei:TEI">
     <div id="bibliography">
-      <xsl:apply-templates />
+      
+      <h3>(in progress...)</h3>
+      
+      <div id="mss">
+        <h4>Manuscripts</h4>
+        <xsl:for-each select="//tei:bibl[tei:msIdentifier]">
+          <xsl:sort select="descendant::tei:settlement"/>
+          <p class="tei-bibl" id="{child::tei:msIdentifier/@xml:id}"><xsl:apply-templates/></p>
+        </xsl:for-each>
+      </div>
+      
+      <div id="editions">
+        <h4>Editions</h4>
+        <xsl:for-each select="//tei:bibl[@type='P']">
+          <xsl:sort select="tei:editor[1]/tei:surname[1]"/>
+          <p class="tei-bibl" id="{@xml:id}"><xsl:apply-templates/></p>
+        </xsl:for-each>
+      </div>
+      
+      <div id="secondary">
+        <h4>Secondary Works</h4>
+        <xsl:for-each select="//tei:bibl[@type='S']">
+          <xsl:sort select="tei:author[1]/tei:surname[1]"/>
+          <p class="tei-bibl" id="{@xml:id}"><xsl:apply-templates/></p>
+        </xsl:for-each>
+      </div>
+      
+      
     </div>
-  </xsl:template>
-
-  <xsl:template match="tei:text | tei:body">
-    <xsl:apply-templates />
-  </xsl:template>
-
-  <xsl:template match="tei:div">
-    <div>
-      <xsl:apply-templates select="@*" />
-      <xsl:choose>
-        <xsl:when test="contains(@xml:id, 'works')">
-          <!-- soon we will want to change this to handle grouping by author -->
-          <xsl:apply-templates />
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:apply-templates />
-        </xsl:otherwise>
-      </xsl:choose>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:head">
-    <h2>
-      <xsl:apply-templates select="@*" />
-      <xsl:apply-templates />
-    </h2>
-  </xsl:template>
-
-  <xsl:template match="tei:head[@type='sub']">
-    <h4>
-      <xsl:apply-templates select="@*" />
-      <xsl:apply-templates />
-    </h4>
-  </xsl:template>
-
-  <xsl:template match="tei:list[@type='gloss']">
-    <table>
-      <xsl:apply-templates />
-    </table>
-  </xsl:template>
-
-  <xsl:template match="tei:list[@type='gloss']/tei:item">
-    <tr class="biblGlossItem">
-      <xsl:apply-templates select="@*" />
-      <xsl:apply-templates />
-    </tr>
-  </xsl:template>
-
-  <xsl:template match="tei:list[@type='gloss']/tei:item/tei:abbr">
-    <td>
-      <xsl:choose>
-        <xsl:when test="@rend='upright'"><!-- do nothing --></xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="class">italic</xsl:attribute>
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates />
-    </td>
-  </xsl:template>
-
-  <xsl:template match="tei:list[@type='gloss']/tei:item/tei:expan">
-    <td class="biblExpan">
-      <xsl:choose>
-        <xsl:when test="@rend='upright'"><!-- do nothing --></xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="class">italic</xsl:attribute>
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates />
-    </td>
-  </xsl:template>
-
-  <xsl:template match="tei:bibl">
-    <p class="biblEntry">
-      <xsl:apply-templates select="@*" />
-      <xsl:apply-templates />
-    </p>
   </xsl:template>
 
   <xsl:template match="tei:author">
     <xsl:apply-templates />
   </xsl:template>
+  
+  <xsl:template match="tei:date">
+    <xsl:apply-templates />
+  </xsl:template>
 
-  <xsl:template match="tei:title[@level='a']">
+  <xsl:template match="tei:editor">
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <xsl:template match="tei:idno">
     <xsl:apply-templates />
   </xsl:template>
 
   <xsl:template match="tei:title[(@level='j') or (@level='m')]">
-    <span class="italic">
+    <em>
       <xsl:apply-templates />
-    </span>
+    </em>
   </xsl:template>
 
   <xsl:template match="tei:hi[@rend='italic']">
-    <span class="italic">
+    <em>
       <xsl:apply-templates />
-    </span>
+    </em>
   </xsl:template>
 
   <xsl:template match="tei:hi[@rend='upright']">
@@ -113,4 +71,21 @@
       <xsl:apply-templates />
     </span>
   </xsl:template>
+  
+  <xsl:template match="tei:msIdentifier">
+    <xsl:apply-templates />
+  </xsl:template>
+  
+  <xsl:template match="tei:repository">
+    <xsl:apply-templates /><xsl:text>, </xsl:text>
+  </xsl:template>
+  
+  <xsl:template match="tei:settlement">
+    <xsl:apply-templates /><xsl:text>, </xsl:text>
+  </xsl:template>
+  
+  <xsl:template match="tei:surname">
+    <xsl:apply-templates />
+  </xsl:template>
+  
 </xsl:stylesheet>
