@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:my="http://www.oucs.ox.ac.uk/infodev/ns"
+    xmlns:tei="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title type="main">TEI test file</title>
+        </titleStmt>
+        <publicationStmt>
+            <p>Published by KDL</p>
+        </publicationStmt>
+        <sourceDesc>
+            <ab>
+                <seg/>
+            </ab>
+            <ab/>
+        </sourceDesc>
+    </fileDesc>
+</teiHeader>
+<text>
+<body>
+    <head>Bibliography</head>
+    <lb/>
+    <ab>
+        (in progress...)
+    </ab>
+    <bibl><msIdentifier xml:id="Fr20125_iron"><settlement>Dijon</settlement><repository>Bibliothèque
+        municipale</repository><idno>562</idno></msIdentifier></bibl>
+    
+    <bibl><msIdentifier xml:id="Fr20125_copper"><settlement>London</settlement><repository>British
+        Library</repository><idno>Additional 15268</idno></msIdentifier></bibl>
+    <bibl><msIdentifier xml:id="Fr20125_sulphur"><settlement>London</settlement><repository>British
+        Library</repository><idno>Additional 19669</idno></msIdentifier></bibl>
+    <bibl><msIdentifier xml:id="Fr20125_lead"><settlement>Paris</settlement><repository>Bibliothèque
+        nationale de  France</repository><idno>f. fr. 168</idno></msIdentifier></bibl>
+    <bibl><msIdentifier xml:id="Fr20125_argon"><settlement>Paris</settlement><repository>Bibliothèque
+            nationale de  France</repository><idno>f. fr. 20125</idno></msIdentifier></bibl>
+    <bibl><msIdentifier xml:id="Fr20125_boron"><settlement>Rennes</settlement><repository>Bibliothèque
+        municipale</repository><idno>2331</idno></msIdentifier></bibl>
+    <bibl xml:id="Atwood_Whitaker_1944" type="P"><editor><surname>Atwood</surname>, E. Bagby, and
+            Virgil K. <surname>Whitaker</surname></editor> (eds). <date>1944</date>. <title
+            level="m">Excidium Troiae</title>, (Cambridge, MA: The Medieval Academy of
+        America)</bibl>
+    <bibl xml:id="Barbieri_2002" type="S"><author><surname>Barbieri</surname>, Luca</author>.
+            <date>2002</date>. <title level="a">'Entre mythe et histoire: quelques sources de la
+            version en prose "napolitaine" du <hi rend="i">Roman de Troie</hi> en prose (Prose
+            5)'</title>, in <title level="m">'Ce est li fruis selonc la letre': mélanges offerts à
+            Charles Méla</title>, ed. by <editor>Olivier <surname>Collet</surname></editor>,
+            <editor>Yasmina <surname>Foehr-Jansens</surname></editor>, <editor>Sylviane
+                <surname>Messerli</surname></editor> (Paris: Champion), pp. 111-23</bibl>
+    <bibl xml:id="Bianciotto_1994" type="P"><editor><surname>Bianciotto</surname>, Gabriel</editor>
+        (ed.). <date>1994</date>. <title level="m">Le Roman de Troyle</title> (Rouen: Publications
+        de l’Université de Rouen)</bibl>
+    <bibl xml:id="Blumfeld-Kosinski_1981" type="S"><author><surname>Blumenfeld-Kosinski</surname>,
+            Renate Elisabeth</author>. <date>1981</date>. <title level="a">'Moralization and
+            history: verse and prose in the <hi rend="i">Histoire ancienne jusqu'à César</hi> (in BN
+            f. fr. 20125)'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
+        97: 41-46</bibl>
+    <bibl xml:id="Coker_Joslin_1980" type="P"><editor><surname>Coker Joslin</surname>,
+        Mary</editor>. <date>1980</date>. <title level="m">'A Critical Edition of the Genesis of
+            Rogier's "Histoire ancienne" Based on Paris, Bibliothèque Nationale, Ms. Fr.
+            20125'</title>, doctoral dissertation, University of North Carolina</bibl>
+    <bibl xml:id="Coker_Joslin_1986" type="P"><editor><surname>Coker Joslin</surname>, Mary</editor>
+        (ed.). <date>1986</date>. <title level="m">The Heard Word: A Moralized History. The Genesis
+            Section of the "Histoire ancienne" in a Text from Saint-Jean d'Acre</title>, <title
+            level="s">Romance Monographs, 45</title> (Lafayette: University of Mississipi
+        Press)</bibl>
+    <bibl xml:id="Croizy-Naquet_1999" type="S"><author><surname>Croizy-Naquet</surname>,
+            Catherine</author>. <date>1999</date>. <title level="m">Écrire l'histoire romaine au
+            début du XIIIe siècle: l'"Histoire ancienne jusqu'à César" et les "Faits des
+            Romains"</title> (Paris: Champion)</bibl>
+    <bibl xml:id="Croizy-Naquet_2000" type="S"><author><surname>Croizy-Naquet</surname>,
+            Catherine</author>. <date>2000</date>. <title level="a">'Écrire l'histoire: la choix du
+            vers ou de la prose aux XIIe et XIII siècles'</title>, in <title level="j"
+            >Médiévales</title>, 39: 71-85</bibl>
+    <bibl xml:id="Croizy-Naquet_2004" type="S"><author><surname>Croizy-Naquet</surname>,
+            Catherine</author>. <date>2004</date>. <title level="a">'L'<hi rend="i">Histoire
+                ancienne jusqu'à César</hi>, les <hi rend="i">Faits des Romains</hi>. Entre sermon
+            et chronique, entre histoire et roman'</title>, in <title level="m">Textes et cultures:
+            réception, modèles, interférences. Volume 1: Réception de l'Antiquité</title>, ed. by
+            <editor>Pierre <surname>Nobel</surname></editor> (Besançon: Presses universitaires de
+        Franche-Comté), pp. 103-118</bibl>
+    <bibl xml:id="Croizy-Naquet_2015" type="S"><author><surname>Croizy-Naquet</surname>,
+            Catherine</author>. <date>2015</date>. <title level="a">'Wauchier de Denain ou
+            l'experience de l'histoire dans l'Histoire ancienne jusqu'à César'</title>, in <title
+            level="m">Wauchier de Denain polygraphe du XIIIe siècle</title>, ed. by
+            <editor>Sébastien <surname>Douchet</surname></editor> (Aix-en-Provence: Presses
+        universitaires de Provence), pp. 75-92</bibl>
+    <bibl xml:id="Croizy-Naquet_2016" type="S"><author><surname>Croizy-Naquet</surname>,
+            Catherine</author>. <date>2016</date>. <title level="a">'Introduction
+            littéraire'</title>, in <editor>Yorio <surname>Otaka</surname></editor> (ed.), <title
+            level="m">L'Histoire ancienne jusqu'à César. Édition d'après le manuscrit OUL 1 de la
+            bibliothèque de l'Université Otemae (ancien Phillips 23240)</title> (Orléans:
+        Paradigme), vol. 1, pp. 9-65</bibl>
+    <bibl xml:id="Derolez_1968" type="P"><editor><surname>Albert</surname>, Derolez</editor> (ed.).
+            <date>1968</date>. <title level="m">Lamberti S. Audomari Canonici, Liber
+            Floridus</title>, (Ghent: In aedibus Story-Scientia)</bibl>
+    <bibl xml:id="Gaullier-Bougassas_2007" type="S"><author><surname>Gaullier-Bougassas</surname>,
+            Catherine</author>. <date>2007</date>. <title level="a">'Histoires universelles et
+            variations sur deux figures du pouvoir. Alexandre et César dans l’<hi rend="i">Histoire
+                ancienne jusqu’à César</hi>, <hi rend="i">Renart le Contrefait</hi> et le <hi
+                rend="i">Livre de la Mutacion de Fortune</hi> de Christine de Pizan'</title>, <title
+            level="j">Cahiers de recherches médiévales</title>, 14: 7-28</bibl>
+    <bibl xml:id="Gaullier-Bougassas_2012" type="P"><editor><surname>Gaullier-Bougassas</surname>,
+            Catherine</editor> (ed.). <date>2012</date>. <title level="m">L'Histoire ancienne
+            jusqu'à César, ou, Histoires pour Roger, châtelain de Lille de Wauchier de Denain;
+            L'Histoire de la Macédoine et d'Alexandre le Grand</title>, <title level="s">Alexander
+            redivivus</title>, 4 (Turnhout: Brepols)</bibl>
+    <bibl xml:id="Gracia_2006" type="S"><author><surname>Gracia</surname>, Paloma</author>.
+            <date>2006</date>. <title level="a">'Hacia el modelo de la General estoria. París, la
+            translatio imperii et studii y la <hi rend="i">Histoire ancienne jusqu'à
+            César</hi>'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
+        122: 17-27</bibl>
+    <bibl xml:id="Huber_2000" type="S"><author><surname>Huber</surname>, Franziska</author>.
+            <date>2000</date>. <title level="a">'L'<hi rend="i">Histoire ancienne jusqu'à
+            César</hi>, source du <hi rend="i">Livre de la mutacion de Fortune</hi> de Christine de
+            Pizan: étude comparative des récits sur Cyrus'</title>, in <title level="m">Au champ des
+            escriptures. IIIe Colloque international sur Christine de Pizan, Lausanne, 18-22 juillet
+            1998</title>, ed. by <editor>Eric <surname>Hicks</surname></editor> et al., <title
+            level="s">Études christiniennes</title>, 6 (Paris: Champion), pp. 161-74</bibl>
+    <bibl xml:id="Longobardi_1994" type="S"><author><surname>Longobardi</surname>, Monica</author>.
+            <date>1994</date>. <title level="a">'Nuovi frammenti dell'Histoire ancienne jusqu'à
+            César'</title>, <title level="j">Cultura neolatina</title>, 54: 213-61</bibl>
+    <bibl xml:id="Lynde-Recchia_2000" type="P"><author><surname>Lynde-Recchia</surname>,
+            Molly</author>. <date>2000</date>. <title level="m">Prose, Verse, and Truth-Telling in
+            the Thirteenth Century: An Essay on Form and Function in Selected Texts, Accompanied by
+            an Edition of the Prose "Thèbes" as Found in the "Histoire ancienne jusqu'à
+            César"</title>, <title level="s">The Edward C. Armstrong Monographs on Medieval
+            Literature</title>, 10 (Lexington: French Forum) </bibl>
+    <bibl xml:id="Mazzoni_and_Jeanroy_1898" type="S"><author><surname>Mazzoni</surname>,
+            Guido</author>, and <author>Alfred <surname>Jeanroy</surname></author>.
+            <date>1989</date>. <title level="a">'Un nouveau manuscrit du <hi rend="i">Roman de
+                Troie</hi> et de l'<hi rend="i">Histoire ancienne avant César</hi>'</title>, <title
+            level="j">Romania</title>, 27: 574-81</bibl>
+    <bibl xml:id="Meyer_1885" type="S"><author><surname>Meyer</surname>, Paul</author>.
+            <date>1885</date>. <title level="a">'Les premières compilations françaises d'histoire
+            ancienne'</title>, <title level="j">Romania</title>, 14: 1-8</bibl>
+    <bibl xml:id="Meyer_1895" type="S"><author><surname>Meyer</surname>, Paul</author>.
+            <date>1895</date>. <title level="a">'Notice du manuscrit fr. 17177 de la Bibliothèque
+            nationale (histoire universelle; Brut en prose; poésies et chroniques
+        diverses)'</title>, <title level="j">Bulletin de la Société des anciens textes
+            français</title>, 21: 80-118</bibl>
+    <bibl xml:id="Monfrin_1985" type="S">
+        <author><surname>Monfrin</surname>, Jacques</author>. <date>1985</date>. <title level="a"
+            >'Les translations vernaculaires de Virgile au Moyen Âge'</title>, in <title level="m"
+            >Lectures médiévales de Virgile. Actes du colloque organisé par l'École française de
+            Rome, Rome, École française de Rome</title>, <title level="s">Collection de l'École
+            française de Rome</title>, 80 (Rome: École française de Rome), pp. 189-249</bibl>
+    <bibl xml:id="Montorsi_2016a" type="S"><author><surname>Montorsi</surname>, Francesco</author>.
+            <date>2016</date>. <title level="a">‘Les origines des Francs dans l'<hi rend="i"
+                >Histoire ancienne jusqu'à César</hi>. Sur une source inconnue de la première
+            chronique universelle en français’</title>, <title level="j">Medioevo Romanzo</title>,
+        40.2: 415-26</bibl>
+    <bibl xml:id="Montorsi_2016b" type="S"><author><surname>Montorsi</surname>, Francesco</author>.
+            <date>2016</date>. <title level="a">‘Sur l'<hi rend="i">intentio auctoris</hi> et la
+            datation de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>’</title>, <title
+            level="j">Romania</title>, 134: 148-65</bibl>
+    <bibl xml:id="Mynors_1969" type="P"><editor><surname>Mynors</surname>, R. A. B.</editor> (ed.).
+            <date>1969</date>
+        <title level="m">P. Vergili Maronis Opera</title>, <title level="s">Oxford Classical
+            Texts</title> (Oxford: Oxford University Press)</bibl>
+    <bibl xml:id="Oltrogge_1989" type="S"><author><surname>Oltrogge</surname>, Doris</author>.
+            <date>1989</date>. <title level="m">Die Illustrationszyklen zur "Histoire ancienne
+            jusqu'à César" (1250-1400)</title>, <title level="s">Europäische
+            Hochschulschriften</title>, Reihe XXVIII: Kunstgeschichte, 94 (Frankfurt am Main:
+        Lang)</bibl>
+    <bibl xml:id="Otaka_2016" type="P"><editor><surname>Otaka</surname>, Yorio</editor> (ed.).
+            <date>2016</date>. <title level="m">L'Histoire ancienne jusqu'à César. Édition d'après
+            le manuscrit OUL 1 de la bibliothèque de l'Université Otemae (ancien Phillips
+            23240)</title>, <title level="s">Medievalia, 88</title>, 2 vols (Orléans:
+        Paradigme)</bibl>
+    <bibl xml:id="Perriccioli_Saggese_et_al_1979" type="S"><author><surname>Perriccioli
+                Saggese</surname>, Alessandra</author>, <author>Catello
+            <surname>Salviati</surname></author> and <author>Vittorio
+            <surname>Marino</surname></author>. <date>1979</date>. <title level="m">I romanzi
+            cavallereschi miniati a Napoli</title> (Naples: Società editrice napoletana) </bibl>
+    <bibl xml:id="Petit_2001" type="S"><author><surname>Petit</surname>, Aimé</author>.
+            <date>2001</date>. <title level="a">'Le <hi rend="i">Roman de Thèbes</hi> dans l'<hi
+                rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j">Le Moyen
+            Âge</title>, 107: 113-21</bibl>
+    <bibl xml:id="Petit_2002" type="S"><author><surname>Petit</surname>, Aimé</author>.
+            <date>2002</date>. <title level="a">'Wauchier de Denain et la matière du <hi rend="i"
+                >Roman de Thèbes</hi> dans l'<hi rend="i">Histoire ancienne jusqu'à
+            César</hi>'</title>, in <title level="m">Richesses médiévales du Nord et du
+            Hainaut</title>, ed. by <editor>Jean-Charles <surname>Herbin</surname></editor>
+        (Valenciennes: Presses universitaires de Valenciennes), pp. 243-52</bibl>
+    <bibl xml:id="Petit_2004" type="S"><author><surname>Petit</surname>, Aimé</author>.
+            <date>2004</date>. <title level="a">'Le traitement du personnage d'Amphiaraüs par
+            Wauchier de Denain dans l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, in
+            <title level="m">Image et mémoire du Hainaut médiéval</title>, ed. by
+            <editor>Jean-Charles <surname>Herbin</surname></editor> (Valenciennes: Presses
+        universitaires de Valenciennes), pp. 183-92</bibl>
+    <bibl xml:id="Raynaud_de_Lage_1948" type="S"><author><surname>Raynaud de Lage</surname>,
+            Guy</author>. <date>1948</date>. <title level="a">'L'<hi rend="i">Historia Britonum</hi>
+            source de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j"
+            >Revue du moyen âge latin</title>, 4: 275-78</bibl>
+    <bibl xml:id="Raynaud_de_Lage_1949" type="S"><author><surname>Raynaud de Lage</surname>,
+            Guy</author>. <date>1949</date>. <title level="a">'L'<hi rend="i">Histoire ancienne
+                jusqu'à César</hi> et les <hi rend="i">Faits des Romains</hi>'</title>, <title
+            level="j">Le Moyen Âge</title>, 55: 5-16</bibl>
+    <bibl xml:id="Raynaud_de_Lage_1957" type="S"><author><surname>Raynaud de Lage</surname>,
+            Guy</author>. <date>1957</date>. <title level="a">'Les "romans antiques" dans l'<hi
+                rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j">Le Moyen
+            Âge</title>, 63: 267-309</bibl>
+    <bibl xml:id="Raynaud_de_Lage_1976" type="S"><author><surname>Raynaud de Lage</surname>,
+            Guy</author>. <date>1976</date>. <title level="a">'L'<hi rend="i">Histoire ancienne
+                jusqu'à César</hi> et les <hi rend="i">Faits des Romains</hi> et La Morale de
+            l'histoire'</title> in <author>Guy <surname>Raynaud de Lage</surname></author>, <title
+            level="m">Les premiers romans français et autres études littéraires et
+            linguistiques</title>, <title level="s">Publications romanes et françaises</title>, 138
+        (Geneva: Droz), pp. 5-13 and 171-174</bibl>
+    <bibl xml:id="Vieilliard_1997" type="S">
+        <author><surname>Vielliard</surname>, Françoise</author>. <date>1997</date>. <title
+            level="a">‘En marge de l’<hi rend="i">Histoire ancienne jusq’à César</hi>: deux
+            traductions françaises d’Eutrope’</title>, in <title level="m">Entre fiction et
+            histoire: Troie et Rome au Moyen Âge</title>, ed. by <editor>Emmanuèle
+                <surname>Baumgartner</surname></editor> and <editor>Laurance
+                <surname>Harf-Lacner</surname></editor> (Paris: Presses de la Sorbonne Nouvelle),
+        pp. 207–35</bibl>
+    <bibl xml:id="Visser_van_Terwisga_1995" type="P"><editor><surname>de Visser van
+                Terwisga</surname>, Marjike</editor> (ed.). <date>1995</date>. <title level="m"
+            >Histoire ancienne jusqu'à César, Estoires Rogier. Tome I: Assyrie, Thèbes, Le
+            Minotaure, les Amazones, Hercule</title>, <title level="s">Medievalia</title>, 19,
+        (Orléans: Paradigme)</bibl>
+    <bibl xml:id="Visser_van_Terwisga_1999" type="P"><editor><surname>de Visser van
+                Terwisga</surname>, Marjike</editor> (ed.). <date>1999</date>. <title level="m"
+            >Histoire ancienne jusqu'à César, Estoires Rogier. Tome II</title>, <title level="s"
+            >Medievalia</title>, 30 (Orléans: Paradigme)</bibl>
+</body>
+</text>
+</TEI>
