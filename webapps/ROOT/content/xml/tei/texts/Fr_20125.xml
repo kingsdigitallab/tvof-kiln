@@ -19,8 +19,8 @@
     </encodingDesc>
   </teiHeader>
   <text>
-    
-     
+  
+      
     <body>
       <div type="1" xml:id="edfr20125_00588" n="148rb">
         <head type="rubric">Ci comence d<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName> qui <choice><seg type="semi-dip">separti</seg><seg type="crit">se parti</seg></choice> de
@@ -64,7 +64,7 @@
               apareillees<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="5" rend="NR" xml:id="edfr20125_00589_02">Cist alerent mout par mer [et] en
             pluisors lius se combatirent<choice><orig></orig><reg>,</reg></choice> [et] por ce q[u<choice><orig></orig><reg>'</reg></choice>i]l ne <choice><orig>u</orig><reg>v</reg></choice>oloient estre <choice><seg type="semi-dip">de sous</seg><seg type="crit">desous</seg></choice> nuilui
-              poest<choice><orig>e</orig><reg>é</reg></choice><pc rend="1"/><choice><orig></orig><reg>,</reg></choice> si ne <choice><orig>u</orig><reg>v</reg></choice>oloient il estre en nul l<choice><sic>ui</sic><corr>iu</corr></choice> arestant<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice>
+              poest<choice><orig>e</orig><reg>é</reg></choice><pc rend="1"/><choice><orig></orig><reg>,</reg></choice> si ne <choice><orig>u</orig><reg>v</reg></choice>oloient il estre en nul <choice><sic>lui</sic><corr>liu</corr></choice> arestant<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice>
             <choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>ntretant si morut <persName>friga</persName> [et] il firent roi d<choice><orig></orig><reg>'</reg></choice>un fill sien<choice><orig></orig><reg>,</reg></choice>
               <persName>fra[n]chion</persName> ot a non<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <rs type="metatext">[<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t]
               tels <choice><seg type="semi-dip">ia</seg><seg type="crit">i a</seg></choice> qui dient</rs> qu<choice><orig></orig><reg>'</reg></choice>il fu ses n<choice><orig>e</orig><reg>é</reg></choice>s<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> mais mout estoit prous
@@ -194,7 +194,7 @@
               rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="5" xml:id="edfr20125_00591_09">En celui tans estoient unes gens crueus [et]
             hardies qui habitoient es darraines parties de <placeName>pannone</placeName><choice><orig></orig><reg>,</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>oste
-            les <geogName>meotidiens <choice><seg type="semi-dip">p</seg><seg type="crit" subtype="toUpper">p</seg></choice>alus</geogName><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">c</seg><seg type="crit" subtype="toUpper">c</seg></choice>es gens <name type="people">ala<choice><sic>m</sic><corr>in</corr></choice>i</name>
+              les <geogName>meotidiens <choice><seg type="semi-dip">p</seg><seg type="crit" subtype="toUpper">p</seg></choice>alus</geogName><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">c</seg><seg type="crit" subtype="toUpper">c</seg></choice>es gens <name type="people"><choice><sic>alami</sic><corr>Alaini</corr></choice></name>
             apel<choice><orig>e</orig><reg>é</reg></choice> estoient [et] por lor force [et] por lor forte terre ne cremoient ceaus de
               <placeName>rome</placeName><choice><orig></orig><reg>,</reg></choice> qui ado[n]c a<choice><orig>u</orig><reg>v</reg></choice>oient par tot le mont la segnorie<pc
                 rend="1"/><choice><orig></orig><reg>,</reg></choice> ains lor faisoient mout de mal [et] de gre<choice><orig>u</orig><reg>v</reg></choice>ance<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
@@ -243,7 +243,7 @@
             <pb n="150r"/><cb n="a"/>[et] alerent tant qu<choice><orig></orig><reg>'</reg></choice>il <choice><orig>u</orig><reg>v</reg></choice>indre[n]t en
               <placeName>germanie</placeName><choice><orig></orig><reg>,</reg></choice> [et] si se herbergerent sor le
               <geogName>rin</geogName><pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
-          <seg type="2" xml:id="edfr20125_00591_18">La mainstrent il [et] ares<choice><sic></sic><corr>te</corr></choice>rent
+            <seg type="2" xml:id="edfr20125_00591_18">La mainstrent il [et] <choice><sic>aresrent</sic><corr>aresterent</corr></choice>
               <num>·lxxv·</num> ans<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="3" xml:id="edfr20125_00591_19">E adonc<choice><orig></orig><reg>,</reg></choice> qua[n]t <persName>theodosius</persName>
             fu enperere de <placeName>rome</placeName><choice><orig></orig><reg>,</reg></choice> si fu fais rois [et] sires des <name
@@ -1838,7 +1838,7 @@
                             <placeName>laurente</placeName> ot un chasteau ou les grans noressons
                         <choice><seg type="semi-dip">leroi</seg><seg type="crit">le roi</seg></choice> estoient<choice><orig></orig><reg>,</reg></choice> dont <persName>tyrrus</persName><anchor type="tradNote" corresp="#edfr20125_0616_08_sycamore"/> estoit sires qui
                         <num>·ii·</num> fiz a<choice><orig>u</orig><reg>v</reg></choice>oit [et] une bele damoisele a fille<choice><orig></orig><reg>,</reg></choice> qui
-                        <persName>sil<choice><sic>iu</sic><corr>vi</corr></choice>a</persName><anchor type="genNote" corresp="#edfr20125_0616_08_cairo"/> estoit
+                        <persName><choice><sic>siliua</sic><corr>Silvia</corr></choice></persName><anchor type="genNote" corresp="#edfr20125_0616_08_cairo"/> estoit
                             apelee<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">c</seg><seg type="crit" subtype="toUpper">c</seg></choice>ele a<choice><orig>u</orig><reg>v</reg></choice>oit nori un cerf g[ra]nt [et] parcreu
                         que si frere li a<choice><orig>u</orig><reg>v</reg></choice>oient aport<choice><orig>e</orig><reg>é</reg></choice> de la forest si <choice><orig>i</orig><reg>j</reg></choice>o<choice><orig>u</orig><reg>v</reg></choice>ene qu<choice><orig></orig><reg>'</reg></choice>il l<choice><orig></orig><reg>'</reg></choice>a<choice><orig>u</orig><reg>v</reg></choice>oient
                         tolu a la mere<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
@@ -1860,7 +1860,7 @@
                         re<choice><orig>u</orig><reg>v</reg></choice>int fuiant en la maison o il a<choice><orig>u</orig><reg>v</reg></choice>oit est<choice><orig>e</orig><reg>é</reg></choice> noris<choice><orig></orig><reg>,</reg></choice> si se coucha [et]
                         plainst [et] braist ausi com s<choice><orig></orig><reg>'</reg></choice>il requesist a<choice><orig>i</orig><reg>ï</reg></choice>e de la mort q[u<choice><orig></orig><reg>'</reg></choice>i]l sentoit
                             prouchaine<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">p</seg><seg type="crit" subtype="toUpper">p</seg></choice>[ri]mes <choice><seg type="semi-dip">i<choice><orig>u</orig><reg>v</reg></choice>int</seg><seg type="crit">i <choice><orig>u</orig><reg>v</reg></choice>int</seg></choice> corant
-                        <persName>sil<choice><sic>i<choice><orig>u</orig><reg>v</reg></choice>a</sic><corr><choice><orig>u</orig><reg>v</reg></choice></corr></choice>ia</persName> qui mout en fu esmarie quant
+                        <persName><choice><sic>siliua</sic><corr>Silvia</corr></choice></persName> qui mout en fu esmarie quant
                         ele <choice><orig>u</orig><reg>v</reg></choice>it son cers sanglent qui <choice><orig>i</orig><reg>j</reg></choice>a moroit par la plaie<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice>
                         <choice><seg type="semi-dip">t</seg><seg type="crit" subtype="toUpper">t</seg></choice>antost comensa ele a crier a<choice><orig>i</orig><reg>ï</reg></choice>e<pc rend="1"/> [et] li <choice><orig>u</orig><reg>v</reg></choice>ilain saillirent
                         [et] sa maisnee<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> si quistrent la plaie qu<choice><orig></orig><reg>'</reg></choice>il ass<choice><orig>e</orig><reg>é</reg></choice>s tost
@@ -2853,8 +2853,8 @@
                         si faisoit terdre [et] essuer sa plaie qui mout <pb n="169r"/><cb n="a"/>li
                         estoit dolorouse<choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais <choice><seg type="semi-dip">porce</seg><seg type="crit">por ce</seg></choice> ne laissoit il mie qu<choice><orig></orig><reg>'</reg></choice>il ne demandast ou ses
                         fils estoit <persName>lausus</persName><choice><orig></orig><reg>,</reg></choice> [et] <choice><seg type="semi-dip">sidisoi<add place="inline"
-                            hand="LH2" rend="overwritten">s</add></seg><seg type="crit">si disoi<choice><sic><add place="inline"
-                                hand="LH2" rend="overwritten">s</add></sic><corr>t</corr></choice></seg></choice><anchor type="genNote" corresp="#edfr20125_0630_04_cairo"/> a ses gens qu<choice><orig></orig><reg>'</reg></choice><said
+                            hand="LH2" rend="overwritten">s</add></seg><seg type="crit">si <choice><sic>disoi<add place="inline"
+                                hand="LH2" rend="overwritten">s</add></sic><corr>disoit</corr></choice></seg></choice><anchor type="genNote" corresp="#edfr20125_0630_04_cairo"/> a ses gens qu<choice><orig></orig><reg>'</reg></choice><said
                                 direct="false">il l<choice><orig></orig><reg>'</reg></choice>amenassent fors des estors [et] des meslees<choice><orig></orig><reg>,</reg></choice> [et] si
                             li desissent coment il se mantenoit q[ua]r mout <choice><orig>u</orig><reg>v</reg></choice>oudroit oir <choice><seg type="semi-dip">delui</seg><seg type="crit">de lui</seg></choice>
                             la tres grant proece</said><pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
@@ -3743,7 +3743,7 @@
                     <seg type="4" xml:id="edfr20125_00640_10">E puis tantost com il ot ce dit<choice><orig></orig><reg>,</reg></choice> ocist
                         il <persName>asbiten</persName> le compaignon<choice><orig></orig><reg>,</reg></choice> celui a cui il a<choice><orig>u</orig><reg>v</reg></choice>oit dites
                         ces paroles<pc rend="1"/><choice><orig></orig><reg>.</reg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] puis a<cb n="b"/>pr<choice><orig>e</orig><reg>é</reg></choice>s ocist il [et] abati
-                        mout des aut<choice><sic></sic><corr>r</corr></choice><add place="above" hand="S">e</add>s dont anuis seroit les nons
+                        mout des <choice><sic>aut<add place="above" hand="S">e</add>s</sic><corr>autres</corr></choice> dont anuis seroit les nons
                         toz co[n]ter [et] dire<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00640_11">Entrues que
                             <persName>turnus</persName> aloit si sa <choice><orig>u</orig><reg>v</reg></choice>olent<choice><orig>e</orig><reg>é</reg></choice> faisant par la
@@ -3775,7 +3775,7 @@
                         enchausoit<choice><orig></orig><reg>,</reg></choice> nes degnoit ocire<choice><orig></orig><reg>,</reg></choice> ains queroit [et] huchoit
                             <persName>turnus</persName> tant soulement par les grans presses de lor
                         compaignies<choice><orig></orig><reg>,</reg></choice> <pc rend="1"/> ne autrui ne
-                        <choice><sic>ai</sic><corr>v</corr></choice>oloit il ne ne demandoit <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> bataille<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
+                        <choice><sic>aioloit</sic><corr>voloit</corr></choice> il ne ne demandoit <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> bataille<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="4" xml:id="edfr20125_00640_16"><persName>Turnus</persName> n<choice><orig></orig><reg>'</reg></choice>arestoit
                         guaires<choice><orig></orig><reg>,</reg></choice> ains cerchoit les rens des <name type="people">troieins</name> dont
                         il faisoit grant domage<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
@@ -4058,8 +4058,7 @@
                         li emp[er]eor de <placeName>rome</placeName> dusques a hui cest <choice><orig>i</orig><reg>j</reg></choice>or
                             <persName>auguste</persName><pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00644_06"><persName>Ascanius</persName> ot un
-                        fill<choice><orig></orig><reg>,</reg></choice><anchor type="genNote" corresp="#edfr20125_0644_06_cairo"/> 
-                        <persName><choice><orig>i</orig><reg>J</reg></choice>ulius</persName> ot <choice><seg type="semi-dip">anon</seg><seg type="crit">a non</seg></choice><choice><orig></orig><reg>,</reg></choice> mais quant
+                        fill<choice><orig></orig><reg>,</reg></choice> <persName><choice><orig>i</orig><reg>J</reg></choice>ulius</persName> ot <choice><seg type="semi-dip">anon</seg><seg type="crit">a non</seg></choice><choice><orig></orig><reg>,</reg></choice> mais quant
                             <persName>ascanius</persName> morut<choice><orig></orig><reg>,</reg></choice> ses fils
                             <persName><choice><orig>i</orig><reg>J</reg></choice>ulius</persName> fu trop <choice><orig>i</orig><reg>j</reg></choice>o<choice><orig>u</orig><reg>v</reg></choice>enes por tenir le regne<pc
                             rend="1"/><choice><orig></orig><reg>.</reg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] por ce le dona il [et] otria a <persName>sil<choice><orig>u</orig><reg>v</reg></choice>ius
@@ -4575,15 +4574,15 @@
                             deffendissent<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                 </ab>
             </div>
-             <div type="notes" subtype="sourceNotes" xml:id="edfr20125_sourceNotes">
+            <div type="notes" subtype="sourceNotes" xml:id="edfr20125_sourceNotes">
                 <div type="note" subtype="source" xml:id="edfr20125_0588_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0588_peach_a">Daretis Phrigii, <hi rend="i">De excidio
                             Troiae historia</hi>, XLIII et XLIV ; l'<hi rend="i">Excidium
-                            Troiae</hi> donne 20 navires (voir <ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 238). Il y a une édition
-                        des §§588-691 dans <ref type="bibliography" corresp="Montorsi_2016a"
-                            >Montorsi (2016a)</ref>, (p. 423-426).</p>
+                            Troiae</hi> précise 20 navires au lieu de 22 (voir <ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        238). Il y a une édition des §§588-691 dans <ref type="bibliography"
+                            corresp="Montorsi_2016a">Montorsi (2016a)</ref>, (p. 423-426).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0589_peach">
                     <head type="noteLabel"/>
@@ -4592,30 +4591,30 @@
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
                         238</ref>). Sur l'histoire de l'île de Scanzia voir <hi rend="i">Liber
                             Floridus</hi> de Lambert de Saint-Omer (<ref type="bibliography"
-                            corresp="Derolez_1968">Derolez (ed.)</ref>, p. 558), qui s'inspire de la
-                            <hi rend="i">Chronicon</hi> de Fréculfe (voir <ref type="bibliography"
-                            corresp="Montorsi_2016a">Montorsi (2016a)</ref>, p. 418-420).</p>
+                            corresp="Derolez_1968">Derolez éd. (1968)</ref>, p. 558), qui à son tour
+                        reprend la <hi rend="i">Chronicon</hi> de Fréculfe (voir <ref
+                            type="bibliography" corresp="Montorsi_2016a">Montorsi (2016a)</ref>, p.
+                        418-420).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0590_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0590_peach_a">Voir Monfrin sur les references ambiguës à la
-                        destination d'Eneas dans l’<hi rend="i">Aeneid</hi>, II, 620 (Vénus),
-                        781-782 (Créüse). C'est en Crète que les Pénates l'indique plus directement
-                            (<hi rend="i">Aeneid</hi>,III, 161-168). Dans l'<hi rend="i">Excidium
-                            Troiae</hi> (20, 10), Vénus mentionne l'Italie clairement (cf. Roman
-                        d'Eneas, v. 39-40). Selon Monfrin, le « sacrifice paraît une invention de
-                            l'<hi rend="i">HA</hi>. La généalogie est traditionelle, mais ne vient
-                        pas directement de Servius ; cf. <hi rend="i">ad</hi> III, 167. Voir aussi
-                        Isidore », <hi rend="i">Etymologiae</hi>, IX, II, 67 (<ref
+                    <p xml:id="edfr20125_0590_peach_a">Les références à la destination d'Énée sont
+                        ambiguës dans l’<hi rend="i">Aeneid</hi>, II, 620 (Vénus), 781-782 (Créüse).
+                        C'est en Crète que les Pénates l'indiquent plus directement (<hi rend="i"
+                            >Aeneid</hi>, III, 161-168). Dans l'<hi rend="i">Excidium Troiae</hi>
+                        (20, 10), Vénus mentionne l'Italie clairement (cf. <hi rend="i">Roman
+                            d'Eneas</hi>, v. 39-40). Selon Monfrin, le « sacrifice paraît une
+                        invention de l'<hi rend="i">HA</hi>. La généalogie est traditionelle, mais
+                        ne vient pas directement de Servius ; cf. <hi rend="i">ad</hi> III, 167.
+                        Voir aussi Isidore », <hi rend="i">Etymologiae</hi>, IX, II, 67 (<ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
                         238).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0591_peach">
-                    <!-- «   » -->
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0591_peach_a">Monfrin suggère que l'histoire d'Anténor et
                         Priam « conforme à la version du <hi rend="i">Liber historiae Francorum</hi>
-                        » et le passage sur l'origine des Galates derive de la tradition d'Isidore
+                        » et le passage sur l'origine des Galates dérivent de la tradition d'Isidore
                             (<hi rend="i">Etymologiae</hi>, IX, II, 26) (voir <ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
                         238</ref>). Pourtant, Montorsi a plus récemment souligné que la source
@@ -4630,14 +4629,13 @@
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0592_peach_a"><hi rend="i">Aeneid</hi>, I, 88-213; <hi
                             rend="i">Excidium Troiae</hi>, 25, 4 (« qui lie à ce naufrage la mort de
-                        Palinure »). Un vaisseau est perdu dans l'<hi rend="i">Eneas</hi> et l'<hi
-                            rend="i">Histoire ancienne</hi>. Monfrin suggère que la glose sur la
-                        Lbie 'peut venir d'Isidore » (<hi rend="i">Etymologiae</hi>, XIV, V, 4) ; «
-                        le discours d'Énée dès le débarquement est une addition de l'<hi rend="i"
-                            >HA</hi> ». Voir <ref type="bibliography" corresp="Monfrin_1985">Monfrin
-                            (1985)</ref>, p. 238-239.('la premere Espaigne devers les Aufriquans' -
-                        possible origin in Isidore, as at the end of IV, 30: et ultra vel quod
-                        ultima vel quod non sit post hanc ulla, hoc est alia, terra') </p>
+                        Palinure »). Dans l'<hi rend="i">Eneas</hi> (tout comme dans l'<hi rend="i"
+                            >Histoire ancienne</hi>), il est question d'un vaisseau égaré dans la
+                        tempête. Monfrin suggère que la glose sur la Libye « peut venir d'Isidore »
+                            (<hi rend="i">Etymologiae</hi>, XIV, V, 4) ; « le discours d'Énée dès le
+                        débarquement est une addition de l'<hi rend="i">HA</hi> ». Voir <ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        238-239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0593_peach">
                     <head type="noteLabel"/>
@@ -4648,33 +4646,32 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0594_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0594_peach_a"><hi rend="i">Aeneid</hi>, I, 208-222,
-                        305-313, 418-420 ; « la rencontre avec Vénus est supprimé ; l'<hi rend="i"
-                            >HA</hi> a ensuite utilisé, en prenant à son compte, ce que la déesse
+                        305-313, 418-420 ; « la rencontre avec Vénus est supprimée ; l'<hi rend="i"
+                            >HA</hi> a ensuite utilisé, en le prenant à son compte, ce que la déesse
                         dit au sujet de Didon, I, 338-364 », voir <ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0595_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0595_peach_a"><hi rend="i">Aeneid</hi>, I, 366-368, 421-458
-                        ; l'achat du territoire où s'élèvera Carthage (I, 366-368) est developpé
-                        avec Servius, I, 367 (Monfrin donne par erreur I, 266-268, voir <ref
-                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
-                        239.</p>
+                        ; l'<hi rend="i">Histoire ancienne</hi> développe l'achat du territoire où
+                        s'élèvera Carthage avec Servius, I, 367 (<ref type="bibliography"
+                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0596_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0596_peach_a"><hi rend="i">Aeneid</hi>, I, 459-519, mais
                         avec des différences : « Enée et Achate retrouvent Ilionée et son groupe
-                        avant que ceux-ci aient imploré Didon » ; ils s'addressent à la reine
-                        ensemble; et « Énée n'est pas caché par une nuage, mais il se fond dans le
-                        groupe » (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
-                            (1985)</ref>, p. 239).</p>
+                        avant que ceux-ci aient imploré Didon. C'est ensemble qu'ils s'adressent à
+                        la reine ; Énée n'est pas caché par un nuage, mais il se fond dans le groupe
+                        » (<ref type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0597_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0597_peach_a"><hi rend="i">Aeneid</hi>, I, 522-585, et
-                        Isidore (<hi rend="i">Etymologiae</hi>, XIV, V, 18) sur l'origine du nom
-                        d'Italie (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
+                        Isidore (<hi rend="i">Etymologiae</hi>, XIV, V, 18) sur l'origine du nom de
+                        l'Italie (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
                             (1985)</ref>, p. 239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0598_peach">
@@ -4686,31 +4683,32 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0599_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0599_peach_a"><hi rend="i">Aeneid</hi>, I, 643-656, 695-756
-                        ; II, 1-13 ; Servius, II, 13 sur les trois choses qui auraient pu empêcher
-                        la destruction de Troies (§599, 14-16) (<ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239).</p>
+                        ; II, 1-13 ; en ce qui concerne les trois choses qui auraient pu empêcher la
+                        destruction de Troies (§599.14-16) voir Servius, II, 13 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0600_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0600_peach_a">L'<hi rend="i">Histoire ancienne</hi> ne
-                        retient que la fantôme de Créüse et le regroupement des Troyens (<hi
+                        retient que le fantôme de Créüse et le regroupement des Troyens (<hi
                             rend="i">Aeneid</hi>, II, 771-800), la rencontre avec Helenus (III,
-                        294-463) et la mort d'Anchise (III, 707-710) (Monfrin écrit par erreur II,
-                        294-463 et II, 707-710, voir <ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 239).</p>
+                        294-463) et la mort d'Anchise (III, 707-710) (<ref type="bibliography"
+                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0601_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0601_peach_a"><hi rend="i">Aeneid</hi>, IV, 1-53 (<ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239
-                        ; en outre, dans l'appendice II, Monfrin a édité §601, §602.1, et §603.1 (p.
-                        242-243)).</p>
+                        ; en outre, dans l'appendice II, Monfrin donne une édition des §601, §602.1,
+                        et §603.1 (p. 242-243)).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0602_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0602_peach_a">Servius, I, 338 (onwards according to
-                        Monfrin, but seems more complex, passages from IV as well - see notes on
-                        sources doc in the folder) Servius, IV, 36 voir <ref type="bibliography"
+                    <p xml:id="edfr20125_0602_peach_a">« Servius, I, 338 et suiv., qui reprend la
+                        tradition de Justin, XVIII, VI, 1-7. "Barnesse" traduit le <hi rend="i"
+                            >virago</hi> de Servius à I, 340. Pour l'étymologie du nom de <hi
+                            rend="i">Cartage</hi>, v. Servius à IV, 670 » (<ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0603_peach">
@@ -4722,9 +4720,10 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0604_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0604_peach_a"><hi rend="i">Aeneid</hi>, IV, 259-392,
-                        634-663 ; « la nourrice que Didon envoie chercher Anna a disparu, comme dans
-                            <hi rend="i">Excidium</hi>, 37, 9 », voir <ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239.</p>
+                        634-663 ; « Le personnage de la nourrice que Didon envoie chercher Anna a
+                        disparu, comme dans <hi rend="i">Excidium</hi>, 37, 9 », selon <ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0605_peach">
                     <head type="noteLabel"/>
@@ -4749,21 +4748,21 @@
                     <p xml:id="edfr20125_0608_peach_a"><hi rend="i">Aeneid</hi>, V, 835-863,
                         870-871; VI, 14-41, « développé avec Servius à VI, 14 » (<ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
-                        239). L'introduction de l'histoire de Dédale (§608, 4-6) suit le commentaire
-                        de Servius VI, 2, mais avec le changement de quelques détails. Eneas arrive
-                        sur l'île d'Eubée plutôt que les « Euboicis oris » de Cumes (<hi rend="i"
-                            >Aeneid</hi>, VI, 2). L'<hi rend="i">Histoire ancienne</hi> adapte
-                        l'étymologie de Servius en changeant l'endroit discuté (Campanie plutôt que
-                        Cumes), et par conséquent, la source étymologique. L'association de Capis
-                        avec l'étymologie de Campanie semblerait une innovation de l'<hi rend="i"
-                            >Histoire ancienne</hi>.</p>
+                        239). L'introduction de l'histoire de Dédale (§608.4-6) suit le commentaire
+                        de Servius VI, 2, mais avec le changement de quelques détails. Énée arrive
+                        sur l'île d'Eubée plutôt que sur les « Euboicis oris » de Cumes (<hi
+                            rend="i">Aeneid</hi>, VI, 2). L'<hi rend="i">Histoire ancienne</hi>
+                        adapte l'étymologie de Servius en changeant l'endroit discuté (Campanie
+                        plutôt que Cumes), et par conséquent, la source étymologique. L'association
+                        de Capis avec l'étymologie de Campanie semblerait une innovation de l'<hi
+                            rend="i">Histoire ancienne</hi>.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0609_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0609_peach_a">Servius, VI, 14 (<ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 239). Pourtant, la
-                        source directe du malentendu d'Égée et sa mort est non identifiée. (AND Eg's
-                        INSTRUCTIONS IN 608)</p>
+                        source directe du malentendu d'Égée et de sa mort n'a pas été
+                        identifiée.</p>
 
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0610_peach">
@@ -4773,18 +4772,16 @@
                             >Monfrin (1985)</ref>, p. 238).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0611_peach">
-                    <!--«   » -->
-                    <!--«   »-->
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0611_peach_a"><hi rend="i">Aeneid</hi>, VII, 45-50,
                         107-147. L'inclusion de Janus dans la lignée ne dérive pas des sources
                         principales (Virgile, Servius, <hi rend="i">Excidium</hi> (39, 11)). Monfrin
                         identifie « soit l'<hi rend="i">Historia romana</hi> de Paul Diacre, [...]
-                        soit une glose qui en dérive; une tradition semblable se trouve dans l'<hi
+                        soit une glose qui en dérive ; une tradition semblable se trouve dans l'<hi
                             rend="i">Origio gentis Romanae</hi> [...] Mais aucun de ces récits ne
                         dit que Saturne ait été fils de Janus, et qu'il faille le distinguer du père
-                        de Jupiter ». Pour d'autres références bibliographiques, voir <ref
-                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        de Jupiter ». Pour des références bibliographiques supplémentaires, voir
+                            <ref type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
                         239-240). « La conversation d'Énée avec les gens du pays n'est pas dans
                         Virgile, mais il y a un dialogue semblable dans <hi rend="i">Excidium</hi>,
                         37, 20-38, 18, et une allusion dans l'<hi rend="i">Eneas</hi> » (v.
@@ -4794,7 +4791,7 @@
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0612_peach_a">« Pour l'histoire de Laurente, voir Servius,
                         VII, 59 » et <hi rend="i">Aeneid</hi>, VII, 59-63. Pour l'installation du
-                        camp, <hi rend="i">Aeneid</hi>, VII, 157-159 (<ref type="bibliography"
+                        camp, voir <hi rend="i">Aeneid</hi>, VII, 157-159 (<ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0613_peach">
@@ -4819,28 +4816,29 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0616_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0616_peach_a"><hi rend="i">Aeneid</hi>, VII, 406-471 ;
-                        475-539. « Le détail des chandeles [§616, 9] vient de l'<hi rend="i"
-                            >Eneas</hi> » (v. 3552-3559) ; cf. Raymond de Lage, p. 81 (CHECK
-                        REFERENCE AND ADD BIB LINK)(<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 240).</p>
+                        475-539. « Le détail des chandeles [§616.9] vient de l'<hi rend="i"
+                            >Eneas</hi> » (v. 3552-3559) ; cf. <ref type="bibliography"
+                            corresp="Raynaud_de_Lage_1957">Raynaud de Lage (1957)</ref> (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0617_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0617_peach_a"><hi rend="i">Aeneid</hi>, VII, 585-600 ; «
                         tout le passage sur les alliés de Turnus (647-802) est reduit à une
                         énumération, où se mêlent des indications prises à Servius. Camille a retenu
-                        l'attention de l'auteur, qui emprunte un détail [§617, 12) à l'<hi rend="i"
-                            >Eneas</hi> » (v. 3976-3986) ; cf. Raymond de Lage, p. 82. (CHECK
-                        REFERENCE AND ADD BIB LINK) Priverno et Metabus « viennent de Servius, VII,
-                        803 » (voir aussi <hi rend="i">Aeneid</hi>, XI, 540) (<ref
-                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
-                        240).</p>
+                        l'attention de l'auteur, qui emprunte un détail [= §617.12] à l'<hi rend="i"
+                            >Eneas</hi> » (v. 3976-3986) ; cf. <ref type="bibliography"
+                            corresp="Raynaud_de_Lage_1957">Raynaud de Lage (1957)</ref>. Priverno et
+                        Metabus « viennent de Servius, VII, 803 » (voir aussi <hi rend="i"
+                            >Aeneid</hi>, XI, 540) (<ref type="bibliography" corresp="Monfrin_1985"
+                            >Monfrin (1985)</ref>, p. 240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0618_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0618_peach_a"><hi rend="i">Aeneid</hi>, VIII, 1-9, 26-65 ;
-                        et Servius, VIII, 51 sur Évandre et son histoire de famille. On trouve les «
-                        recommandations d'Énée » avant son départ dans <hi rend="i">Excidium</hi>,
+                        et Servius, VIII, 51 sur Évandre et l'histoire de sa famille. On trouve les
+                        « recommandations d'Énée » avant son départ dans <hi rend="i">Excidium</hi>,
                         39, 16-20, et dans <hi rend="i">Eneas</hi>, v. 4603-4608 (« il y est fait
                         allusion, de manière incidente, au début du récit du siège du camp » dans
                             <hi rend="i">Aeneid</hi>, IX, 40-43). <hi rend="i">Aeneid</hi>, VIII,
@@ -4862,15 +4860,15 @@
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0621_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0621_peach_a"><hi rend="i">Aeneid</hi>, IX, 176-280
-                        (Monfrin donne IX, 176-262, <ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 240).</p>
+                    <p xml:id="edfr20125_0621_peach_a"><hi rend="i">Aeneid</hi>, IX, 176-280 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0622_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0622_peach_a"><hi rend="i">Aeneid</hi>, IX, 280-313
-                        (Monfrin donne IX, 283-313, <ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 240).</p>
+                    <p xml:id="edfr20125_0622_peach_a"><hi rend="i">Aeneid</hi>, IX, 280-313 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0623_peach">
                     <head type="noteLabel"/>
@@ -4899,8 +4897,13 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0627_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0627_peach_a"><hi rend="i">Aeneid</hi>, X, 118-163 ;
-                        260-320 <!-- Need to check --> (<ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 240).</p>
+                        260-320 ; « la suite n'est représentée que par le texte ci-dessus, suivi de
+                        quelques lignes (321-605). On a noté (<ref type="bibliography"
+                            corresp="Raynaud_de_Lage_1957">Raynaud de Lage (1957)</ref>) que Virgile
+                        parle du balteus de Pallas (X,496) et que l'<hi rend="i">Eneas</hi> comme
+                            l'<hi rend="i">HA</hi> parlent d'un <hi rend="i">anel</hi> » (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        240).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0628_peach">
                     <head type="noteLabel"/>
@@ -4917,34 +4920,33 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0630_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0630_peach_a"><hi rend="i">Aeneid</hi>, X, 789-820; 833-908
-                        (Monfrin donne X, 812-821 ; 841-908 ; il semble que Monfrin lit dans le
-                        manuscrit « Latinus » plutôt que « la nuis » à la fin de ce paragraphe
-                        (§630, 18 ; f. 169rb) (<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 241)).</p>
+                        (Monfrin semble lire « Latinus » au lieu de « la nuis » à la fin de ce
+                        paragraphe (§630.18 ; f. 169rb) (<ref type="bibliography"
+                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 241)).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0631_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0631_peach_a"><hi rend="i">Aeneid</hi>, XI, 17-224 (Monfrin
                         donne XI, 59-99 ; 139-181 ; 100-224 (<ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 241)). L'<hi rend="i"
-                            >Histoire ancienne</hi> (§631, 4-5) fait référence au deuil de Pallas et
-                        sa feme avant l'arrivée des messagers de Laurente, en omittant les détails
-                        de sa lamentation (<hi rend="i">Aeneid</hi>, XI, 139-181).</p>
+                            >Histoire ancienne</hi> (§631.4-5) fait référence au deuil de Pallas et
+                        sa femme avant l'arrivée des messagers de Laurente, tout en négligeant les
+                        détails de sa lamentation (<hi rend="i">Aeneid</hi>, XI, 139-181).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0632_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0632_peach_a"><hi rend="i">Aeneid</hi>, XI, 225-293
                         (Monfrin donne 225-295 (<ref type="bibliography" corresp="Monfrin_1985"
                             >Monfrin (1985)</ref>, p. 241)). L'<hi rend="i">Histoire ancienne</hi>
-                        aussi incorpore les détails de Servius, XI, 262, dans le discours de Diomède
-                        sur les malheurs d'Agamemnon et de Ménélas (§632, 10).</p>
+                        aussi intègre les détails procédant de Servius (à XI, 262) au discours de
+                        Diomède sur les malheurs d'Agamemnon et de Ménélas (§632.10).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0633_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0633_peach_a"><hi rend="i">Aeneid</hi>, XI 294-375 (Monfrin
-                        donne XI, 296-375 ; « La mention de Sicile provient d'une glose de Servius,
-                        XI à 317 » (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
-                            (1985)</ref>, p. 241)).</p>
+                    <p xml:id="edfr20125_0633_peach_a"><hi rend="i">Aeneid</hi>, XI 294-375 ; « La
+                        mention de Sicile provient d'une glose de Servius, XI à 317 » (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0634_peach">
                     <head type="noteLabel"/>
@@ -4960,9 +4962,9 @@
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0636_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0636_peach_a"><hi rend="i">Aeneid</hi>, XI, 629-867
-                        (Monfrin donne XI, 648-867 (<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 241)).</p>
+                    <p xml:id="edfr20125_0636_peach_a"><hi rend="i">Aeneid</hi>, XI, 629-867 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0637_peach">
                     <head type="noteLabel"/>
@@ -4975,288 +4977,308 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0638_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0638_peach_a"><hi rend="i">Aeneid</hi>, XII, 46-133 ; XII,
-                        161-215 (Monfrin donne XII, 81-215 (<ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 241)).</p>
+                        161-215 (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
+                            (1985)</ref>, p. 241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0639_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0639_peach_a"><hi rend="i">Aeneid</hi>, XII, 244-279
-                        (Monfrin donne XII, 244-279 (<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 241)).</p>
+                    <p xml:id="edfr20125_0639_peach_a"><hi rend="i">Aeneid</hi>, XII, 244-279 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0640_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0640_peach_a"><hi rend="i">Aeneid</hi>, XII, 279-592
-                        (Monfrin donne XII, 276-467 (<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 241)).</p>
+                    <p xml:id="edfr20125_0640_peach_a"><hi rend="i">Aeneid</hi>, XII, 279-592 (<ref
+                            type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
+                        241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0641_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0641_peach_a"><hi rend="i">Aeneid</hi>, XII, 593-619 ;
-                        650-696 (Monfrin donne XII, 468-696 (<ref type="bibliography"
-                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 241)).</p>
+                        650-696 (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
+                            (1985)</ref>, p. 241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0642_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0642_peach_a"><hi rend="i">Aeneid</hi>, XII, 697-790 ;
                         887-952 (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
-                            (1985)</ref>, p. 241)).</p>
+                            (1985)</ref>, p. 241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0643_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0643_peach_a">Servius, IV, 620 (Monfrin gives long
-                        commentary) <ref type="bibliography" corresp="Monfrin_1985">Monfrin
-                            (1985)</ref>, p. 241).</p>
+                    <p xml:id="edfr20125_0643_peach_a">Voir le long commentaire de Monfrin à ce
+                        paragraphe, ce qui identifie plusieurs passages de Servius (I, 259 ; I, 267
+                        ; IV, 620 ; VII, 150) et parle des traditions sur la mort d'Énée (par ex.
+                            l'<hi rend="i">Origo gentis Romanae</hi>) <ref type="bibliography"
+                            corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0644_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0644_peach_a">Servius, VI, 760 (Monfrin gives long
-                        commentary) (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
+                    <p xml:id="edfr20125_0644_peach_a">Voir le commentaire de Monfrin à ce
+                        paragraphe, ce qui désigne <hi rend="i">inter alia</hi> Servius (VI, 760),
+                            l'<hi rend="i">Historia Romana</hi> de Paul Diacre, et la chronique
+                        d'Eusèbe-Jérôme (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
                             (1985)</ref>, p. 241).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0645_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0645_peach_a">Orose, <hi rend="i">Historiarum adversum
-                            paganos</hi> II, 2? </p>
+                            paganos</hi> II, 2, 1 ; <hi rend="i">Eusebius Werke 7: Die Chronik des
+                            Hieronymus</hi> (Helm éd. (1956)), pt.1, 54</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0646_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0646_peach_a">Orose?</p>
+                    <p xml:id="edfr20125_0646_peach_a"><hi rend="i">Eusebius Werke 7: Die Chronik
+                            des Hieronymus</hi> (Helm éd. (1956)), pt.1, 53-59</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0647_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0647_peach_a">Orose?</p>
+                    <p xml:id="edfr20125_0647_peach_a"><hi rend="i">Eusebius Werke 7: Die Chronik
+                            des Hieronymus</hi> (Helm éd. (1956)), pt.1, 59-82</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0648_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0648_peach_a">Orose?</p>
+                    <p xml:id="edfr20125_0648_peach_a">Orose, <hi rend="i">Historiarum adversum
+                            paganos</hi> II, 2, 2 ; en ce qui concerne Sardanapale, voir Justin, <hi
+                            rend="i">Epitoma Historiarum Philippicarum</hi>, I, 3.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0649_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0649_peach_a">Orose?</p>
+                    <p xml:id="edfr20125_0649_peach_a">Orose, <hi rend="i">Historiarum adversum
+                            paganos</hi> II, 2, 7 ; <hi rend="i">Eusebius Werke 7: Die Chronik des
+                            Hieronymus</hi> (Helm éd. (1956)), pt.1, ??<!--HM add today  --></p>
                 </div>
             </div>
+
+            <!--Notes on the tradition with variant readings -->
+            <!-- «   » -->
             <div type="notes" subtype="tradNotes" xml:id="edfr20125_tradNotes">
                 <div type="note" subtype="trad" xml:id="edfr20125_0590_07_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0590_07_sycamore_a">La segmentation de Fr20125 suggère que
-                        « Eneas et sa compaignie » sont les subjets du verbe « anuita » (ADD LINK TO
-                        DEAF/AND/TL?) (les incohérences dans l'accord entre le sujet et le verbe ne
-                        sont pas inhabituel dans Fr20125, cf. §591, 2). Donc, on pourrait lire «
-                        Eneas et ses camarades passèrent la nuit ». (cf. SV on anaphora of anuita...
-                        quant la nuit fu venue => En et sa c. = not subjects of anuiter) Par contre,
-                        dans nos manuscrits de référence, le verbe « anuita » est impersonnel, et «
-                        Eneas et sa compaignie » s'accordent au verbe de la prochaine clause (ce qui
-                        manque dans Fr20125): [et] si feicent lor pooir et lor force de la mer
+                        « Eneas et sa compaignie » sont les subjets du verbe « anuita » (cf.
+                        anuitier/anuiter (intransitif) AND, DEAF, TL), ce qui donnerait « Énée et
+                        ses compagnons passèrent la nuit ». Le manque d'accord entre verbe et sujet
+                        n'est pas sans précédent dans notre manuscrit. Par contre, dans nos
+                        manuscrits de référence, le verbe « anuita » est impersonnel, et « Eneas et
+                        sa compaignie » s'accordent au verbe de la proposition qui suit (et qui
+                        manque dans Fr20125): « [et] si feicent lor pooir et lor force de la mer
                         esmouoir de la hautece iusq[ue] en labisme· [et] donc anuita· Eneas [et] sa
                         co[m]paignie orent g[ra]nt paor· [et] q[ua]nt la nuit fu uenue donc comensa
-                        a torner (<hi rend="b">Dijon</hi> (108va), BLAdd15268 (130ra), Fr168 (134rb)
-                        Rennes (150ra)); dans BLAdd19669 (93ra), §590, 7-8 sont récrits et abrégés :
-                        [et] coumenca a toner [et] a faire si pesme tens que nus ne le porroit
-                        croire (compare with source and Eneas)</p>
+                        a torner Dijon (108va), BLAdd15268 (130ra), Fr168 (134rb) Rennes (150ra);
+                        dans BLAdd19669 (93ra), §590.7-8 sont réécrits et abrégés : « [et] coumenca
+                        a toner [et] a faire si pesme tens que nus ne le porroit croire</p>
                 </div>
+                <!-- compare with source and Eneas -->
                 <div type="note" subtype="trad" xml:id="edfr20125_0595_12_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0595_12_sycamore_a">proeces (<hi rend="b">Dijon</hi>
-                        (110va), BLAdd19669 (94rb), Fr168 (137rb), Rennes (154ra)) ; il y a une
-                        lacune dans BLAdd15268 entre §594, 13 et §596, 9 (ff. 131vb et 132ra).</p>
+                    <p xml:id="edfr20125_0595_12_sycamore_a">« proeces » Dijon (110va), BLAdd19669
+                        (94rb), Fr168 (137rb), Rennes (154ra) ; il y a une lacune dans BLAdd15268
+                        entre §594.13 et §596.9 (ff. 131vb et 132ra).</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0596_11_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0596_11_sycamore_a">Dans nos manuscrits de référence, la
-                        déixis de personne suggère le movement du discours indirect au discours
-                        direct : [et] toz noz compaignons fors cil q[ui] dune nef perirent si com
-                        noz ueymes <hi rend="b">Dijon</hi> (110vb), BLAdd15268 (132ra), Fr168
-                        (137va), Rennes (154va). BLAdd19669 (94va) garde le discours indirect et
-                        manque « si com nos veimes » : [et] tuit si compaignon fors que cil dune nef
-                        qui estoient perdu [et] peri</p>
+                    <p xml:id="edfr20125_0596_11_sycamore_a">Dans nos manuscrits de référence, les
+                        pronoms personnels implique une transition du discours indirect au discours
+                        direct : « [et] toz noz compaignons fors cil q[ui] dune nef perirent si com
+                        noz ueymes » Dijon (110vb), BLAdd15268 (132ra), Fr168 (137va), Rennes
+                        (154va). BLAdd19669 (94va) garde le discours indirect mais supprime « si com
+                        nos veimes » : « [et] tuit si compaignon fors que cil dune nef qui estoient
+                        perdu [et] peri ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0597_02_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0597_02_sycamore_a">(Add comment on agreement in Fr20125?)
-                        ont done <hi rend="b">Dijon</hi> (111ra), BLAdd15268 (132ra), Fr168 (137vb),
-                        BLAdd19669 (94va), Rennes (154vb)</p>
+                    <p xml:id="edfr20125_0597_02_sycamore_a">Le manuscrit lit « ot ». Dans ce cas,
+                        nous avons corrigé l'auxiliaire ; voir à ce propos la leçon de nos nos
+                        manuscrits de référence : « ont done » Dijon (111ra), BLAdd15268 (132ra),
+                        BLAdd19669 (94va), Fr168 (137vb), Rennes (154vb)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0600_09_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0600_09_sycamore_a">Il y a deux sauts-du-même-au-même dans
-                        Fr20125 (§600, 9). Dans nos manuscrits de référence, on lit : [et] si erai
-                        tant <hi rend="b">q[ue]</hi> ie ariuai en la terre le roi acestes· <hi
-                            rend="b">Que</hi> uoz iroie ie plus contant ne disant la pris ie port·
-                        issi a terre· Car grief torment [et] orible <hi rend="b">mi amena</hi>·
-                        Entre les autres poines <hi rend="b">ma si ariue</hi> auenture· en uostre
-                        contree· ou uoz maues fet m[o]lt donor [et] a ma compaignie <hi rend="b"
-                            >Dijon</hi> (112va), BLAdd15268 (133vb), Fr168 (140ra), Rennes (156vb).
-                        BLAdd19669 (95vb) donne une version récrite et abrégée: [et] errai tant que
-                        ie uing en cestei contree ou mauez fait m[o]lt honor [et] a ma
-                        compaignie</p>
+                        Fr20125 (§600.9). Les manuscrits de référence lisent : « [et] si erai tant
+                        q[ue] ie ariuai en la terre le roi acestes· Que uoz iroie ie plus contant ne
+                        disant la pris ie port· issi a terre· Car grief torment [et] orible mi
+                        amena· Entre les autres poines ma si ariue auenture· en uostre contree· ou
+                        uoz maues fet m[o]lt donor [et] a ma compaignie » Dijon (112va), BLAdd15268
+                        (133vb), Fr168 (140ra), Rennes (156vb). BLAdd19669 (95vb) donne une version
+                        réécrite et abrégée: « [et] errai tant que ie uing en cestei contree ou
+                        mauez fait m[o]lt honor [et] a ma compaignie ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0601_01_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0601_01_sycamore_a">il ne dist ne raconta nulle criature
-                            <hi rend="b">Dijon</hi> (112va), Fr168 (140ra), Rennes (157ra) ; il ne
-                        dist ne raconta nulle chose BLAdd15268 (134ra) ; il ne dist onques nule
-                        parole BLAdd19669 (95vb)</p>
+                    <p xml:id="edfr20125_0601_01_sycamore_a">« il ne dist ne raconta nulle criature
+                        » Dijon (112va), Fr168 (140ra), Rennes (157ra) ; « il ne dist ne raconta
+                        nulle chose » BLAdd15268 (134ra) ; « il ne dist onques nule parole »
+                        BLAdd19669 (95vb)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0601_01_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0602_01_oak_a">L'accord féminin est présent dans nos
-                        manuscrits de référence: alumee <hi rend="b">Dijon</hi> (112va), BLAdd15268
-                        (134ra), Fr168 (140rb), Rennes (157ra) ; sauf BLAdd19669 (95vb) : ades
-                        alumoit come fole de lamor de lui</p>
+                    <p xml:id="edfr20125_0602_01_oak_a">Accord grammatical au féminin singulier dans
+                        la plupart de nos manuscrits de référence: « alumee » Dijon (112va),
+                        BLAdd15268 (134ra), Fr168 (140rb), Rennes (157ra) ; cf. BLAdd19669 (95vb) :
+                        « ades alumoit come fole de lamor de lui ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0603_05_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0603_05_sycamore_a">(CHANGE TO une matinee???)
-                        Saut-du-même-au-même dans Fr20125 : tant q[ue] ce <hi rend="b">uint</hi> un
-                        ior q[ue]lle dist q[ue]lle uoloit aler chassier en la forest [et] berser as
-                        bestes· Ceste chose fu deuizee une uespree· [et] quant <hi rend="b"
-                            >uint</hi> a la matinee au point du ior fu leuee la royne [et] tote sa
-                        maisniee· [et] apareilliee <hi rend="b">Dijon</hi> (113ra) ; Fr168 (141ra)
-                        même leçon, sauf : traire as bestes ; BLAdd15268 (134vb) même leçon, sauf :
-                        au point du ior la royne fu leuee ; Rennes (157vb) même leçon, sauf : tant
-                        que ce vint un ior quelle vouloit aler chacier en la forest aux bestes ;
-                        BLAdd19669 (96rb) même leçon, sauf : quele iroit chacier en la forest [et]
-                        berser aus bestes· Ceste chose fu deuisee une uespree· Quant uint au ior la
-                        reine fu leuee [et] apparoilliee a toute sa mesniee (Check with MT how to
-                        present these different leçons)</p>
+                    <p xml:id="edfr20125_0603_05_sycamore_a">Il y a un saut-du-même-au-même dans
+                        Fr20125 : « tant q[ue] ce uint un ior q[ue]lle dist q[ue]lle uoloit aler
+                        chassier en la forest [et] berser as bestes· Ceste chose fu deuizee une
+                        uespree· [et] quant uint a la matinee au point du ior fu leuee la royne [et]
+                        tote sa maisniee· [et] apareilliee » Dijon (113ra) ; Fr168 (141ra) même
+                        leçon, sauf : « traire as bestes » ; BLAdd15268 (134vb) même leçon, sauf : «
+                        au point du ior la royne fu leuee » ; Rennes (157vb) même leçon, sauf : «
+                        tant que ce vint un ior quelle vouloit aler chacier en la forest aux bestes
+                        » ; BLAdd19669 (96rb) même leçon en gros : « Tant que ce uint ·i· ior quele
+                        dist quele iroit chacier en la forest [et] berser aus bestes· Ceste chose fu
+                        deuisee une uespree· Quant uint au ior la reine fu leuee [et] apparoilliee a
+                        toute sa mesniee ».</p>
 
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0608_08_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0608_08_sycamore_a">Dans <hi rend="b">BLAdd15268</hi>
-                        (136rb), Dijon (115ra) et Fr168 (143vb), une rubrique supplémentaire
-                        introduit l'histoire de Dédale : Ci parolle de dedalus.</p>
+                    <p xml:id="edfr20125_0608_08_sycamore_a">Dans BLAdd15268 (136rb), Dijon (115ra)
+                        et Fr168 (143vb), une rubrique supplémentaire introduit l'histoire de Dédale
+                        : « Ci parolle de dedalus ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0608_14_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0608_14_sycamore_a">Dans <hi rend="b">BLAdd15268</hi>
-                        (136vb), Dijon (115rb) et Fr168 (144ra), une deuxième rubrique
-                        supplémentaire divise §608 : Comment cil dathenes estoient subget a cil de
-                        crete. Dans Dijon et Fr168, il y a une miniature du Minotaure ; par contre,
-                        dans BLAdd15268, il y a une miniature d'une flotte et scènes de bataille.(
-                        CHECK Oltrogge)</p>
+                    <p xml:id="edfr20125_0608_14_sycamore_a">Dans BLAdd15268 (136vb), Dijon (115rb)
+                        et Fr168 (144ra), une deuxième rubrique divise §608 : « Comment cil dathenes
+                        estoient subget a cil de crete ». Dans Dijon et Fr168, il y a une miniature
+                        du Minotaure ; par contre, dans BLAdd15268, il y a une miniature d'une
+                        flotte avec scènes de bataille.</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0608_17_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0608_17_sycamore_a">Dans nos manuscrits de référence
                         (BLAdd15268 (137ra), BLAdd19669 (97vb), Dijon (115va), Fr168 (144rb), Rennes
-                        (160vb)), la ponctuation y suggère une pause forte (point ou fin de ligne et
-                        majuscule) avant 'celle'.</p>
+                        (160vb)), la ponctuation suggère une pause forte (point ou fin de ligne et
+                        majuscule) avant « celle ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0608_21_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0608_21_sycamore_a">loncel <hi rend="b">Dijon</hi> (115va),
-                        Fr168 (144ra), luisel BLAdd19669 (97vb), lonceau Rennes (161ra), gremissel
+                    <p xml:id="edfr20125_0608_21_sycamore_a">« loncel » Dijon (115va), Fr168 (144ra)
+                        ; « luisel » BLAdd19669 (97vb) ; « lonceau » Rennes (161ra) ; « gremissel »
                         BLAdd15268 (137ra)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0609_03_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0609_03_sycamore_a">La version « corrigée » de l'histoire
-                        du Minotaure et Dédale qui suit est absente du BLAdd19669.</p>
+                        du Minotaure et Dédale qui suit est absente dans BLAdd19669.</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0616_08_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0616_08_sycamore_a">BLAdd19669 (99vb) omit le nom de
-                        Thrryrus : ou les norrecons le roi estoient ou il auoit ·ii· filz et une
-                        bele damoisele qui Silua auoit non.</p>
+                    <p xml:id="edfr20125_0616_08_sycamore_a">BLAdd19669 (99vb) omet le nom de
+                        Thrryrus : « ou les norrecons le roi estoient ou il auoit ·ii· filz et une
+                        bele damoisele qui Silua auoit non ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0616_15_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0616_15_oak_a">Après avoir omis Thrryrus dans §615, 8,
-                        BLAdd19669 (99vb) le remplace par Turnus dans §616, 15 : Aschani[us] occist
-                        dune saiete lainne fil Turnus.</p>
+                    <p xml:id="edfr20125_0616_15_oak_a">Après avoir omis Thrryrus dans §616.8,
+                        BLAdd19669 (99vb) le remplace par Turnus dans §616.15 : « Aschani[us] occist
+                        dune saiete lainne fil Turnus ».</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0616_15_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0616_15_sycamore_a">Nous avons corrigé notre manuscrit en
-                        ajoutant le verbe et le pronom (cf. §640, 11: la ot grant bruit et grant
-                        criee), ce qui s'accord avec la leçon des manuscrits de référence : Do[n]t y
-                        ot g[ra]nt criee <hi rend="b">Dijon</hi> (118rb), BLAdd15268 (140vb),
-                        BLAdd19669 (99vb), Fr168 (148ra), Rennes (165ra) </p>
+                        ajoutant le verbe et le pronom (cf. §640.11 : « la ot grant bruit et grant
+                        criee »), ce qui est en accord avec la leçon de nos manuscrits de référence
+                        : « Do[n]t y ot g[ra]nt criee » Dijon (118rb), BLAdd15268 (140vb),
+                        BLAdd19669 (99vb), Fr168 (148ra), Rennes (165ra).</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0621_16_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0621_16_sycamore_a">(add comment on position of je? CHANGE
-                        je to ja? Nos manuscrits de référence propose une leçon différente, même <hi
-                            rend="i">facilior</hi> : ie te donrai le riche destrier sur quoi tu uois
-                        turnus seoir Dijon (120rb), BLAdd15268(143ra), Fr168 (149rb), Rennes (167va)
-                        ; <hi rend="i">om</hi>. BLAdd19669</p>
+                    <p xml:id="edfr20125_0621_16_sycamore_a">Passage problématique, comme en
+                        témoigne nos manuscrits de référence qui proposent une leçon différente,
+                        même <hi rend="i">facilior</hi> : « ie te donrai le riche destrier sur quoi
+                        tu uois turnus seoir » Dijon (120rb), BLAdd15268(143ra), Fr168 (149rb),
+                        Rennes (167va) ; <hi rend="i">om</hi>. BLAdd19669</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0625_R_sycamore">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0625_04_sycamore_a">Au lieu de « li conestables de Laurente
-                        », on trouve par erreur « Turnus » dans la rubrique de BLAdd15268 (144rb) ;
-                        Dijon (121rb) ; Fr168 (150vb)</p>
+                        », on trouve par erreur « Turnus » dans la rubrique de BLAdd15268 (144rb),
+                        Dijon (121rb) et Fr168 (150vb).</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0627_R_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0627_R_sycamore_a">Il y a des divergences notables dans la
-                        rubrique de ce paragraphe : Comment eneas vint au secours de ses hommmes et
-                        comme[n]t grant comme[n]ca la bataille Rennes (170ra) ; Que eneas uint [et]
-                        secourut ses homes BLAdd19669 (102ra) ; Coment eneas reuint a sa gent q[ui]
-                        assegie estoie[n]t BLAdd15268 (145rb) ; Coment eneas uint en cezille [et]
-                        q[ue] g[ra]nt comensa la bataille Dijon (122ra) ; Coment Eneas uint de
-                        scisille et quant comensa la bataille Fr168 (151va)</p>
+                    <p xml:id="edfr20125_0627_R_sycamore_a">Dans la tradition manuscrite, nous
+                        relevons des divergences notables concernant la rubrique de ce paragraphe :
+                        « Comment eneas vint au secours de ses hommmes et comme[n]t grant comme[n]ca
+                        la bataille » Rennes (170ra) ; « Que eneas uint [et] secourut ses homes »
+                        BLAdd19669 (102ra) ; « Coment eneas reuint a sa gent q[ui] assegie
+                        estoie[n]t » BLAdd15268 (145rb) ; « Coment eneas uint en cezille [et] q[ue]
+                        g[ra]nt comensa la bataille » Dijon (122ra) ; « Coment Eneas uint de
+                        scisille et quant comensa la bataille » Fr168 (151va).</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0627_04_sycamore">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0627_04_sycamore_a">encontre eulz ala a la porte defendre
-                        le port Rennes (170rb) ; enco[n]tre els ala a la porte le port defendre
-                        Dijon (122rb) ; entre elz ala a la porte le port deffendre Fr168 (151vb);
-                        contre eaus ala le port defendre BLAdd15268 (145va) ; alast contre aus por
-                        defandre le port BLAdd19669 (102ra)</p>
+                    <p xml:id="edfr20125_0627_04_sycamore_a">« encontre eulz ala a la porte defendre
+                        le port » Rennes (170rb) ; « enco[n]tre els ala a la porte le port defendre
+                        » Dijon (122rb) ; « entre elz ala a la porte le port deffendre » Fr168
+                        (151vb); « contre eaus ala le port defendre » BLAdd15268 (145va) ; « alast
+                        contre aus por defandre le port » BLAdd19669 (102ra)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0627_04_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0627_04_oak_a">a larriuer Rennes (170rb) ; a la mer Dijon
-                        (122rb), BLAdd15268 (145va) ; en la mer Fr168 (151vb) ; au port BLAdd19669
-                        (102ra)</p>
+                    <p xml:id="edfr20125_0627_04_oak_a">« a larriuer » Rennes (170rb) ; « a la mer »
+                        Dijon (122rb), BLAdd15268 (145va) ; « en la mer » Fr168 (151vb) ; « au port
+                        » BLAdd19669 (102ra)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0630_15_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0630_15_oak_a"> failli eneas a lui ferir si feri le cheual
-                        Dijon (123va), BLAdd15268 (146vb), Rennes (172ra) ; failli a lui [et] feri
-                        le cheual BLAdd19669 (102vb)</p>
+                    <p xml:id="edfr20125_0630_15_oak_a">« failli eneas a lui ferir si feri le cheual
+                        » Dijon (123va), BLAdd15268 (146vb), Rennes (172ra) ; « failli a lui [et]
+                        feri le cheual » BLAdd19669 (102vb)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0632_10_cairo">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0632_10_cairo_a">La répetition d'Agamemnon est soutenue par
-                        la leçon de quatre de nos manuscrits de référence : aussi est le roi
+                        la leçon de quatre de nos manuscrits de référence : « aussi est le roi
                         agamenon· [et] le roi menelaus en essill en lille de pharon en la dereaine
-                        partie degypte· [et] le roi agamenon Dijon (124rb), BLAdd19669 (103va),
-                        Fr168 (154va), Rennes (173rb) ; aussi est le roi Menelaus en essil en lisle
-                        de pharon· en la dereaine partie degypte· Et le roi agamenon BLAdd15268
-                        (147vb). En effet, cette doublure ne vient pas de l'<hi rend="i"
-                        >Aeneid</hi>, mais dérive de Servius, XI, 262, qui aussi fait référence
-                        explicite à Pharon, l'isle égyptienne.</p>
+                        partie degypte· [et] le roi agamenon » Dijon (124rb), BLAdd19669 (103va),
+                        Fr168 (154va), Rennes (173rb) ; « aussi est le roi Menelaus en essil en
+                        lisle de pharon· en la dereaine partie degypte· Et le roi agamenon »
+                        BLAdd15268 (147vb). En effet, cette répétition ne vient pas de l'<hi
+                            rend="i">Aeneid</hi>, mais dérive de Servius (à XI, 262), qui aussi fait
+                        référence explicite à Pharon, l'isle égyptienne.</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0635_18_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0635_18_oak_a">fors dels [et] ensus auq[ue]s Dijon (125vb),
-                        Fr168 (156vb) ; fors de fosces [et] ensus auq[ue]s BLAdd15268 (149va) ; hors
-                        et au dessus Rennes (175ra) ; iusq[ue] BLAdd19669 (104rb)</p>
+                    <p xml:id="edfr20125_0635_18_oak_a">« fors dels [et] ensus auq[ue]s » Dijon
+                        (125vb), Fr168 (156vb) ; « fors de fosces [et] ensus auq[ue]s » BLAdd15268
+                        (149va) ; « hors et au dessus » Rennes (175ra) ; « iusq[ue] » BLAdd19669
+                        (104rb)</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0638_02_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0638_02_oak_a"> Nous lisons « venue » (comment on ending?)
-                        en tant que Vénus dans ce passage, ce qui est soutenu par les manuscrits de
-                        référence : Ains i sera lonc se ie me combat a lui uenuz la deece sa mere en
-                        cui il a sa fiance Dijon (126vb), BLAdd15268 (150vb), Fr168 (158ra) ; ains y
-                        sera loing venus la deece sa mere en qui il a fiance se ie me co(m)bas a lui
-                        Rennes (176rb) ; einz li sera m[o]lt loing la deesce sa mere BLAdd19669
-                        (105rb). Pourtant, l'<hi rend="b">Aeneid</hi> ne fait pas mention de son nom
-                        : « longe illi dea mater erit » (XII, 52)</p>
+                    <p xml:id="edfr20125_0638_02_oak_a">À cet endroit le manuscrit lit « uenue »,
+                        que nous corrigeons en « Venus », choix qui trouve l'appui des autres
+                        manuscrits: « Ains i sera lonc se ie me combat a lui uenuz la deece sa mere
+                        en cui il a sa fiance » Dijon (126vb), BLAdd15268 (150vb), Fr168 (158ra) ; «
+                        ains y sera loing venus la deece sa mere en qui il a fiance se ie me
+                        co(m)bas a lui » Rennes (176rb) ; « einz li sera m[o]lt loing la deesce sa
+                        mere » BLAdd19669 (105rb). Pourtant, l'<hi rend="i">Aeneid</hi> ne fait pas
+                        mention de son nom : « longe illi dea mater erit » (XII, 52).</p>
                 </div>
                 <div type="note" subtype="trad" xml:id="edfr20125_0644_20_oak">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0644_20_oak_a">Ces deux couplets octosyllabiques (§644,
+                    <p xml:id="edfr20125_0644_20_oak_a">Ces deux couplets octosyllabiques (§644.
                         19-20) sont aussi présents dans : BLAdd15268 (153vb), Dijon (129rb), Rennes
-                        (179vb); dans Fr168 (161vb) la quatrième ligne est fautive : de lor malice
-                        o[n]t lor part ; <hi rend="i">om</hi>. BLAdd19669 (107rb).</p>
+                        (179vb); dans Fr168 (161vb) la quatrième ligne est fautive : « de lor malice
+                        o[n]t lor part » ; <hi rend="i">om</hi>. BLAdd19669 (107rb).</p>
                 </div>
             </div>
+            <!--General notes: everything else  -->
             <div type="notes" subtype="genNotes" xml:id="edfr20125_genNotes">
+
+                <div type="note" subtype="gen" xml:id="edfr20125_0592_07_cairo">
+                    <head type="noteLabel"/>
+                    <p xml:id="edfr20125_0592_07_cairo_a">cf. Isidore, <hi rend="i"
+                        >Etymologiae</hi>, IV, 30 (« et ultra vel quod ultima vel quod non sit post
+                        hanc ulla, hoc est alia, terra »)</p>
+                </div>
                 <div type="note" subtype="gen" xml:id="edfr20125_0594_01_cairo">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0594_01_cairo_a">Fin du cahier « XV ».</p>
@@ -5270,47 +5292,42 @@
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0606_07_cairo_a">Eurus est le vent du sud-est. Virgile en
                         fait mention plusieurs fois (I, 85, 110, 131, 140, 383, etc.), mais non pas
-                        dans la description du trajet d'Eneas vers Sicile (<hi rend="i">Aeneid</hi>,
-                        V, 1-71).</p>
+                        dans la description du voyage d'Énée en Sicile (<hi rend="i">Aeneid</hi>, V,
+                        1-71).</p>
                 </div>
                 <div type="note" subtype="gen" xml:id="edfr20125_0611_12_cairo">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0611_12_cairo_a">Voir <hi rend="i">Aeneid</hi>, VII,
-                        107-147. Add something else?</p>
+                        107-147.</p>
                 </div>
                 <div type="note" subtype="gen" xml:id="edfr20125_0616_08_cairo">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0616_08_cairo_a">Dans Fr20125, l'orthographe de Silvia est
-                        à chaque reprise « Siliua ». Une tendance similaire peut être notée dans
-                        l'orthographe de liu > locus, ce qui est souvent épelé « lui » (cf. §613,
-                        11).</p>
+                        à chaque reprise « Siliua ».</p>
                 </div>
                 <div type="note" subtype="gen" xml:id="edfr20125_0618_04_cairo">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0618_04_cairo_a">Le prénom de la mere d'Évandre est
                         Nicostrata dans la source (Servius, VIII, 51) et dans les autres manuscrits
                         consultés (Nicostrata BLAdd15268 (141rb), Rennes (165vb) ; Nicestrata
-                        BLAdd19669 (100rb) ; Nocostrata Dijon (119ra), Fr168 (148vb)). Il semble que
-                        l'orthographe « Incostrata » dérive d'une erreur paléographique.</p>
+                        BLAdd19669 (100rb) ; Nocostrata Dijon (119ra), Fr168 (148vb)). Il semble
+                        probable que l'orthographe « Incostrata » dérive d'une faute de copiste.</p>
                 </div>
                 <div type="note" subtype="gen" xml:id="edfr20125_0630_04_cairo">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0630_04_cairo_a">Quelqu'un a écrit un -s par-dessus la -t
-                        original de « disoit ».</p>
+                    <p xml:id="edfr20125_0630_04_cairo_a">Une main non identifiée (mais peut-être
+                        tardive) a remplacé le « t » final dans « disoit » par un « s ». Cette même
+                        main est évident à f. 165r</p>
                 </div>
-                <div type="note" subtype="gen" xml:id="edfr20125_0644_06_cairo">
+                <div type="note" subtype="gen" xml:id="edfr20125_0647_16_cairo">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0644_06_cairo_a">Ascanius ot un fill? Check sources, cf.
-                        644_05, where the contrary is stated</p>
+                    <p xml:id="edfr20125_0647_16_cairo_a">C'est-à-dire : Peritiades.</p>
                 </div>
-                <div type="note" subtype="gen" xml:id="edfr20125_0644_16_cairo">
-                    <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0644_16_cairo_a">ce conte li « estorie latine »? What is
-                        this? COMPLETE</p>
-                </div>
-            </div>     
+            </div>
     
     </body>
-       
+      
+  
+  
   </text>
 </TEI>

@@ -31,9 +31,8 @@
                 <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
                 <xsl:variable name="note-type-text">
                     <xsl:choose>
-                        <xsl:when test="$note-type='gen'">General note:</xsl:when>
-                        <xsl:when test="$note-type='source'">Source note:</xsl:when>
-                        <xsl:when test="$note-type='trad'">Tradition note:</xsl:when>
+                        <xsl:when test="$note-type='source'"><xsl:text>Source: </xsl:text></xsl:when>
+                        <xsl:otherwise><!-- do nothing --></xsl:otherwise>
                     </xsl:choose> 
                 </xsl:variable>
                 
@@ -42,7 +41,7 @@
                     </sup>
                 </a>
                 <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-                    <xsl:value-of select="$note-type-text"/> <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+                    <xsl:value-of select="$note-type-text"/><xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
                     <button class="close-button" data-close="" aria-label="Close note" type="button">
                         <span aria-hidden="true">&#215;</span>
                     </button>
@@ -89,7 +88,7 @@
 
     <xsl:template match="tei:corr" mode="critical">
         <xsl:variable name="myID" select="generate-id()"/>
-        <xsl:apply-templates/><a data-toggle="{$myID}"><sup class="tei-corr"/></a>
+        <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
         
         <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
             <em>sic</em>: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
