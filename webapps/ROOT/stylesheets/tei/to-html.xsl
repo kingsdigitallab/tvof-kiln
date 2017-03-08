@@ -152,6 +152,11 @@
                     <xsl:apply-templates/>
                 </em>
             </xsl:when>
+            <xsl:when test="@rend = 'R'">
+                <span class="tei-hi red">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
         </xsl:choose>
     </xsl:template>
 
