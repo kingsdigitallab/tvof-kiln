@@ -25,7 +25,7 @@
     <xsl:template match="tei:anchor">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
                 <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head"/>
                 <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
@@ -74,8 +74,8 @@
     <xsl:template match="tei:choice">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
-                <xsl:apply-templates mode="critical"/>
+            <xsl:when test="$view = 'interpretive'">
+                <xsl:apply-templates mode="interpretive"/>
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
                 <xsl:apply-templates mode="semi-diplomatic"/>
@@ -86,12 +86,12 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:corr" mode="critical">
+    <xsl:template match="tei:corr" mode="interpretive">
         <xsl:variable name="myID" select="generate-id()"/>
         <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
         
         <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            <em>sic</em>: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            ms.: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -105,7 +105,7 @@
     <xsl:template match="tei:del">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <!-- do nothing -->
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
@@ -128,7 +128,7 @@
     <xsl:template match="tei:fw">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <!-- do nothing -->
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
@@ -169,7 +169,7 @@
         <br/>
     </xsl:template>
 
-    <xsl:template match="tei:orig" mode="critical">
+    <xsl:template match="tei:orig" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
 
@@ -195,7 +195,7 @@
     <xsl:template match="tei:pc">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
                     <!-- do nothing -->
                 </xsl:if>
@@ -231,7 +231,7 @@
         <a href="{@corresp}"><xsl:apply-templates/></a>
     </xsl:template>
 
-    <xsl:template match="tei:reg" mode="critical">
+    <xsl:template match="tei:reg" mode="interpretive">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -258,7 +258,7 @@
     <!-- ********************************* -->
     <!-- critical / semi-diplomatic segs -->
     <!-- ********************************* -->
-    <xsl:template match="tei:seg[@type = 'crit']" mode="critical">
+    <xsl:template match="tei:seg[@type = 'crit']" mode="interpretive">
         <span>
             <xsl:if test="@subtype = 'toUpper'">
                 <xsl:attribute name="class">tei-critToUpper</xsl:attribute>
@@ -281,7 +281,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:seg[@type = 'semi-dip']" mode="critical">
+    <xsl:template match="tei:seg[@type = 'semi-dip']" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
     <!-- ********************************* -->
@@ -334,7 +334,7 @@
         <!-- do nothing -->
     </xsl:template>
 
-    <xsl:template match="tei:sic" mode="critical">
+    <xsl:template match="tei:sic" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
 
@@ -363,7 +363,7 @@
     <xsl:template match="text()">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <xsl:value-of select="translate(., '[]', '')"/>
             </xsl:when>
             <xsl:otherwise>
