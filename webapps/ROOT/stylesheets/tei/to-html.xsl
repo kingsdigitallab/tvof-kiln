@@ -23,24 +23,39 @@
     </xsl:template>
 
     <xsl:template match="tei:anchor">
-        <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
-        <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head"/>
-
-        <a data-toggle="{$corresp}">
-            <sup class="note">
-                <xsl:value-of select="$note-head"/>
-            </sup>
-        </a>
-        <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-            <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
-            <button class="close-button" data-close="" aria-label="Close note" type="button">
-                <span aria-hidden="true">&#215;</span>
-            </button>
-        </div>
+        <xsl:param name="view" tunnel="yes"/>
+        <xsl:choose>
+            <xsl:when test="$view = 'interpretive'">
+                <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
+                <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head"/>
+                <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
+                <xsl:variable name="note-type-text">
+                    <xsl:choose>
+                        <xsl:when test="$note-type='source'"><xsl:text>Source: </xsl:text></xsl:when>
+                        <xsl:otherwise><!-- do nothing --></xsl:otherwise>
+                    </xsl:choose> 
+                </xsl:variable>
+                
+                <a data-toggle="{$corresp}">
+                    <sup class="{concat('note tei-', $note-type)}">
+                    </sup>
+                </a>
+                <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
+                    <xsl:value-of select="$note-type-text"/><xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+                    <button class="close-button" data-close="" aria-label="Close note" type="button">
+                        <span aria-hidden="true">&#215;</span>
+                    </button>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- do nothing -->
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
 
     <xsl:template match="tei:c[@rend = 'R']">
-        <span class="red">
+        <span class="tei-initial">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -48,10 +63,10 @@
     <xsl:template match="tei:cb">
         <xsl:choose>
             <xsl:when test="(@n != 'a') and (ends-with(preceding::text()[1], ' '))">
-                <span class="cb" style="color:teal;">[<xsl:value-of select="@n"/>] </span>
+                <span class="tei-cb">[<xsl:value-of select="@n"/>] </span>
             </xsl:when>
             <xsl:when test="(@n != 'a') and (not(ends-with(preceding::text()[1], ' ')))">
-                <span class="cb" style="color:teal;">-[<xsl:value-of select="@n"/>]-</span>
+                <span class="tei-cb" style="color:teal;">-[<xsl:value-of select="@n"/>]-</span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -59,8 +74,8 @@
     <xsl:template match="tei:choice">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
-                <xsl:apply-templates mode="critical"/>
+            <xsl:when test="$view = 'interpretive'">
+                <xsl:apply-templates mode="interpretive"/>
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
                 <xsl:apply-templates mode="semi-diplomatic"/>
@@ -71,10 +86,16 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:corr" mode="critical">
-        <span class="orange">
-            <xsl:apply-templates/>
-        </span>
+    <xsl:template match="tei:corr" mode="interpretive">
+        <xsl:variable name="myID" select="generate-id()"/>
+        <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
+        
+        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
+            ms.: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            <button class="close-button" data-close="" aria-label="Close note" type="button">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
     </xsl:template>
 
     <xsl:template match="tei:corr" mode="semi-diplomatic">
@@ -84,11 +105,11 @@
     <xsl:template match="tei:del">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <!-- do nothing -->
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
-                <span class="strikethrough">
+                <span class="tei-del">
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
@@ -96,7 +117,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = '1']">
-        <div class="type1">
+        <div>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </div>
@@ -107,21 +128,19 @@
     <xsl:template match="tei:fw">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <!-- do nothing -->
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
-                <span class="cb" style="color:green;">-[<xsl:if test="@type='quire_no'"><xsl:text>quire number: </xsl:text></xsl:if><xsl:value-of select="."/>]-</span>
+                <span class="tei-fw">-[<xsl:if test="@type='quire_no'"><xsl:text>quire number: </xsl:text></xsl:if><xsl:value-of select="."/>]-</span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:head[@type = 'rubric']">
-        <h4 class="red">
-            <span class="seg-num">
+        <h4 class="tei-rubric">
                 <xsl:value-of select="number(substring-after(parent::tei:div/@xml:id, '_'))"/>.
                 <xsl:text> </xsl:text>
-            </span>
             <xsl:apply-templates/>
         </h4>
     </xsl:template>
@@ -132,6 +151,11 @@
                 <em>
                     <xsl:apply-templates/>
                 </em>
+            </xsl:when>
+            <xsl:when test="@rend = 'R'">
+                <span class="tei-hi red">
+                    <xsl:apply-templates/>
+                </span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -145,7 +169,7 @@
         <br/>
     </xsl:template>
 
-    <xsl:template match="tei:orig" mode="critical">
+    <xsl:template match="tei:orig" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
 
@@ -156,12 +180,12 @@
     <xsl:template match="tei:pb">
         <xsl:choose>
             <xsl:when test="ends-with(preceding::text()[1], ' ')">
-                <span class="pb" style="color:teal;">[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb" style="color:teal;">[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
                             select="following-sibling::tei:cb[1]/@n"/></xsl:if>] </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="pb" style="color:teal;">-[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb" style="color:teal;">-[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
                             select="following-sibling::tei:cb[1]/@n"/></xsl:if>]-</span>
             </xsl:otherwise>
@@ -171,14 +195,14 @@
     <xsl:template match="tei:pc">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
                     <!-- do nothing -->
                 </xsl:if>
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
-                    <span class="pc">
+                    <span>
                         <xsl:choose>
                             <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
                             <xsl:when test="@rend = '2'">&#x061B;</xsl:when>
@@ -198,18 +222,16 @@
     </xsl:template>
 
     <xsl:template match="tei:q">
-        <span class="quoted">
+        <span>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     
-    <xsl:template match="tei:ref[@type = 'bibliography']/@corresp">
-        <xsl:attribute name="data-biblio-corresp">
-            <xsl:value-of select="."/>
-        </xsl:attribute>
+    <xsl:template match="tei:ref[@type = 'bibliography']">
+        <a href="{@corresp}"><xsl:apply-templates/></a>
     </xsl:template>
 
-    <xsl:template match="tei:reg" mode="critical">
+    <xsl:template match="tei:reg" mode="interpretive">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -218,7 +240,7 @@
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'ms_name']">
-        <span class="ms-name">
+        <span>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
@@ -226,7 +248,7 @@
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'location']">
-        <span class="ms-name">
+        <span>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
@@ -236,12 +258,16 @@
     <!-- ********************************* -->
     <!-- critical / semi-diplomatic segs -->
     <!-- ********************************* -->
-    <xsl:template match="tei:seg[@type = 'crit']" mode="critical">
+    <xsl:template match="tei:seg[@type = 'crit']" mode="interpretive">
         <span>
             <xsl:if test="@subtype = 'toUpper'">
-                <xsl:attribute name="class">critToUpper</xsl:attribute>
-
-                <xsl:attribute name="style">text-transform:uppercase;</xsl:attribute>
+                <xsl:attribute name="class">tei-critToUpper</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@subtype = 'toLower'">
+                <xsl:attribute name="class">tei-critToLower</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@subtype = 'toSup'">
+                <xsl:attribute name="class">tei-critToSup</xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
         </span>
@@ -255,7 +281,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:seg[@type = 'semi-dip']" mode="critical">
+    <xsl:template match="tei:seg[@type = 'semi-dip']" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
     <!-- ********************************* -->
@@ -267,28 +293,29 @@
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'rubric' and @xml:id]">
-        <span class="red">
+        <span class="tei-rubric">
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = ('1', '2', '3', '4', '5')]">
-        <span class="seg-num">
+        <span class="tei-seg-num">
             <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/>.
             <xsl:text> </xsl:text>
         </span>
-        <span class="seg1">
+        <span>
             <xsl:apply-templates select="@*"/>
-            <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
+            <!-- PC 01 Mar 2017 : I'm checking on this because I don't think it's relevant any more -->
+            <!--<xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
                 <xsl:attribute name="class">seg1rfl</xsl:attribute>
-            </xsl:if>
+            </xsl:if>-->
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'textual-unit-2']">
-        <span class="t-u-2">
+        <span>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </span>
@@ -296,7 +323,7 @@
 
     <xsl:template match="tei:seg[@type = 'textual-unit-3-moralisation']">
         <br/>
-        <span class="t-u-3">
+        <span>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </span>
@@ -307,7 +334,7 @@
         <!-- do nothing -->
     </xsl:template>
 
-    <xsl:template match="tei:sic" mode="critical">
+    <xsl:template match="tei:sic" mode="interpretive">
         <!-- do nothing -->
     </xsl:template>
 
@@ -316,9 +343,15 @@
     </xsl:template>
 
     <xsl:template match="tei:unclear">
-        <span class="unclear">
-            <xsl:apply-templates/>
-        </span>
+        <xsl:variable name="myID" select="generate-id()"/>
+        <xsl:apply-templates/><a data-toggle="{$myID}"><sup class="tei-unclear"/></a>
+        
+        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
+            text unclear <xsl:if test="@reason">due to  <xsl:value-of select="@reason"/></xsl:if>
+            <button class="close-button" data-close="" aria-label="Close note" type="button">
+                <span aria-hidden="true">&#215;</span>
+            </button>
+        </div>
     </xsl:template>
 
     <xsl:template match="@corresp">
@@ -330,7 +363,7 @@
     <xsl:template match="text()">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
-            <xsl:when test="$view = 'critical'">
+            <xsl:when test="$view = 'interpretive'">
                 <xsl:value-of select="translate(., '[]', '')"/>
             </xsl:when>
             <xsl:otherwise>

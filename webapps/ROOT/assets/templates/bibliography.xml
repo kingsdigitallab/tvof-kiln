@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:dir="http://apache.org/cocoon/directory/2.0"
+  xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Imports stylesheet to convert TEI into HTML. -->
+    <xsl:import href="cocoon://_internal/template/xsl/stylesheets/tei/bibliography.xsl" />
+
+    <data>
+        <xsl:apply-templates select="/aggregation/tei:TEI" />
+    </data>
+</kiln:root>
