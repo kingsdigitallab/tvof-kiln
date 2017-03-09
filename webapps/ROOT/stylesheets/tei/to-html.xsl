@@ -291,7 +291,7 @@
     <xsl:template match="tei:seg[@type = 'stripFirstLetter']">
         <xsl:value-of select="translate(substring-after(., substring(., 1, 1)), '[]', '')"/>
     </xsl:template>
-
+    
     <xsl:template match="tei:seg[@type = 'rubric' and @xml:id]">
         <span class="tei-rubric">
             <xsl:apply-templates select="@*"/>

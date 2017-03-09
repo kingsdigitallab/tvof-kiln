@@ -19,11 +19,6 @@
 </teiHeader>
 <text>
 <body>
-    <head>Bibliography</head>
-    <lb/>
-    <ab>
-        (in progress...)
-    </ab>
     <bibl><msIdentifier xml:id="Fr20125_iron"><settlement>Dijon</settlement><repository>Bibliothèque
         municipale</repository><idno>562</idno></msIdentifier></bibl>
     
