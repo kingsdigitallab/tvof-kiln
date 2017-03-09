@@ -91,7 +91,7 @@
         <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
         
         <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            ms.: <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            ms. <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -360,7 +360,7 @@
         </xsl:attribute>
     </xsl:template>
 
-    <xsl:template match="text()">
+    <xsl:template match="text()[not(ancestor::tei:div[@type='note'])]">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
             <xsl:when test="$view = 'interpretive'">
