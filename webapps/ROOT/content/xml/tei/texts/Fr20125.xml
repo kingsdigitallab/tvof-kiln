@@ -2272,8 +2272,8 @@
                             riche hanap d<choice><orig></orig><reg>'</reg></choice>anciene o<choice><orig>u</orig><reg>v</reg></choice>re que la roine <persName>dido</persName> me
                         dona en <placeName>cartage</placeName><pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] si li deu nos
                             done[n]t tel eur que nos puissons conq[ue]rre
-                        <placeName>lombardie</placeName> [et] la proie prendre [et] departir
-                        <choice><seg type="semi-dip"><choice><orig>i</orig><reg>j</reg></choice>ene</seg><seg type="crit"><choice><orig>i</orig><reg>j</reg></choice>e<choice><orig></orig><reg>,</reg></choice> ne</seg></choice> t<choice><orig></orig><reg>'</reg></choice>i
+                        <placeName>lombardie</placeName> [et] la proie prendre [et] departir<choice><orig></orig><reg>,</reg></choice>
+                        <choice><seg type="semi-dip"><choice><orig>i</orig><reg>j</reg></choice>ene</seg><seg type="crit"><choice><orig>i</orig><reg>j</reg></choice>e ne</seg></choice> t<choice><orig></orig><reg>'</reg></choice>i
                         faudra que tu n<choice><orig></orig><reg>'</reg></choice>aies<anchor type="tradNote" corresp="#edfr20125_0621_16_sycamore"/> le riche destrier sor quoi tu <choice><orig>u</orig><reg>v</reg></choice>ois
                                 <persName>t[ur]nus</persName> seir [et] son riche escu [et] son
                         riche haume<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] sor tot ce te donrai <choice><orig>i</orig><reg>j</reg></choice>e une partie de la
@@ -2369,7 +2369,7 @@
                             por quoi <choice><seg type="semi-dip"><choice><orig>i</orig><reg>j</reg></choice>e<choice><orig>u</orig><reg>v</reg></choice>os</seg><seg type="crit"><choice><orig>i</orig><reg>j</reg></choice>e <choice><orig>u</orig><reg>v</reg></choice>os</seg></choice> nomasse les no[m]s des pluisors qu<choice><orig></orig><reg>'</reg></choice>il occistrent
                                 quar trop sunt a<choice><orig>u</orig><reg>v</reg></choice>ers [et] si n<choice><orig></orig><reg>'</reg></choice>i a<choice><orig>u</orig><reg>v</reg></choice>roit pas grant profitance</q><pc
                             rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">l</seg><seg type="crit" subtype="toUpper">l</seg></choice>i pluisor si demandent coment pooit ce estre<pc rend="1"/>
-                        que nus ne si es<choice><orig>u</orig><reg>v</reg></choice>eilloit<pc rend="2"/><choice><orig></orig><reg>,</reg></choice> si faisoit<choice><orig></orig><reg>,</reg></choice> mais quant il les
+                        que nus ne si es<choice><orig>u</orig><reg>v</reg></choice>eilloit<pc rend="2"/><choice><orig></orig><reg> :</reg></choice> si faisoit<choice><orig></orig><reg>,</reg></choice> mais quant il les
                         <choice><orig>u</orig><reg>v</reg></choice>eoient arm<choice><orig>e</orig><reg>é</reg></choice>s [et] les espees tenir totes nues [et] ensanglentees<choice><orig></orig><reg>,</reg></choice> si
                         n<choice><orig></orig><reg>'</reg></choice>osoient noise faire [et] si erent tuit estordi [et] dou <choice><orig>u</orig><reg>v</reg></choice>in [et] dou
                             sogme<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] cil tantost com il p[er]ce<choice><orig>u</orig><reg>v</reg></choice>oient qu<choice><orig></orig><reg>'</reg></choice>il <choice><orig>u</orig><reg>v</reg></choice>eilloient ne
@@ -4597,7 +4597,7 @@
                             Troiae</hi> (20, 10), Vénus mentionne l'Italie clairement (cf. <hi
                             rend="i">Roman d'Eneas</hi>, v. 39-40). Selon Monfrin, le « sacrifice
                         paraît une invention de l'<hi rend="i">HA</hi>. La généalogie est
-                        traditionelle, mais ne vient pas directement de Servius ; cf. ad III, 167.
+                        traditionnelle, mais ne vient pas directement de Servius ; cf. ad III, 167.
                         Voir aussi Isidore », <hi rend="i">Etymologiae</hi>, IX, II, 67 (<ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
                         238).</p>
@@ -4610,7 +4610,7 @@
                             (<hi rend="i">Etymologiae</hi>, IX, II, 26) (voir <ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985), p.
                         238</ref>). Pourtant, Montorsi a plus récemment souligné que la source
-                        probable de cette paragraphe est le <hi rend="i">Liber Floridus</hi> (<ref
+                        probable de ce paragraphe est le <hi rend="i">Liber Floridus</hi> (<ref
                             type="bibliography" corresp="Derolez_1968">Derolez (ed.)</ref>, p.
                         467-468), dans lequel on trouve déjà « la juxtaposition de la version du <hi
                             rend="i">Liber Historiae Francorum</hi> et de la généalogie
@@ -5308,7 +5308,7 @@
             </div>
     
     </body>
-   
+ 
   
   
   </text>
