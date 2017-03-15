@@ -91,7 +91,7 @@
         <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
         
         <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            <em>ms.</em> <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            <em>ms.</em><span class="tei-sic-text"><xsl:text> </xsl:text><xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/></span>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -339,7 +339,7 @@
     </xsl:template>
 
     <xsl:template match="tei:sic" mode="semi-diplomatic">
-        <xsl:apply-templates/>
+        <xsl:text> </xsl:text><xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="tei:unclear">
