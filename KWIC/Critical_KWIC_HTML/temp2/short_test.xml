@@ -1,0 +1,161 @@
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <title>KWIC list</title><style>
+                    span[class = rubric]{
+                        background-color: #F9C1C1;
+                        text-align: left;
+                        width: 20%;
+                    }
+                    table{
+                        width: 100%;
+                    }
+                    td{
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+                    td[class = loc]{
+                        text-align: left;
+                        width: 20%;
+                    }
+                    td[class = prec]{
+                        text-align: right;
+                        width: 32%;
+                    }
+                    td[class = instance]{
+                        color: red;
+                        text-align: left;
+                        padding-left: 50px;
+                        width: 16%;
+                    }
+                    td[class = foll]{
+                        text-align: left;
+                        width: 32%;
+                    }
+                    th{
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }</style></head>
+   <body>
+      <div>
+         <h2>a</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_03</td>
+               <td class="prec"> fee' fie . Fo , fum broken</td>
+               <td class="instance">and</td>
+               <td class="foll">busted In critical KWIC you should see</td>
+            </tr>
+         </table>
+         <h2>b</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_03</td>
+               <td class="prec"> fee' fie . Fo , fum</td>
+               <td class="instance">broken</td>
+               <td class="foll">and busted In critical KWIC you should</td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_03</td>
+               <td class="prec"> fee' fie . Fo , fum broken and</td>
+               <td class="instance">busted</td>
+               <td class="foll">In critical KWIC you should see teh</td>
+            </tr>
+         </table>
+         <h2>c</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">In critical KWIC you should see teh</td>
+               <td class="instance">correct</td>
+               <td class="foll"> </td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">fie . Fo , fum broken and busted In</td>
+               <td class="instance">critical</td>
+               <td class="foll">KWIC you should see teh correct </td>
+            </tr>
+         </table>
+         <h2>f</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_02</td>
+               <td class="prec"> </td>
+               <td class="instance">fee'</td>
+               <td class="foll">fie . Fo , fum broken and busted In</td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_02</td>
+               <td class="prec"> fee'</td>
+               <td class="instance">fie</td>
+               <td class="foll">. Fo , fum broken and busted In critical</td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_02</td>
+               <td class="prec"> fee' fie .</td>
+               <td class="instance">Fo</td>
+               <td class="foll">, fum broken and busted In critical KWIC</td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_02</td>
+               <td class="prec"> fee' fie . Fo ,</td>
+               <td class="instance">fum</td>
+               <td class="foll">broken and busted In critical KWIC you</td>
+            </tr>
+         </table>
+         <h2>i</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">fee' fie . Fo , fum broken and busted</td>
+               <td class="instance">In</td>
+               <td class="foll">critical KWIC you should see teh correct</td>
+            </tr>
+         </table>
+         <h2>k</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">Fo , fum broken and busted In critical</td>
+               <td class="instance">KWIC</td>
+               <td class="foll">you should see teh correct </td>
+            </tr>
+         </table>
+         <h2>s</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">and busted In critical KWIC you should</td>
+               <td class="instance">see</td>
+               <td class="foll">teh correct </td>
+            </tr>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">broken and busted In critical KWIC you</td>
+               <td class="instance">should</td>
+               <td class="foll">see teh correct </td>
+            </tr>
+         </table>
+         <h2>t</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">busted In critical KWIC you should see</td>
+               <td class="instance">teh</td>
+               <td class="foll">correct </td>
+            </tr>
+         </table>
+         <h2>y</h2>
+         <table>
+            <tr>
+               <td class="loc">edfr20125_00588_04</td>
+               <td class="prec">fum broken and busted In critical KWIC</td>
+               <td class="instance">you</td>
+               <td class="foll">should see teh correct </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

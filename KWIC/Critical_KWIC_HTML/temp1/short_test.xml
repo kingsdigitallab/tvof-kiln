@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">TVOF edition fr. 20125_Critical</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>KCL DH laboratory</p>
+                <p>adaptation Simone Ventura</p>
+            </publicationStmt>
+            <sourceDesc>
+                <ab/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <ab type="version" subtype="semi-diplomatic"/>
+            <ab type="version" subtype="critical"/>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="1" xml:id="edfr20125_00588" n="148rb">
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00588_02">
+                        fee' fie. Fo, fum
+                    </seg>
+                </ab>
+                
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00588_03">
+                        bro<cb/>ken and bust<pb/>ed
+                    </seg>
+                </ab>
+                
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00588_04">
+                        In critical KWIC you should see teh <choice><sic>wrong</sic><corr>correct</corr></choice>
+                    </seg>
+                </ab>
+                
+                
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00604_12">Adonc n<choice><orig></orig><reg>'</reg></choice>ot en <persName>didon</persName> q[ue]
+                        corrocier<choice><orig></orig><reg>,</reg></choice> qui tote fundoit en larmes<choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>out parla a <persName>eneas</persName> [et]
+                        <persName>eneas</persName> <choice><seg type="semi-dip">alui</seg><seg type="crit">a lui</seg></choice><choice><orig></orig><reg>,</reg></choice> qui rapaisier [et] rasoagier le cuidoit<pc
+                            rend="1"/><choice><orig></orig><reg>,</reg></choice> mais en la fin <choice><orig>u</orig><reg>v</reg></choice>it il que ce ne pooit estre<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] por ce que
+                        faire li con<choice><orig>u</orig><reg>v</reg></choice>enoit ce que li deu li comandoient<pc rend="2"/><choice><orig></orig><reg>,</reg></choice> se departi il de li
+                        <choice><seg type="semi-dip">aq[ue]lque</seg><seg type="crit">a quelque</seg></choice> dolor<pc rend="1"/> [et] si s<choice><orig></orig><reg>'</reg></choice>en ala a sa na<choice><orig>u</orig><reg>v</reg></choice>ie<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
+                    
+                </ab>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

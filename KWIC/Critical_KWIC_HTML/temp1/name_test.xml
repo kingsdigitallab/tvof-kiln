@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">TVOF edition fr. 20125_Critical</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>KCL DH laboratory</p>
+        <p>adaptation Simone Ventura</p>
+      </publicationStmt>
+      <sourceDesc>
+        <ab/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <ab type="version" subtype="semi-diplomatic"/>
+      <ab type="version" subtype="critical"/>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="1" xml:id="edfr20125_00588" n="148rb">
+        
+        <ab>
+          <seg type="5" xml:id="edfr20125_00588_02">
+            <persName><choice><orig>v</orig><reg>W</reg></choice><choice><orig>u</orig><reg>o</reg></choice>lfric</persName>
+            <persName><choice><orig>v</orig><reg>W</reg></choice>ulfr<choice><orig>i</orig><reg>ï</reg></choice>c</persName>
+            <persName>e<choice><orig>u</orig><reg>v</reg></choice>ander</persName>
+          </seg>
+        </ab>
+        
+        </div>
+    </body>
+  </text>
+</TEI>
