@@ -9,7 +9,16 @@
             <xd:p><xd:b>Author:</xd:b> paulcaton</xd:p>
             <xd:p>This stylesheet takes as input a TVOF transcription file. 
                 It outputs a version where the first letter of name-type elements is encoded with tei:choice. 
-                Everything else is left unchanged.</xd:p>
+                Everything else is left unchanged.
+                IN:  [placeName]troies[/placeName]
+                OUT: [placeName]
+                        [tei:choice]
+                            [tei:seg type="crit" subtype="toUpper"]t[/tei:seg]
+                            [tei:seg type="semi-dip"]t[/tei:seg]
+                        [/tei:choice]
+                        [tei:seg type="stripFirstLetter"]troies[/tei:seg]
+                     [/placeName]
+            </xd:p>
         </xd:desc>
     </xd:doc>
     
