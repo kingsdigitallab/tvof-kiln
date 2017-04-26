@@ -102,59 +102,71 @@ class KWICList(XMLParser):
             # for element in div.findall('head[@type="rubric"]',
             # './/seg[@type]'):
             for filter in ['head[@type="rubric"]', './/seg[@type]']:
-                for element in div.findall(filter):
-                    # only process seg type="1" .. "9"
-                    if element.tag == 'seg' and\
-                            not re.match(ur'\d+', element.attrib.get('type') or ur''):
-                        continue
-                    # get ID from seg if available
-                    parentid = element.attrib.get(
-                        self.expand_prefix('xml:id')) or parentid
-                    # add all <w> to the kwic list
-                    self.collect_keywords_under_element(element, parentid)
+                # add all <w> to the kwic list
+                self.collect_keywords_under_elements(
+                    div.findall(filter), parentid)
 
     # Collect all the tokens
-    def collect_keywords_under_element(self, element, parentid):
-        tokens = element.findall('.//w')
+    def collect_keywords_under_elements(self, elements, parentid):
 
-        # collect all the tokens under <element>
-        keywords = []
-        keyword_tokens = []
-        for token in tokens:
-            keyword = self.get_element_text(token, True)
-            # print parentid, token.attrib.get('n'), repr(self.get_unicode_from_xml(token))
-            # print repr(keyword)
-            if keyword:
-                keyword = re.sub(ur'[\[\]]', ur'', keyword)
-                keywords.append(keyword)
-                keyword_tokens.append(token)
-            else:
-                print 'NONE'
-                print token.attrib.get('n')
-                print parentid
-                exit()
+        kwics = []
+
+        for element in elements:
+            element_type = 'rubric_item' if element.attrib.get(
+                'type') == 'rubric' else 'seg_item'
+
+            # only process seg type="1" .. "9"
+            if element.tag == 'seg' and\
+                    not re.match(ur'\d+', element.attrib.get('type') or ur''):
+                continue
+            # get ID from element if available
+            elementid = element.attrib.get(
+                self.expand_prefix('xml:id')) or parentid
+
+            tokens = element.findall('.//w')
+
+            # collect all the tokens under <element>
+            for token in tokens:
+                keyword = self.get_element_text(token, True)
+                # print parentid, token.attrib.get('n'), repr(self.get_unicode_from_xml(token))
+                # print repr(keyword)
+                if keyword:
+                    keyword = re.sub(ur'[\[\]]', ur'', keyword)
+                    # keywords.append(keyword)
+                    # keyword_tokens.append(token)
+                    kwic = {
+                        'kw': keyword,
+                        'sl': keyword.lower()[0:1],
+                        'lc': elementid,
+                        'nb': token.attrib.get('n'),
+                        'tp': element_type,
+                    }
+                    self.kwics.append(kwic)
+                    kwics.append(kwic)
+                else:
+                    print 'NONE'
+                    print token.attrib.get('n')
+                    print parentid
+                    exit()
 
         # add tokens metadata to the keyword list
         radius = self.context_radius + 1
-        for i in range(len(keywords)):
-            keyword = keywords[i]
-            token = keyword_tokens[i]
-            kwic = {
-                'kw': keyword,
-                'sl': keyword.lower()[0:1],
-                'lc': parentid,
-                'nb': token.attrib.get('n'),
-                'tp': 'rubric_item' if element.attrib.get('type') == 'rubric' else 'seg_item',
-                'pr': ' '.join(keywords[max(0, i - radius):i]),
-                'fo': ' '.join(keywords[i + 1:min(len(keywords), i + radius)]),
-            }
+        for i in range(len(kwics)):
+            kwic = kwics[i]
+            #keyword = keywords[i]
+            #token = keyword_tokens[i]
+
+            kwic.update({
+                'pr': ' '.join([kw['kw'] for kw in kwics[max(0, i - radius):i]]),
+                'fo': ' '.join([kw['kw'] for kw in kwics[i + 1:min(len(kwics), i + radius)]]),
+            })
+
             # Add ending punctuation mark
             # TODO: detect punctuation before? (actual exceptional)
             # TODO: detect attachment (no space between the two tokens)
             # But again that may be exceptional and not necessarily useful.
-            if (i + 1) < len(keywords) and re.match(ur'[\.,]', keywords[i + 1]):
-                kwic['pe'] = keywords[i + 1]
-            self.kwics.append(kwic)
+            if (i + 1) < len(kwics) and re.match(ur'[\.,]', kwics[i + 1]['kw']):
+                kwic['pe'] = kwics[i + 1]['kw']
 
     def generate_xml(self):
         print 'Generate XML'
