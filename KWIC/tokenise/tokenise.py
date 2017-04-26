@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import os
 import re
@@ -80,7 +81,7 @@ class TEITokeniser(XMLParser):
         text = getattr(el, part) or ur''
 
         # scind around punctuation
-        text = re.sub(ur"(?musi)([^'\s\w\[\]])", self.token_end +
+        text = re.sub(ur"(?musi)([^'\s\w\[\]·])", self.token_end +
                       self.token_start +
                       ur'\1' + self.token_end + self.token_start, text)
 

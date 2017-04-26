@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import os
 import re
@@ -33,17 +34,21 @@ class XMLParser(object):
         # note that ET takes a utf-8 encoded string
         self.xml = ET.fromstring(xml_string.encode('utf-8'))
 
-    def get_unicode_from_xml(self):
-        for prefix, url in self.namespaces.iteritems():
-            # skip xml namespace, it's implicitly defined
-            if prefix == 'xml':
-                continue
-            aprefix = 'xmlns'
-            if prefix:
-                aprefix += ':' + prefix
-            self.xml.set(aprefix, url)
+    def get_unicode_from_xml(self, xml=None):
+        if xml is None:
+            for prefix, url in self.namespaces.iteritems():
+                # skip xml namespace, it's implicitly defined
+                if prefix == 'xml':
+                    continue
+                aprefix = 'xmlns'
+                if prefix:
+                    aprefix += ':' + prefix
+                self.xml.set(aprefix, url)
 
-        return ET.tostring(self.xml, encoding='utf-8').decode('utf-8')
+        if xml is None:
+            xml = self.xml
+
+        return ET.tostring(xml, encoding='utf-8').decode('utf-8')
 
     def read_xml(self, filepath):
         import codecs
