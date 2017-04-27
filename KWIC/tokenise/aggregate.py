@@ -9,7 +9,7 @@ from collections import OrderedDict
 
 # TODO
 # [DONE] compile
-# . use wildcard
+# [DONE] use wildcard
 # [DONE] specify output
 # . add notes
 # [DONE] natural sort of the files
@@ -28,7 +28,9 @@ class Aggregator(XMLParser):
     def aggregate(self, input_path):
         print(input_path)
 
-        self.read_xml(input_path)
+        if not self.read_xml(input_path):
+            print '\tWARNING: file is not valid XML'
+            return
 
         # get the body content
         body = self.xml.find('.//body')
@@ -60,6 +62,7 @@ if len(args) < 1:
 aggregator = Aggregator()
 
 output_path = u'aggregated.xml'
+input_path_list = []
 while len(args):
     arg = (args.pop(0)).strip()
     if arg.strip() == '-o':
@@ -69,12 +72,14 @@ while len(args):
     else:
         input_paths = arg
 
-        input_path_list = glob.glob(input_paths)
-        input_path_list = sorted(input_path_list, key=lambda p: [
-                                 int(n) for n in re.findall(ur'\d+', p)])
-        for input_path in input_path_list:
-            if os.path.isfile(input_path):
-                aggregator.aggregate(input_path)
+        input_path_list += glob.glob(input_paths)
+
+if input_path_list:
+    input_path_list = sorted(input_path_list, key=lambda p: [
+                             int(n) for n in re.findall(ur'\d+', p)])
+    for input_path in input_path_list:
+        if os.path.isfile(input_path):
+            aggregator.aggregate(input_path)
 
 if aggregator.is_aggregating():
     aggregator.write_xml(output_path)

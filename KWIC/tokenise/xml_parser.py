@@ -51,11 +51,17 @@ class XMLParser(object):
         return ET.tostring(xml, encoding='utf-8').decode('utf-8')
 
     def read_xml(self, filepath):
+        ret = True
         import codecs
         with codecs.open(filepath, 'r', 'utf-8') as f:
             content = f.read()
 
-            self.set_xml_from_unicode(content)
+            try:
+                self.set_xml_from_unicode(content)
+            except ET.ParseError, e:
+                ret = False
+
+        return ret
 
     def write_xml(self, file_path, encoding='utf-8'):
         f = open(file_path, 'wb')
