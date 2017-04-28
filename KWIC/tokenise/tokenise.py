@@ -11,9 +11,21 @@ class TEITokeniser(XMLParser):
     token_start = u'#{#'
     token_end = u'#}#'
     tag_to_be_remove = u'TOBEREMOVED'
+    default_output = u'tokenised.xml'
 
-    def __init__(self):
-        super(TEITokeniser, self).__init__()
+    def run_custom(self, input_path_list, output_path):
+        if len(input_path_list) != 1:
+            print 'ERROR: please provide a single input file'
+        else:
+            for input_path in input_path_list:
+                self.reset()
+                self.read_xml(input_path)
+
+                if self.tokenise():
+                    # tokeniser.find_corner_cases()
+
+                    self.assign_tokenids()
+                    # print tokeniser.get_unicode_from_xml()
 
     def remove_superfluous_spaces(self):
         # Remove spaces erroneously added by Oxygen editor.
@@ -191,31 +203,4 @@ class TEITokeniser(XMLParser):
                 child.attrib['n'] = unicode(relativeid)
 
 
-args = sys.argv
-
-script_file = args.pop(0)
-
-if len(args) != 1:
-    print 'Usage: {} INPUT.xml [OUTPUT.xml]'.format(os.path.basename(script_file))
-    exit()
-
-input_path = args.pop(0)
-
-tokeniser = TEITokeniser()
-tokeniser.read_xml(input_path)
-
-if 0 or tokeniser.tokenise():
-    tokeniser.find_corner_cases()
-
-    tokeniser.assign_tokenids()
-    print tokeniser.get_unicode_from_xml()
-
-    if args:
-        output_path = args.pop(0)
-    else:
-        output_path = re.sub(ur'\.[^.]*?$', ur'.tkd.xml', input_path)
-    if output_path != input_path:
-        tokeniser.write_xml(output_path)
-        print 'written %s' % output_path
-
-print 'done'
+TEITokeniser.run()

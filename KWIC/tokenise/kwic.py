@@ -37,9 +37,19 @@ class KWICList(XMLParser):
     # 'context' size: the number of words on each side of a keyword that are
     # part of its context.
     context_radius = 7
+    default_output = u'kwic.xml'
 
     def __init__(self):
         super(KWICList, self).__init__()
+
+    def run_custom(self, input_path_list, output_path):
+        if len(input_path_list) != 1:
+            print 'ERROR: please provide a single input file'
+        else:
+            for input_path in input_path_list:
+                self.reset()
+                self.read_xml(input_path)
+                self.generate_list()
 
     def is_stop_word(self, token):
         '''Return True if <token> in self.stop_words or doesn't contain a letter'''
@@ -211,30 +221,4 @@ class KWICList(XMLParser):
         return ret
 
 
-args = sys.argv
-
-script_file = args.pop(0)
-
-if len(args) != 1:
-    print 'Usage: {} INPUT.xml [OUTPUT.xml]'.format(os.path.basename(script_file))
-    exit()
-
-input_path = args.pop(0)
-
-print input_path
-
-kwic_list = KWICList()
-kwic_list.read_xml(input_path)
-
-kwic_list.generate_list()
-
-if args:
-    output_path = args.pop(0)
-else:
-    output_path = re.sub(ur'\.[^.]*?$', ur'.kwic.xml', input_path)
-if output_path != input_path:
-    kwic_list.write_xml(output_path)
-
-print 'written %s' % output_path
-
-print 'done'
+KWICList.run()

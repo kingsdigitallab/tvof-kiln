@@ -10,7 +10,10 @@ On a Mac, the general procedure is as follow:
 * Right-lick the folder name to open the context menu
 * Select "New Terminal at Folder"
 * type "python SCRIPTNAME.py INPUTFILE.xml -o OUTPUTFILE.xml", followed by ENTER key. 
-* wait until the script has ended (report error messages to us if you see any)
+* wait until the script has ended
+* if you see 'done' at the end, the script executed without bug
+* otherwise, take a screenshot and send it to me geoffroy.noel@kcl.ac.uk
+* if you see 'written XXX.xml' near the end, an output file was correctly written
 * type "exit" then ENTER key to leave the terminal
 * verify the content of OUTPUTFILE.xml
 * please also verify the date and time of OUTPUTFILE.xml to be sure its content has just been (over)written.
