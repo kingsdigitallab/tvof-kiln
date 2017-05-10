@@ -19,7 +19,8 @@ class TEITokeniser(XMLParser):
         else:
             for input_path in input_path_list:
                 self.reset()
-                self.read_xml(input_path)
+                if not self.read_xml(input_path):
+                    raise Exception('Cant read %s' % input_path)
 
                 if self.tokenise():
                     # tokeniser.find_corner_cases()
@@ -184,7 +185,7 @@ class TEITokeniser(XMLParser):
             pass_count = 0
             while True:
                 pass_count += 1
-                print 'pass %s' % pass_count
+                print '\tpass %s' % pass_count
 
                 changed = self.push_down_tokens()
                 if not changed:

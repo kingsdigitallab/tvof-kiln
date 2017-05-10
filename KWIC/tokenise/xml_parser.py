@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 
 class XMLParser(object):
 
+    suppressed_output = False
     default_output = u'parsed.xml'
 
     def __init__(self):
@@ -24,17 +25,26 @@ class XMLParser(object):
         return self.xml is not None
 
     @classmethod
-    def run(cls):
-        parser = cls()
-        args = sys.argv
+    def run(cls, args=None):
+        if args is None and cls.__module__ != '__main__':
+            return
 
-        script_file = args.pop(0)
+        script_file = '%s.py' % cls.__module__
+
+        if args is None:
+            args = sys.argv
+            script_file = args.pop(0)
+
+        parser = cls()
+
+        print 'python %s %s' % (script_file, ' '.join(args))
 
         if len(args) < 1:
             print 'Usage: {} INPUT.xml [-o OUTPUT.xml]'.format(os.path.basename(script_file))
             exit()
 
         output_path = cls.default_output
+        input_str = []
         input_path_list = []
         while len(args):
             arg = (args.pop(0)).strip()
@@ -43,9 +53,9 @@ class XMLParser(object):
                     arg = args.pop(0)
                     output_path = arg
             else:
-                input_paths = arg
-
-                input_path_list += glob.glob(input_paths)
+                input_str.append(arg)
+                for input_paths in cls.get_expanded_paths(arg):
+                    input_path_list += glob.glob(input_paths)
 
         if input_path_list:
             parser.run_custom(input_path_list, output_path)
@@ -54,16 +64,39 @@ class XMLParser(object):
             parser.write_xml(output_path)
             print 'written %s' % output_path
         else:
-            print 'WARNING: Nothing to output, please check the input argument (%s)' % input_paths
+            if not getattr(cls, 'suppressed_output', False):
+                print 'WARNING: Nothing to output, please check the input argument (%s)' % ', '.join(input_str)
 
         print 'done'
+
+    @classmethod
+    def get_expanded_paths(cls, path):
+        # get_expanded_paths
+        # e.g. {16,18}X => [16X, 18X]
+        # e.g. {16-18}X => [16X, 17X, 18X]
+        ret = [path]
+
+        parts = re.findall(ur'^(.*)\{([-\d,]+)\}(.*)$', path)
+        if parts:
+            parts = parts[0]
+            ranges = parts[1].split(',')
+            for range in ranges:
+                ends = range.split('-')
+                if len(ends) == 1:
+                    ends.append(ends[0])
+                ends = [int(end) for end in ends]
+                ends[-1] += 1
+                for end in xrange(*ends):
+                    ret.append(ur'%s%s%s' % (parts[0], end, parts[-1]))
+
+        return ret
 
     def set_namespaces_from_unicode(self, xml_string):
         # grab all the namespaces
         self.namespaces = {
             prefix: uri
             for definition, prefix, uri
-            in re.findall(ur'(xmlns(:\w+)?\s*=\s*"([^"]+)")', xml_string)
+            in re.findall(ur'(xmlns:(\w+)?\s*=\s*"([^"]+)")', xml_string)
         }
         self.namespaces.update(self.namespaces_implicit)
 
@@ -103,7 +136,11 @@ class XMLParser(object):
 
             try:
                 self.set_xml_from_unicode(content)
+
+                # self.is_wellformed(self.get_unicode_from_xml())
+
             except ET.ParseError, e:
+                print e
                 ret = False
 
         return ret

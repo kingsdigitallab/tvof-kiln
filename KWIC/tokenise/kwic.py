@@ -189,6 +189,11 @@ class KWICList(XMLParser):
         sublist = None
         parts = []
         for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
+            for k in ['sl', 'pr', 'fo', 'kw', 'pe']:
+                v = kwic.get(k, None)
+                if v is not None:
+                    kwic[k] = v.replace('"', '&quot;')
+
             part = u''
             # print u'{lc} {nb} {kw}'.format(**kwic)
             if kwic['sl'] != sublist:
@@ -213,6 +218,17 @@ class KWICList(XMLParser):
         if sublist:
             ret += u'</sublist>'
         ret += u'</kwiclist>'
+
+        if 0:
+            # for debugging only: output notwelformedfile
+            file_path = 'notwellformed.xml'
+            encoding = 'utf-8'
+            f = open(file_path, 'wb')
+            content = u'<?xml version="1.0" encoding="{}"?>\n'.format(encoding)
+            content += ret
+            content = content.encode(encoding)
+            f.write(content)
+            f.close()
 
         self.set_xml_from_unicode(ret)
 
