@@ -37,6 +37,9 @@ undef @in;			# don't need this anymore
 
 # $file =~ s|||g;
 #
+
+# PRE-PROCESSING
+
 $file =~ s|<\?xml|<MARYPOPPINSxml|g;
 $file =~ s|8"\?>|8"MARYPOPPINS>|g;
 # GN: temporarly convert named entities, to avoid individual conversion of ; 
@@ -45,6 +48,11 @@ $file =~ s|&([a-z]+);|AMPERSAND\1SEMICOLON|gi;
 $file =~ s|(=[^>]+?)\+|\1PLUSSIGN|g;
 $file =~ s|(=[^>]+?)_|\1UNDERSCORESIGN|g;
 
+# EXTRACT ONLY THE PART THAT NEEDS EXPANSION
+my ($before, $file, $after) = ($file =~ /(.+)(<body.+?)((?:body>|<div[^>]+type="notes").+)/s);
+#print join("\n------------\n", $before, $file, $after);
+
+# SHORTHAND EXPANSIONS
 
 $file =~ s|\*|<choice><orig></orig><reg>'</reg></choice>|g;
 
@@ -63,10 +71,10 @@ $file =~ s|([A-Z])÷|<choice><seg type="semi-dip">\1</seg><seg type="crit" subty
 $file =~ s|\^([\d])|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toSup">\1</seg></choice>|g;
 
 # GN: added negative lookbehind assertion to keep the conversion idempotent 
-$file =~ s|(?<!\s)\?|<choice><orig></orig><reg> ?</reg></choice>|g;
+$file =~ s|\?(?!</reg>)|<choice><orig></orig><reg> ?</reg></choice>|g;
 # GN: added negative lookbehind assertion to keep the conversion idempotent
 # Also avoid converting ; when it is part of a named entity, e.g. &gt; 
-$file =~ s|(?<!\s);|<choice><orig></orig><reg> ;</reg></choice>|g;
+$file =~ s|;(?!</reg>)|<choice><orig></orig><reg> ;</reg></choice>|g;
 $file =~ s|\{|<choice><orig></orig><reg> :</reg></choice>|g;
 $file =~ s|§|<choice><orig></orig><reg>,</reg></choice>|g;
 $file =~ s|\+|<choice><orig></orig><reg>« </reg></choice>|g;
@@ -86,6 +94,11 @@ $file =~ s|u`|<choice><orig>u</orig><reg>ü</reg></choice>|g;
 
 $file =~ s|%([^±]+)±([^≠]+)≠|<choice><seg type="semi-dip">\1\2</seg><seg type="crit">\1 \2</seg></choice>|g;
 $file =~ s|@([^€]+)€\s([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
+
+# REINSERT THE EXPANDED PART
+$file = join('', $before, $file, $after);
+
+# POST-PROCESSING
 
 # GN: place plus signs back into the document 
 $file =~ s|PLUSSIGN|+|g;

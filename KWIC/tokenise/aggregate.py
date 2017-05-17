@@ -8,6 +8,7 @@ from xml_parser import XMLParser
 class Aggregator(XMLParser):
 
     default_output = u'aggregated.xml'
+    note_order = ['sourceNotes', 'genNotes', 'tradNotes']
 
     def run_custom(self, input_path_list, output_path):
         input_path_list = sorted(input_path_list, key=lambda p: [
@@ -15,11 +16,12 @@ class Aggregator(XMLParser):
         for input_path in input_path_list:
             if os.path.isfile(input_path):
                 self.append_tei(input_path)
+        self.reorder_content()
 
     def append_tei(self, input_path):
         ret = False
 
-        print(input_path)
+        print '\t%s' % input_path
 
         xml_aggregated = self.xml
 
@@ -43,6 +45,44 @@ class Aggregator(XMLParser):
             self.xml = xml_aggregated
 
         return ret
+
+    def reorder_content(self):
+        '''Group all notes by type and move those groups to the end of the document'''
+        print '\tgroup all notes and move them to the end'
+        # grouping
+
+        if self.xml is None:
+            return
+
+        body = self.xml.find('.//body')
+        if body is None:
+            return
+
+        note_groups = {}
+
+        for note_group in body.findall('div[@type="notes"]'):
+            subtype = note_group.attrib.get('subtype')
+
+            if subtype in note_groups:
+                # copy notes to the first note group we found
+                note_groups[subtype].extend(list(note_group))
+                # remove note group
+                # (we assume there's no tail)
+                body.remove(note_group)
+            else:
+                note_groups[subtype] = note_group
+
+        # move all note groups at the end of the body
+        def get_group_order(note_group):
+            ret = 1000
+            subtype = note_group.attrib.get('subtype')
+            if subtype in self.note_order:
+                ret = self.note_order.index(subtype)
+            return ret
+
+        body.extend(sorted(note_groups.values(), key=get_group_order))
+        for note_group in note_groups.values():
+            body.remove(note_group)
 
 
 Aggregator.run()

@@ -12,6 +12,11 @@ class ParseAll(XMLParser):
     suppressed_output = True
     default_output = u''
 
+    def reset(self):
+        ret = super(ParseAll, self).reset()
+        self.para_string = ''
+        return ret
+
     def run_custom(self, input_path_list, output_path):
 
         # aggregate
@@ -23,9 +28,11 @@ class ParseAll(XMLParser):
 
         # convert shorthands
         print '-' * 20
+        thisdir = os.path.dirname(os.path.relpath(__file__, '.'))
+        perlpath = os.path.join(thisdir, 'convert.perl')
         outfiles += [output_path + 'converted.xml']
-        command = 'perl convert.perl < %s > %s' %\
-                  (outfiles[-2], outfiles[-1])
+        command = 'perl "%s" < %s > %s' %\
+                  (perlpath, outfiles[-2], outfiles[-1])
         print command
         os.system(command)
 
@@ -41,7 +48,13 @@ class ParseAll(XMLParser):
         outfiles += [output_path + 'kwic.xml']
         from kwic import KWICList
         options = [outfiles[-2]] + ['-o', outfiles[-1]]
+        if self.para_string:
+            options += ['-r', self.para_string]
         KWICList.run(options)
+
+    def set_paragraphs(self, para_string):
+        self.para_string = para_string
+        return super(ParseAll, self).set_paragraphs(para_string)
 
 
 ParseAll.run()

@@ -47,9 +47,9 @@ class KWICList(XMLParser):
             print 'ERROR: please provide a single input file'
         else:
             for input_path in input_path_list:
-                self.reset()
                 self.read_xml(input_path)
                 self.generate_list()
+                break
 
     def is_stop_word(self, token):
         '''Return True if <token> in self.stop_words or doesn't contain a letter'''
@@ -109,6 +109,10 @@ class KWICList(XMLParser):
 
         for div in self.xml.findall('.//div[head]'):
             parentid = div.attrib.get(self.expand_prefix('xml:id'))
+
+            if not self.is_para_in_range(parentid):
+                continue
+
             # for element in div.findall('head[@type="rubric"]',
             # './/seg[@type]'):
             for filter in ['head[@type="rubric"]', './/seg[@type]']:

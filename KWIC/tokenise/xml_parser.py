@@ -16,6 +16,7 @@ class XMLParser(object):
         self.reset()
 
     def reset(self):
+        self.paragraphs = []
         self.namespaces_implicit = {
             'xml': 'http://www.w3.org/XML/1998/namespace',
         }
@@ -40,7 +41,7 @@ class XMLParser(object):
         print 'python %s %s' % (script_file, ' '.join(args))
 
         if len(args) < 1:
-            print 'Usage: {} INPUT.xml [-o OUTPUT.xml]'.format(os.path.basename(script_file))
+            print 'Usage: {} INPUT.xml [-o OUTPUT.xml] [-r PARA_RANGE]'.format(os.path.basename(script_file))
             exit()
 
         output_path = cls.default_output
@@ -48,6 +49,10 @@ class XMLParser(object):
         input_path_list = []
         while len(args):
             arg = (args.pop(0)).strip()
+            if arg.strip() == '-r':
+                if len(args) > 0:
+                    arg = args.pop(0)
+                    parser.set_paragraphs(arg)
             if arg.strip() == '-o':
                 if len(args) > 0:
                     arg = args.pop(0)
@@ -68,6 +73,35 @@ class XMLParser(object):
                 print 'WARNING: Nothing to output, please check the input argument (%s)' % ', '.join(input_str)
 
         print 'done'
+
+    def set_paragraphs(self, paragraphs_string=None):
+        ret = []
+
+        if paragraphs_string:
+            # edfr20125_00589 in range '589-614'
+            for paras in paragraphs_string.strip().split(','):
+                paras = paras.split('-')
+                if len(paras) < 2:
+                    paras[-1] = paras[0]
+                ret += range(int(paras[0]), int(paras[-1]) + 1)
+
+        self.paragraphs = ret
+
+        return ret
+
+    def is_para_in_range(self, parentid):
+        ret = False
+
+        if not self.paragraphs:
+            return True
+
+        if parentid:
+            # edfr20125_00589 in range '589-614'
+            para = re.findall('\d+$', parentid)
+            if para:
+                ret = int(para[0]) in self.paragraphs
+
+        return ret
 
     @classmethod
     def get_expanded_paths(cls, path):
