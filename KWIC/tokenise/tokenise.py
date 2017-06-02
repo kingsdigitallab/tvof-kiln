@@ -112,7 +112,7 @@ class TEITokeniser(XMLParser):
                 if reg is not None and reg.text:
                     apostrophe = reg.text[-1] in ["'"]
                     punctuation = 1 and not re.search(
-                        ur'(?musi)\w', reg.text)
+                        ur'(?musi)[\w·]', reg.text)
                     if apostrophe or punctuation:
                         # scind it after
                         text = self.token_end + self.token_start + text
