@@ -109,14 +109,22 @@ class TEITokeniser(XMLParser):
             for reg in [el.find('reg'), el.find('seg[@type="crit"]')]:
                 # special case for apostrophe, it is part of the previous
                 # token but not part of the text coming after
+                # qu<choice><orig></orig><reg>'</reg></choice>eles
+                #
+                # <choice><orig>entreamoient</orig><reg>entre'amoient</reg></choice>
+                # <choice><orig>entrespargnoient</orig><reg>entr'espargnoient</reg></choice>
                 if reg is not None and reg.text:
                     apostrophe = reg.text[-1] in ["'"]
+                    # any character in reg?
                     punctuation = 1 and not re.search(
                         ur'(?musi)[\w·]', reg.text)
                     if apostrophe or punctuation:
                         # scind it after
+                        # => qu<choice><orig></orig><reg>'</reg></choice></w><w>eles
                         text = self.token_end + self.token_start + text
                     if punctuation and not apostrophe and not list(reg):
+                        # => <seg type="semi-dip"></seg><w><seg type="crit">.</seg></w></choice></seg>
+                        # => <seg type="semi-dip"></seg><w><seg type="crit"> !</seg></w></choice></seg>
                         if el_prev is not None:
                             # scind it before
                             text_prev = getattr(

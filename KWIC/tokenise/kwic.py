@@ -86,9 +86,7 @@ class KWICList(XMLParser):
         print '\t capitalise toUpper'
         for element in self.xml.findall('.//*[@subtype="toUpper"]'):
             element.text = (element.text or ur'').upper()
-            print '*'
             for el in element.findall('.//*'):
-                print '.'
                 el.text = (el.text or ur'').upper()
                 el.tail = (el.tail or ur'').upper()
 
