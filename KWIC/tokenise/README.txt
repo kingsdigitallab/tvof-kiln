@@ -77,3 +77,11 @@ Q4. How do I generate a KWIC list?
 This will produce a KWIC list xml document from all the tokens found in 
 Fr20125_tokenised.xml.
 
+Q5. How do I do eveything in one go ?
+=====================================
+
+  python doall.py Fr20125_part1.xml Fr20125_part2.xml -o prefix
+
+This will produce all the output files described above, all starting with the given prefix.
+
+
