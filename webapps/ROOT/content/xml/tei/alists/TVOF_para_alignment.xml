@@ -69,6 +69,12 @@
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">BR18295</seg>
                                     <seg type="rubric"/>
                                     <seg type="location">absent</seg>
@@ -112,7 +118,17 @@
                                     <seg type="rubric">[no rubric]</seg>
                                     <seg type="location">1ra</seg>
                                     <seg type="note">different para segmentation: new para at
-                                          00001_09, 00001_15, 00001_19, 00001_40</seg></ab>
+                                          00001_09, 00001_15, 00001_19, 00001_40</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Ce est li liures des ansienes estoires 7 dit
+                                          dou comensement dou monde· 7 coment n[ost]re sires fist
+                                          adam·</seg>
+                                    <seg type="location">2ra</seg>
+                                    <seg type="note">further rubric at 3ra before segment 35:
+                                          'Coment li deables dessus adam·'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00003">
                               <ab type="ms_instance" corresp="#edfr20125_00003">
@@ -143,6 +159,12 @@
                                     <seg type="ms_name">BR18295</seg>
                                     <seg type="rubric">[no rubric]</seg>
                                     <seg type="location">2va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t n[ost]re sires parla a adam·</seg>
+                                    <seg type="location">3vb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -176,6 +198,12 @@
                                     <seg type="location">2vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De la biaute adam 7 de sa forme·</seg>
+                                    <seg type="location">4rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00005">
                               <ab type="ms_instance" corresp="#edfr20125_00005">
@@ -206,6 +234,12 @@
                                     <seg type="location">2vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">4rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00006">
                               <ab type="ms_instance" corresp="#edfr20125_00006">
@@ -233,6 +267,13 @@
                                     <seg type="location">3vb</seg>
                                     <seg type="note">Red pied-de-mouche at beginning of para; part
                                           of para 6</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment adam ot ses enfanz 7 en quel
+                                          aage·</seg>
+                                    <seg type="location">4rb</seg>
+                                    <seg type="note"/>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00007">
@@ -301,6 +342,12 @@
                                     <seg type="location">3rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment caym ocist son frere abel</seg>
+                                    <seg type="location">4vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00009">
                               <ab type="ms_instance" corresp="#edfr20125_00009">
@@ -335,6 +382,12 @@
                                     <seg type="location">absent</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">5ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00010">
                               <ab type="ms_instance" corresp="#edfr20125_00010">
@@ -367,6 +420,24 @@
                                     <seg type="location">3rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Dou signe que n[ost]re mist acaym·</seg>
+                                    <seg type="location">5ra</seg>
+                                    <seg type="note">nonsensical reading in rubric, which is
+                                          actually those of para 11</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr 168</seg>
+                                    <seg type="rubric">Coment nostre <unclear reason="illegible"
+                                                >seign</unclear><lb/>la a<corr type="expunctuation"
+                                                >acyn caym· Rubric·</corr>
+                                    </seg>
+                                    <seg type="location">4rb</seg>
+                                    <seg type="note">rubric copied end of column, after two empty
+                                          lines left plus a decorated moulding a line long; the text
+                                          begins 4va</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00011">
                               <ab type="ms_instance" corresp="#edfr20125_00011">
@@ -382,7 +453,7 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
-                                    <seg type="rubric">Dou dignes q[ue] nostre sires mist
+                                    <seg type="rubric">Dou signes q[ue] nostre sires mist
                                           enkaim</seg>
                                     <seg type="location">5ra</seg>
                                     <seg type="note"/>
@@ -398,6 +469,18 @@
                                     <seg type="ms_name">BR18295</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">3va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">5rb</seg>
+                                    <seg type="note">rubric copied before para 10</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr 168</seg>
+                                    <seg type="rubric">del signe que nostre sires fist a caym·</seg>
+                                    <seg type="location">4vb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -430,6 +513,12 @@
                                     <seg type="location">3va</seg>
                                     <seg type="note">para starts at 00012_02</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t adam ot son fiz seth·</seg>
+                                    <seg type="location">5rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00013">
                               <ab type="ms_instance" corresp="#edfr20125_00013">
@@ -442,8 +531,9 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">de la lignie caym [et] de sa generation</seg>
                                     <seg type="location">6v</seg>
-                                    <seg type="note">Has split §13 into two with rubric 'Or orres
-                                          lageneration cayn [et] sa lignee'</seg>
+                                    <seg type="note">Has split §13 into two (at seg 4, as in Add
+                                          15268) with rubric 'Or orres lageneration cayn [et] sa
+                                          lignee'</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -456,6 +546,14 @@
                                     <seg type="rubric">De la lignee Caym et de sa generacion</seg>
                                     <seg type="location">5ra</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De la ligniee caym 7 de sa generacio[n]</seg>
+                                    <seg type="location">5va</seg>
+                                    <seg type="note">Has split §13 into two (at seg 4, as in Add
+                                          19669) with rubric 'Encores de la lignie cayn 7 de sa
+                                          generacio[n]'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00014">
@@ -481,6 +579,12 @@
                                     <seg type="location">5rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Encores de ce meesmes</seg>
+                                    <seg type="location">5va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00015">
                               <ab type="ms_instance" corresp="#edfr20125_00015">
@@ -504,6 +608,13 @@
                                     <seg type="rubric">Encores auant de ce mesmes·</seg>
                                     <seg type="location">5va</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment lamech ocist caym</seg>
+                                    <seg type="location">5vb</seg>
+                                    <seg type="note">this title reflects the contents of the
+                                          paragraph</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00016">
@@ -531,6 +642,12 @@
                                     <seg type="rubric">De Seth le filz dadam et quelz hoirs en
                                           yssirent</seg>
                                     <seg type="location">5vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De seth le fiz adam 7 de ses hoirs·</seg>
+                                    <seg type="location">6ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -562,6 +679,13 @@
                                     <seg type="location">6ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Por q[uo]i enoch fu rauis 7 ostes de
+                                          terre·</seg>
+                                    <seg type="location">6va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00018">
                               <ab type="ms_instance" corresp="#edfr20125_00018">
@@ -587,6 +711,12 @@
                                     <seg type="rubric">De noe et quelz filz il ot et de leurs
                                           femmes</seg>
                                     <seg type="location">6rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De noe 7 de ses fiz 7 de lor ligniees</seg>
+                                    <seg type="location">6va</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -618,6 +748,13 @@
                                     <seg type="location">6vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t n[os]tre sires comanda anoe q[ui]
+                                          feyst larche·</seg>
+                                    <seg type="location">7ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00020">
                               <ab type="ms_instance" corresp="#edfr20125_00020">
@@ -643,6 +780,12 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">7ra</seg>
                                     <seg type="note">End of preceding paragraph</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment noe entra en larche</seg>
+                                    <seg type="location">7rb</seg>
+                                    <seg type="note"/>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00021">
@@ -670,6 +813,13 @@
                                     <seg type="location">7ra</seg>
                                     <seg type="note">Miniature</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">7rb</seg>
+                                    <seg type="note">abriged. Incipit: 'Il mist dedenz les oiseaus 7
+                                          les bestes'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00022">
                               <ab type="ms_instance" corresp="#edfr20125_00022">
@@ -694,6 +844,13 @@
                                     <seg type="location">7ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">7rb</seg>
+                                    <seg type="note">incipit: 'n[ost]re sires li dist· Noe entre en
+                                          larche'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00023">
                               <ab type="ms_instance" corresp="#edfr20125_00023">
@@ -709,16 +866,23 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
-                                    <seg type="rubric">[[no rubric; incipit: Entres fu noes enlarche
-                                          si chon uos oer il et toz sa masnee]]</seg>
+                                    <seg type="rubric">"</seg>
                                     <seg type="location">6va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">[[no rubric; incipit: Entres fu noes enlarche
+                                          si chon uos oer il et toz sa masnee]]</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
                                     <seg type="rubric">Comme les eaues crure[n]t</seg>
                                     <seg type="location">7rb</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">7rb</seg>
+                                    <seg type="note">incipit: 'Noe entre en larche· toi 7 tote ta
+                                          meisnee'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00024">
@@ -744,6 +908,13 @@
                                     <seg type="location">7rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment les aigues crurent 7 abo[n]derent par
+                                          quoi tot fu peri</seg>
+                                    <seg type="location">8ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00025">
                               <ab type="ms_instance" corresp="#edfr20125_00025">
@@ -751,6 +922,8 @@
                                     <seg type="rubric">Si come les aigues abaissere[n]t [et] co[m]
                                           noe enuoia le colon fors delarche ·xxiii·</seg>
                                     <seg type="location">9rb</seg>
+                                    <seg type="note">mistake in rubric; correct reading in Add
+                                          15268</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
@@ -769,7 +942,17 @@
                                     <seg type="rubric">Comme les eaues abaisserent et comme noe
                                           enuoia le coulomb hors de larche</seg>
                                     <seg type="location">7rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">mistake in rubric; correct reading in Add
+                                          15268</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t les eiues abeisseierent 7 noe enuoia
+                                          le corbel forz del arche·</seg>
+                                    <seg type="location">8rb</seg>
+                                    <seg type="note">correct reading in rubric - additional rubric
+                                          before seg 10: 'Coment noe mist le colomb fors del
+                                          arche'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00026">
@@ -778,6 +961,7 @@
                                     <seg type="rubric">Si co[m] noe enuoia autre foiz le colo[n]
                                           q[ue]rre terre ·xxiiii·</seg>
                                     <seg type="location">9va</seg>
+                                    <seg type="note">mistake in rubric</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
@@ -795,6 +979,13 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">7vb</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">8va</seg>
+                                    <seg type="note">incipit: 'Adonc ate[n]di noe autres ·vii·
+                                          iors'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00027">
@@ -822,6 +1013,13 @@
                                     <seg type="location">7vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t n[ost]re sires fist isir noe del
+                                          arche 7 le benoy·</seg>
+                                    <seg type="location">8va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00028">
                               <ab type="ms_instance" corresp="#edfr20125_00028">
@@ -845,9 +1043,19 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
-                                    <seg type="rubric"/>
-                                    <seg type="location"/>
+                                    <seg type="rubric">Comme n[ost]re seig[nor] donna sa benediction
+                                          a noe</seg>
+                                    <seg type="location">8ra</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">8vb</seg>
+                                    <seg type="note">incipit: 'Qua[n]t n[ost]re sires ot ensi parle
+                                          anoe'. Additional rubric at seg 9, rubric: 'Delaliance
+                                          q[ue] n[ost]re fist anoe delarc qui encores pert en lair'
+                                          (sic!)</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00029">
@@ -870,9 +1078,16 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
-                                    <seg type="rubric"/>
-                                    <seg type="location"/>
+                                    <seg type="rubric">Pour quoy larc apparut es nuef du ciel</seg>
+                                    <seg type="location">8rb</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">8vb</seg>
+                                    <seg type="note">abridged - incipit: 'Et por ce paert encores
+                                          larc amont ou ciel'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00030">
@@ -896,8 +1111,9 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
-                                    <seg type="rubric"/>
-                                    <seg type="location"/>
+                                    <seg type="rubric">De la destruction du mo[n]se p[re]s
+                                          parlero[m]s</seg>
+                                    <seg type="location">8ra</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -906,6 +1122,13 @@
                                           auenues·</seg>
                                     <seg type="location">25vb</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">8vb</seg>
+                                    <seg type="note">incipit: 'Ensi come uos oes fu tot le monde
+                                          destruit ensemble·'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00031">
@@ -937,8 +1160,16 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
+                                    <seg type="rubric">Cy parle cellui qui fist ce liure· et
+                                          enseigne de laissier le mal afaire</seg>
+                                    <seg type="location">8vb</seg>
+                                    <seg type="note">copied as prose, with verses divided by
+                                          midpoints</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
                                     <seg type="rubric"/>
-                                    <seg type="location"/>
+                                    <seg type="location">Absent</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -969,6 +1200,13 @@
                                     <seg type="location">7vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t noe pla[n]ta la uigne 7 but leuin 7
+                                          fu yures·</seg>
+                                    <seg type="location">9ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00033">
                               <ab type="ms_instance" corresp="#edfr20125_00033">
@@ -989,6 +1227,13 @@
                                     <seg type="rubric">Si come noe maudist son fils cam porce qui la
                                           uoit ris desamesceance·</seg>
                                     <seg type="location">8ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t 7 porquoi noe maudist son fiz
+                                          cain·</seg>
+                                    <seg type="location">9rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -1012,6 +1257,13 @@
                                     <seg type="location">8ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">9rb</seg>
+                                    <seg type="note">Incipit: 'Et por ceste auenture de noe qui ensi
+                                          se descuri portrop boiure'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00035">
                               <ab type="ms_instance" corresp="#edfr20125_00035">
@@ -1030,6 +1282,12 @@
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">Denoe q[ua]nt trespasa deceste uie</seg>
                                     <seg type="location">8ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment noe trespassa de cest siecle·</seg>
+                                    <seg type="location">9va</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -1051,6 +1309,13 @@
                                     <seg type="rubric">La deuisse dou monde qui est e[n] trois
                                           p[ar]ties</seg>
                                     <seg type="location">8ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Come[n]t les aigues sostienent la
+                                          terre·</seg>
+                                    <seg type="location">9va</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -1295,9 +1560,9 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
-                                    <seg type="rubric">[[no rubric]]</seg>
-                                    <seg type="location">[[no location]]</seg>
-                                    <seg type="note">Absent</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -3928,7 +4193,7 @@
                         <div type="alignment" xml:id="fr20125_00167">
                               <ab type="ms_instance" corresp="#edfr20125_00167">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">de rececam qui ot ·ii· fills de sa feme tot
+                                    <seg type="rubric">de rebecam qui ot ·ii· fills de sa feme tot
                                           ensamble</seg>
                                     <seg type="location">40ra</seg>
                                     <seg type="note">As Coker Joslin (p. 312) notes 'de sa feme' in
@@ -3984,7 +4249,13 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Des muances dou regne de grece dont arrches
                                           fu la premeiere seignorie</seg>
-                                    <seg type="location">28v</seg>
+                                    <seg type="location">28vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Des muances dou regne de grece</seg>
+                                    <seg type="location">35ra</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -3992,6 +4263,13 @@
                                     <seg type="rubric">Des muances dou regne degresse dont arges fu
                                           la primeraine seignorie</seg>
                                     <seg type="location">25va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Rennes2331</seg>
+                                    <seg type="rubric">Des mutacions du royaume de grece· dont arges
+                                          fut la p[re]miere seignorie</seg>
+                                    <seg type="location">41rb[vue 86-87]</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -4193,6 +4471,12 @@
                                     <seg type="location">26va</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Por quoi ysaac ala en bersabee</seg>
+                                    <seg type="location">36ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00179">
                               <ab type="ms_instance" corresp="#edfr20125_00179">
@@ -4214,7 +4498,6 @@
                                     <seg type="location">26va</seg>
                                     <seg type="note"/>
                               </ab>
-
                         </div>
                         <div type="alignment" xml:id="fr20125_00180">
                               <ab type="ms_instance" corresp="#edfr20125_00180">
@@ -4461,6 +4744,13 @@
                                     <seg type="location">27vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Por quoi iacob parti de son pere 7 de sa
+                                          mere·</seg>
+                                    <seg type="location">38ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00190">
                               <ab type="ms_instance" corresp="#edfr20125_00190">
@@ -4483,6 +4773,13 @@
                                     <seg type="location">28ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment esau prist afeme lafille ysmael son
+                                          oncle·</seg>
+                                    <seg type="location">36va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00191">
                               <ab type="ms_instance" corresp="#edfr20125_00191">
@@ -4501,6 +4798,12 @@
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">De iacob q[ue] se p[ar]ti debersabee</seg>
                                     <seg type="location">28ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment iacob se parti de bersabee</seg>
+                                    <seg type="location">36rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -5059,6 +5362,20 @@
                                     <seg type="location">30va</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Dijon562</seg>
+                                    <seg type="rubric">Coment laban atai[n]st iacob· [et]coment il
+                                          quist [et] cercha ces dex</seg>
+                                    <seg type="location">36vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">KBR10175</seg>
+                                    <seg type="rubric">Comen laban a tainst iacob· [et] coment il
+                                          quist [et] sercha ses diex·</seg>
+                                    <seg type="location">57rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00217">
                               <ab type="ms_instance" corresp="#edfr20125_00217">
@@ -5113,8 +5430,8 @@
                         <div type="alignment" xml:id="fr20125_00219">
                               <ab type="ms_instance" corresp="#edfr20125_00219">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Sico[m] iacob fu reconfortes p[ar] les
-                                          angeles de la poor desau·</seg>
+                                    <seg type="rubric">sico[m] iacob fu reconfortes p[ar] les
+                                          angeles dela poor desau·</seg>
                                     <seg type="location">50vb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -8688,7 +9005,7 @@
                         <div type="alignment" xml:id="fr20125_00385">
                               <ab type="ms_instance" corresp="#edfr20125_00385">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] par maintes t[er]res or adonques
+                                    <seg type="rubric">Q[ue] par maintes t[er]res ot adonques
                                           g[ra]ns pestilences</seg>
                                     <seg type="location">86va-86vb</seg>
                                     <seg type="note"/>
@@ -8842,6 +9159,19 @@
                                     <seg type="note">Puzzle initial and 2-compartment
                                           miniature</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Ci comence lestoire de thebes·</seg>
+                                    <seg type="location">75va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">Ci comensse de tebes lag[ra]ns come[n]t ele
+                                          fu destruite</seg>
+                                    <seg type="location">47ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00394">
                               <ab type="ms_instance" corresp="#edfr20125_00394">
@@ -8863,6 +9193,20 @@
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">1ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">47ra</seg>
+                                    <seg type="note">incipit: 'Q[ua]nt li rois lauins entendit ceste
+                                          p[ar]olle il sen m[er]ueiloit'</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que le rei laius comanda son fiz a
+                                          occirre</seg>
+                                    <seg type="location">76ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -8888,6 +9232,13 @@
                                     <seg type="location">1ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que li ueneor le roi polib[us] trouere[n]t
+                                          lenfa[n]t</seg>
+                                    <seg type="location">76ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00396">
                               <ab type="ms_instance" corresp="#edfr20125_00396">
@@ -8911,6 +9262,13 @@
                                     <seg type="location">1r</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">76rb</seg>
+                                    <seg type="note">Incipit: 'Ensi come uos oies fu nes edippus 7
+                                          noris par g[ra]nt diligence·'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00397">
                               <ab type="ms_instance" corresp="#edfr20125_00397">
@@ -8931,6 +9289,12 @@
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">1r</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que edippus cuidoit estre fiz le roi·</seg>
+                                    <seg type="location">76rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -9339,7 +9703,7 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
-                                    <seg type="rubric">De la rant dolir quil demenerent</seg>
+                                    <seg type="rubric">De la grant dolor quil demenerent</seg>
                                     <seg type="location">60v</seg>
                                     <seg type="note"/>
                               </ab>
@@ -13167,6 +13531,15 @@
                                     <seg type="location">81v</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">Li q[ue]l p[ri]strent port p[ri]miers
+                                          deua[n]t t[ro]ie 7 [com]ment agameno[n] p[ri]a m[o]lt
+                                          achiles 7 les aut[re]s baro[n]s dector ocir·</seg>
+                                    <seg type="location">63ra</seg>
+                                    <seg type="note">rubrics summarizes those of para 546 and
+                                          549</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00546">
                               <ab type="ms_instance" corresp="#edfr20125_00546">
@@ -13182,6 +13555,20 @@
                                           82r] deuant troie</seg>
                                     <seg type="location">81v</seg>
                                     <seg type="note">End of rubric and start of para on f. 82r</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63ra</seg>
+                                    <seg type="note">Incipit: 'q[ue] ueist la g[ra]ns moltece des
+                                          nes q[ue] sor le mer estoie[n]t'</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Li q[ue]l grex alerent deua[n]t por prendre
+                                          prot premerainement·</seg>
+                                    <seg type="location">11vb</seg>
+                                    <seg type="note"/>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00547">
@@ -13200,6 +13587,19 @@
                                     <seg type="location">82r</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location"/>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63rb</seg>
+                                    <seg type="note">Incipit: 'Ensi come uos oiez uenoient les nes 7
+                                          prokerent m[o]lt durem[en]t troye'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00548">
                               <ab type="ms_instance" corresp="#edfr20125_00548">
@@ -13214,6 +13614,20 @@
                                     <seg type="rubric">Que gaires ne laissierent litroien les
                                           grezois seiorner</seg>
                                     <seg type="location">82r</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63rb</seg>
+                                    <seg type="note">Incipit: 'ale[n]demmain q[ue] laube fu creue
+                                          refist ector apareiles ses iens'</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Dijon 562</seg>
+                                    <seg type="rubric">Coment les troyens ne lessierent gaires
+                                          seiorner les grezois quis q[ui]l furent ariues·</seg>
+                                    <seg type="location">95ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -13232,6 +13646,14 @@
                                     <seg type="location">82v</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63va</seg>
+                                    <seg type="note">Incipit: '7 au ior q[ue]lla trieue fu faillie
+                                          orent tantost ordenes les batailles 7 bien
+                                          apareiles'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00550">
                               <ab type="ms_instance" corresp="#edfr20125_00550">
@@ -13248,6 +13670,13 @@
                                     <seg type="location">82v</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63vb</seg>
+                                    <seg type="note">Incipit: 'Cant ui[n]t au maiti[n] Hector paris
+                                          eneas 7 eli autre amenerentlor batailes'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00551">
                               <ab type="ms_instance" corresp="#edfr20125_00551">
@@ -13262,6 +13691,14 @@
                                     <seg type="rubric">Que m[o]lt iot occis des hauz ba·rons·</seg>
                                     <seg type="location">82v</seg>
                                     <seg type="note">Para starts at top of f. 83r</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63vb</seg>
+                                    <seg type="note">Incipit: 'Mes q[ua]nt uint ala maitinee sen
+                                          retorna akilles 7 diomedes por les conroys
+                                          ordene[er]'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00552">
@@ -13279,6 +13716,14 @@
                                     <seg type="location">83r</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">63vb</seg>
+                                    <seg type="note">Incipit: 'Ensi passa lanouis 7 q[ua]nt uint
+                                          alendemai[n] maiti[n] il coma[n]da q[ue]lle batailles
+                                          fusent ordenes'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00553">
                               <ab type="ms_instance" corresp="#edfr20125_00553">
@@ -13295,6 +13740,20 @@
                                           de·iii·anz [et]sidura·xxx·iors</seg>
                                     <seg type="location">83r</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">64va</seg>
+                                    <seg type="note">between para 552 and 554 we find a prose and
+                                          verse interpolations. The verse passage (dialogue between
+                                          Hector and Achilles is drawn from the Roman de Troie). In
+                                          the context of the prose passage, after the verse section,
+                                          we find a rubric summarizing those of 555 and 556 in
+                                          20125: 'Q[ue] la fame hector[r] e[n]dorma[n]t la uisio[n]
+                                          do[n]t ele fu exfree 7 [com]m[en]t hector[r] fist
+                                          m[er]uoiles q[ua]nt il fu uenuz e[n] la bataille 7 q[ue]
+                                          achiles locist·'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00554">
@@ -13933,12 +14392,26 @@
                                     <seg type="note">Foliate initial</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Fr9682</seg>
+                                    <seg type="rubric">Ci comence de eneas qui se parti de troies et
+                                          coment il ala en ytaille~~~</seg>
+                                    <seg type="location">133va</seg>
+                                    <seg type="note">Foliate initial - 4 lines h</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Fr17177</seg>
                                     <seg type="rubric">Ci co[m]mence de Eneas co[m]ment il se
                                           p[ar]ti detroie [et] [com]ment il ene ala en ytale p[ar]
                                           le [com]ma[n]dement a ses dieus</seg>
                                     <seg type="location">74rb</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Cy parle deneas qui se parti de troye et
+                                          comment il sen ala en ytallie·</seg>
+                                    <seg type="location">97rb</seg>
+                                    <seg type="note">Miniature featuring Eneas's fleet</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
@@ -13961,7 +14434,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que defriga lefrere eneas fu lasemence des
                                           francois premiere</seg>
-                                    <seg type="location">92v</seg>
+                                    <seg type="location">92vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance"
@@ -14011,6 +14484,13 @@
                                     <seg type="rubric">Que defriga le frere eneas fu lasemence des
                                           francois p[re]miere</seg>
                                     <seg type="location">53rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Co[m]ment de friga le frere eneas yssi la
+                                          p[re]mier[e] seme[n]ce des francois</seg>
+                                    <seg type="location">97rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -14195,10 +14675,17 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr17177</seg>
-                                    <seg type="rubric">Co[m]ment Eneas du agreuez p[ar]
+                                    <seg type="rubric">Co[m]ment Eneas fu agreuez p[ar]
                                           tempeste</seg>
                                     <seg type="location">75ra</seg>
                                     <seg type="note">abbreviated</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Co[m]ment eneas fu agreuez en la mer p[ar] la
+                                          te[m]peste</seg>
+                                    <seg type="location">80ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
@@ -14244,7 +14731,7 @@
                                     <seg type="ms_name">Fr1386</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">44rb</seg>
-                                    <seg type="note">Incipit: '[E?]nde mentre qil ensi sestoient·
+                                    <seg type="note">Incipit: 'E[n] | de mentre qil ensi sestoient·
                                           Eneas monte sor une de ces roches'</seg>
                               </ab>
                               <ab type="ms_instance">
@@ -14275,6 +14762,14 @@
                                     <seg type="location">54rb</seg>
                                     <seg type="note">strongly abbreviated. Incipit: 'Dementierz quil
                                           se haaisoient eneas mont sor une roche'</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">98rb [= vue 118]</seg>
+                                    <seg type="note">Incipit: endementres quils | lasseoient eneas
+                                          monta sur vne roche | pour esgarder sil veuoit nuls de ses
+                                          | compaignons quil auoit perdus en la | mer</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00594">
@@ -14384,7 +14879,8 @@
                                     <seg type="ms_name">Add 15268</seg>
                                     <seg type="rubric"/>
                                     <seg type="location"/>
-                                    <seg type="note">Lacuna of 1(?) folio between 131 and 132?</seg>
+                                    <seg type="note">Lacuna between 131v and 132r (edFr20125: §594,
+                                          13 and §596, 9)</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr168</seg>
@@ -14469,6 +14965,13 @@
                                     <seg type="ms_name">Chantilly726</seg>
                                     <seg type="rubric">Que eneas nesepot tenir de plourer</seg>
                                     <seg type="location">54vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr64</seg>
+                                    <seg type="rubric">Comme[n]t eneas ne se peut tenir de
+                                          plourer</seg>
+                                    <seg type="location">89ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -14616,7 +15119,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que eneas fist aporter deses plus riches
                                           ioiaux deses nes alareine·</seg>
-                                    <seg type="location">95r</seg>
+                                    <seg type="location">95ra</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance"
@@ -14652,7 +15155,7 @@
                                     <seg type="ms_name">Fr168</seg>
                                     <seg type="rubric">coment eneas fist aporter de ses riches
                                           presens ala royne dydo·</seg>
-                                    <seg type="location">139va</seg>
+                                    <seg type="location">138va</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -14660,6 +15163,13 @@
                                     <seg type="rubric">Co[m]ment Eneas fist aporter des plus riches
                                           ioiax deses nes ala roine dydo</seg>
                                     <seg type="location">75vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Que eneas fist aporter de ses nefs de ses
+                                          plus riches joyaux a dido la royne</seg>
+                                    <seg type="location">99va</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -14725,15 +15235,29 @@
                                     <seg type="ms_name">Fr17177</seg>
                                     <seg type="rubric">[material lacuna]</seg>
                                     <seg type="location">76ra</seg>
-                                    <seg type="note">folio has been cutted to take of the miniature,
+                                    <seg type="note">folio has been cutt to take out the miniature,
                                           but the paragraph was most likely missing from this copy
-                                          in a seek of brevity</seg>
+                                          which abbreviates here</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
                                     <seg type="rubric">Que eneas conta alaroine dydo la
                                           d[e]strutio[n] d[e] troie</seg>
                                     <seg type="location">55va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">fr250</seg>
+                                    <seg type="rubric">Que eneas co[n]ta a la Royne dido la
+                                          destruction de troyes·</seg>
+                                    <seg type="location">99vb [= vue 120]</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">fr20126</seg>
+                                    <seg type="rubric">Q[ue] eneas [con]te ala roine dydo la
+                                          destrucio[n] d[e] troie· [chapitre] c xv v·</seg>
+                                    <seg type="location">111va [= vue 114]</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -15019,7 +15543,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">97r</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">no rubric at the end of the para</seg>
                               </ab>
                               <ab type="ms_instance"
                                     corresp="#edRoyal20D1_00541_13 #edRoyal20D1_00541_15">
@@ -15050,7 +15574,7 @@
                                     <seg type="ms_name">Add 15268</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">135ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">no rubric at the end of the para</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr168</seg>
@@ -15214,9 +15738,8 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">97v</seg>
                                     <seg type="note">rubric missing, text copied without
-                                          interruption. the paragraph end in 19669 at 97va, 5th
-                                          line, but the account of 20125 is much more
-                                          developed</seg>
+                                          interruption. The paragraph ends in 19669 at 97vb, but the
+                                          account of 20125 is much more developed</seg>
                               </ab>
                               <ab type="ms_instance"
                                     corresp="#edRoyal20D1_00543_09 #edRoyal20D1_00543_25">
@@ -15244,12 +15767,11 @@
                                     <seg type="location">136ra</seg>
                                     <seg type="note">1st additional rubric: 'Ci parolle de
                                           dedalus·'(136rb), incipit: 'Uoirs fu el comensement q[ue]
-                                          minos fu roi de crete·' [=xml:id="edfr20125_00608_08"];
-                                          2nd additional rubric: 'Coment cil dathenes estoient
-                                          subget a cil de crete·' (136vb), incipit: 'En cel tens
-                                          estoient cil dathenes si
-                                          subget'[=xml:id="edfr20125_00608_14"]. Half-page miniature
-                                          (136v).</seg>
+                                          minos fu roi de crete·' [= edFr20125 §608_08"]; 2nd
+                                          additional rubric: 'Coment cil dathenes estoient subget a
+                                          cil de crete·' (136vb), incipit: 'En cel tens estoient cil
+                                          dathenes si subget'[= edFr20125 §608_14"]. Half-page
+                                          miniature (136v).</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr168</seg>
@@ -15291,14 +15813,18 @@
                                           mer por la dolor deson fil quil cuidoit q[ui]l fust
                                           morz</seg>
                                     <seg type="location">98r</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Ends with escape of Dedalus, does not include
+                                          Fr20125's alternative account of the Minotaur and escape
+                                          of Dedalus.</seg>
                               </ab>
                               <ab type="ms_instance"
                                     corresp="#edRoyal20D1_00543_26 #edRoyal20D1_00543_29">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">201v</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Ends with escape of Dedalus, does not include
+                                          Fr20125's alternative account of the Minotaur and escape
+                                          of Dedalus.</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Rennes</seg>
@@ -15312,7 +15838,10 @@
                                     <seg type="ms_name">Fr1386</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">48vb</seg>
-                                    <seg type="note">Abbreviated in relation to fr. 20125</seg>
+                                    <seg type="note">Same abbreviated account as Add19669; ends with
+                                          escape of Dedalus and does not include Fr20125's
+                                          alternative account of the Minotaur and the escape of
+                                          Dedalus.</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -15320,14 +15849,16 @@
                                           la doulor so[n] fiz q[ui]l cuidoit q[ui]l eust perdu la
                                           uie·</seg>
                                     <seg type="location">137rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Includes both accounts of the Minotaur and
+                                          Dedalus as found in Fr20125.</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr168</seg>
                                     <seg type="rubric">coment egeus se leissa choier en lamer pour
                                           la dolor de son filz quil cuidoit que fust mort·</seg>
                                     <seg type="location">144va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Includes both accounts of the Minotaur and
+                                          Dedalus as found in Fr20125.</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr17177</seg>
@@ -15335,14 +15866,20 @@
                                           enlamer pot la dolor deson fil q[ui]l cuidoit q[ui]l fust
                                           ocis·</seg>
                                     <seg type="location">77rb</seg>
-                                    <seg type="note">strongly abbreviated</seg>
+                                    <seg type="note">Same abbreviated account as Add19669; ends with
+                                          escape of Dedalus and does not include Fr20125's
+                                          alternative account of the Minotaur and the escape of
+                                          Dedalus.</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
                                     <seg type="rubric">Que lirois egeus selaissa cheoir enlam[er]
                                           per ladolor desonf fil quil cuidoit quil fust mors</seg>
                                     <seg type="location">58vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Same abbreviated account as Add19669; ends with
+                                          escape of Dedalus and does not include Fr20125's
+                                          alternative account of the Minotaur and the escape of
+                                          Dedalus.</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00610">
@@ -15435,7 +15972,7 @@
                                     corresp="#edRoyal20D1_00544_08 #edRoyal20D1_00544_20">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
-                                    <seg type="location">202r</seg>
+                                    <seg type="location">202ra</seg>
                                     <seg type="note">Bas-de-page illustration</seg>
                               </ab>
                               <ab type="ms_instance">
@@ -15533,8 +16070,8 @@
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr17177</seg>
                                     <seg type="rubric"/>
-                                    <seg type="location">77va</seg>
-                                    <seg type="note">absent</seg>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
@@ -15684,8 +16221,9 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que li rois latins enuoia a eneas des sue[n]s
                                           presenz</seg>
-                                    <seg type="location">99v</seg>
-                                    <seg type="note"/>
+                                    <seg type="location">99va</seg>
+                                    <seg type="note">Abridged: explicit: si li conterent tout
+                                          lafaire· dom[sic?] eneas ot m[o]lt grant ioie·</seg>
                               </ab>
                               <ab type="ms_instance"
                                     corresp="#edRoyal20D1_00548_01 #edRoyal20D1_00548_03">
@@ -15706,7 +16244,9 @@
                                     <seg type="ms_name">Fr1386</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">50va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Incipit (line 5): q[ua]nt li Rois latins ot
+                                          ensi dit il fist amener... (version similar to
+                                          Add19669)</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -15727,7 +16267,7 @@
                                     <seg type="rubric">Co[m] li rois latins e[n]uoia a Eneas deses
                                           presenz</seg>
                                     <seg type="location">77va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Incipit 77vb line 1</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
@@ -15735,6 +16275,13 @@
                                           p[re]senz</seg>
                                     <seg type="location">60ra</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr64</seg>
+                                    <seg type="rubric">Comment le Roy latin enuoya a eneas de ses
+                                          riches pris</seg>
+                                    <seg type="location">93va</seg>
+                                    <seg type="note">Incipit 93vb line 1</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00616">
@@ -15750,7 +16297,10 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">99va</seg>
                                     <seg type="note">rubric missing, text copied without
-                                          interruption (paragraph starting at 99va, 24th line)</seg>
+                                          interruption (paragraph starting at 99va, 24th line).
+                                          Incipit: la nouele fu m[o]lt tost espandue par tout
+                                          lombaride 7 fu no[n]cie a turnus... Notice that the NI
+                                          (616.1) is gone.</seg>
                               </ab>
                               <ab type="ms_instance"
                                     corresp="#edRoyal20D1_00548_04 #edRoyal20D1_00548_24">
@@ -15770,7 +16320,10 @@
                                     <seg type="ms_name">Fr1386</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">50va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Incipit (line 5): q[ua]nt li Rois | latins ot
+                                          ensi dit il fist amener C· cheuaus / Explicit: 7 si
+                                          uindrent tuit lies alor segnor 7 li [con]terent tut
+                                          laffaire dont· Heneas esoit m[o]lt lies</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -15800,6 +16353,14 @@
                                     <seg type="note">Incipit: 'La nouelle fu tost espandue partoute
                                           lombardie [et] fu noncie aturnus'</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr64</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">93vb</seg>
+                                    <seg type="note">Incipit 93vb, after gold pied de mouche: La
+                                          nouuelle fut tost espandue p[ar] la contree de
+                                          lombardie</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00617">
                               <ab type="ms_instance" corresp="#edfr20125_00617">
@@ -15814,7 +16375,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que turn[us] manda ses genz por chacier eneas
                                           de la t[er]re</seg>
-                                    <seg type="location">100r</seg>
+                                    <seg type="location">100ra</seg>
                                     <seg type="note"/>
                               </ab>
 
@@ -16066,6 +16627,14 @@
                                     <seg type="location">60vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Que turnus [104rb] assailli le chastel ou
+                                          eneas auoit sa geent laissiee·</seg>
+                                    <seg type="location">104ra</seg>
+                                    <seg type="note">The rubric starts at 104ra but finishes at
+                                          104rb</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00621">
                               <ab type="ms_instance" corresp="#edfr20125_00621">
@@ -16214,7 +16783,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que Nisus [et] erialus issirent dou chastel
                                           si enterent es tentes</seg>
-                                    <seg type="location">101r</seg>
+                                    <seg type="location">101ra</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance"
@@ -16383,7 +16952,7 @@
                                     <seg type="rubric">que turnus fist couper les testes a nisus et
                                           aeurialus et metre sur ij· lances·</seg>
                                     <seg type="location">151va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Same error as Add15268</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr17177</seg>
@@ -16477,7 +17046,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que eneas uint [et] secourut ses homes·</seg>
                                     <seg type="location">102r</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">First part much abbreviated</seg>
                               </ab>
                               <ab type="ms_instance" corresp="#edRoyal20D1_00554">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -16505,6 +17074,13 @@
                                     <seg type="rubric">Coment eneas reuint a sa gent q[ui] assegie
                                           estoie[n]t·</seg>
                                     <seg type="location">145rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Dijon</seg>
+                                    <seg type="rubric">Coment eneas uint encezille [et] q[ue]
+                                          g[ra]nt comensa la bataille</seg>
+                                    <seg type="location">122ra</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -16857,7 +17433,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que li rois latins loa· asagent [et]
                                           aturn[us] quil feisse[n]t pas a eneas·</seg>
-                                    <seg type="location">103v</seg>
+                                    <seg type="location">103va</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance" corresp="#edRoyal20D1_00558">
@@ -18340,7 +18916,7 @@
                                     <seg type="rubric">Q[ue] mout ot rome en celui tans de
                                           persecutions en pluisors manieres·</seg>
                                     <seg type="location">188vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">Half prose, half verse moralisation</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
@@ -18388,6 +18964,13 @@
                                     <seg type="location">233rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le conselle malius 7 les fabiniens de
+                                          rome fure[n]t tuit ocis</seg>
+                                    <seg type="location">165rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00675">
                               <ab type="ms_instance" corresp="#edfr20125_00675">
@@ -18410,6 +18993,13 @@
                                     <seg type="location">234ra</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com grant doulor fu demenee arome por ceste
+                                          desconfiture·</seg>
+                                    <seg type="location">165vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00676">
                               <ab type="ms_instance" corresp="#edfr20125_00676">
@@ -18423,7 +19013,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que li concele furent abatu a rome par les
                                           senators delor seignorie</seg>
-                                    <seg type="location">116r</seg>
+                                    <seg type="location">116rb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -18433,6 +19023,13 @@
                                     <seg type="location">234vb</seg>
                                     <seg type="note">Rubric is continued on 235ra, where para
                                           begins; bas-de-page illustration on f. 235r</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment par les senators furent les conselles
+                                          abatus arome de leur seignorie·</seg>
+                                    <seg type="location">166rb</seg>
+                                    <seg type="note"/>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00677">
@@ -18456,6 +19053,13 @@
                                     <seg type="location">235va</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Dun crolle qui adonc fu arome 7 de la faute
+                                          des demences</seg>
+                                    <seg type="location">166vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00678">
                               <ab type="ms_instance" corresp="#edfr20125_00678">
@@ -18476,6 +19080,13 @@
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">236ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que m[o]lt agreuerent le romainz pluisors
+                                          cites dytaille·</seg>
+                                    <seg type="location">167ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -18502,6 +19113,13 @@
                                     <seg type="location">236rb</seg>
                                     <seg type="note">Bas-de-page illustration on 236v</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Come le duc brenius enuay les romai[n]z de la
+                                          bataille·</seg>
+                                    <seg type="location">167rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00680">
                               <ab type="ms_instance" corresp="#edfr20125_00680">
@@ -18515,13 +19133,21 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que li dus branni[us] prist rachat des
                                           roumai[n]s qui foi estoient agarantise oucapitole</seg>
-                                    <seg type="location">117v</seg>
+                                    <seg type="location">117vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">237rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le duc brennius prist rachat des
+                                          romainz q[ui] foy estoient a garantise el
+                                          capitoille·</seg>
+                                    <seg type="location">167vb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -18544,6 +19170,12 @@
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">237rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Ci dit de la destrucion de rome·</seg>
+                                    <seg type="location">168ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -19088,6 +19720,13 @@
                                     <seg type="location">215va</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le roi astiages fist norir cyrus ;
+                                          q[ui]l ot comande a ocirre·</seg>
+                                    <seg type="location">174vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00705">
                               <ab type="ms_instance" corresp="#edfr20125_00705">
@@ -19112,6 +19751,13 @@
                                     <seg type="location">215vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment cyrus q[ui]st genz 7 ayes por tolis au
+                                          roi so[n] regne·</seg>
+                                    <seg type="location">175rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00706">
                               <ab type="ms_instance" corresp="#edfr20125_00706">
@@ -19133,6 +19779,13 @@
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">216ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que m[o]lt fu g[ra]nt la bataille des genz
+                                          cyrus [et] le roi astiages</seg>
+                                    <seg type="location">175va</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -20576,7 +21229,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">·Coment lirois phelippes [et] ses filz
                                           alixandres des[con]fire[n]t leroi atheas</seg>
-                                    <seg type="location"/>
+                                    <seg type="location">142vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -20586,13 +21239,20 @@
                                     <seg type="location">227vb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr250</seg>
+                                    <seg type="rubric">Comment le Roy phe[elipe] et son fils
+                                          alixandre desconfirent thoas[sic] le Roy de siche</seg>
+                                    <seg type="location">227vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00771">
                               <ab type="ms_instance" corresp="#edfr20125_00771">
                                     <seg type="ms_name">Fr20125</seg>
                                     <seg type="rubric">Q[ue] li rois phelippes renuai ceaus
                                           dathaines·</seg>
-                                    <seg type="location">225va</seg>
+                                    <seg type="location">139ra [= vue 164]</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -21401,7 +22061,8 @@
                                     <seg type="rubric">Q[ue] li rois changa son abit· [et] si ala
                                           ueoir le roi porrus·</seg>
                                     <seg type="location">240va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note"
+                                    /><!-- Colour digitisation duplicates 241v in the place of 240v -->
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
@@ -21943,8 +22604,8 @@
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric"/>
-                                    <seg type="location"/>
-                                    <seg type="note">Absent</seg>
+                                    <seg type="location">Absent</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -23700,7 +24361,8 @@
                                     <seg type="rubric">Q[ue] li senator ne uoudrent mie la
                                           concorde·</seg>
                                     <seg type="location">275va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">6 lines of verse in para presented as
+                                          verse</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
@@ -23720,7 +24382,7 @@
                                     <seg type="rubric">Que par lenorteme[n]t regulus ne uodrent les
                                           senators la pes</seg>
                                     <seg type="location">239va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">2 lines of verse remain</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr1386</seg>
@@ -24755,14 +25417,14 @@
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
-                                    <seg type="rubric">[ABSENT]</seg>
-                                    <seg type="location"/>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
-                                    <seg type="rubric">[ABSENT]</seg>
-                                    <seg type="location"/>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -25476,8 +26138,8 @@
                         <div type="alignment" xml:id="fr20125_00991">
                               <ab type="ms_instance" corresp="#edfr20125_00991">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] liconceles scipio enuoia tos ses
-                                          prisons [et] les conquestes arome·</seg>
+                                    <seg type="rubric">Q[ue] li conceles scipio enuoia tos ses
+                                          prisons [et] les conquestes a rome·</seg>
                                     <seg type="location">298vb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -25565,7 +26227,7 @@
                               <ab type="ms_instance" corresp="#edfr20125_00995">
                                     <seg type="ms_name">Fr20125</seg>
                                     <seg type="rubric">Q[ue] anibal ne se uout herbergier en cartage
-                                          seust p[ar]le a scripio</seg>
+                                          seust p[ar]le a scipio</seg>
                                     <seg type="location">299va</seg>
                                     <seg type="note"/>
                               </ab>
@@ -25610,7 +26272,7 @@
                               <ab type="ms_instance" corresp="#edfr20125_00997">
                                     <seg type="ms_name">Fr20125</seg>
                                     <seg type="rubric">Q[ue] li parlemens ne pot estre acheues ne
-                                          faite la co[n]codre·</seg>
+                                          faite la co[n]corde·</seg>
                                     <seg type="location">300rb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -25640,7 +26302,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que les batailles assamblere[n]t aufriq[ua]nz
                                           [et] des romains</seg>
-                                    <seg type="location">199rb</seg>
+                                    <seg type="location">198rb</seg>
                                     <seg type="note">2-compartment miniature in middle of para</seg>
                               </ab>
                               <ab type="ms_instance">
@@ -25714,10 +26376,38 @@
                                           126v instead of after 198v</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Ci recomence la batailles des
+                                          madoniens<!-- SV sic --> 7 des romainz·</seg>
+                                    <seg type="location">261rb</seg>
+                                    <seg type="note">The rubric has been copied at the very end of
+                                          the column 261rb. Two lines left blank between the end of
+                                          the 'Hannibal/Scipio' subsection, and the 'Macedoniens'
+                                          subsection. F. 261va, big historiated initial ‹A›</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr9682</seg>
+                                    <seg type="rubric">Coment la bataille recomensa des macedoniens
+                                          encontre cil de rome·</seg>
+                                    <seg type="location">270rb</seg>
+                                    <seg type="note">Large foliate initial. In this codex folios are
+                                          numbered in Roman numerals (the same number is copied in
+                                          the r/v. Finally, running titles in the intercolumn space,
+                                          at the top (above the limit lines/justification (specchio
+                                          di scrittura))</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Chantilly726</seg>
                                     <seg type="rubric">Ci comence desmacedonois labataille
                                           en[con]t[re] rome</seg>
                                     <seg type="location">134va</seg>
+                                    <seg type="note">Large foliate initial</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr1386</seg>
+                                    <seg type="rubric">Ensi comence la bataille des aced[e]moniens
+                                          en[con]tre les Romains·</seg>
+                                    <seg type="location">157ra</seg>
                                     <seg type="note">Large foliate initial</seg>
                               </ab>
                               <ab type="ms_instance">
@@ -25731,7 +26421,7 @@
                         <div type="alignment" xml:id="fr20125_01002">
                               <ab type="ms_instance" corresp="#edfr20125_01002">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] liconceles quint[us] flaminius fu
+                                    <seg type="rubric">Q[ue] li conceles quint[us] flaminius fu
                                           enuoies contre les macedoniens·</seg>
                                     <seg type="location">302va</seg>
                                     <seg type="note"/>
@@ -25743,6 +26433,13 @@
                                     <seg type="location">127va</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
                                           126v instead of after 198v</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t le conselle q[ui]ntus fu enuoies
+                                          contre les macedoniens·</seg>
+                                    <seg type="location">261vb</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -25768,6 +26465,13 @@
                                           126v instead of after 198v</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le conselle flaminius desconfist les
+                                          macedonie[n]s en bataille·</seg>
+                                    <seg type="location">262ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">293ra</seg>
@@ -25791,6 +26495,13 @@
                                           126v instead of after 198v</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le roi phelippe 7 le duc nauida de
+                                          lacedemonie: firent pais as romainz·</seg>
+                                    <seg type="location">262rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">293rb</seg>
@@ -25812,6 +26523,13 @@
                                     <seg type="location">128va</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
                                           126v instead of after 198v</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment vne mortel guerre sorst adonc as
+                                          romainz·</seg>
+                                    <seg type="location">262vb</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -25838,6 +26556,13 @@
                                           126v instead of after 198v; para ends on 201ra</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Qui fu cil antiocus q[ui] as romainz sahati
+                                          de bataille·</seg>
+                                    <seg type="location">263ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">294ra</seg>
@@ -25859,6 +26584,12 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">263rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric"/>
                                     <seg type="location"/>
@@ -25878,6 +26609,13 @@
                                     <seg type="rubric">Qui cil furent qui a[pre]s anthioc[us] sother
                                           regnere[n]t</seg>
                                     <seg type="location">201ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Qui furent cil q[ui] apres antiochus soter
+                                          regnerent·</seg>
+                                    <seg type="location">263va</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -25903,6 +26641,17 @@
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">263va</seg>
+                                    <seg type="note">incipit: [263va] Ensi com uos | poes entendre:
+                                          orrent no[m] les rois [263vb] dasie 7 de sire: [...]
+                                          explicit: Car ie ueus | siure<!-- SV sic --> la droite
+                                          uoies des conselles | romainz q[ue] ie uos ai entreprise·
+                                          7 siure lestoire briement· Car m[o]lt | yais afaire ainz
+                                          q[ue]lles soit adroite | fin menee·</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">295rb</seg>
@@ -25922,6 +26671,20 @@
                                     <seg type="rubric">Q[ue] liromai[n] enuoiere[n]t lormesaies
                                           auroi anthioch[us]</seg>
                                     <seg type="location">201rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment les romainz enuoierent leur messages
+                                          au roi</seg>
+                                    <seg type="location">263vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr1386</seg>
+                                    <seg type="rubric">qe li Romain enuoierent messages au Roi
+                                          antihiocus·</seg>
+                                    <seg type="location">295rb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -25948,6 +26711,13 @@
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t les romainz assaillirent les
+                                          eschargaites le roi antiocus·</seg>
+                                    <seg type="location">264rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">296ra</seg>
@@ -25967,6 +26737,13 @@
                                     <seg type="rubric">·Que hannibal [et] scipio assamblere[n]t lor
                                           nes en mer</seg>
                                     <seg type="location">202ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment ha[n]nibal 7 scipio assemblerent leur
+                                          nes en mer a bataille·</seg>
+                                    <seg type="location">264vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -25993,6 +26770,20 @@
                                     <seg type="note">'Tost furent ces nouueles espa[n]dues'</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t la pais fu otroiee aantiocus 7
+                                          ha[n]nibal perdi la uie·</seg>
+                                    <seg type="location">265ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr1386</seg>
+                                    <seg type="rubric">Comant fu antyocus a troie 7 comant Hanibal
+                                          perdi la uie··</seg>
+                                    <seg type="location">160ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">297ra</seg>
@@ -26017,6 +26808,20 @@
                                           ogrant honor deuictoire·'</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment lucius emilius fu uencus 7 ocis en
+                                          espaigne·</seg>
+                                    <seg type="location">265va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr1386</seg>
+                                    <seg type="rubric">qe lucius emulus fu uancus 7 ochis en
+                                          bataille·</seg>
+                                    <seg type="location">160va</seg>
+                                    <seg type="note">End of Rome II segment in Fr 1386</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que lucius emilius fu uaincuz [et] ocis en
                                           bataille·</seg>
@@ -26037,6 +26842,13 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t cil despaigne furent desconfit en la
+                                          mo[n]taigne·</seg>
+                                    <seg type="location">265vb</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26060,6 +26872,17 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">266ra</seg>
+                                    <seg type="note">incipit: [266ra] 7 ado[n]c aussi | ala le
+                                          conselle marcius o m[o]lt g[ra]nt | gent sur les guriyens·
+                                          Car il auoient fait as romainz m[o]lt de maus si come ie
+                                          uos ais dit 7 faisoient encores· Tantost [...] explicit:
+                                          [266ra] dont onq[ue]s un soul neschapa com uos aues ay 7
+                                          ente[n]du arieres·</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">298va</seg>
@@ -26081,6 +26904,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que en cel tens morut le roi de
+                                          macedonie·</seg>
+                                    <seg type="location">266ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">298va</seg>
@@ -26100,6 +26930,19 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment les romai[n]z ore[n]t mainte g[ra]nt
+                                          poine par le porchas le roi perreus<!-- SV sic -->·</seg>
+                                    <seg type="location">266ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Fr9682</seg>
+                                    <seg type="rubric">·</seg>
+                                    <seg type="location">275ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26124,6 +26967,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que m[o]lt de gent noierent au passer la
+                                          dunoe q[ui] ert engelee·</seg>
+                                    <seg type="location">266va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">299ra</seg>
@@ -26143,6 +26993,13 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t le roi perreus desconfi encores les
+                                          romainz·</seg>
+                                    <seg type="location">267ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26166,6 +27023,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t le roi perreus fu desconfit par les
+                                          romainz·</seg>
+                                    <seg type="location">267rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">299vb</seg>
@@ -26185,6 +27049,13 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le concelle paulus emilius otroia pais
+                                          acil de macedoine·</seg>
+                                    <seg type="location">267va</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26207,6 +27078,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le concelle paulus sen ala en
+                                          grece·</seg>
+                                    <seg type="location">267vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">300va</seg>
@@ -26225,6 +27103,13 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment le roi perreus [268ra] fu menes a
+                                          rome</seg>
+                                    <seg type="location">267vb/268ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26248,6 +27133,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De la g[ra]nt ioie q[ui] fu demenee arome dou
+                                          conselle paulus·</seg>
+                                    <seg type="location">268ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">301ra</seg>
@@ -26269,6 +27161,13 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que mau dex auoit la qui seslieessoient
+                                          doccision domes·</seg>
+                                    <seg type="location">268rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">301rb</seg>
@@ -26285,8 +27184,8 @@
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric"/>
-                                    <seg type="location"/>
-                                    <seg type="note">Absent</seg>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26894,8 +27793,8 @@
                         <div type="alignment" xml:id="fr20125_01055">
                               <ab type="ms_instance" corresp="#edfr20125_01055">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lico[n]celes tos nus [et] loies entre
-                                          ses anemis ala porte de numance·</seg>
+                                    <seg type="rubric">Q[ue] lico[n]celes mancinus fu geres tos nus
+                                          [et] loies entre ses anemis ala porte de numance·</seg>
                                     <seg type="location">319va-vb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -26938,7 +27837,7 @@
                         <div type="alignment" xml:id="fr20125_01057">
                               <ab type="ms_instance" corresp="#edfr20125_01057">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] scipio afficanus uint en
+                                    <seg type="rubric">Q[ue] scipio affricanus uint en
                                           espaigne·</seg>
                                     <seg type="location">320rb</seg>
                                     <seg type="note"/>
@@ -26983,7 +27882,7 @@
                         <div type="alignment" xml:id="fr20125_01059">
                               <ab type="ms_instance" corresp="#edfr20125_01059">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Quasses auoit sesile de presecutions
+                                    <seg type="rubric">Quasses auoit sesile de persecutions
                                           adonques</seg>
                                     <seg type="location">320vb</seg>
                                     <seg type="note"/>
@@ -27044,6 +27943,22 @@
                                     <seg type="location">313ra</seg>
                                     <seg type="note">//</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment chascun haut home doit uolentiers
+                                          rendre merite·</seg>
+                                    <seg type="location">277rb</seg>
+                                    <seg type="note">segs 6-28 [verses copied as prose in 20125]
+                                          missing</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">130ra</seg>
+                                    <seg type="note">red paraghraph sign; incipit: 'de ceste
+                                          doctrine dou uailant scipio douroit p[re]nde garde li haut
+                                          baro[n]'</seg>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_01062">
                               <ab type="ms_instance" corresp="#edfr20125_01062">
@@ -27064,6 +27979,20 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">313va</seg>
                                     <seg type="note">/</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location"/>
+                                    <seg type="note">/[absent]</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">130rb</seg>
+                                    <seg type="note">red paragraph sign; incipit: 'A coi puet
+                                          ente[n]dre li haut home doudroit son s[er]iant de randre
+                                          merite'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_01063">
@@ -27443,7 +28372,7 @@
                         <div type="alignment" xml:id="fr20125_01080">
                               <ab type="ms_instance" corresp="#edfr20125_01080">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Lochoisons dela discordance en rome</seg>
+                                    <seg type="rubric">Lochoisons de la discordance en rome</seg>
                                     <seg type="location">326vb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -29299,7 +30228,7 @@
                         <div type="alignment" xml:id="fr20125_01164">
                               <ab type="ms_instance" corresp="#edfr20125_01164">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] porcius cato se uantois/t des proueces
+                                    <seg type="rubric">Q[ue] porcius cato se uantoit des proueces
                                           q[ui]l faisoit par les gens mariu[m]·</seg>
                                     <seg type="location">350rb</seg>
                                     <seg type="note"/>
@@ -29846,7 +30775,7 @@
                         <div type="alignment" xml:id="fr20125_01189">
                               <ab type="ms_instance" corresp="#edfr20125_01189">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] metellus desconfi ortoleuim [et] sa
+                                    <seg type="rubric">Q[ue] metellus desconfi ortoleimm [et] sa
                                           cheualerie·</seg>
                                     <seg type="location">357va</seg>
                                     <seg type="note"/>
@@ -30209,7 +31138,7 @@
                         <div type="alignment" xml:id="fr20125_01206">
                               <ab type="ms_instance" corresp="#edfr20125_01206">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lidus archelaus uint as romains en
+                                    <seg type="rubric">Q[ue] li dus archelaus uint as romains en
                                           aie·</seg>
                                     <seg type="location">362rb</seg>
                                     <seg type="note"/>
@@ -30251,8 +31180,8 @@
                         <div type="alignment" xml:id="fr20125_01208">
                               <ab type="ms_instance" corresp="#edfr20125_01208">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Coment lirois mitridates deguerpi la pais
-                                          quil auoit uiree·</seg>
+                                    <seg type="rubric">Coment li rois mitridates deguerpi la pais
+                                          quil auoit iuree·</seg>
                                     <seg type="location">362va</seg>
                                     <seg type="note">Para begins 362vb</seg>
                               </ab>
@@ -30274,8 +31203,8 @@
                         <div type="alignment" xml:id="fr20125_01209">
                               <ab type="ms_instance" corresp="#edfr20125_01209">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] liconceles lucullus assist le roi
-                                          mitridates la ou lirois auoit une cite assise</seg>
+                                    <seg type="rubric">Q[ue] li conceles lucullus assist le roi
+                                          mitridates la ou li rois auoit une cite assise</seg>
                                     <seg type="location">363ra</seg>
                                     <seg type="note"/>
                               </ab>
@@ -30296,7 +31225,7 @@
                         <div type="alignment" xml:id="fr20125_01210">
                               <ab type="ms_instance" corresp="#edfr20125_01210">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] liconceles lucullus desconfi ceaus qui
+                                    <seg type="rubric">Q[ue] li conceles lucullus desconfi ceaus qui
                                           au roi uenoient en aie</seg>
                                     <seg type="location">363rb</seg>
                                     <seg type="note"/>
@@ -30580,7 +31509,7 @@
                         <div type="alignment" xml:id="fr20125_01223">
                               <ab type="ms_instance" corresp="#edfr20125_01223">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lirois tigranes uint ala merci
+                                    <seg type="rubric">Q[ue] li rois tigranes uint ala merci
                                           pompeii·</seg>
                                     <seg type="location">366va</seg>
                                     <seg type="note"/>
@@ -30626,8 +31555,8 @@
                         <div type="alignment" xml:id="fr20125_01225">
                               <ab type="ms_instance" corresp="#edfr20125_01225">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lirois mit[ri]dates fist enchaucier son
-                                          fill por ocire·</seg>
+                                    <seg type="rubric">Q[ue] li rois mit[ri]dates fist enchaucier
+                                          son fill por ocire·</seg>
                                     <seg type="location">367rb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -30803,8 +31732,8 @@
                         <div type="alignment" xml:id="fr20125_01233">
                               <ab type="ms_instance" corresp="#edfr20125_01233">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] mout g[ra]nt ioie ot adonques
-                                          arome·</seg>
+                                    <seg type="rubric">Q[ue] mout g[ra]nt ioie ot adonques a
+                                          rome·</seg>
                                     <seg type="location">369vb</seg>
                                     <seg type="note"/>
                               </ab>
@@ -30874,7 +31803,7 @@
                         <div type="alignment" xml:id="fr20125_01236">
                               <ab type="ms_instance" corresp="#edfr20125_01236">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lico[n]celes crassus sesmut p[or]
+                                    <seg type="rubric">Q[ue] li co[n]celes crassus sesmut p[or]
                                           [con]querre les turs qui reueloie[n]t</seg>
                                     <seg type="location">370rb</seg>
                                     <seg type="note"/>
@@ -31021,8 +31950,8 @@
                         <div type="alignment" xml:id="fr20125_01243">
                               <ab type="ms_instance" corresp="#edfr20125_01243">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] lirois ariouiustus fu ocis [et] sa gens
-                                          por ce uencue·</seg>
+                                    <seg type="rubric">Q[ue] li rois ariouiustus fu ocis [et] sa
+                                          gens por ce uencue·</seg>
                                     <seg type="location">372vb</seg>
                                     <seg type="note"/>
                               </ab>

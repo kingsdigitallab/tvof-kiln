@@ -31,17 +31,19 @@
                 <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
                 <xsl:variable name="note-type-text">
                     <xsl:choose>
-                        <xsl:when test="$note-type='source'"><xsl:text>Source: </xsl:text></xsl:when>
+                        <xsl:when test="$note-type = 'source'">
+                            <xsl:text>Source: </xsl:text>
+                        </xsl:when>
                         <xsl:otherwise><!-- do nothing --></xsl:otherwise>
-                    </xsl:choose> 
+                    </xsl:choose>
                 </xsl:variable>
-                
+
                 <a data-toggle="{$corresp}">
-                    <sup class="{concat('note tei-', $note-type)}">
-                    </sup>
+                    <sup class="{concat('note tei-', $note-type)}"> </sup>
                 </a>
                 <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-                    <xsl:value-of select="$note-type-text"/><xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+                    <xsl:value-of select="$note-type-text"/>
+                    <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
                     <button class="close-button" data-close="" aria-label="Close note" type="button">
                         <span aria-hidden="true">&#215;</span>
                     </button>
@@ -51,8 +53,85 @@
                 <!-- do nothing -->
             </xsl:otherwise>
         </xsl:choose>
-        
+
     </xsl:template>
+
+    <!-- PC 21 MAR 2017 TEST TEST TEST -->
+    <xsl:template match="tei:body">
+        <xsl:param name="view" tunnel="yes"/>
+        <div class="tei body">
+            <div id="text-conventions">
+                <ul>
+                    
+                    <li>
+                        <span class="notation">
+                            <span class="tei-cb">[999ra]</span>
+                        </span>
+                        <span class="description"> Folio number, side, and column information.</span>
+                    </li>
+                    <xsl:if test="$view = 'interpretive'">
+                        
+                        <li>
+                            <span class="notation">
+                                <a data-toggle="xxx">
+                                    <sup class="note tei-source"/>
+                                </a>
+                            </span>
+                            <span class="description"> Note on sources.</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <a data-toggle="xxx">
+                                    <sup class="note tei-trad"/>
+                                </a>
+                            </span>
+                            <span class="description"> Note on the tradition with variant readings.</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <a data-toggle="xxx">
+                                    <sup class="note tei-gen"/>
+                                </a>
+                            </span>
+                            <span class="description"> General note.</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <span class="tei-corr-text">abc</span>
+                                <a data-toggle="xxx">
+                                    <sup class="tei-corr-popup"/>
+                                </a>
+                            </span>
+                            <span class="description"> Orange text has been corrected; popup shows what the text is in the MS.</span>
+                        </li>
+                        
+                    </xsl:if>
+                    <xsl:if test="$view = 'semi-diplomatic'">
+                        
+                        <li>
+                            <span class="notation">
+                                <span>[abc]</span>
+                            </span>
+                            <span class="description"> Expansion of abbreviation in MS.</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <span class="tei-del">abc</span>
+                            </span>
+                            <span class="description"> Text deleted in MS.</span>
+                        </li>
+                        
+                    </xsl:if>
+                </ul>
+            </div>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <!-- END TEST -->
 
     <xsl:template match="tei:c[@rend = 'R']">
         <span class="tei-initial">
@@ -88,10 +167,19 @@
 
     <xsl:template match="tei:corr" mode="interpretive">
         <xsl:variable name="myID" select="generate-id()"/>
-        <span class="tei-corr-text"><xsl:apply-templates/></span><a data-toggle="{$myID}"><sup class="tei-corr-popup"/></a>
-        
+        <span class="tei-corr-text">
+            <xsl:apply-templates/>
+        </span>
+        <a data-toggle="{$myID}">
+            <sup class="tei-corr-popup"/>
+        </a>
+
         <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            <em>ms.</em><span class="tei-sic-text"><xsl:text> </xsl:text><xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/></span>
+            <em>ms.</em>
+            <span class="tei-sic-text">
+                <xsl:text> </xsl:text>
+                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            </span>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -124,7 +212,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'notes']"/>
-    
+
     <xsl:template match="tei:fw">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
@@ -132,19 +220,20 @@
                 <!-- do nothing -->
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
-                <span class="tei-fw">-[<xsl:if test="@type='quire_no'"><xsl:text>quire number: </xsl:text></xsl:if><xsl:value-of select="."/>]-</span>
+                <span class="tei-fw">-[<xsl:if test="@type = 'quire_no'"
+                        ><xsl:text>quire number: </xsl:text></xsl:if><xsl:value-of select="."
+                    />]-</span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:head[@type = 'rubric']">
         <h4 class="tei-rubric">
-                <xsl:value-of select="number(substring-after(parent::tei:div/@xml:id, '_'))"/>.
-                <xsl:text> </xsl:text>
+            <xsl:value-of select="number(substring-after(parent::tei:div/@xml:id, '_'))"/>. <xsl:text> </xsl:text>
             <xsl:apply-templates/>
         </h4>
     </xsl:template>
-    
+
     <xsl:template match="tei:hi">
         <xsl:choose>
             <xsl:when test="@rend = 'i'">
@@ -226,9 +315,11 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    
+
     <xsl:template match="tei:ref[@type = 'bibliography']">
-        <a href="{@corresp}"><xsl:apply-templates/></a>
+        <a href="{@corresp}">
+            <xsl:apply-templates/>
+        </a>
     </xsl:template>
 
     <xsl:template match="tei:reg" mode="interpretive">
@@ -291,7 +382,7 @@
     <xsl:template match="tei:seg[@type = 'stripFirstLetter']">
         <xsl:value-of select="translate(substring-after(., substring(., 1, 1)), '[]', '')"/>
     </xsl:template>
-    
+
     <xsl:template match="tei:seg[@type = 'rubric' and @xml:id]">
         <span class="tei-rubric">
             <xsl:apply-templates select="@*"/>
@@ -339,15 +430,19 @@
     </xsl:template>
 
     <xsl:template match="tei:sic" mode="semi-diplomatic">
-        <xsl:text> </xsl:text><xsl:apply-templates/>
+        <xsl:text> </xsl:text>
+        <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="tei:unclear">
         <xsl:variable name="myID" select="generate-id()"/>
-        <xsl:apply-templates/><a data-toggle="{$myID}"><sup class="tei-unclear"/></a>
-        
-        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            text unclear <xsl:if test="@reason">due to  <xsl:value-of select="@reason"/></xsl:if>
+        <xsl:apply-templates/>
+        <a data-toggle="{$myID}">
+            <sup class="tei-unclear"/>
+        </a>
+
+        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false"> text unclear
+                <xsl:if test="@reason">due to <xsl:value-of select="@reason"/></xsl:if>
             <button class="close-button" data-close="" aria-label="Close note" type="button">
                 <span aria-hidden="true">&#215;</span>
             </button>
@@ -360,7 +455,7 @@
         </xsl:attribute>
     </xsl:template>
 
-    <xsl:template match="text()[not(ancestor::tei:div[@type='note'])]">
+    <xsl:template match="text()[not(ancestor::tei:div[@type = 'note'])]">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:choose>
             <xsl:when test="$view = 'interpretive'">

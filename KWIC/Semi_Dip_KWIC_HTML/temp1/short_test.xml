@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">TVOF edition fr. 20125_Critical</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>KCL DH laboratory</p>
+                <p>adaptation Simone Ventura</p>
+            </publicationStmt>
+            <sourceDesc>
+                <ab/>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <ab type="version" subtype="semi-diplomatic"/>
+            <ab type="version" subtype="critical"/>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="1" xml:id="edfr20125_00588" n="148rb">
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00588_02">
+                        fee' fie. Fo, fum
+                    </seg>
+                </ab>
+                
+                
+                <ab>
+                    <seg type="5" xml:id="edfr20125_00588_04">
+                        In semi-dip KWIC you should see teh <choice><sic>wrong</sic><corr>correct</corr></choice>
+                    </seg>
+                </ab>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
