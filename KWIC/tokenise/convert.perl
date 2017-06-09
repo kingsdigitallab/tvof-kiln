@@ -68,7 +68,8 @@ $file =~ s|([a-z])£|<choice><seg type="semi-dip">\1</seg><seg type="crit" subty
 $file =~ s|([A-Z])÷|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toLower">\1</seg></choice>|g;
 
 
-$file =~ s|\^([\d])|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toSup">\1</seg></choice>|g;
+#$file =~ s|\^([\d])|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toSup">\1</seg></choice>|g;
+$file =~ s|\^([\d])|<hi rend="sup">\1</hi>|g;
 
 # GN: added negative lookbehind assertion to keep the conversion idempotent 
 $file =~ s|\?(?!</reg>)|<choice><orig></orig><reg> ?</reg></choice>|g;
