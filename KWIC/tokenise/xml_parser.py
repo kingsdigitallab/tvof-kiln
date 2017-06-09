@@ -130,7 +130,7 @@ class XMLParser(object):
         self.namespaces = {
             prefix: uri
             for definition, prefix, uri
-            in re.findall(ur'(xmlns:(\w+)?\s*=\s*"([^"]+)")', xml_string)
+            in re.findall(ur'(xmlns:?(\w+)?\s*=\s*"([^"]+)")', xml_string)
         }
         self.namespaces.update(self.namespaces_implicit)
 
