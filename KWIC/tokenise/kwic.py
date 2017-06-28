@@ -69,19 +69,7 @@ class KWICList(XMLParser):
             raise Exception('Unsupported version %s' % version)
 
         filters = ['del', 'orig', 'seg[@type="semi-dip"]', 'sic', 'pb', 'cb']
-        for filter in filters:
-            c = 0
-            matches = re.findall('^([^\[]*)(\[.*\])?', filter)
-            tag, condition = matches[0]
-            for parent in self.xml.findall(ur'.//*[' + tag + ur']'):
-                for element in parent.findall(filter):
-                    # We DO NOT use remove as it also delete the tail!
-                    # parent.remove(element)
-                    tail = element.tail
-                    element.clear()
-                    element.tail = tail
-                    c += 1
-            print '\t removed %s %s' % (c, filter)
+        self.remove_elements(filters)
 
         print '\t capitalise toUpper'
         for element in self.xml.findall('.//*[@subtype="toUpper"]'):
