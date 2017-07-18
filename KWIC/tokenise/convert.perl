@@ -94,7 +94,7 @@ $file =~ s|u_|<choice><orig>u</orig><reg>V</reg></choice>|g;
 $file =~ s|u`|<choice><orig>u</orig><reg>ü</reg></choice>|g;
 
 $file =~ s|%([^±]+)±([^≠]+)≠|<choice><seg type="semi-dip">\1\2</seg><seg type="crit">\1 \2</seg></choice>|g;
-$file =~ s|@([^€]+)€\s([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
+$file =~ s|@([^€]+)€\s+([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
 
 # REINSERT THE EXPANDED PART
 $file = join('', $before, $file, $after);
