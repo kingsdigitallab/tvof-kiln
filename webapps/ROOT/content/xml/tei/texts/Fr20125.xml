@@ -3,11 +3,11 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title type="main">Fr20125</title>
+        <title type="main">TVOF edition Fr20125</title>
       </titleStmt>
       <publicationStmt>
         <p>KCL DH laboratory</p>
-        <p>adaptation Simone Ventura</p>
+        <p>adaptation Simone Ventura</p> 
       </publicationStmt>
       <sourceDesc>
         <ab/>
@@ -16,12 +16,10 @@
     <encodingDesc>
       <ab type="version" subtype="semi-diplomatic"/>
       <ab type="version" subtype="interpretive"/>
-    </encodingDesc>
-  </teiHeader>
+    </encodingDesc>  </teiHeader>
   <text>
-  
-     
     <body>
+        <milestone unit="section" n="6" type="Eneas"/>
       <div type="1" xml:id="edfr20125_00588" n="148rb">
         <head type="rubric">Ci comence d<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName> qui <choice><seg type="semi-dip">separti</seg><seg type="crit">se parti</seg></choice> de
             <placeName>troies</placeName> [et] coment il s<choice><orig></orig><reg>'</reg></choice>en ala en <placeName>itale</placeName><pc
@@ -741,7 +739,7 @@
             quar <choice><orig>i</orig><reg>j</reg></choice>e i perdi ma feme que <choice><orig>i</orig><reg>j</reg></choice>e mout <choice><seg type="semi-dip">tresdureme[n]t</seg><seg type="crit">tres dureme[n]t</seg></choice> amoie<pc rend="1"/></said><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="3" xml:id="edfr20125_00599_13"><said direct="true">E<pc rend="3"/><choice><seg type="semi-dip"></seg><seg type="crit"> !</seg></choice> dame<choice><orig></orig><reg>,</reg></choice> qui
               poroit ce raconter qu<choice><orig></orig><reg>'</reg></choice>il <choice><seg type="semi-dip">neli</seg><seg type="crit">ne li</seg></choice> con<choice><orig>u</orig><reg>v</reg></choice>enist plorer sans atargance<pc rend="1"
-              /><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></said></seg>
+              /><choice><orig></orig><reg> ?</reg></choice></said></seg>
           <seg type="5" xml:id="edfr20125_00599_14"><said direct="true">Sach<choice><orig>e</orig><reg>é</reg></choice>s bien que par trois
             chozes pooit estre nostre cit<choice><orig>e</orig><reg>é</reg></choice>s guarandie qu<choice><orig></orig><reg>'</reg></choice>ele ne fust destruite<pc rend="1"/><choice><orig></orig><reg>,</reg></choice>
             [et] se li une de ces trois chozes nos fust demoree<choice><orig></orig><reg>,</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>a ne fussons <choice><orig>u</orig><reg>v</reg></choice>e[n]cu ne la
@@ -802,7 +800,7 @@
                 rend="1"/> [et] retenir ains qu<choice><orig></orig><reg>'</reg></choice>ele se fust de moi partie<choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais <choice><orig>i</orig><reg>j</reg></choice>e <choice><seg type="semi-dip">nele</seg><seg type="crit">ne le</seg></choice> peu
             aprocher tant que <choice><orig>i</orig><reg>j</reg></choice>e la sentisse<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></said></seg>
           <seg type="3" xml:id="edfr20125_00600_05"><said direct="true">A la fin quant <choice><orig>i</orig><reg>j</reg></choice>e <choice><orig>u</orig><reg>v</reg></choice>i que
-              l<choice><orig></orig><reg>'</reg></choice>a<choice><orig>u</orig><reg>v</reg></choice>oie p[er]due<choice><orig></orig><reg>,</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>e m<choice><orig></orig><reg>'</reg></choice>en repairai <choice><seg type="semi-dip">ama</seg><seg type="crit">a ma</seg></choice> gent qui tant s<choice><orig></orig><reg>'</reg></choice>estoient trait <choice><seg type="semi-dip">de fors</seg><seg type="crit">defors</seg></choice>
+              <choice><orig>i</orig><reg>j</reg></choice>e l<choice><orig></orig><reg>'</reg></choice>a<choice><orig>u</orig><reg>v</reg></choice>oie p[er]due<choice><orig></orig><reg>,</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>e m<choice><orig></orig><reg>'</reg></choice>en repairai <choice><seg type="semi-dip">ama</seg><seg type="crit">a ma</seg></choice> gent qui tant s<choice><orig></orig><reg>'</reg></choice>estoient trait <choice><seg type="semi-dip">de fors</seg><seg type="crit">defors</seg></choice>
               la cit<choice><orig>e</orig><reg>é</reg></choice> en une montaigne que <choice><orig>i</orig><reg>j</reg></choice>e re<choice><orig>u</orig><reg>v</reg></choice>enisse<pc rend="1"
                 /><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></said></seg>
           <seg type="3" xml:id="edfr20125_00600_06"><said direct="true">Et quant <choice><orig>i</orig><reg>j</reg></choice>e <choice><seg type="semi-dip">iuinc</seg><seg type="crit">i vinc</seg></choice><choice><orig></orig><reg>,</reg></choice> <choice><orig>i</orig><reg>j</reg></choice>e
@@ -1127,7 +1125,7 @@
         <ab>
           <seg type="4" xml:id="edfr20125_00606_01"><q type="NI">Ne<!--( HM: puzzle initial )--> dirai
               plus ore</q> de la roine <persName>dido</persName><choice><orig></orig><reg>,</reg></choice> qui premereme[n]t fu
-              <persName>elissa</persName> nomee<choice><orig></orig><reg>,</reg></choice> ne de la dolor com demena <choice><seg type="semi-dip">desa</seg><seg type="crit">de sa</seg></choice> laide mort par
+              <persName>elissa</persName> nomee<choice><orig></orig><reg>,</reg></choice> ne de la dolor c<choice><orig></orig><reg>'</reg></choice>om demena <choice><seg type="semi-dip">desa</seg><seg type="crit">de sa</seg></choice> laide mort par
             tote sa contree<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> <q type="NI">ains dirai</q> d<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName>
             qui a son pooir eslongoit <placeName>lybie</placeName> por aler querre
               <placeName>itale</placeName> que li deu li a<cb n="b"/><choice><orig>u</orig><reg>v</reg></choice>oient promise<pc rend="1"
@@ -1200,7 +1198,7 @@
         <ab>
           <seg type="5" xml:id="edfr20125_00607_01">Quant li giu furent ensi fin<choice><orig>e</orig><reg>é</reg></choice> [et] il furent
               repair<choice><orig>e</orig><reg>é</reg></choice> <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> sepouture <persName>anchis<choice><orig>e</orig><reg>é</reg></choice>s</persName><pc rend="2"/><choice><orig></orig><reg>,</reg></choice> li fus esprist en
-            lor nes qui totes eussent est<choice><orig>e</orig><reg>é</reg></choice> arses ou ri<choice><orig>u</orig><reg>v</reg></choice>age<choice><orig></orig><reg>,</reg></choice> se ne fust uns messages qui le
+              lor nes<choice><orig></orig><reg>,</reg></choice> qui totes eussent est<choice><orig>e</orig><reg>é</reg></choice> arses ou ri<choice><orig>u</orig><reg>v</reg></choice>age se ne fust uns messages qui le
               nuncia la o il estoient<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] si dist que les dames des nes meismes les
             a<choice><orig>u</orig><reg>v</reg></choice>oie[n]t esprises por ce qu<choice><orig></orig><reg>'</reg></choice>eles <choice><orig>u</orig><reg>v</reg></choice>ousissent illueques faire demorance quar trop erent
               lassees [et] debrisees qui paine [et] tra<choice><orig>u</orig><reg>v</reg></choice>aill a<choice><orig>u</orig><reg>v</reg></choice>oient soferte par terre [et] par mer<choice><orig></orig><reg> :</reg></choice>
@@ -1319,7 +1317,7 @@
               /><choice><orig></orig><reg>.</reg></choice><!--( Miniature )--> <choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>n cele maison fu cil monstres enclos<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice><anchor type="tradNote" corresp="#edfr20125_0608_14_sycamore"/> <choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>n celui
             tans estoient cil d<choice><orig></orig><reg>'</reg></choice><placeName>athenes</placeName> sougit au roi
               <persName>minos</persName> de <placeName>crete</placeName> qu<choice><orig></orig><reg>'</reg></choice>il li de<choice><orig>u</orig><reg>v</reg></choice>oient chascun
-            an en<choice><orig>u</orig><reg>v</reg></choice>oier <num>·vii·</num> <choice><orig>u</orig><reg>v</reg></choice>ailles<pc rend="1"/> [et] <num>·vii·</num> meschines de
+                an en<choice><orig>u</orig><reg>v</reg></choice>oier <num>·vii·</num> <choice><orig>u</orig><reg>v</reg></choice>aill<choice><orig>e</orig><reg>é</reg></choice>s<pc rend="1"/> [et] <num>·vii·</num> meschines de
               treuage<pc rend="1"/> [et] tels com li rois <persName>minos</persName> les mandoit ou
               roiaume<pc rend="4"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="3" xml:id="edfr20125_00608_15">E quant il erent <choice><orig>u</orig><reg>v</reg></choice>enu en
@@ -1364,8 +1362,8 @@
             puis mist la pucele en sa nef<choice><orig></orig><reg> ;</reg></choice> si se remist <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> <choice><orig>u</orig><reg>v</reg></choice>oie sans le seut le roi
             <persName>minos</persName><choice><orig></orig><reg>,</reg></choice> qui mout en fu dolans quant il le sot<choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t]
             <persName>teseus</persName> ot si grant <choice><orig>i</orig><reg>j</reg></choice>oie de ceste a<choice><orig>u</orig><reg>v</reg></choice>enture<pc rend="1"/><choice><orig></orig><reg>,</reg></choice>
-            <choice><seg type="semi-dip">qu<choice><orig></orig><reg>'</reg></choice>ili</seg><seg type="crit">qu<choice><orig></orig><reg>'</reg></choice>il i</seg></choice> estoit a<choice><orig>u</orig><reg>v</reg></choice>enue<choice><orig></orig><reg>,</reg></choice> qu<choice><orig></orig><reg>'</reg></choice>il oblia ce que ses peres li a<choice><orig>u</orig><reg>v</reg></choice>oit dit<pc rend="1"/><choice><orig></orig><reg> :</reg></choice> <cb
-              n="b"/>c<choice><orig></orig><reg>'</reg></choice>est sor ses mas mesist bla[n]ches <choice><orig>u</orig><reg>v</reg></choice>oiles s<choice><orig></orig><reg>'</reg></choice>il eschapoit [et] repairoit a
+            <choice><seg type="semi-dip">quili</seg><seg type="crit">qui li</seg></choice> estoit a<choice><orig>u</orig><reg>v</reg></choice>enue<choice><orig></orig><reg>,</reg></choice> qu<choice><orig></orig><reg>'</reg></choice>il oblia ce que ses peres li a<choice><orig>u</orig><reg>v</reg></choice>oit dit<pc rend="1"/><choice><orig></orig><reg> :</reg></choice> <cb
+                n="b"/>c<choice><orig></orig><reg>'</reg></choice>est qu<choice><orig></orig><reg>'</reg></choice>il sor ses mas mesist bla[n]ches <choice><orig>u</orig><reg>v</reg></choice>oiles s<choice><orig></orig><reg>'</reg></choice>il eschapoit [et] repairoit a
             tote la <choice><orig>u</orig><reg>v</reg></choice>ie<pc rend="5"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
         </ab>
       </div>
@@ -1506,7 +1504,7 @@
               roiaume<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="4" xml:id="edfr20125_00611_05">E puis regna <persName>eneas</persName> en
               <placeName>itale</placeName><pc rend="1"/> [et] sa lignee qu<choice><orig></orig><reg>'</reg></choice>issi de lui<choice><orig></orig><reg>,</reg></choice> ce sunt si
-              oir<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> <num><choice><orig></orig><reg>·</reg></choice>cccc· ans [et] <choice><orig></orig><reg>·</reg></choice>xxvii·</num> trosques a
+              oir<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> <num><choice><orig></orig><reg>·</reg></choice>cccc· ans [et] <choice><orig></orig><reg>·</reg></choice>xvii·</num> trosques a
               <persName>romulus</persName> qui comensa <placeName>rome</placeName> a faire<pc
               rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
           <seg type="1" xml:id="edfr20125_00611_06">E puis regna <persName>romulus</persName><pc
@@ -2115,8 +2113,8 @@
                         de<choice><orig>u</orig><reg>v</reg></choice>ant le chasteau o <persName>ascanius</persName> estoit<pc rend="1"/>
                         [et] sa chi<choice><orig>u</orig><reg>v</reg></choice>alerie por sa<choice><orig>u</orig><reg>v</reg></choice>oir s<choice><orig></orig><reg>'</reg></choice>il <choice><orig>i</orig><reg>j</reg></choice>a les porroit fors <choice><seg type="semi-dip">abataille</seg><seg type="crit">a bataille</seg></choice>
                         traire o le chastel <pb n="164r"/><cb n="a"/>prendre<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais li
-                            <name type="people">troien</name> qui le g[ua]rdoient quant il les
-                        <choice><orig>u</orig><reg>v</reg></choice>irent <choice><orig>u</orig><reg>v</reg></choice>enir a tote si grande habundance de chi<choice><orig>u</orig><reg>v</reg></choice>alerie se mistrent dedens
+                        <name type="people">troien</name> qui le g[ua]rdoient<choice><orig></orig><reg>,</reg></choice> quant il les
+                        <choice><orig>u</orig><reg>v</reg></choice>irent <choice><orig>u</orig><reg>v</reg></choice>enir a tote si grande habundance de chi<choice><orig>u</orig><reg>v</reg></choice>alerie<choice><orig></orig><reg>,</reg></choice> se mistrent dedens
                         lor forterece<pc rend="1"/> [et] si s<choice><orig></orig><reg>'</reg></choice>apareillerent m[o]lt bien de lor armes
                         [et] ordenerent as murs [et] as creteaus por aus defendre<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice>
                         [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] <persName>nisus</persName> [et] <persName>eurialus</persName><choice><orig></orig><reg>,</reg></choice> dui
@@ -2131,7 +2129,7 @@
                             rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00620_03">Ce fu li come[n]cemens <choice><seg type="semi-dip">dela</seg><seg type="crit">de la</seg></choice>
                         bataille<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] tantost retorna le chief <choice><seg type="semi-dip">douchi<choice><orig>u</orig><reg>v</reg></choice>au</seg><seg type="crit">dou chi<choice><orig>u</orig><reg>v</reg></choice>au</seg></choice><choice><orig></orig><reg>,</reg></choice> si
-                        fist <choice><seg type="semi-dip">par mi</seg><seg type="crit">parmi</seg></choice> le champ un eslais par si grant segnorie<choice><orig></orig><reg>,</reg></choice> [et] li <num>·xx·</num>
+                        fist <choice><seg type="semi-dip">par mi</seg><seg type="crit">parmi</seg></choice> le champ un eslais par si grant segnorie<choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] li <num>·xx·</num>
                         chi<choice><orig>u</orig><reg>v</reg></choice>alier<choice><orig></orig><reg>,</reg></choice> qui <choice><seg type="semi-dip">olui</seg><seg type="crit">o lui</seg></choice> <choice><orig>u</orig><reg>v</reg></choice>enu estoient<choice><orig></orig><reg>,</reg></choice> escriere[n]t <choice><orig>u</orig><reg>v</reg></choice>ers ceaus dou chasteau
                         [et] mout s<choice><orig></orig><reg>'</reg></choice>esmer<choice><orig>u</orig><reg>v</reg></choice>eilloient que li <name type="people">troien</name> erent
                         si coart qu<choice><orig></orig><reg>'</reg></choice>il <choice><seg type="semi-dip">atansquans</seg><seg type="crit">a tans quans</seg></choice> <choice><seg type="semi-dip">aaus</seg><seg type="crit">a aus</seg></choice> <choice><orig>i</orig><reg>j</reg></choice>oster ne <choice><orig>u</orig><reg>v</reg></choice>enoient<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
@@ -2166,7 +2164,7 @@
                         lor bone chi<choice><orig>u</orig><reg>v</reg></choice>alerie<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00620_11">Quant <choice><orig>u</orig><reg>v</reg></choice>int <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> <choice><orig>u</orig><reg>v</reg></choice>espree<choice><orig></orig><reg>,</reg></choice>
                             <persName>turnus</persName> comanda
-                        l<choice><orig></orig><reg>'</reg></choice>escrougaite<pc rend="1"/> a <num>·xiii·c·</num> chi<choice><orig>u</orig><reg>v</reg></choice>aliers dont
+                        l<choice><orig></orig><reg>'</reg></choice>escrougaite<pc rend="1"/> a <num>·xiii·c·</num><!--(note xiiii·c in beta mss)--> chi<choice><orig>u</orig><reg>v</reg></choice>aliers dont
                             <persName>mesapus</persName> fu princes [et] comanderes<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice>
                         [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] ta[n]tost com la nuis fu tote <choice><orig>u</orig><reg>v</reg></choice>enue [et] li fu furent alum<choice><orig>e</orig><reg>é</reg></choice> par
                         totes les loges<choice><orig></orig><reg>,</reg></choice> mout <choice><seg type="semi-dip">iot</seg><seg type="crit">i ot</seg></choice> grant <choice><orig>i</orig><reg>j</reg></choice>oie<pc rend="1"/> au ma[n]gier [et] au
@@ -2553,7 +2551,7 @@
                         atargerent mie<choice><orig></orig><reg>,</reg></choice> ains s<choice><orig></orig><reg>'</reg></choice>a<choice><orig>u</orig><reg>v</reg></choice>a[n]cerent qui miaus
                         miaus por les foss<choice><orig>e</orig><reg>é</reg></choice>s emplir<pc rend="1"/> [et] por droicier au m[ur] les eschieles<pc
                             rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] li pluisor traioient dars maniers a ceaus qui sor les
-                        murs estoient<choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">l</seg><seg type="crit" subtype="toUpper">l</seg></choice>i hardi chi<choice><orig>u</orig><reg>v</reg></choice>alier <name type="people">troien</name><choice><orig></orig><reg>,</reg></choice> qui bien
+                        murs estoient<choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">l</seg><seg type="crit" subtype="toUpper">l</seg></choice>i hardi chi<choice><orig>u</orig><reg>v</reg></choice>alier troien<choice><orig></orig><reg>,</reg></choice> qui bien
                         erent apris de defendre<choice><orig></orig><reg>,</reg></choice> lor getoient grans pels agus [et] grans pierres<pc
                             rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">l</seg><seg type="crit" subtype="toUpper">l</seg></choice>i premerain<choice><orig></orig><reg>,</reg></choice> qui <choice>
                             <seg type="semi-dip">al assaut</seg>
@@ -2641,8 +2639,8 @@
                         <persName>turnus</persName> [et] sa gent refurent bien apareilli<choice><orig>e</orig><reg>é</reg></choice> d<choice><orig></orig><reg>'</reg></choice>aus
                         assaillir ass<choice><orig>e</orig><reg>é</reg></choice>s tempre <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> <choice><orig>i</orig><reg>j</reg></choice>ornee<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00627_02">Entretant <persName>eneas</persName><choice><orig></orig><reg>,</reg></choice>
-                        qui socors queroit [et] a<choice><orig>i</orig><reg>ï</reg></choice>e<choice><orig></orig><reg>,</reg></choice> tot la <choice><seg type="semi-dip">oil</seg><seg type="crit">o il</seg></choice> le cuidoit a<choice><orig>u</orig><reg>v</reg></choice>oir<choice><orig></orig><reg>,</reg></choice> fu al<choice><orig>e</orig><reg>é</reg></choice>s au roi
-                            <persName>tarchon</persName> qui li fust en a<choice><orig>i</orig><reg>ï</reg></choice>e [et] si fist il quar il
+                        qui socors queroit [et] a<choice><orig>i</orig><reg>ï</reg></choice>e tot la <choice><seg type="semi-dip">oil</seg><seg type="crit">o il</seg></choice> le cuidoit a<choice><orig>u</orig><reg>v</reg></choice>oir<choice><orig></orig><reg>,</reg></choice> fu al<choice><orig>e</orig><reg>é</reg></choice>s au roi
+                        <persName>tarchon</persName> qui li fust en a<choice><orig>i</orig><reg>ï</reg></choice>e<choice><orig></orig><reg>,</reg></choice> [et] si fist il quar il
                         li amena <choice><seg type="semi-dip">olui</seg><seg type="crit">o lui</seg></choice> toz ses haus barons [et] ses homes <choice><seg type="semi-dip">desa</seg><seg type="crit">de sa</seg></choice> terre de
                         <placeName>nissie</placeName><choice><orig></orig><reg>,</reg></choice> [et] si se mistrent tuit es nes<choice><orig></orig><reg>,</reg></choice> [et]
                             <persName>eneas</persName> [et] <persName>pallas</persName> [et] lor
@@ -2655,7 +2653,7 @@
                         estoient qui le socors atendoient<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
                     <seg type="5" xml:id="edfr20125_00627_04">A <persName>turnus</persName> <choice><orig>u</orig><reg>v</reg></choice>int la
                         no<choice><orig>u</orig><reg>v</reg></choice>ele qui contre aus ala <choice><seg type="semi-dip">ala</seg><seg type="crit">a la</seg></choice> porte defendre le
-                        port<anchor type="tradNote" corresp="#edfr20125_0627_04_sycamore"/> mais tuit ari<choice><orig>u</orig><reg>v</reg></choice>erent sans damage fors la <cb n="b"/>nef
+                        port<choice><orig></orig><reg>,</reg></choice><anchor type="tradNote" corresp="#edfr20125_0627_04_sycamore"/> mais tuit ari<choice><orig>u</orig><reg>v</reg></choice>erent sans damage fors la <cb n="b"/>nef
                         <persName>tarchon</persName><pc rend="1"/><choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">c</seg><seg type="crit" subtype="toUpper">c</seg></choice>ele fu <choice><seg type="semi-dip">al ari<choice><orig>u</orig><reg>v</reg></choice>ier</seg><seg type="crit">a l<choice><orig></orig><reg>'</reg></choice>ari<choice><orig>u</orig><reg>v</reg></choice>ier</seg></choice><anchor type="tradNote" corresp="#edfr20125_0627_04_oak"/> mout laidengee<pc rend="1"
                         /> [et] <persName>turnus</persName> s<choice><orig></orig><reg>'</reg></choice>en pena quanque il pot [et] sa
                             chi<choice><orig>u</orig><reg>v</reg></choice>alerie<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais puis qu<choice><orig></orig><reg>'</reg></choice><persName>eneas</persName> fu
@@ -2806,7 +2804,7 @@
                                 rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice> <choice><seg type="semi-dip">a</seg><seg type="crit" subtype="toUpper">a</seg></choice>ins le reguarda mout<choice><orig></orig><reg>,</reg></choice> com grans il estoit [et] <choice><seg type="semi-dip">dequel</seg><seg type="crit">de quel</seg></choice>
                         contenance<choice><orig></orig><reg>,</reg></choice> [et] lors <choice><seg type="semi-dip">la proisma</seg><seg type="crit">l<choice><orig></orig><reg>'</reg></choice>aproisma</seg></choice><choice><orig></orig><reg>,</reg></choice> si li lansa son espiout par son grant
                         mautalent [et] par <cb n="b"/>sa plus ruiste force<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
-                    <seg type="5" xml:id="edfr20125_00629_08">Li espious co[n]sui
+                    <seg type="5" xml:id="edfr20125_00629_08">Li espious co[n]sui<!--HM add trema consuï  -->
                         <persName>eneas</persName> en l<choice><orig></orig><reg>'</reg></choice>escu mais il ne l<choice><orig></orig><reg>'</reg></choice>entama mie<choice><orig></orig><reg>,</reg></choice> ains
                         resorti sor un autre chi<choice><orig>u</orig><reg>v</reg></choice>alier li cos par ce qu<choice><orig></orig><reg>'</reg></choice>il fu <choice><seg type="semi-dip">sidurement</seg><seg type="crit">si durement</seg></choice> lances
                         si qu<choice><orig></orig><reg>'</reg></choice>il li toli la <choice><orig>u</orig><reg>v</reg></choice>ie<pc rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></seg>
@@ -2983,7 +2981,7 @@
                             <choice><seg type="semi-dip">lideu</seg><seg type="crit">li deu</seg></choice> la donassent [et] <choice><seg type="semi-dip">liautres</seg><seg type="crit">li autres</seg></choice> perdist la terre [et] la <choice><orig>u</orig><reg>v</reg></choice>ie<pc
                                 rend="1"/><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></said></seg>
                     <seg type="3" xml:id="edfr20125_00631_10"><said direct="true">Ensi seroit miaus
-                        <choice><seg type="semi-dip">afaire</seg><seg type="crit">a faire</seg></choice> si n<choice><orig></orig><reg>'</reg></choice>en morroient mie <choice><seg type="semi-dip">liautre</seg><seg type="crit">li autre</seg></choice> qui coupes ni ont<choice><orig></orig><reg>,</reg></choice> ne n<choice><orig></orig><reg>'</reg></choice>en seroit
+                        <choice><seg type="semi-dip">afaire</seg><seg type="crit">a faire</seg></choice> si n<choice><orig></orig><reg>'</reg></choice>en morroient mie <choice><seg type="semi-dip">liautre</seg><seg type="crit">li autre</seg></choice> qui coupes n<choice><orig></orig><reg>'</reg></choice>i ont<choice><orig></orig><reg>,</reg></choice> ne n<choice><orig></orig><reg>'</reg></choice>en seroit
                             pas la contree desertee ne afeblie des prodomes<pc rend="1"
                         /><choice><seg type="semi-dip"></seg><seg type="crit">.</seg></choice></said></seg>
                     <seg type="5" xml:id="edfr20125_00631_11"><said direct="true">Mais or al<choice><orig>e</orig><reg>é</reg></choice>s [et]
@@ -3111,7 +3109,7 @@
                                 meismes<pc rend="3"/><choice><orig></orig><reg> ?</reg></choice></said></seg>
                     <seg type="5" xml:id="edfr20125_00632_12"><said direct="true">E que <choice><orig>u</orig><reg>v</reg></choice>os
                             raconteroie <choice><orig>i</orig><reg>j</reg></choice>e de tos les autres<pc rend="2"/><choice><orig></orig><reg> ?</reg></choice> <choice><seg type="semi-dip">s</seg><seg type="crit" subtype="toUpper">s</seg></choice>ach<choice><orig>e</orig><reg>é</reg></choice>s que <choice><orig>i</orig><reg>j</reg></choice>e
-                            <choice><orig>i</orig><reg>j</reg></choice>amais ne me combatrai en<choice><orig>u</orig><reg>v</reg></choice>ers <name type="people">troien</name> home
+                            <choice><orig>i</orig><reg>j</reg></choice>amais ne me combatrai en<choice><orig>u</orig><reg>v</reg></choice>ers troien home
                             <choice><seg type="semi-dip">porce</seg><seg type="crit">por ce</seg></choice> qu<choice><orig></orig><reg>'</reg></choice>a tote m<choice><orig></orig><reg>'</reg></choice>onor deporter m<choice><orig></orig><reg>'</reg></choice>en puisse<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> quar
                             encore nos est il pis a<choice><orig>u</orig><reg>v</reg></choice>enu de ce que nos a aus nos combatimes qu<choice><orig></orig><reg>'</reg></choice>il
                             n<choice><orig></orig><reg>'</reg></choice>est a aus en mout de manieres<pc rend="1"/><choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais retorn<choice><orig>e</orig><reg>é</reg></choice>s ariere au
@@ -3232,7 +3230,7 @@
                             [et] fait le hardeme[n]t de combatre<choice><orig></orig><reg>,</reg></choice> quar nos en a<choice><orig>u</orig><reg>v</reg></choice>ons <choice><orig>i</orig><reg>j</reg></choice>a ass<choice><orig>e</orig><reg>é</reg></choice>s <choice><orig>u</orig><reg>v</reg></choice>eu
                             d<choice><orig></orig><reg>'</reg></choice>ocis dont les t[er]res remaindront desertes<choice><orig></orig><reg>.</reg></choice> [<choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>t] se il a si ardi
                             corage de combatre [et] il sent en lui la force [et] la <choice><orig>u</orig><reg>v</reg></choice>ertu qu<choice><orig></orig><reg>'</reg></choice>il le
-                            fille le roi <choice><orig>u</orig><reg>v</reg></choice>oille a<choice><orig>u</orig><reg>v</reg></choice>oir<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] le regne tot apr<choice><orig>e</orig><reg>é</reg></choice>s le
+                            fille le roi <choice><orig>u</orig><reg>v</reg></choice>oille a<choice><orig>u</orig><reg>v</reg></choice>oir<pc rend="1"/> [et] le regne tot apr<choice><orig>e</orig><reg>é</reg></choice>s le
                             roi son pere<pc rend="2"/><choice><orig></orig><reg>,</reg></choice> <choice><orig>u</orig><reg>v</reg></choice>oist cors a cors encontre son anemi qui
                             l<choice><orig></orig><reg>'</reg></choice>en fait guerre<choice><orig></orig><reg>,</reg></choice> si n<choice><orig></orig><reg>'</reg></choice>en face mie la po<choice><orig>u</orig><reg>v</reg></choice>re gent destruire</said><pc
                             rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
@@ -3385,7 +3383,7 @@
                             type="people">troiein</name> [et] totes lor a<choice><orig>i</orig><reg>ï</reg></choice>es orden<choice><orig>e</orig><reg>é</reg></choice>
                         mout bien ausi par eschieles por <choice><orig>u</orig><reg>v</reg></choice>enir de<choice><orig>u</orig><reg>v</reg></choice>ant la <choice><orig>u</orig><reg>v</reg></choice>ile<pc rend="1"/><choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais
                         tantost com il s<choice><orig></orig><reg>'</reg></choice>entre<choice><orig>u</orig><reg>v</reg></choice>irent<pc rend="1"/> [et] il s<choice><orig></orig><reg>'</reg></choice>aproismere[n]t [et]
-                        d<choice><orig></orig><reg>'</reg></choice>une part [et] d<choice><orig></orig><reg>'</reg></choice>autre<choice><orig></orig><reg>,</reg></choice> onques ni ot parole de
+                        d<choice><orig></orig><reg>'</reg></choice>une part [et] d<choice><orig></orig><reg>'</reg></choice>autre<choice><orig></orig><reg>,</reg></choice> onques n<choice><orig></orig><reg>'</reg></choice>i ot parole de
                         tri<choice><orig>u</orig><reg>v</reg></choice>es ne de pais mostree ne de<choice><orig>u</orig><reg>v</reg></choice>isee<choice><orig></orig><reg>,</reg></choice> ains s<choice><orig></orig><reg>'</reg></choice>entrelaisserent corre les chi<choice><orig>u</orig><reg>v</reg></choice>aus les lances eslongees<pc
                             rend="1"/><choice><orig></orig><reg>.</reg></choice> <choice><seg type="semi-dip">e</seg><seg type="crit" subtype="toUpper">e</seg></choice>nsi s<choice><orig></orig><reg>'</reg></choice>acointerent [et] assamblerent<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="3" xml:id="edfr20125_00635_20">Quant ensamble <choice><orig>u</orig><reg>v</reg></choice>indrent<choice><orig></orig><reg>,</reg></choice> mout <choice><seg type="semi-dip">iot</seg><seg type="crit">i ot</seg></choice>
@@ -3807,7 +3805,7 @@
                 <ab>
                     <seg type="3" xml:id="edfr20125_00641_01">Quant la roine
                             <persName>amata</persName> <choice><orig>u</orig><reg>v</reg></choice>it ensi la choze alee<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et]
-                        ele <choice><orig>u</orig><reg>v</reg></choice>it les eschieles as murs<choice><orig></orig><reg>,</reg></choice> [et] le fu <choice><orig>i</orig><reg>j</reg></choice>a ruer en la <choice><orig>u</orig><reg>v</reg></choice>ile<choice><orig></orig><reg>,</reg></choice> [et] ele ne
+                        ele <choice><orig>u</orig><reg>v</reg></choice>it les eschieles as murs [et] le fu <choice><orig>i</orig><reg>j</reg></choice>a ruer en la <choice><orig>u</orig><reg>v</reg></choice>ile<choice><orig></orig><reg>,</reg></choice> [et] ele ne
                         <choice><orig>u</orig><reg>v</reg></choice>it mie de <persName>turnus</persName><choice><orig></orig><reg>,</reg></choice> qui le de<choice><orig>u</orig><reg>v</reg></choice>oit defendre<pc rend="2"/><choice><orig></orig><reg>,</reg></choice> ele cuida qu<choice><orig></orig><reg>'</reg></choice>il fust ocis<pc rend="1"
                         /><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="4" rend="NR" xml:id="edfr20125_00641_02">Lors ot mout torblee sa
@@ -4099,7 +4097,7 @@
                         <num>·xxxix·</num> ans<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="3" xml:id="edfr20125_00644_12">E apr<choice><orig>e</orig><reg>é</reg></choice>s <choice><seg type="semi-dip">iregna</seg><seg type="crit">i regna</seg></choice> <persName>egyptus
                             <choice><seg type="semi-dip">s</seg><seg type="crit" subtype="toUpper">s</seg></choice>il<choice><orig>u</orig><reg>v</reg></choice>ius</persName><choice><orig></orig><reg>,</reg></choice> qui <persName>athis <choice><seg type="semi-dip">s</seg><seg type="crit" subtype="toUpper">s</seg></choice>il<choice><orig>u</orig><reg>v</reg></choice>ius</persName> fu ausi
-                        nom<choice><orig>e</orig><reg>é</reg></choice>s d<choice><orig></orig><reg>'</reg></choice>autre non<choice><orig></orig><reg>,</reg></choice> <num>·xxiii·</num> a[n]s<pc rend="4"/><choice><orig></orig><reg>.</reg></choice></seg>
+                        nom<choice><orig>e</orig><reg>é</reg></choice>s d<choice><orig></orig><reg>'</reg></choice>autre non<choice><orig></orig><reg>,</reg></choice> <num>·xxiiii·</num> a[n]s<pc rend="4"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="2" xml:id="edfr20125_00644_13">E apr<choice><orig>e</orig><reg>é</reg></choice>s <persName>egyptus
                             <choice><seg type="semi-dip">s</seg><seg type="crit" subtype="toUpper">s</seg></choice>il<choice><orig>u</orig><reg>v</reg></choice>ius</persName> i regna <persName>capis</persName>
                         <num>·xxiiii·</num> ans<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] apr<choice><orig>e</orig><reg>é</reg></choice>s
@@ -4124,24 +4122,26 @@
                         <num>·xix·</num> ans<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                     <seg type="2" xml:id="edfr20125_00644_18">Cis fu fel [et] de <choice><seg type="semi-dip">malaire</seg><seg type="crit">mal aire</seg></choice><choice><orig></orig><reg>,</reg></choice> si fu ocis
                         <choice><seg type="semi-dip">d<choice><orig></orig><reg>'</reg></choice>un effoudre</seg><seg type="crit">d<choice><orig></orig><reg>'</reg></choice>une ffoudre</seg></choice><pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
-                    <seg type="1" xml:id="edfr20125_00644_19">Quar as mau<choice><orig>u</orig><reg>v</reg></choice>ais [et] as felons<pc
-                            rend="1"/><choice><orig></orig><reg>,</reg></choice> rent deus so<choice><orig>u</orig><reg>v</reg></choice>ent lor gueredons<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
-                    <seg type="1" xml:id="edfr20125_00644_20">Quar soit <choice><seg type="semi-dip">atempre</seg><seg type="crit">a tempre</seg></choice> o soit a tart<pc
-                            rend="1"/><choice><orig></orig><reg>,</reg></choice> de lor malise ont il lor part<pc rend="1"
-                            /><choice><orig></orig><reg>.</reg></choice><anchor type="tradNote" corresp="#edfr20125_0644_20_oak"/></seg><!-- HM 19-20 = couplets -->
-                    <seg type="1" xml:id="edfr20125_00644_21">E apr<choice><orig>e</orig><reg>é</reg></choice>s <persName>aremulus</persName>
+                    <seg type="6" xml:id="edfr20125_00644_19"><lg type="octo_coup"><lg type="cont">
+                        <l n="001">Quar as mau<choice><orig>u</orig><reg>v</reg></choice>ais [et] as felons<pc
+                            rend="1"/><choice><orig></orig><reg>,</reg></choice></l> 
+                        <l n="002" rend="NR">rent deus so<choice><orig>u</orig><reg>v</reg></choice>ent lor gueredons<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></l>
+                        <l n="003">Quar soit <choice><seg type="semi-dip">atempre</seg><seg type="crit">a tempre</seg></choice> o soit a tart<pc rend="1"/><choice><orig></orig><reg>,</reg></choice></l>
+                        <l n="004" rend="NR">de lor malise ont il lor part<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></l><anchor type="tradNote" corresp="#edfr20125_0644_20_oak"/>
+                    </lg></lg></seg><!-- HM 644.19=couplets -->
+                    <seg type="1" xml:id="edfr20125_00644_20">E apr<choice><orig>e</orig><reg>é</reg></choice>s <persName>aremulus</persName>
                         regna <persName>a<choice><orig>u</orig><reg>v</reg></choice>entinus</persName>
                         <num>·xxxvii·</num> ans<pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
-                    <seg type="1" xml:id="edfr20125_00644_22">E apr<choice><orig>e</orig><reg>é</reg></choice>s
+                    <seg type="1" xml:id="edfr20125_00644_21">E apr<choice><orig>e</orig><reg>é</reg></choice>s
                             <persName>a<choice><orig>u</orig><reg>v</reg></choice>entinus</persName> tint le regne <num>·xxiii·</num> ans<pc
                             rend="1"/>
                         <persName>prochas <choice><seg type="semi-dip">s</seg><seg type="crit" subtype="toUpper">s</seg></choice>il<choice><orig>u</orig><reg>v</reg></choice>ius</persName><pc rend="1"/><choice><orig></orig><reg>,</reg></choice> li fiz
                             <persName>a<choice><orig>u</orig><reg>v</reg></choice>entinus</persName><pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
-                    <seg type="5" xml:id="edfr20125_00644_23">A cestui comencent les <rs
+                    <seg type="5" xml:id="edfr20125_00644_22">A cestui comencent les <rs
                             type="metatext">estories des <name type="people">romains</name></rs><pc
                             rend="1"/><choice><orig></orig><reg>,</reg></choice> c<choice><orig></orig><reg>'</reg></choice>est li comencemens de ceaus qui funderent
                             <placeName>rome</placeName><pc rend="1"/> [et] estorerent<choice><orig></orig><reg>.</reg></choice> <q type="NI"><choice><seg type="semi-dip">m</seg><seg type="crit" subtype="toUpper">m</seg></choice>ais ne dirai plus ore a<choice><orig>u</orig><reg>v</reg></choice>ant a ceste fiee</q><pc rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
-                    <seg type="5" xml:id="edfr20125_00644_24"><q type="NI">Si a<choice><orig>u</orig><reg>v</reg></choice>rai
+                    <seg type="5" xml:id="edfr20125_00644_23"><q type="NI">Si a<choice><orig>u</orig><reg>v</reg></choice>rai
                             premiers dit</q> qui li roi d<choice><orig></orig><reg>'</reg></choice><placeName>asire</placeName> furent<choice><orig></orig><reg>,</reg></choice> [et]
                         des autres roiaumes qui adonc en lor flors estoient<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et] sous
                         quels rois li roiaume finere[n]t trosques au tans le roi
@@ -4156,6 +4156,7 @@
                             rend="1"/><choice><orig></orig><reg>.</reg></choice></seg>
                 </ab>
             </div>
+        <milestone unit="section" n="7" type="Rome_I"/>
             <div type="1" xml:id="edfr20125_00645" n="177ra">
                 <head type="rubric">Des <name type="people">assirieins</name> qui de tot le mo[n]de
                     orent la poest<choice><orig>e</orig><reg>é</reg></choice> [et] la segnorie<pc rend="1"/><anchor type="sourceNote" corresp="#edfr20125_0645_peach"/></head>
@@ -4242,7 +4243,7 @@
                     <seg type="3" xml:id="edfr20125_00646_07">Q[ua]nt <persName>delbora</persName>
                         [et] <persName>barach</persName> furent fin<choice><orig>e</orig><reg>é</reg></choice><choice><orig></orig><reg>,</reg></choice> si tint des <name
                             type="people">hebrius</name><pc rend="1"/>
-                        <c rend="R">G</c>edeon la segnorie <num>·xl·</num> ans<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et]
+                        <persName><c rend="R">G</c>edeon</persName> la segnorie <num>·xl·</num> ans<pc rend="1"/><choice><orig></orig><reg>,</reg></choice> [et]
                         as <name type="people">assirieins</name> ap[r<choice><orig>e</orig><reg>é</reg></choice>]s
                             <persName>pannias</persName>
                         <persName>sosarmus</persName>
@@ -4616,19 +4617,17 @@
                             type="bibliography" corresp="Derolez_1968">Derolez (ed.)</ref>, p.
                         467-468), dans lequel on trouve déjà « la juxtaposition de la version du <hi
                             rend="i">Liber Historiae Francorum</hi> et de la généalogie
-                        Japhet-Galates-Troyens […] se trouve déjà » (voir <ref type="bibliography"
+                        Japhet-Galates-Troyens » (voir <ref type="bibliography"
                             corresp="Montorsi_2016a">Montorsi (2016a)</ref>, p. 421-423).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0592_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0592_peach_a"><hi rend="i">Aen.</hi>, I, 88-213; <hi
-                            rend="i">Excidium Troiae</hi>, 25, 4 (« qui lie à ce naufrage la mort de
-                        Palinure »). Dans l'<hi rend="i">Eneas</hi> (v. 242 et suiv.) (tout comme
+                    <p xml:id="edfr20125_0592_peach_a"><hi rend="i">Aen.</hi>, I, 88-213 ; et l'<hi
+                            rend="i">Excidium Troiae</hi>, 25, 4 « qui lie à ce naufrage la mort de
+                        Palinure ». Dans l'<hi rend="i">Eneas</hi> (v. 242 et suiv.) (tout comme
                         dans l'<hi rend="i">Histoire ancienne</hi>), il est question d'un vaisseau
                         égaré dans la tempête. Monfrin suggère que la glose sur la Libye (§692.7) «
-                        peut venir d'Isidore » (<hi rend="i">Etymologiae</hi>, XIV, V, 4) ; « le
-                        discours d'Énée dès le débarquement [= §592.4-5] est une addition de l'<hi
-                            rend="i">HA</hi> ». Voir <ref type="bibliography" corresp="Monfrin_1985"
+                        peut venir d'Isidore » (<hi rend="i">Etymologiae</hi>, XIV, V, 4). Voir <ref type="bibliography" corresp="Monfrin_1985"
                             >Monfrin (1985)</ref>, p. 238-239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0593_peach">
@@ -4640,14 +4639,14 @@
                 <div type="note" subtype="source" xml:id="edfr20125_0594_peach">
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0594_peach_a"><hi rend="i">Aen.</hi>, I, 208-222, 305-313,
-                        418-420 ; « la rencontre avec Vénus est supprimée ; l'<hi rend="i">HA</hi> a
+                        418-420 ; « la rencontre avec Vénus [= <hi rend="i">Aen.</hi>, I, 314-417] est supprimée ; l'<hi rend="i">HA</hi> a
                         ensuite utilisé, en le prenant à son compte, ce que la déesse dit au sujet
                         de Didon, I, 338-364 », voir <ref type="bibliography" corresp="Monfrin_1985"
                             >Monfrin (1985)</ref>, p. 239.</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0595_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0595_peach_a"><hi rend="i">Aen.</hi>, I, 366-368, 421-458 ;
+                    <p xml:id="edfr20125_0595_peach_a"><hi rend="i">Aen.</hi>, I, 365-368, 421-458 ;
                         en ce qui concerne l'achat du territoire où s'élèvera Carthage, l'<hi
                             rend="i">Histoire ancienne</hi> développe le récit d'après Servius, I,
                         367 (<ref type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>,
@@ -4748,7 +4747,7 @@
                         avec le changement de quelques détails. Énée arrive sur l'île d'Eubée plutôt
                         que sur les « Euboicis oris » de Cumes (<hi rend="i">Aen.</hi>, VI, 2). L'<hi rend="i"
                             >Histoire ancienne</hi> adapte l'étymologie de Servius en changeant
-                        l'endroit discuté (Campanie plutôt que Cumes), et par conséquent, la source
+                        l'endroit discuté (la Campanie), et par conséquent, la source
                         étymologique. L'association de Capis avec l'étymologie de Campanie
                         semblerait une innovation de l'<hi rend="i">Histoire ancienne</hi>.</p>
                 </div>
@@ -4764,7 +4763,7 @@
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0610_peach_a"><hi rend="i">Aen.</hi>, VI, 1-13 ; VII,
                         25-36, 52-58 et 95-101 (<ref type="bibliography" corresp="Monfrin_1985"
-                            >Monfrin (1985)</ref>, p. 238).</p>
+                            >Monfrin (1985)</ref>, p. 239).</p>
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0611_peach">
                     <head type="noteLabel"/>
@@ -4784,8 +4783,8 @@
                 </div>
                 <div type="note" subtype="source" xml:id="edfr20125_0612_peach">
                     <head type="noteLabel"/>
-                    <p xml:id="edfr20125_0612_peach_a">« Pour l'histoire de Laurente, voir Servius,
-                        VII, 59 » et <hi rend="i">Aen.</hi>, VII, 59-63. Pour l'installation du
+                    <p xml:id="edfr20125_0612_peach_a">Pour l'histoire de Laurente, voir Servius, I, 2 et
+                        VII, 59 ; et <hi rend="i">Aen.</hi>, VII, 59-63. Pour l'installation du
                         camp, voir <hi rend="i">Aen.</hi>, VII, 157-159 (<ref type="bibliography"
                             corresp="Monfrin_1985">Monfrin (1985)</ref>, p. 240).</p>
                 </div>
@@ -4895,7 +4894,7 @@
                         ; « la suite n'est représentée que par le texte ci-dessus, suivi de quelques
                         lignes (321-605). On a noté (<ref type="bibliography"
                             corresp="Raynaud_de_Lage_1957">Raynaud de Lage (1957)</ref>) que Virgile
-                        parle du balteus de Pallas (X,496) et que l'<hi rend="i">Eneas</hi> comme
+                        parle du balteus de Pallas (X, 496) et que l'<hi rend="i">Eneas</hi> comme
                             l'<hi rend="i">HA</hi> parlent d'un <hi rend="i">anel</hi> » (<ref
                             type="bibliography" corresp="Monfrin_1985">Monfrin (1985)</ref>, p.
                         240).</p>
@@ -5010,7 +5009,7 @@
                     <head type="noteLabel"/>
                     <p xml:id="edfr20125_0644_peach_a">Voir le commentaire de Monfrin à ce
                         paragraphe. Monfrin renvoie <hi rend="i">inter alia</hi> à Servius (VI,
-                        760), l'<hi rend="i">Historia Romana</hi> de Paul Diacre, et la chronique
+                        760), l'<hi rend="i">Historia Romana</hi> de Paul Diacre et la chronique
                         d'Eusèbe-Jérôme (<ref type="bibliography" corresp="Monfrin_1985">Monfrin
                             (1985)</ref>, p. 241).</p>
                 </div>
@@ -5309,8 +5308,5 @@
             </div>
     
     </body>
-  
-  
-  
   </text>
 </TEI>
