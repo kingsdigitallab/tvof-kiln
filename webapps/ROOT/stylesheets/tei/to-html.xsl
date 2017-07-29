@@ -145,7 +145,7 @@
                 <span class="tei-cb">[<xsl:value-of select="@n"/>] </span>
             </xsl:when>
             <xsl:when test="(@n != 'a') and (not(ends-with(preceding::text()[1], ' ')))">
-                <span class="tei-cb" style="color:teal;">-[<xsl:value-of select="@n"/>]-</span>
+                <span class="tei-cb split-word">[<xsl:value-of select="@n"/>]</span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -269,14 +269,14 @@
     <xsl:template match="tei:pb">
         <xsl:choose>
             <xsl:when test="ends-with(preceding::text()[1], ' ')">
-                <span class="tei-pb" style="color:teal;">[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb">[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
                             select="following-sibling::tei:cb[1]/@n"/></xsl:if>] </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="tei-pb" style="color:teal;">-[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb split-word">[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
-                            select="following-sibling::tei:cb[1]/@n"/></xsl:if>]-</span>
+                            select="following-sibling::tei:cb[1]/@n"/></xsl:if>]</span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
