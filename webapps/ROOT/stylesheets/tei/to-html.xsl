@@ -236,6 +236,10 @@
 
     <xsl:template match="tei:hi">
         <xsl:choose>
+            <!-- GN: Shouldn't sup and i be in the base kiln template instead? -->
+            <xsl:when test="@rend = 'sup'">
+                <sup><xsl:apply-templates/></sup>
+            </xsl:when>
             <xsl:when test="@rend = 'i'">
                 <em>
                     <xsl:apply-templates/>

@@ -18,6 +18,36 @@ class Aggregator(XMLParser):
                 self.append_tei(input_path)
         self.reorder_content()
 
+        self.add_encoding()
+
+    def add_encoding(self):
+        '''
+        Add encodingDesc in the header if not there otherwise kiln won't return
+        any version when the Text Viewer requests them.
+        '''
+        if self.xml is None:
+            return
+
+        teiHeader = self.xml.find('.//teiHeader')
+        if teiHeader is None:
+            print '\tWARNING: teiHeader is missing'
+            return
+
+        encoding = teiHeader.find('.//encodingDesc')
+        if encoding is not None:
+            return
+
+        print '\tadd missing encodingDesc element'
+
+        encoding_desc = '''
+        <encodingDesc>
+          <ab type="version" subtype="semi-diplomatic"/>
+          <ab type="version" subtype="interpretive"/>
+        </encodingDesc>
+        '''
+        import xml.etree.ElementTree as ET
+        teiHeader.append(ET.fromstring(encoding_desc))
+
     def append_tei(self, input_path):
         ret = False
 
