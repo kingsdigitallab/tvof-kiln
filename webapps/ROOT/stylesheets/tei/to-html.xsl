@@ -394,7 +394,7 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="tei:seg[@type = ('1', '2', '3', '4', '5')]">
+    <xsl:template match="tei:seg[substring(@type, 1, 1) = ('1', '2', '3', '4', '5')]">
         <span class="tei-seg-num">
             <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/>.
             <xsl:text> </xsl:text>
