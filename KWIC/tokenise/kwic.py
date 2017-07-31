@@ -124,8 +124,9 @@ class KWICList(XMLParser):
             # only process seg type="1" .. "9"
             # also case for 3a, 4a (e.g. Royal)
             if element.tag == 'seg' and\
-                    not re.match(ur'\d+[a-z]?', element.attrib.get('type') or ur''):
+                    not re.match(ur'\d+[a-z]?$', element.attrib.get('type') or ur''):
                 continue
+            print element.attrib.get('type')
             # get ID from element if available
             elementid = element.attrib.get(
                 self.expand_prefix('xml:id')) or paraid
