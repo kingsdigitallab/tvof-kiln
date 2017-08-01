@@ -17,9 +17,16 @@
     <xsl:template match="tei:add">
         <xsl:if test="@hand != 'LH'">
             <span class="add">
+                <xsl:apply-templates select="@*" />
                 <xsl:apply-templates/>
             </span>
         </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="tei:add/@*">
+        <xsl:attribute name="{concat('data-teia-', name(.))}">
+            <xsl:value-of select="." />
+        </xsl:attribute>
     </xsl:template>
 
     <xsl:template match="tei:anchor">
