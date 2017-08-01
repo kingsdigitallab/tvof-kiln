@@ -134,7 +134,7 @@
     <!-- END TEST -->
 
     <xsl:template match="tei:c[@rend = 'R']">
-        <span class="tei-initial">
+        <span class="tei-c red">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -402,9 +402,12 @@
         <span>
             <xsl:apply-templates select="@*"/>
             <!-- PC 01 Mar 2017 : I'm checking on this because I don't think it's relevant any more -->
-            <!--<xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
-                <xsl:attribute name="class">seg1rfl</xsl:attribute>
-            </xsl:if>-->
+            <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
+                <xsl:attribute name="class">first-letter-red</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">
+                <xsl:attribute name="class">first-letter-red</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
