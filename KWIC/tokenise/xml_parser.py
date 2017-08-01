@@ -13,6 +13,7 @@ class XMLParser(object):
     default_output = u'parsed.xml'
 
     def __init__(self):
+        self.convert_only = False
         self.xml_comments = []
         self.reset()
 
@@ -54,10 +55,14 @@ class XMLParser(object):
                 if len(args) > 0:
                     arg = args.pop(0)
                     parser.set_paragraphs(arg)
-            if arg.strip() == '-o':
+            elif arg.strip() == '-o':
                 if len(args) > 0:
                     arg = args.pop(0)
                     output_path = arg
+            elif arg.strip() == '-c':
+                # aggregate and convert only, don't tokenise or kwic
+                # TODO: this should really go into doall.py
+                parser.convert_only = True
             else:
                 input_str.append(arg)
                 for input_paths in cls.get_expanded_paths(arg):
@@ -145,7 +150,13 @@ class XMLParser(object):
         xml_string = re.sub(ur'\sxmlns="[^"]+"', '', xml_string, count=1)
 
         # note that ET takes a utf-8 encoded string
-        self.xml = ET.fromstring(xml_string.encode('utf-8'))
+        try:
+            self.xml = ET.fromstring(xml_string.encode('utf-8'))
+        except Exception, e:
+            f = open('error.log', 'w')
+            f.write(xml_string.encode('utf-8'))
+            f.close()
+            raise e
 
     def get_unicode_from_xml(self, xml=None):
         if xml is None:

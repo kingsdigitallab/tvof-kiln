@@ -197,7 +197,16 @@ class KWICList(XMLParser):
         ret += u'<kwiclist>'
         sublist = None
         parts = []
+        invalids = {}
         for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
+            is_token_invalid = (re.search(ur'\s', kwic['kw']) or len(
+                kwic['kw']) > 20 or not(kwic['kw']))
+            if is_token_invalid:
+                if kwic['kw'] not in invalids:
+                    print 'WARNING: probably invalid token in %s, "%s".' % (kwic['lc'], repr(kwic['kw']))
+                    invalids[kwic['kw']] = 1
+                continue
+
             for k in ['sl', 'pr', 'fo', 'kw', 'pe']:
                 v = kwic.get(k, None)
                 if v is not None:
@@ -219,8 +228,12 @@ class KWICList(XMLParser):
                         **kwic)
                 part += u'\n\t</item>'
                 kwic_count += 1
+
             if part:
                 parts.append(part)
+
+#         for kwic in sorted(set([k['kw'] for k in self.kwics])):
+#             print repr(kwic)
 
         ret += ''.join(parts)
 
