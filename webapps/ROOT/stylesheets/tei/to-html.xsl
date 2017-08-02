@@ -2,11 +2,31 @@
 <xsl:stylesheet version="2.0" xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:key name="div_from_miletone" match="//tei:div[@type='1']" 
+        use="preceding-sibling::tei:milestone[1]/@n" />
+
     <!-- Project-specific XSLT for transforming TEI to
        HTML. Customisations here override those in the core
        to-html.xsl (which should not be changed). -->
 
     <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl"/>
+
+    <!-- GN: we turn milestones into divs which contain all the div type=1 -->
+    <xsl:template match="tei:milestone[@unit = 'section']">
+        <div class="section" 
+                id="{concat('section-', @n)}" 
+                data-n="{@n}" data-type="{@type}">
+            <xsl:for-each select="key('div_from_miletone', @n)">
+                <div>
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:apply-templates/>
+                </div>
+            </xsl:for-each>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:div[@type = '1']">
+    </xsl:template>
 
     <xsl:template match="tei:ab">
         <div class="ab">
@@ -209,13 +229,6 @@
                 </span>
             </xsl:when>
         </xsl:choose>
-    </xsl:template>
-
-    <xsl:template match="tei:div[@type = '1']">
-        <div>
-            <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates/>
-        </div>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'notes']"/>
