@@ -89,6 +89,7 @@ $file =~ s|i`|<choice><orig>i</orig><reg>ï</reg></choice>|g;
 $file =~ s|i,|<choice><orig>i</orig><reg>j</reg></choice>|g;
 $file =~ s|i_|<choice><orig>i</orig><reg>J</reg></choice>|g;
 # GN: 30 jul 17
+$file =~ s|I,|<choice><orig>I</orig><reg>j</reg></choice>|g;
 $file =~ s|I_|<choice><orig>I</orig><reg>J</reg></choice>|g;
 $file =~ s|o`|<choice><orig>o</orig><reg>ö</reg></choice>|g;
 # GN: 30 jul 17
