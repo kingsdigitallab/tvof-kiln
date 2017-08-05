@@ -17,7 +17,7 @@
                 id="{concat('section-', @n)}" 
                 data-n="{@n}" data-type="{@type}">
             <xsl:for-each select="key('div_from_miletone', @n)">
-                <div>
+                <div class="tei-div paragraph" data-type="1">
                     <xsl:apply-templates select="@*"/>
                     <xsl:apply-templates/>
                 </div>
@@ -458,7 +458,11 @@
 
     <xsl:template match="tei:sic" mode="semi-diplomatic">
         <xsl:text> </xsl:text>
-        <xsl:apply-templates/>
+        <!-- GN: see TVOF 146, mode must be provided here, otherwise
+        reg is shown in the sic withint the reveal; we want of orig 
+        Make sure you understand XSLT spec 5.7 and 5.8 about Modes!
+        -->
+        <xsl:apply-templates mode="semi-diplomatic" />
     </xsl:template>
 
     <xsl:template match="tei:unclear">
