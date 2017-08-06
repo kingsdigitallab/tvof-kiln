@@ -13,11 +13,14 @@
 
     <!-- GN: we turn milestones into divs which contain all the div type=1 -->
     <xsl:template match="tei:milestone[@unit = 'section']">
+        <xsl:variable name="section-number" 
+            select="@n" />
         <div class="section" 
                 id="{concat('section-', @n)}" 
                 data-n="{@n}" data-type="{@type}">
             <xsl:for-each select="key('div_from_miletone', @n)">
-                <div class="tei-div paragraph" data-type="1">
+                <div class="tei-div paragraph" 
+                    data-type="1" data-section="{$section-number}">
                     <xsl:apply-templates select="@*"/>
                     <xsl:apply-templates/>
                 </div>
