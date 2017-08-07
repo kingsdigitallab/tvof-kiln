@@ -2,11 +2,34 @@
 <xsl:stylesheet version="2.0" xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:key name="div_from_miletone" match="//tei:div[@type='1']" 
+        use="preceding-sibling::tei:milestone[1]/@n" />
+
     <!-- Project-specific XSLT for transforming TEI to
        HTML. Customisations here override those in the core
        to-html.xsl (which should not be changed). -->
 
     <xsl:import href="../../kiln/stylesheets/tei/to-html.xsl"/>
+
+    <!-- GN: we turn milestones into divs which contain all the div type=1 -->
+    <xsl:template match="tei:milestone[@unit = 'section']">
+        <xsl:variable name="section-number" 
+            select="@n" />
+        <div class="section" 
+                id="{concat('section-', @n)}" 
+                data-n="{@n}" data-type="{@type}">
+            <xsl:for-each select="key('div_from_miletone', @n)">
+                <div class="tei-div paragraph" 
+                    data-type="1" data-section="{$section-number}">
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:apply-templates/>
+                </div>
+            </xsl:for-each>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:div[@type = '1']">
+    </xsl:template>
 
     <xsl:template match="tei:ab">
         <div class="ab">
@@ -17,9 +40,16 @@
     <xsl:template match="tei:add">
         <xsl:if test="@hand != 'LH'">
             <span class="add">
+                <xsl:apply-templates select="@*" />
                 <xsl:apply-templates/>
             </span>
         </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="tei:add/@*">
+        <xsl:attribute name="{concat('data-teia-', name(.))}">
+            <xsl:value-of select="." />
+        </xsl:attribute>
     </xsl:template>
 
     <xsl:template match="tei:anchor">
@@ -134,7 +164,7 @@
     <!-- END TEST -->
 
     <xsl:template match="tei:c[@rend = 'R']">
-        <span class="tei-initial">
+        <span class="tei-c red">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -145,7 +175,7 @@
                 <span class="tei-cb">[<xsl:value-of select="@n"/>] </span>
             </xsl:when>
             <xsl:when test="(@n != 'a') and (not(ends-with(preceding::text()[1], ' ')))">
-                <span class="tei-cb" style="color:teal;">-[<xsl:value-of select="@n"/>]-</span>
+                <span class="tei-cb split-word">[<xsl:value-of select="@n"/>]</span>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -204,13 +234,6 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:div[@type = '1']">
-        <div>
-            <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
     <xsl:template match="tei:div[@type = 'notes']"/>
 
     <xsl:template match="tei:fw">
@@ -236,6 +259,10 @@
 
     <xsl:template match="tei:hi">
         <xsl:choose>
+            <!-- GN: Shouldn't sup and i be in the base kiln template instead? -->
+            <xsl:when test="@rend = 'sup'">
+                <sup><xsl:apply-templates/></sup>
+            </xsl:when>
             <xsl:when test="@rend = 'i'">
                 <em>
                     <xsl:apply-templates/>
@@ -269,14 +296,14 @@
     <xsl:template match="tei:pb">
         <xsl:choose>
             <xsl:when test="ends-with(preceding::text()[1], ' ')">
-                <span class="tei-pb" style="color:teal;">[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb">[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
                             select="following-sibling::tei:cb[1]/@n"/></xsl:if>] </span>
             </xsl:when>
             <xsl:otherwise>
-                <span class="tei-pb" style="color:teal;">-[<xsl:value-of select="@n"/><xsl:if
+                <span class="tei-pb split-word">[<xsl:value-of select="@n"/><xsl:if
                         test="following-sibling::tei:cb[1][@n = 'a']"><xsl:value-of
-                            select="following-sibling::tei:cb[1]/@n"/></xsl:if>]-</span>
+                            select="following-sibling::tei:cb[1]/@n"/></xsl:if>]</span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -390,7 +417,7 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="tei:seg[@type = ('1', '2', '3', '4', '5')]">
+    <xsl:template match="tei:seg[substring(@type, 1, 1) = ('1', '2', '3', '4', '5', '6')]">
         <span class="tei-seg-num">
             <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/>.
             <xsl:text> </xsl:text>
@@ -398,9 +425,12 @@
         <span>
             <xsl:apply-templates select="@*"/>
             <!-- PC 01 Mar 2017 : I'm checking on this because I don't think it's relevant any more -->
-            <!--<xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
-                <xsl:attribute name="class">seg1rfl</xsl:attribute>
-            </xsl:if>-->
+            <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
+                <xsl:attribute name="class">first-letter-red</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">
+                <xsl:attribute name="class">first-letter-red</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -431,7 +461,11 @@
 
     <xsl:template match="tei:sic" mode="semi-diplomatic">
         <xsl:text> </xsl:text>
-        <xsl:apply-templates/>
+        <!-- GN: see TVOF 146, mode must be provided here, otherwise
+        reg is shown in the sic withint the reveal; we want of orig 
+        Make sure you understand XSLT spec 5.7 and 5.8 about Modes!
+        -->
+        <xsl:apply-templates mode="semi-diplomatic" />
     </xsl:template>
 
     <xsl:template match="tei:unclear">
@@ -467,8 +501,9 @@
         </xsl:choose>
     </xsl:template>
 
-
-
-
+    <!-- Lines -->
+    <xsl:template match="tei:lg/tei:l">
+        <span><xsl:apply-templates/></span>
+    </xsl:template>
 
 </xsl:stylesheet>

@@ -6,6 +6,9 @@ from xml_parser import XMLParser
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 
+# runs all the scripts: aggregate, convert, tokenise, kwic
+# use -c flag on command line to do only aggregation and conversion
+
 
 class ParseAll(XMLParser):
 
@@ -35,6 +38,9 @@ class ParseAll(XMLParser):
                   (perlpath, outfiles[-2], outfiles[-1])
         print command
         os.system(command)
+
+        if self.convert_only:
+            return
 
         # tokenise
         print '-' * 20

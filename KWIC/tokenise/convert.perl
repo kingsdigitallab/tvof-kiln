@@ -69,7 +69,7 @@ $file =~ s|([A-Z])÷|<choice><seg type="semi-dip">\1</seg><seg type="crit" subty
 
 
 #$file =~ s|\^([\d])|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toSup">\1</seg></choice>|g;
-$file =~ s|\^([\d])|<hi rend="sup">\1</hi>|g;
+$file =~ s|\^([ivxlcdm])|<hi rend="sup">\1</hi>|g;
 
 # GN: added negative lookbehind assertion to keep the conversion idempotent 
 $file =~ s|\?(?!</reg>)|<choice><orig></orig><reg> ?</reg></choice>|g;
@@ -88,13 +88,22 @@ $file =~ s|e`|<choice><orig>e</orig><reg>ë</reg></choice>|g;
 $file =~ s|i`|<choice><orig>i</orig><reg>ï</reg></choice>|g;
 $file =~ s|i,|<choice><orig>i</orig><reg>j</reg></choice>|g;
 $file =~ s|i_|<choice><orig>i</orig><reg>J</reg></choice>|g;
+# GN: 30 jul 17
+$file =~ s|I,|<choice><orig>I</orig><reg>j</reg></choice>|g;
+$file =~ s|I_|<choice><orig>I</orig><reg>J</reg></choice>|g;
 $file =~ s|o`|<choice><orig>o</orig><reg>ö</reg></choice>|g;
+# GN: 30 jul 17
+$file =~ s|V_|<choice><orig>V</orig><reg>U</reg></choice>|g;
+# GN: 30 jul 17
+$file =~ s|v,|<choice><orig>v</orig><reg>u</reg></choice>|g;
 $file =~ s|u,|<choice><orig>u</orig><reg>v</reg></choice>|g;
+# GN: 30 jul 17
+$file =~ s|U_|<choice><orig>U</orig><reg>V</reg></choice>|g;
 $file =~ s|u_|<choice><orig>u</orig><reg>V</reg></choice>|g;
 $file =~ s|u`|<choice><orig>u</orig><reg>ü</reg></choice>|g;
 
 $file =~ s|%([^±]+)±([^≠]+)≠|<choice><seg type="semi-dip">\1\2</seg><seg type="crit">\1 \2</seg></choice>|g;
-$file =~ s|@([^€]+)€\s([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
+$file =~ s|@([^€]+)€\s+([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
 
 # REINSERT THE EXPANDED PART
 $file = join('', $before, $file, $after);

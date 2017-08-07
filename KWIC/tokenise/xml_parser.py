@@ -13,6 +13,8 @@ class XMLParser(object):
     default_output = u'parsed.xml'
 
     def __init__(self):
+        self.convert_only = False
+        self.xml_comments = []
         self.reset()
 
     def reset(self):
@@ -53,10 +55,14 @@ class XMLParser(object):
                 if len(args) > 0:
                     arg = args.pop(0)
                     parser.set_paragraphs(arg)
-            if arg.strip() == '-o':
+            elif arg.strip() == '-o':
                 if len(args) > 0:
                     arg = args.pop(0)
                     output_path = arg
+            elif arg.strip() == '-c':
+                # aggregate and convert only, don't tokenise or kwic
+                # TODO: this should really go into doall.py
+                parser.convert_only = True
             else:
                 input_str.append(arg)
                 for input_paths in cls.get_expanded_paths(arg):
@@ -130,7 +136,7 @@ class XMLParser(object):
         self.namespaces = {
             prefix: uri
             for definition, prefix, uri
-            in re.findall(ur'(xmlns:(\w+)?\s*=\s*"([^"]+)")', xml_string)
+            in re.findall(ur'(xmlns:?(\w+)?\s*=\s*"([^"]+)")', xml_string)
         }
         self.namespaces.update(self.namespaces_implicit)
 
@@ -144,7 +150,13 @@ class XMLParser(object):
         xml_string = re.sub(ur'\sxmlns="[^"]+"', '', xml_string, count=1)
 
         # note that ET takes a utf-8 encoded string
-        self.xml = ET.fromstring(xml_string.encode('utf-8'))
+        try:
+            self.xml = ET.fromstring(xml_string.encode('utf-8'))
+        except Exception, e:
+            f = open('error.log', 'w')
+            f.write(xml_string.encode('utf-8'))
+            f.close()
+            raise e
 
     def get_unicode_from_xml(self, xml=None):
         if xml is None:
@@ -168,6 +180,8 @@ class XMLParser(object):
         with codecs.open(filepath, 'r', 'utf-8') as f:
             content = f.read()
 
+            content = self.save_xml_comments(content)
+
             try:
                 self.set_xml_from_unicode(content)
 
@@ -179,6 +193,44 @@ class XMLParser(object):
 
         return ret
 
+    def forget_xml_comments(self):
+        self.xml_comments = []
+
+    def restore_xml_comments(self, content):
+        # xml.etree.ElementTree does NOT preserve <!-- -->
+        # We could use lxml but that would mean asking project partners
+        # to install that... let's do it manually.
+        # return content
+        def replace_comment(match):
+            ret = ur''
+            if self.xml_comments:
+                ret = self.xml_comments[int(match.group(1))]
+            return ret
+
+        return re.sub(ur'(?musi)<comment\s*id\s*=\s*"c-(\d+)"\s*/>', replace_comment, content)
+
+    def save_xml_comments(self, content):
+        # xml.etree.ElementTree does NOT preserve <!-- -->
+        # We could use lxml but that would mean asking project partners
+        # to install that... let's do it manually.
+        # TODO: Alternatively
+        # https://stackoverflow.com/questions/33573807/faithfully-preserve-comments-in-parsed-xml-python-2-7
+        # return content
+        first_element_index = (re.search(ur'<\s*\w', content)).start()
+
+        def replace_comment(match):
+            ret = match.group(0)
+
+            if match.start() > first_element_index:
+                commentid = len(self.xml_comments)
+                self.xml_comments.append(ret)
+
+                ret = ur'<comment id="c-%s"/>' % commentid
+
+            return ret
+
+        return re.sub(ur'(?musi)<!--.*?-->', replace_comment, content)
+
     def write_xml(self, file_path, encoding='utf-8'):
         f = open(file_path, 'wb')
         content = u'<?xml version="1.0" encoding="{}"?>\n'.format(encoding)
@@ -187,6 +239,7 @@ class XMLParser(object):
             datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         )
         content += self.get_unicode_from_xml()
+        content = self.restore_xml_comments(content)
         content = content.encode(encoding)
         f.write(content)
         f.close()
@@ -222,3 +275,44 @@ class XMLParser(object):
             ret = False
 
         return ret
+
+    def remove_elements(self, filters):
+        # Remove all elements in the xml that match any of the given fitlers.
+        # e.g. filters = ['del', 'orig', 'seg[@type="semi-dip"]', 'sic', 'pb']
+        # self.remove_elements(filters)
+        for filter in filters:
+            c = 0
+            matches = re.findall('^([^\[]*)(\[.*\])?', filter)
+            tag, condition = matches[0]
+            for parent in self.xml.findall(ur'.//*[' + tag + ur']'):
+                if 0:
+                    # simple version that only empties the element
+                    for element in parent.findall(filter):
+                        # We DO NOT use remove as it also delete the tail!
+                        # parent.remove(element)
+                        tail = element.tail
+                        element.clear()
+                        element.tail = tail
+                        c += 1
+                else:
+                    # slower version that completely removes the elements
+                    elements = parent.findall(filter)
+                    if len(elements):
+                        previous = None
+                        for element in list(parent):
+                            if element in elements:
+                                # make sure we keep the tail
+                                tail = element.tail
+                                parent.remove(element)
+                                c += 1
+                                if tail:
+                                    if previous is not None:
+                                        previous.tail = (
+                                            previous.tail or ur'') + tail
+                                    else:
+                                        parent.text = (
+                                            parent.text or ur'') + tail
+                            else:
+                                previous = element
+
+            print '\t removed %s %s' % (c, filter)

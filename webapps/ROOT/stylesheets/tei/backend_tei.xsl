@@ -60,13 +60,16 @@
               </manuscript>
             </xsl:for-each>
           </manuscripts>
-          <toc>
+          <!-- GN: 1 August 2017: commented out, no longer needed as the
+               Text Viewer API can produce it from the full HTML
+          -->
+          <!-- toc>
             <xsl:for-each select="$tei/tei:text/tei:body/tei:div[@type = '1']">
               <item id="{@xml:id}">
                 <xsl:apply-templates select="tei:head" />
               </item>
             </xsl:for-each>
-          </toc>
+          </toc -->
           <content>
             <xsl:apply-templates select="$tei/tei:text/tei:body">
               <xsl:with-param name="view" select="$cur-version-name"

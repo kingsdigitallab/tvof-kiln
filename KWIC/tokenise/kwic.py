@@ -69,19 +69,7 @@ class KWICList(XMLParser):
             raise Exception('Unsupported version %s' % version)
 
         filters = ['del', 'orig', 'seg[@type="semi-dip"]', 'sic', 'pb', 'cb']
-        for filter in filters:
-            c = 0
-            matches = re.findall('^([^\[]*)(\[.*\])?', filter)
-            tag, condition = matches[0]
-            for parent in self.xml.findall(ur'.//*[' + tag + ur']'):
-                for element in parent.findall(filter):
-                    # We DO NOT use remove as it also delete the tail!
-                    # parent.remove(element)
-                    tail = element.tail
-                    element.clear()
-                    element.tail = tail
-                    c += 1
-            print '\t removed %s %s' % (c, filter)
+        self.remove_elements(filters)
 
         print '\t capitalise toUpper'
         for element in self.xml.findall('.//*[@subtype="toUpper"]'):
@@ -115,9 +103,9 @@ class KWICList(XMLParser):
         self.kwics = []
 
         for div in self.xml.findall('.//div[head]'):
-            parentid = div.attrib.get(self.expand_prefix('xml:id'))
+            paraid = div.attrib.get(self.expand_prefix('xml:id'))
 
-            if not self.is_para_in_range(parentid):
+            if not self.is_para_in_range(paraid):
                 continue
 
             # for element in div.findall('head[@type="rubric"]',
@@ -125,24 +113,22 @@ class KWICList(XMLParser):
             for filter in ['head[@type="rubric"]', './/seg[@type]']:
                 # add all <w> to the kwic list
                 self.collect_keywords_under_elements(
-                    div.findall(filter), parentid)
+                    div.findall(filter), paraid)
 
     # Collect all the tokens
-    def collect_keywords_under_elements(self, elements, parentid):
+    def collect_keywords_under_elements(self, elements, paraid):
 
         kwics = []
 
         for element in elements:
-            element_type = 'rubric_item' if element.attrib.get(
-                'type') == 'rubric' else 'seg_item'
-
             # only process seg type="1" .. "9"
+            # also case for 3a, 4a (e.g. Royal)
             if element.tag == 'seg' and\
-                    not re.match(ur'\d+', element.attrib.get('type') or ur''):
+                    not re.match(ur'\d+[a-z]?$', element.attrib.get('type') or ur''):
                 continue
             # get ID from element if available
             elementid = element.attrib.get(
-                self.expand_prefix('xml:id')) or parentid
+                self.expand_prefix('xml:id')) or paraid
 
             tokens = element.findall('.//w')
 
@@ -160,17 +146,17 @@ class KWICList(XMLParser):
                         'sl': keyword.lower()[0:1],
                         'lc': elementid,
                         'nb': token.attrib.get('n'),
-                        'tp': element_type,
+                        'tp': self.get_token_type_from_parent(element),
                     }
                     self.kwics.append(kwic)
                     kwics.append(kwic)
                 else:
                     print 'NONE'
                     print token.attrib.get('n')
-                    print parentid
+                    print paraid
                     exit()
 
-        # add tokens metadata to the keyword list
+        # add context (prev/next words) to the new keywords in the list
         radius = self.context_radius + 1
         for i in range(len(kwics)):
             kwic = kwics[i]
@@ -189,6 +175,18 @@ class KWICList(XMLParser):
             if (i + 1) < len(kwics) and re.match(ur'[\.,]', kwics[i + 1]['kw']):
                 kwic['pe'] = kwics[i + 1]['kw']
 
+    def get_token_type_from_parent(self, parent):
+        '''Returns the token type from the @type of the parent of the token'''
+        ret = 'seg_item'
+
+        el_type = parent.attrib.get('type')
+        if el_type == 'rubric':
+            ret = 'rubric_item'
+        if el_type == '6':
+            ret = 'verse_item'
+
+        return ret
+
     def generate_xml(self):
         print 'Generate XML'
 
@@ -199,7 +197,16 @@ class KWICList(XMLParser):
         ret += u'<kwiclist>'
         sublist = None
         parts = []
+        invalids = {}
         for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
+            is_token_invalid = (re.search(ur'\s', kwic['kw']) or len(
+                kwic['kw']) > 20 or not(kwic['kw']))
+            if is_token_invalid:
+                if kwic['kw'] not in invalids:
+                    print 'WARNING: probably invalid token in %s, "%s".' % (kwic['lc'], repr(kwic['kw']))
+                    invalids[kwic['kw']] = 1
+                continue
+
             for k in ['sl', 'pr', 'fo', 'kw', 'pe']:
                 v = kwic.get(k, None)
                 if v is not None:
@@ -221,8 +228,12 @@ class KWICList(XMLParser):
                         **kwic)
                 part += u'\n\t</item>'
                 kwic_count += 1
+
             if part:
                 parts.append(part)
+
+#         for kwic in sorted(set([k['kw'] for k in self.kwics])):
+#             print repr(kwic)
 
         ret += ''.join(parts)
 

@@ -12,6 +12,9 @@ class TEITokeniser(XMLParser):
     token_end = u'#}#'
     tag_to_be_remove = u'TOBEREMOVED'
     default_output = u'tokenised.xml'
+    elements_to_remove = [
+        ur'add[@type="annotation"]',
+    ]
 
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
@@ -27,6 +30,8 @@ class TEITokeniser(XMLParser):
 
                     self.assign_tokenids()
                     # print tokeniser.get_unicode_from_xml()
+
+            self.forget_xml_comments()
 
     def remove_superfluous_spaces(self):
         # Remove spaces erroneously added by Oxygen editor.
@@ -177,6 +182,10 @@ class TEITokeniser(XMLParser):
 
     def tokenise(self):
         ret = True
+
+        # remove some elements we don't want to show on website or lemmatise
+        self.remove_elements(self.elements_to_remove)
+
         self.remove_superfluous_spaces()
 
         xml_string = self.get_unicode_from_xml()
