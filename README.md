@@ -6,11 +6,11 @@ Contains the Kiln part of the TVOF resource
 ### UC-00
 
   **Summary**  
-  SUMMARY DESCRIPTION OF THE CASE  
+       SUMMARY DESCRIPTION OF THE CASE  
   **Priority**  
-  PUT IN APPROPRIATE MOSCOW VALUE  
+       PUT IN APPROPRIATE MOSCOW VALUE  
   **Use Frequency**  
-  CHOOSE FROM Always, Often, Sometimes, Rarely, Once  
+       CHOOSE FROM Always, Often, Sometimes, Rarely, Once  
   **Direct Actors**  
   EG. ADMIN, EDITOR, PUBLIC  
   **Main Success Scenario**
