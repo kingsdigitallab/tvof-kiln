@@ -5,14 +5,20 @@ Contains the Kiln part of the TVOF resource
 
 ### UC-00
 
-  **Summary:**  SUMMARY DESCRIPTION OF THE CASE    
-  **Priority:**  PUT IN APPROPRIATE MOSCOW VALUE    
-  **Use Frequency:**  CHOOSE FROM Always, Often, Sometimes, Rarely, Once    
-  **Direct Actors:**  EG. ADMIN, EDITOR, PUBLIC    
-  **Main Success Scenario:**
-  1. STEP
-  2. STEP
-  3. ETC.
+**Summary:**  REQUIRED - SUMMARY DESCRIPTION OF THE CASE    
+**Priority:**  REQUIRED - PUT IN APPROPRIATE MOSCOW VALUE    
+**Use Frequency:**  REQUIRED - CHOOSE FROM Always, Often, Sometimes, Rarely, Once    
+**Direct Actors:**  OPTIONAL - ONLY SPECIFY WHEN ACTOR IS NEITHER USER NOR SYSTEM
+[User: end-user in any role
+System: The system being built
+When actors are not listed, assume User is doing it.
+Items beginning with "see" indicate that System has presented a new screen.]  
+**Stakeholders:**  OPTIONAL - FOO  
+**Prereq:**  OPTIONAL - GIVE ANY NECESSARY PRECONDITIONS     
+**Main Success Scenario:**
+1. STEP
+2. STEP
+3. ETC.
 
 ---
 
