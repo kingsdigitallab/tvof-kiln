@@ -19,6 +19,7 @@ Items beginning with "see" indicate that System has presented a new screen.]
 1. STEP
 2. STEP
 3. ETC.  
+
 **Alternative Scenario Extensions:** OPTIONAL - DETAILS ANY "IF X, THEN Y" RELEVANT TO SCENARIO    
 **Notes and Questions:** OPTIONAL
 * NOTE
