@@ -1207,7 +1207,7 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">8vb</seg>
                                     <seg type="note">incipit: 'Ensi come uos oes fu tot le monde
-                                          destruit ensemble·'</seg>
+                                          destruit ensemble·' (last 2 lines of the b column)</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00031">
@@ -3226,6 +3226,13 @@
                                     <seg type="location">16r</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Enquel part abraha[m] se herberia q[ua]nt il
+                                          uint en la terre de cananee·</seg>
+                                    <seg type="location">19va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">Ou abraam se erberia quant iluint enla tere
                                           dekananee</seg>
@@ -3248,6 +3255,14 @@
                                     <seg type="location">16v</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment abraham ala en egypte ou il douta les
+                                          egyptiens·</seg>
+                                    <seg type="location">19vb</seg>
+                                    <seg type="note">rubrics of para 93 and 94 of Fr20125 are
+                                          merged, as the two para</seg>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">Com[en]t abraam alla primere fois
                                           enegipte</seg>
@@ -3266,6 +3281,14 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">16v</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">19vb</seg>
+                                    <seg type="note">Incipit: 'Bien sachiez uos q[ui] oes [et]
+                                          endendes q[ue] sarra la feme abraham estoit tres belle de
+                                          cors [et] de menbres'</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -3287,6 +3310,13 @@
                                     <seg type="rubric">Coment abraham dist asafame que ele le tenist
                                           a frere</seg>
                                     <seg type="location">16v</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment abraha[m] dist asafeme q[ue]lle le
+                                          tenist por son frere·</seg>
+                                    <seg type="location">20ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -3312,6 +3342,12 @@
                                     <seg type="note">Absent</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric"/>
                                     <seg type="location">absent</seg>
@@ -3330,6 +3366,14 @@
                                     <seg type="rubric">De la grant feste que li rois degypte fist
                                           quant il uit la fame abraha[m]</seg>
                                     <seg type="location">17r</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De la g[ra]nt feste q[ue] fist leroi
+                                                degypte<pc rend="2"/> quant il uit lafeme
+                                          abraham·</seg>
+                                    <seg type="location">20va</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -3353,6 +3397,13 @@
                                     <seg type="location">17r</seg>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]te leroi degypte rendi aabraham sa
+                                          feme q[ui]l auoit couoitiee·</seg>
+                                    <seg type="location">20vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">16rb</seg>
@@ -3371,6 +3422,12 @@
                                     <seg type="rubric">Comment lascience abraham fu loee en
                                           egypte</seg>
                                     <seg type="location">17r</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment abraham fu loe en egypte·</seg>
+                                    <seg type="location">20vb</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -3393,6 +3450,13 @@
                                     <seg type="rubric">Coment il ensaigna p[re]miereme[n]t
                                           arimetique</seg>
                                     <seg type="location">17v</seg>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t abraham enseigna acil degypte
+                                          premierem[en]t arimetique·</seg>
+                                    <seg type="location">21ra</seg>
+                                    <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -9085,6 +9149,13 @@
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Q[ua]nt home [et] quantes femes entrerent en
+                                          egypte o iacob de sa maisniee·</seg>
+                                    <seg type="location">66ra</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric"/>
                                     <seg type="location"/>
@@ -9104,6 +9175,31 @@
                                     <seg type="rubric">Que ioseph ala enco[n]tre sompere</seg>
                                     <seg type="location">52r</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">segs 349,1-2 close para 348; seg 349,3
+                                          opens para 350 </seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">The Hague</seg>
+                                    <seg type="rubric">Co[m]mant ioseph ala encontre sompere·</seg>
+                                    <seg type="location">41va</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Marciana_fr_II</seg>
+                                    <seg type="rubric">Que Joseph ala encontre son pere·</seg>
+                                    <seg type="location">62rb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Chantilly726</seg>
+                                    <seg type="rubric"/>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note">material lacuna</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
@@ -9210,6 +9306,13 @@
                                     <seg type="location">52v</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment la cite de memphis ne fu mie
+                                          damiate·</seg>
+                                    <seg type="location">67va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00356">
                               <ab type="ms_instance" corresp="#edfr20125_00356">
@@ -9221,7 +9324,13 @@
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">de ce meismeme[n]t encore</seg>
-                                    <seg type="location">52v</seg>
+                                    <seg type="location">52vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">67vb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -9240,6 +9349,13 @@
                                     <seg type="location">53r</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que le roi pharaone comanda aioseph q[ui]l
+                                          pensast de son pere·</seg>
+                                    <seg type="location">67vb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00358">
                               <ab type="ms_instance" corresp="#edfr20125_00358">
@@ -9252,6 +9368,13 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Co[m]me[n]t la famine fu g[ra]nz</seg>
                                     <seg type="location">53r</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment la famine estoit encores m[o]lt
+                                          grant·</seg>
+                                    <seg type="location">68ra</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -9268,6 +9391,12 @@
                                     <seg type="location">53r</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment ioseph parla au pueple degypte·</seg>
+                                    <seg type="location">68rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00360">
                               <ab type="ms_instance" corresp="#edfr20125_00360">
@@ -9281,6 +9410,13 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">53r</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">68rb</seg>
+                                    <seg type="note">Incipit: 'Seignor uos [et] uoz bestes [et] uoz
+                                          terres clame ie tot quites·'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00361">
@@ -9296,6 +9432,13 @@
                                     <seg type="rubric">Que tost fu laioie reuenue apres la
                                           famine</seg>
                                     <seg type="location">53r</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Com[en]t la ioie fu reuenue apres
+                                          lafamine·</seg>
+                                    <seg type="location">68rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -9449,6 +9592,12 @@
                                     <seg type="location">85rb</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Ci laist de la ligniee abraham·</seg>
+                                    <seg type="location">70va</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00371">
                               <ab type="ms_instance" corresp="#edfr20125_00371">
@@ -9461,6 +9610,12 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que li rois ninus fu au tens abraham</seg>
                                     <seg type="location">54v</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que li rois ninus fu autens abraham·</seg>
+                                    <seg type="location">70vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -9482,6 +9637,13 @@
                                     <seg type="rubric">Quanz anz il ot dou roi nin[us] iusq[ue] a
                                           cesar auguste</seg>
                                     <seg type="location">54v</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Quant anz il ot de termine dou roi ninus
+                                          iusq[ues] acesar agustus·</seg>
+                                    <seg type="location">70vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
@@ -9532,6 +9694,12 @@
                                     <seg type="location">1ra</seg>
                                     <seg type="note">Space left for illustration</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Quant anz leroi ninus regna·</seg>
+                                    <seg type="location">71ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00374">
                               <ab type="ms_instance" corresp="#edfr20125_00374">
@@ -9552,6 +9720,12 @@
                                     <seg type="location">1rb</seg>
                                     <seg type="note">[From Otaka ed.]</seg>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">De la royne semiramis qui tint asire·</seg>
+                                    <seg type="location">71rb</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00375">
                               <ab type="ms_instance" corresp="#edfr20125_00375">
@@ -9565,6 +9739,12 @@
                                     <seg type="rubric">"</seg>
                                     <seg type="location">55v</seg>
                                     <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">"</seg>
+                                    <seg type="location">71vb</seg>
+                                    <seg type="note">Incipit: 'Ceste royne q[ue] si maliciouse estoit resforsa m[o]lt babeloine'</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00376">
@@ -9596,6 +9776,12 @@
                                     <seg type="location">55v</seg>
                                     <seg type="note"/>
                               </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Coment rome ot la seignorie dou monde de q[ue] elle comensa·</seg>
+                                    <seg type="location">72ra</seg>
+                                    <seg type="note"/>
+                              </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_00378">
                               <ab type="ms_instance" corresp="#edfr20125_00378">
@@ -9610,6 +9796,12 @@
                                     <seg type="rubric">Que roume coum[en]ca q[ua]nt babyloine fu
                                           destruite</seg>
                                     <seg type="location">55v</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Add 15268</seg>
+                                    <seg type="rubric">Que rome comensa q[ua]nt babeloine fu destruite·</seg>
+                                    <seg type="location">72rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -10275,7 +10467,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que edippus ui[n]t athebes [et] quil prist
                                           samere afame</seg>
-                                    <seg type="location">59v</seg>
+                                    <seg type="location">59vb</seg>
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance" corresp="#edRoyal20D1_00008">
@@ -19471,10 +19663,10 @@
                                     <seg type="note"/>
                               </ab>
                               <ab type="ms_instance">
-                                    <seg type="ms_name">fr 168 <!--SV [=205]--></seg>
+                                    <seg type="ms_name">fr 168</seg>
                                     <seg type="rubric">Com[en]t et por quoi romulus co[m]mensa a
                                           croistre engratn seignorie</seg>
-                                    <seg type="location">165rb</seg>
+                                    <seg type="location">165rb<!--SV [=205]--></seg>
                                     <seg type="note">Prosified moralisation 166ra-166rb [Inc (f
                                           166ra): ...Et lor seruice lui p[re]|sentoie[n]t tant auoit
                                           en lui grant | largesce· et si fier cuer et tel pro|esce
@@ -23724,7 +23916,7 @@
                         <div type="alignment" xml:id="fr20125_00850">
                               <ab type="ms_instance" corresp="#edfr20125_00850">
                                     <seg type="ms_name">Fr20125</seg>
-                                    <seg type="rubric">Q[ue] chascns ho[m] se doit pener de bien
+                                    <seg type="rubric">Q[ue] chascuns ho[m] se doit pener de bien
                                           faire que le[n] rende le merite·</seg>
                                     <seg type="location">252rb</seg>
                                     <seg type="note">Verse moralisation</seg>
@@ -26060,7 +26252,7 @@
                               <ab type="ms_instance" corresp="#edfr20125_00936">
                                     <seg type="ms_name">Fr20125</seg>
                                     <seg type="rubric">Q[ue] hanibal assambla sa gent por uengier la
-                                          mort de son pere· [et] seruage de cartage·</seg>
+                                          mort de son pere· [et] f de cartage·</seg>
                                     <seg type="location">282ra</seg>
                                     <seg type="note">Large puzzle initial at beginning of para</seg>
                               </ab>
@@ -26080,7 +26272,8 @@
                                     <seg type="note">Large foliate initial</seg>
                               </ab>
 
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_01 #edRoyal20D1_00617_09">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que hanibal assa[m]bla sa ient por ue[n]gier
                                           la mort son pere [et] le seruaie de cartaie·</seg>
@@ -26101,7 +26294,8 @@
                                     <seg type="location">185rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_10 #edRoyal20D1_00617_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">270ra</seg>
@@ -26123,7 +26317,8 @@
                                     <seg type="location">185va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_11 #edRoyal20D1_00617_17">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">270rb</seg>
@@ -26145,7 +26340,8 @@
                                     <seg type="location">185vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_18 #edRoyal20D1_00617_19">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">270va</seg>
@@ -26167,7 +26363,8 @@
                                     <seg type="location">185vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_20 #edRoyal20D1_00617_30">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">270vb</seg>
@@ -26189,7 +26386,8 @@
                                     <seg type="location">186ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00617_20 #edRoyal20D1_00617_40">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">271ra</seg>
@@ -26211,8 +26409,10 @@
                                           preu de bie[n]</seg>
                                     <seg type="location">186rb</seg>
                                     <seg type="note">Verse moralisation written as prose</seg>
+                                    <seg type="note">= Hague 146va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00618_01 #edRoyal20D1_00618_01">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que mult doit la mo[n]t dot[er] qui ne fait
                                           p[re]u de b[ie]n·</seg>
@@ -26231,9 +26431,10 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">·Encor de ce meismes</seg>
                                     <seg type="location">186va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 146vb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00618_02 #edRoyal20D1_00618_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">272ra</seg>
@@ -26253,9 +26454,10 @@
                                     <seg type="rubric">Que hannibal fist lacite destruire [et]
                                           abatre</seg>
                                     <seg type="location">186vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 146vb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00618_07 #edRoyal20D1_00618_14">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">272rb</seg>
@@ -26275,9 +26477,10 @@
                                     <seg type="rubric">Q[ue] hannibal issi despaigne por aler en
                                           ytale par terre</seg>
                                     <seg type="location">187ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00619_01 #edRoyal20D1_00619_07">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li galois se[con]batire[n]t a
                                           hanibal·</seg>
@@ -26299,9 +26502,10 @@
                                     <seg type="rubric">Que li gallois secombatire[n]t aha[n]nibal
                                           soz les mo[n]z [et] p[us] seracordere[n]t il alui</seg>
                                     <seg type="location">187rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00619_08 #edRoyal20D1_00619_17">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">273ra</seg>
@@ -26321,9 +26525,10 @@
                                     <seg type="rubric">Que hannibal [com]me[n]ca lauoie parmi
                                           mongieu a faire·</seg>
                                     <seg type="location">187va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147rb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00619_18 #edRoyal20D1_00619_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">273va</seg>
@@ -26343,9 +26548,10 @@
                                     <seg type="rubric">Que lirois hannibal passa·
                                           lamo[n]taigne</seg>
                                     <seg type="location">187vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00620_01 #edRoyal20D1_00620_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li rois hanibal trespassa la
                                           montaigne·</seg>
@@ -26366,9 +26572,10 @@
                                     <seg type="rubric">·Que li conceles scipio o ses genz assambla·
                                           as genz hannibal aupie doumo[n]t</seg>
                                     <seg type="location">187vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00620_07 #edRoyal20D1_00620_18">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">274ra</seg>
@@ -26388,9 +26595,10 @@
                                     <seg type="rubric">·Que lirois hannibal perdi mout par latres
                                           grant froidure·</seg>
                                     <seg type="location">188rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 147vb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00620_19 #edRoyal20D1_00620_28">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">274va</seg>
@@ -26410,9 +26618,10 @@
                                     <seg type="rubric">·Que lirois hannibal semist es moles uoies
                                           ditale</seg>
                                     <seg type="location">188va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00630_01 #edRoyal20D1_00621_08">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li rois hanibal semist esmoles uoies
                                           ditale·</seg>
@@ -26433,9 +26642,10 @@
                                     <seg type="rubric">Que hannibal perdi ·i· oil p[ar]
                                           lafroid[ur]e</seg>
                                     <seg type="location">188vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148rb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00621_09 #edRoyal20D1_00621_17">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">275va</seg>
@@ -26455,9 +26665,10 @@
                                     <seg type="rubric">Que hannibal ocist leco[n]cele flaminiu[m]
                                           [et] sa[com]paignie</seg>
                                     <seg type="location">189ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00621_18 #edRoyal20D1_00621_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">276ra</seg>
@@ -26477,9 +26688,10 @@
                                     <seg type="rubric">Q[ue] ha[n]nibal mal gre les romai[n]s en ala
                                           empuille</seg>
                                     <seg type="location">189rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00621_23 #edRoyal20D1_00621_26">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">276rb</seg>
@@ -26499,9 +26711,10 @@
                                     <seg type="rubric">Q[ue] liromai[n] esgardere[n]t q[ui]l totes
                                           lor forces enuoieroient co[n]tre ha[n]nibal</seg>
                                     <seg type="location">189rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148vb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00622_01 #edRoyal20D1_00622_01">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li romain esgarderent quil totes lor
                                           forces en uoieront contra hanibal·</seg>
@@ -26522,9 +26735,10 @@
                                     <seg type="rubric">·Que liromai[n] alerent tant quil
                                           assamblere[n]t as genz hannibal deua[n]t cannes</seg>
                                     <seg type="location">189va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 148vb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00622_02 #edRoyal20D1_00622_09">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">276va</seg>
@@ -26544,9 +26758,10 @@
                                     <seg type="rubric">·Que labataille dura ·iii· iorz par g[ra]nt
                                           desuerie</seg>
                                     <seg type="location">189vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00622_10 #edRoyal20D1_00622_13">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">277ra</seg>
@@ -26566,7 +26781,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric"/>
                                     <seg type="location">absent</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149rb = absent</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26590,9 +26805,10 @@
                                           si fist les anniaux dor mesurer des ch[eualie]rs qui occis
                                           estoie[n]t si en iot ·iii· muis</seg>
                                     <seg type="location"/>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149rb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00622_14 #edRoyal20D1_00622_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">277va</seg>
@@ -26612,9 +26828,10 @@
                                     <seg type="rubric">Que tuit liromai[n] sen fussent foi derome se
                                           ne fust scipio li[con]celes</seg>
                                     <seg type="location">190rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149rb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00623_01 #edRoyal20D1_00623_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que tuit li romain sen fussent fui de rome
                                           senefust scipio li conseles·</seg>
@@ -26635,9 +26852,10 @@
                                     <seg type="rubric">Que cil derome fire[n]t ch[eualie]rs des
                                           iouenciaux [et] des sers par besoigne·</seg>
                                     <seg type="location">190va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00623_07 #edRoyal20D1_00623_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">278rb</seg>
@@ -26657,9 +26875,10 @@
                                     <seg type="rubric">Que tuit libani derome reuenisse[n]t [et]
                                           fusse[n]t tuit assoz de lor mesfez</seg>
                                     <seg type="location">190vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00623_13 #edRoyal20D1_00623_17">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">278va</seg>
@@ -26679,9 +26898,11 @@
                                     <seg type="rubric">Que li p[ro]conceles claudi[us] enuahi lost
                                           hannibal [et] seli fist g[ra]nt damaige</seg>
                                     <seg type="location">190vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 149vb Que lipreuz [con]celes
+                                          claudi[us]...</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00624_01 #edRoyal20D1_00624_13">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li conseles claudius [added in
                                           margin:enuai] lost hanibal [et] sili fist gra[n]t
@@ -26703,9 +26924,10 @@
                                     <seg type="rubric">·Que lirois phelippes demacedoine enuoiases
                                           mesaies a hannibal</seg>
                                     <seg type="location">191rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 150ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00624_14 #edRoyal20D1_00624_24">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">279rb</seg>
@@ -26725,9 +26947,10 @@
                                     <seg type="rubric">Que m[ou]lt auoie[n]t adonq[ue]s afaire
                                           liromain</seg>
                                     <seg type="location">191va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 150rb</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00624_25 #edRoyal20D1_00624_27">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">279vb</seg>
@@ -26745,7 +26968,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Que hannibal asist rome·</seg>
                                     <seg type="location">191vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 150rb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26767,7 +26990,7 @@
                                     <seg type="rubric">Que tuit cil derome issire[n]t delacite p[or]
                                           [com]batre</seg>
                                     <seg type="location">192ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 150va</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26789,7 +27012,7 @@
                                     <seg type="rubric">Que tuit sedepartire[n]t por la grant
                                           pluie</seg>
                                     <seg type="location">192rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 150vb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26811,7 +27034,7 @@
                                     <seg type="rubric">Que cele fu la uolentez n[ost]tre seignor
                                           q[ue] lacitez ne fu mie destruite</seg>
                                     <seg type="location">192va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 151ra</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26833,7 +27056,7 @@
                                     <seg type="rubric">Q[ue] li dui scipio qui en espaigne
                                           estoie[n]t se co[m]batire[n]t ahasdrubal</seg>
                                     <seg type="location">192va-vb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 151ra</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26855,7 +27078,7 @@
                                     <seg type="rubric">·Que lirois hasdrubal des[con]fist les ·ii·
                                           scipio [et] occist</seg>
                                     <seg type="location">193ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 151rb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -26877,7 +27100,7 @@
                                     <seg type="rubric">Que liconceles quint[us] fului[us] prist
                                           lacite decapes ou les ge[n]z ha[n]nibal estoie[n]t</seg>
                                     <seg type="location">193ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 151rb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27028,7 +27251,7 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">de cele desconfiture encore meismement</seg>
                                     <seg type="location">194va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague152va</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27139,7 +27362,7 @@
                                     <seg type="rubric">·Que lirois hastrubal passa· mon geu ou
                                           liromai[n] li uindre[n]t alen[con]tre</seg>
                                     <seg type="location">195va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 153ra</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27205,8 +27428,10 @@
                                     <seg type="rubric"/>
                                     <seg type="location"/>
                                     <seg type="note">Para is absent; additional content at end of
-                                          para (988): '[et] puis fu apres enuoiez en aufrique· par
-                                          leconsoil des senators·'(196rb)</seg>
+                                          para (986): '[et] puis fu apres enuoiez en aufrique· par
+                                          leconsoil des senators·'(196rb)
+                                          <!-- SV the Hague ms 154vb has the same rubric as fr20125 and 
+                                          doesn't have Add19's additional content --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27339,7 +27564,7 @@
                                     <seg type="rubric">·Que li rois hannibal seremist enm[er] por
                                           repairier enaufriq[ue]</seg>
                                     <seg type="location">197rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 154vb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27456,7 +27681,7 @@
                                     <seg type="rubric">Que liparlemenz nepotestre acheuez nefaite
                                           laconcorde</seg>
                                     <seg type="location">198ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note">= Hague 155rb</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27478,7 +27703,8 @@
                                     <seg type="rubric">Que les batailles assamblere[n]t aufriq[ua]nz
                                           [et] des romains</seg>
                                     <seg type="location">198rb</seg>
-                                    <seg type="note">2-compartment miniature in middle of para</seg>
+                                    <seg type="note">2-compartment miniature in middle of
+                                          para<!-- SV same as Hague 155vb --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27548,7 +27774,8 @@
                                           Encontre ceus derome·</seg>
                                     <seg type="location">127rb</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v</seg>
+                                          126v instead of after
+                                          198v<!-- SV = Hague 156rb, large puzzle initial ‹A› --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27559,6 +27786,13 @@
                                           the column 261rb. Two lines left blank between the end of
                                           the 'Hannibal/Scipio' subsection, and the 'Macedoniens'
                                           subsection. F. 261va, large puzzle initial ‹A›</seg>
+                              </ab>
+                              <ab>
+                                    <seg type="ms_name">Dijon 562</seg>
+                                    <seg type="rubric">Si recomence la batailles des macedoniyens
+                                          contre les romains·</seg>
+                                    <seg type="location">222va</seg>
+                                    <seg type="note">Large puzzle initial ‹A›</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Fr9682</seg>
@@ -27607,7 +27841,7 @@
                                           enuoiez [con]tre les macedonie[n]s</seg>
                                     <seg type="location">127va</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v</seg>
+                                          126v instead of after 198v<!-- SV = Hague 156va --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27637,7 +27871,7 @@
                                           macedonois enbataille</seg>
                                     <seg type="location">127vb</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v</seg>
+                                          126v instead of after 198v<!-- SV = Hague 156vb --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27667,7 +27901,7 @@
                                           [et] lidus nauida de lacedomonie·</seg>
                                     <seg type="location">128ra</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v</seg>
+                                          126v instead of after 198v<!-- SV = Hague 156vb --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27697,7 +27931,7 @@
                                           lorsort mortiex g[ue]rre</seg>
                                     <seg type="location">128va</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v</seg>
+                                          126v instead of after 198v<!-- SV = Hague 157ra --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27728,7 +27962,8 @@
                                           debataille</seg>
                                     <seg type="location">128vb</seg>
                                     <seg type="note">127 and 128 = misbound folios; appear after
-                                          126v instead of after 198v; para ends on 201ra</seg>
+                                          126v instead of after 198v; para ends on
+                                          201ra<!-- SV = Hague 157va --></seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
@@ -27757,13 +27992,13 @@
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric"/>
                                     <seg type="location">absent</seg>
-                                    <seg type="note"/>
+                                    <seg type="note"/><!-- SV = Hague 157va-vb absent -->
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
                                     <seg type="rubric">"</seg>
-                                    <seg type="location">263rb</seg>
-                                    <seg type="note"/>
+                                    <seg type="location">absent</seg>
+                                    <seg type="note"/><!-- SV = Dijon 562 223ra-rb absent -->
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -27785,14 +28020,14 @@
                                     <seg type="rubric">Qui cil furent qui a[pre]s anthioc[us] sother
                                           regnere[n]t</seg>
                                     <seg type="location">201ra</seg>
-                                    <seg type="note"/>
+                                    <seg type="note"/><!-- SV = Hague 157vb -->
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Add 15268</seg>
                                     <seg type="rubric">Qui furent cil q[ui] apres antiochus soter
                                           regnerent·</seg>
                                     <seg type="location">263va</seg>
-                                    <seg type="note"/>
+                                    <seg type="note"/><!-- SV = Dijon 562 223rb -->
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Royal_20_D_1</seg>
@@ -29025,7 +29260,8 @@
                                     <seg type="location">206va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_01 #edRoyal20D1_00644_07">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que scipio african[us] uint en
                                           espaigne·</seg>
@@ -29048,7 +29284,8 @@
                                     <seg type="location">206vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_08 #edRoyal20D1_00644_09">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">312rb</seg>
@@ -29070,11 +29307,12 @@
                                     <seg type="location">207ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_10 #edRoyal20D1_00644_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">312va</seg>
-                                    <seg type="note">//</seg>
+                                    <seg type="note">//; nb. more developed than in FR 20125</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_01060">
@@ -29092,7 +29330,8 @@
                                     <seg type="location">207ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_13 #edRoyal20D1_00644_20">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">312va</seg>
@@ -29114,7 +29353,8 @@
                                     <seg type="location">absent</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_21 #edRoyal20D1_00644_27">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">313ra</seg>
@@ -29126,16 +29366,16 @@
                                           rendre merite·</seg>
                                     <seg type="location">277rb</seg>
                                     <seg type="note">The verse passage (copied continuously in
-                                          20125) is missing</seg>
+                                          20125) is missing, but for the first couplet</seg>
                               </ab>
                               <ab type="ms_instance">
                                     <seg type="ms_name">Vienna</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">130ra</seg>
-                                    <seg type="note">red paraghraph sign; incipit: 'de ceste
-                                          doctrine dou uailant scipio douroit p[re]nde garde li haut
+                                    <seg type="note">red paragraph sign; incipit: 'de ceste doctrine
+                                          dou uailant scipio douroit p[re]nde garde li haut
                                           baro[n]'. The 'verse passage' is present but the rhyming
-                                          structure has deteriorated.</seg>
+                                          structure has deteriorated</seg>
                               </ab>
                         </div>
                         <div type="alignment" xml:id="fr20125_01062">
@@ -29152,7 +29392,8 @@
                                     <seg type="location"/>
                                     <seg type="note">[absent]</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00644_28 #edRoyal20D1_00644_31">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">313va</seg>
@@ -29186,10 +29427,17 @@
                                     <seg type="location">207rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_01 #edRoyal20D1_00645_04">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que scipio assambla as numanciens·</seg>
                                     <seg type="location">313vb</seg>
+                                    <seg type="note"/>
+                              </ab>
+                              <ab type="ms_instance">
+                                    <seg type="ms_name">Vienna</seg>
+                                    <seg type="rubric">Q[ue] Scipio assambla as numanciens·</seg>
+                                    <seg type="location">130rb</seg>
                                     <seg type="note"/>
                               </ab>
                         </div>
@@ -29208,7 +29456,8 @@
                                     <seg type="location">207va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_05 #edRoyal20D1_00645_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">314ra</seg>
@@ -29230,7 +29479,8 @@
                                     <seg type="location">207vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_07 #edRoyal20D1_00645_07">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">314rb</seg>
@@ -29252,7 +29502,8 @@
                                     <seg type="location">207vb</seg>
                                     <seg type="note">Para begins at top of 208ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_08 #edRoyal20D1_00645_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">314va</seg>
@@ -29274,7 +29525,8 @@
                                     <seg type="location">208ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_11 #edRoyal20D1_00645_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">//</seg>
@@ -29296,7 +29548,8 @@
                                     <seg type="location">208rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_3 #edRoyal20D1_00645_20">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">314vb</seg>
@@ -29318,7 +29571,8 @@
                                     <seg type="location">208va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00645_21 #edRoyal20D1_00645_26">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">315rb</seg>
@@ -29340,7 +29594,8 @@
                                     <seg type="location">208vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00646_01 #edRoyal20D1_00646_02">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que scipio p[ar] grant fierte asist
                                           numance·</seg>
@@ -29363,7 +29618,8 @@
                                     <seg type="location">208vb</seg>
                                     <seg type="note">Para begins at top of 209ra</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00646_03 #edRoyal20D1_00646_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">315vb</seg>
@@ -29385,7 +29641,8 @@
                                     <seg type="location">209ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00646_07 #edRoyal20D1_00646_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">316ra</seg>
@@ -29407,7 +29664,8 @@
                                     <seg type="location">209rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00646_11 #edRoyal20D1_00646_14">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">316rb</seg>
@@ -29429,7 +29687,8 @@
                                     <seg type="location">209va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00646_15 #edRoyal20D1_00646_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">316va</seg>
@@ -29444,7 +29703,8 @@
                                     <seg type="location">325va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00647_01 #edRoyal20D1_00647_05">
                                     <seg type="ms_name">Add 19669</seg>
                                     <seg type="rubric">Quecil denumance boutere[n]t lefeu enlor
                                           vile</seg>
@@ -29472,7 +29732,8 @@
                                     <seg type="location">210ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00647_06 #edRoyal20D1_00647_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">317va</seg>
@@ -29493,7 +29754,8 @@
                                     <seg type="location">210ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00647_07 #edRoyal20D1_00647_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">317va</seg>
@@ -29516,7 +29778,8 @@
                                     <seg type="location">210rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00647_11 #edRoyal20D1_00647_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">318ra</seg>
@@ -29540,7 +29803,8 @@
                                     <seg type="location">210va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00647_13 #edRoyal20D1_00647_19">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">318ra</seg>
@@ -29568,7 +29832,8 @@
                                     <seg type="location">281ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00648_01 #edRoyal20D1_00648_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Lachoiso[n] dela descorde deceus
                                           d[e]rome·</seg>
@@ -29589,7 +29854,8 @@
                                     <seg type="location">210vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00648_07 #edRoyal20D1_00648_13">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">318vb</seg>
@@ -29610,7 +29876,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00648_14 #edRoyal20D1_00648_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">319ra</seg>
@@ -29631,7 +29898,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00648_23 #edRoyal20D1_00648_27">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">319r</seg>
@@ -29653,7 +29921,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00649_01 #edRoyal20D1_00649_07">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que aristobolus quist force [et] aie pur
                                           conquere sor les romains la terre que ses freres lor auoit
@@ -29676,7 +29945,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00649_08 #edRoyal20D1_00649_15">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">320ra</seg>
@@ -29697,7 +29967,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00649_16 #edRoyal20D1_00649_19">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">320rb</seg>
@@ -29718,7 +29989,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00649_20 #edRoyal20D1_00649_21">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">320vb</seg>
@@ -29739,7 +30011,8 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"
+                                    corresp="#edRoyal20D1_00649_22 #edRoyal20D1_00649_28">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">320vb</seg>
@@ -29760,7 +30033,7 @@
                                     <seg type="location">211ra</seg>
                                     <seg type="note">Follows para 1081</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00650_01 #edRoyal20D1_00650_02">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Queli rois tolomeus morut en cel tens·</seg>
                                     <seg type="location">321rb</seg>
@@ -29782,7 +30055,7 @@
                                     <seg type="location">211ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00650_03 #edRoyal20D1_00650_05">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">321rb</seg>
@@ -29802,7 +30075,7 @@
                                     <seg type="location"/>
                                     <seg type="note">Absent</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00650_06 #edRoyal20D1_00650_15">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">321va</seg>
@@ -29824,7 +30097,7 @@
                                     <seg type="location">211rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00650_16 #edRoyal20D1_00650_22">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">322ra</seg>
@@ -29847,7 +30120,7 @@
                                     <seg type="note">Expunctuation of 'oa' in 'loastes', with Greek
                                           letters lambda and 0 above in pale black ink</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00651_01 #edRoyal20D1_00651_09">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Des la ostes adonques uindrent en
                                           afrique·</seg>
@@ -29870,7 +30143,7 @@
                                     <seg type="location">211vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00651_10 #edRoyal20D1_00651_13">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">322vb</seg>
@@ -29892,7 +30165,7 @@
                                     <seg type="location">212ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"  corresp="#edRoyal20D1_00651_14 #edRoyal20D1_00651_16">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">323ra</seg>
@@ -29912,7 +30185,7 @@
                                     <seg type="location">212ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance"  corresp="#edRoyal20D1_00652_01 #edRoyal20D1_00652_01">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Dou restorament de lacite de cartaie·</seg>
                                     <seg type="location">323ra</seg>
@@ -29934,7 +30207,7 @@
                                     <seg type="location">212ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00652_02 #edRoyal20D1_00652_07">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">323rb</seg>
@@ -29956,7 +30229,7 @@
                                     <seg type="location">212rb-212va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00652_08 #edRoyal20D1_00652_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">323vb</seg>
@@ -29978,7 +30251,7 @@
                                     <seg type="location">212va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_01 #edRoyal20D1_00653_05">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Dune meslee qui adonc recrut en lacite
                                           derome·</seg>
@@ -30001,7 +30274,7 @@
                                     <seg type="location">212vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_06 #edRoyal20D1_00653_08">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">324rb</seg>
@@ -30023,7 +30296,7 @@
                                     <seg type="location">213ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_09 #edRoyal20D1_00653_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">324va</seg>
@@ -30045,7 +30318,7 @@
                                     <seg type="location">213ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_11 #edRoyal20D1_00653_14">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">324va</seg>
@@ -30067,7 +30340,7 @@
                                     <seg type="location">213rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_15 #edRoyal20D1_00653_19">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">324vb</seg>
@@ -30087,7 +30360,7 @@
                                     <seg type="location">213rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00653_20 #edRoyal20D1_00653_23">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">325ra</seg>
@@ -30109,7 +30382,7 @@
                                     <seg type="location">213va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_01 #edRoyal20D1_00654_04">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li rois bituitus assambla sa gent por
                                           enuair rome·</seg>
@@ -30132,7 +30405,7 @@
                                     <seg type="location">213vb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_05 #edRoyal20D1_00654_09">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">325va</seg>
@@ -30154,7 +30427,7 @@
                                     <seg type="location">214ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_10 #edRoyal20D1_00654_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">325vb</seg>
@@ -30176,7 +30449,7 @@
                                     <seg type="location">214ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_13 #edRoyal20D1_00654_18">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">326ra</seg>
@@ -30196,7 +30469,7 @@
                                     <seg type="location">214rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_19 #edRoyal20D1_00654_21">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">326rb</seg>
@@ -30218,7 +30491,7 @@
                                     <seg type="location">214rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_22 #edRoyal20D1_00654_27">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">326va</seg>
@@ -30240,7 +30513,7 @@
                                           des[con]fiture</seg>
                                     <seg type="note">214va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_28 #edRoyal20D1_00654_30">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">326va</seg>
@@ -30265,7 +30538,7 @@
                                     <seg type="note">Pen-flourished initial is incorrect: 'A'
                                           instead of 'E'[t]</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00654_31 #edRoyal20D1_00655_04">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">326vb</seg>
@@ -30296,7 +30569,7 @@
                                     <seg type="location">214vb-215ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00655_05 #edRoyal20D1_00655_06">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">327rb</seg>
@@ -30319,7 +30592,7 @@
                                     <seg type="location">215ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_01 #edRoyal20D1_00656_02">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">Que li senator de rome co[m]manderent aaler
                                           sor leroi iugurta·</seg>
@@ -30342,7 +30615,7 @@
                                     <seg type="location">215rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_03 #edRoyal20D1_00656_08">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">327vb</seg>
@@ -30364,7 +30637,7 @@
                                     <seg type="location">215rb</seg>
                                     <seg type="note">Para begins at top of 215va</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_09 #edRoyal20D1_00656_10">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">328ra</seg>
@@ -30386,7 +30659,7 @@
                                     <seg type="location">215va</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_11 #edRoyal20D1_00656_12">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">328rb</seg>
@@ -30408,7 +30681,7 @@
                                     <seg type="location">215vb</seg>
                                     <seg type="note">4-compartment miniature in middle of para</seg>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_13 #edRoyal20D1_00656_15">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">328va</seg>
@@ -30430,7 +30703,7 @@
                                     <seg type="location">216ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_16 #edRoyal20D1_00656_19">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">328vb</seg>
@@ -30451,7 +30724,7 @@
                                     <seg type="location">216ra</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_20 #edRoyal20D1_00656_24">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">329ra</seg>
@@ -30473,7 +30746,7 @@
                                     <seg type="location">216rb</seg>
                                     <seg type="note"/>
                               </ab>
-                              <ab type="ms_instance">
+                              <ab type="ms_instance" corresp="#edRoyal20D1_00656_25 #edRoyal20D1_00656_32">
                                     <seg type="ms_name">Royal_20_D_1</seg>
                                     <seg type="rubric">"</seg>
                                     <seg type="location">329rb</seg>
