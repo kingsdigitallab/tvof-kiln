@@ -49,7 +49,7 @@ class ParseAll(XMLParser):
         options = [outfiles[-2]] + ['-o', outfiles[-1]]
         TEITokeniser.run(options)
 
-        # kwic
+        # kwic.xml
         print '-' * 20
         outfiles += [output_path + 'kwic.xml']
         from kwic import KWICList
@@ -57,6 +57,13 @@ class ParseAll(XMLParser):
         if self.para_string:
             options += ['-r', self.para_string]
         KWICList.run(options)
+
+        # kwic.html
+        print '-' * 20
+        outfiles += [output_path + 'kwic.html']
+        from kwic_html import KwicHtml
+        options = [outfiles[-2]] + ['-o', outfiles[-1]]
+        KwicHtml.run(options)
 
     def set_paragraphs(self, para_string):
         self.para_string = para_string
