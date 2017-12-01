@@ -34,6 +34,13 @@
               select="$tei/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]"
              />
           </title>
+          <generated>
+            <date>
+                <xsl:value-of
+                  select="$tei/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date[1]"
+                 />
+            </date>
+          </generated>
           <version>
             <xsl:value-of select="$cur-version-name" />
           </version>
