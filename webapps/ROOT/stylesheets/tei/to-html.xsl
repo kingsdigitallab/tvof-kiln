@@ -28,6 +28,15 @@
         </div>
     </xsl:template>
 
+    <!-- GN: convert graphic into html -->
+    <xsl:template match="tei:graphic">
+         <xsl:element name="a">
+            <xsl:attribute name="class">tei-graphic</xsl:attribute>
+            <xsl:attribute name="data-tei-url"><xsl:value-of select="@url" /></xsl:attribute>
+            <i class="fa fa-picture-o" aria-hidden="true"><xsl:text> </xsl:text></i>
+        </xsl:element>
+    </xsl:template>
+
     <xsl:template match="tei:div[@type = '1']">
     </xsl:template>
 
@@ -344,7 +353,7 @@
     </xsl:template>
 
     <xsl:template match="tei:ref[@type = 'bibliography']">
-        <a href="{@corresp}">
+        <a href="{@corresp}" class="bibliography">
             <xsl:apply-templates/>
         </a>
     </xsl:template>

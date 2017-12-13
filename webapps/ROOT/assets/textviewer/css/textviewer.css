@@ -432,3 +432,7 @@ li.tab-selected {
 #user-comments-box-form form, #user-comments-box-form form p {
     height: 100%;
 }
+
+#image-viewer-modal .close-button {
+    background-color: white;
+}
