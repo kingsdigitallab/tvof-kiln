@@ -38,10 +38,10 @@
       </connectors>
 
       <webApp contextPath="/" war="${basedir}/webapps/ROOT" />
-      <webApp contextPath="/openrdf-sesame"
-              war="${basedir}/webapps/openrdf-sesame" />
-      <webApp contextPath="/openrdf-workbench"
-              war="${basedir}/webapps/openrdf-workbench" />
+      <!-- webApp contextPath="/openrdf-sesame"
+              war="${basedir}/webapps/openrdf-sesame" / -->
+      <!-- webApp contextPath="/openrdf-workbench"
+              war="${basedir}/webapps/openrdf-workbench" / -->
       <webApp contextPath="/solr"
               jettyEnvXml="${basedir}/webapps/solr/conf/jetty-env.xml"
               war="${basedir}/webapps/solr" />
