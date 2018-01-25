@@ -23,34 +23,34 @@ class ParseAll(XMLParser):
     def run_custom(self, input_path_list, output_path):
 
         # aggregate
-        print '-' * 20
+        print('-' * 20)
         outfiles = [output_path + 'aggregated.xml']
         from aggregate import Aggregator
         options = input_path_list + ['-o', outfiles[-1]]
         Aggregator.run(options)
 
         # convert shorthands
-        print '-' * 20
+        print('-' * 20)
         thisdir = os.path.dirname(os.path.relpath(__file__, '.'))
         perlpath = os.path.join(thisdir, 'convert.perl')
         outfiles += [output_path + 'converted.xml']
         command = 'perl "%s" < %s > %s' %\
                   (perlpath, outfiles[-2], outfiles[-1])
-        print command
+        print(command)
         os.system(command)
 
         if self.convert_only:
             return
 
         # tokenise
-        print '-' * 20
+        print('-' * 20)
         outfiles += [output_path + 'tokenised.xml']
         from tokenise import TEITokeniser
         options = [outfiles[-2]] + ['-o', outfiles[-1]]
         TEITokeniser.run(options)
 
         # kwic.xml
-        print '-' * 20
+        print('-' * 20)
         outfiles += [output_path + 'kwic.xml']
         from kwic import KWICList
         options = [outfiles[-2]] + ['-o', outfiles[-1]]
@@ -59,7 +59,7 @@ class ParseAll(XMLParser):
         KWICList.run(options)
 
         # kwic.html
-        print '-' * 20
+        print('-' * 20)
         outfiles += [output_path + 'kwic.html']
         from kwic_html import KwicHtml
         options = [outfiles[-2]] + ['-o', outfiles[-1]]

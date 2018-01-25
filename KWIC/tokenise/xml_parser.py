@@ -40,10 +40,12 @@ class XMLParser(object):
 
         parser = cls()
 
-        print 'python %s %s' % (script_file, ' '.join(args))
+        print('python %s %s' % (script_file, ' '.join(args)))
 
         if len(args) < 1:
-            print 'Usage: {} INPUT.xml [-o OUTPUT.xml] [-r PARA_RANGE]'.format(os.path.basename(script_file))
+            print(
+                'Usage: {} INPUT.xml [-o OUTPUT.xml] [-r PARA_RANGE]'.format(
+                    os.path.basename(script_file)))
             exit()
 
         output_path = cls.default_output
@@ -73,12 +75,14 @@ class XMLParser(object):
 
         if parser.has_xml():
             parser.write_xml(output_path)
-            print 'written %s' % output_path
+            print('written %s' % output_path)
         else:
             if not getattr(cls, 'suppressed_output', False):
-                print 'WARNING: Nothing to output, please check the input argument (%s)' % ', '.join(input_str)
+                print(
+                    'WARNING: Nothing to output, please check the input argument (%s)' %
+                    ', '.join(input_str))
 
-        print 'done'
+        print('done')
 
     def set_paragraphs(self, paragraphs_string=None):
         ret = []
@@ -188,7 +192,7 @@ class XMLParser(object):
                 # self.is_wellformed(self.get_unicode_from_xml())
 
             except ET.ParseError as e:
-                print e
+                print(e)
                 ret = False
 
         return ret
@@ -280,11 +284,11 @@ class XMLParser(object):
         try:
             xml_string = ET.fromstring(xml_string.encode('utf-8'))
         except ET.ParseError as e:
-            print u'%s' % e
+            print(u'%s' % e)
             # (3056, 242) = (line, char)
             lines = xml_string.split('\n')
-            print lines[e.position[0] - 1]
-            print (' ' * (e.position[1] - 1)) + '^'
+            print(lines[e.position[0] - 1])
+            print((' ' * (e.position[1] - 1)) + '^')
             ret = False
 
         return ret
@@ -328,4 +332,4 @@ class XMLParser(object):
                             else:
                                 previous = element
 
-            print '\t removed %s %s' % (c, filter)
+            print('\t removed %s %s' % (c, filter))
