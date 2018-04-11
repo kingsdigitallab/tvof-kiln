@@ -27,6 +27,20 @@ class XMLParser(object):
     def has_xml(self):
         return self.xml is not None
 
+    def transform(self, xml_path, xsl_path):
+        import lxml.etree as LET
+
+        dom = LET.parse(xml_path)
+        xslt = LET.parse(xsl_path)
+        trans = LET.XSLT(xslt)
+        newdom = trans(dom)
+        ret = LET.tostring(newdom, pretty_print=True)
+
+        # 2-space indent -> 4-space indent
+        ret = re.sub(r'(?m)^ +', lambda m: ' ' * (2 * len(m.group(0))), ret)
+
+        return ret
+
     @classmethod
     def run(cls, args=None):
         if args is None and cls.__module__ != '__main__':
@@ -61,6 +75,10 @@ class XMLParser(object):
                 if len(args) > 0:
                     arg = args.pop(0)
                     output_path = arg
+            elif arg.strip() == '-m':
+                if len(args) > 0:
+                    arg = args.pop(0)
+                    parser.ms_name = arg
             elif arg.strip() == '-c':
                 # aggregate and convert only, don't tokenise or kwic
                 # TODO: this should really go into doall.py
@@ -293,10 +311,13 @@ class XMLParser(object):
 
         return ret
 
-    def remove_elements(self, filters):
+    def remove_elements(self, filters, condition_function=None):
         # Remove all elements in the xml that match any of the given fitlers.
         # e.g. filters = ['del', 'orig', 'seg[@type="semi-dip"]', 'sic', 'pb']
         # self.remove_elements(filters)
+        if condition_function is None:
+            def condition_function(parent, element): return True
+
         for filter in filters:
             c = 0
             matches = re.findall('^([^\[]*)(\[.*\])?', filter)
@@ -317,7 +338,8 @@ class XMLParser(object):
                     if len(elements):
                         previous = None
                         for element in list(parent):
-                            if element in elements:
+                            if element in elements and condition_function(
+                                    parent, element):
                                 # make sure we keep the tail
                                 tail = element.tail
                                 parent.remove(element)
