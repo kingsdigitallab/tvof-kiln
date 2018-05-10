@@ -81,7 +81,7 @@ class AlignSplit(XMLParser):
                 </editionStmt>
 '''.format(self.ms_name.strip())
 
-        ret = re.sub(r'(</publicationStmt>)', r'\1' + series, ret)
+        ret = re.sub(r'(</titleStmt>)', r'\1' + series, ret)
 
         ret = re.sub('\n\s*\n', '\n', ret)
 

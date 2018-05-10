@@ -52,6 +52,13 @@ $file =~ s|(=[^>]+?)_|\1UNDERSCORESIGN|g;
 my ($before, $file, $after) = ($file =~ /(.+)(<body.+?)((?:body>|<div[^>]+type="notes").+)/s);
 #print join("\n------------\n", $before, $file, $after);
 
+# SUB all the comments so they are not converted
+
+my @comments = ();
+my $comment_number = 0;
+
+$file =~ s|<!--(.*?)-->|savecomment($1)|gse;
+
 # SHORTHAND EXPANSIONS
 
 $file =~ s|\*|<choice><orig></orig><reg>'</reg></choice>|g;
@@ -81,7 +88,6 @@ $file =~ s|§|<choice><orig></orig><reg>,</reg></choice>|g;
 $file =~ s|\+|<choice><orig></orig><reg>« </reg></choice>|g;
 $file =~ s|Ω|<choice><orig></orig><reg> »</reg></choice>|g;
 
-
 $file =~ s|a`|<choice><orig>a</orig><reg>ä</reg></choice>|g;
 $file =~ s|e~|<choice><orig>e</orig><reg>é</reg></choice>|g;
 $file =~ s|e`|<choice><orig>e</orig><reg>ë</reg></choice>|g;
@@ -106,6 +112,9 @@ $file =~ s|u`|<choice><orig>u</orig><reg>ü</reg></choice>|g;
 $file =~ s|%([^±]+)±([^≠]+)≠|<choice><seg type="semi-dip">\1\2</seg><seg type="crit">\1 \2</seg></choice>|g;
 $file =~ s|@([^€]+)€\s+([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
 
+# RESTORE THE COMMENTS
+$file =~ s|<!-- #(\d+) -->|restorecomment($1)|sge;
+
 # REINSERT THE EXPANDED PART
 $file = join('', $before, $file, $after);
 
@@ -119,6 +128,21 @@ $file =~ s|AMPERSAND(.*?)SEMICOLON|&\1;|gi;
 $file =~ s|MARYPOPPINS|?|g;
 
 print $file;			# print out the result
+
+sub savecomment() {
+    ($comment) = @_;
+    $comment_number++;
+    $comments[$comment_number] = $comment;
+    my $ret = "<!-- #$comment_number -->";
+    return $ret;
+}
+
+sub restorecomment() {
+    ($number) = @_;
+    my $comment = $comments[$number+0];
+    return "<!--$comment-->";
+}
+
 
 exit;
 

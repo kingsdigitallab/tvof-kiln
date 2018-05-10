@@ -270,9 +270,14 @@ class XMLParser(object):
         content += self.get_unicode_from_xml()
 
         # insert date in tei headers
-        content = re.sub(ur'(</publicationStmt>)',
-                         ur'<date>{}</date>\1'.format(date_generated),
-                         content)
+        content = re.sub(
+            ur'(?musi)(\s+)(<publicationStmt>)(.*?)(</publicationStmt>)',
+            ur'\1\2\1    <publisher>King' + "'" +
+            ur's Digital Laboratory</publisher>\1    <date>{}</date>\1\4'.format(
+                date_generated
+            ),
+            content
+        )
 
         content = self.restore_xml_comments(content)
         content = content.encode(encoding)
