@@ -66,8 +66,8 @@
         <xsl:choose>
             <xsl:when test="$view = 'interpretive'">
                 <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
-                <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp]/tei:head"/>
-                <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp]/@subtype"/>
+                <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp][1]/tei:head"/>
+                <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp][1]/@subtype"/>
                 <xsl:variable name="note-type-text">
                     <xsl:choose>
                         <xsl:when test="$note-type = 'source'">
@@ -82,7 +82,7 @@
                 </a>
                 <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
                     <xsl:value-of select="$note-type-text"/>
-                    <xsl:apply-templates select="//tei:div[@xml:id = $corresp]/tei:p"/>
+                    <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]/tei:p"/>
                     <button class="close-button" data-close="" aria-label="Close note" type="button">
                         <span aria-hidden="true">&#215;</span>
                     </button>
