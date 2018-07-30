@@ -13,6 +13,7 @@ class TEITokeniser(XMLParser):
     tag_to_be_remove = u'TOBEREMOVED'
     default_output = u'tokenised.xml'
     elements_to_remove = [
+        ur'note',
         ur'add[@type="annotation"]',
     ]
 
@@ -162,6 +163,8 @@ class TEITokeniser(XMLParser):
                 continue
 
             for child in children:
+                # TODO: ignore annotation and note like here
+                # rather than removing them.
                 if (child.attrib.get('type', None) == 'notes'):
                     continue
                 last = self.tokenise_text(child, 'text', -1)

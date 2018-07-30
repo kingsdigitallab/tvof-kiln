@@ -322,7 +322,10 @@
         <xsl:choose>
             <xsl:when test="$view = 'interpretive'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
-                    <!-- do nothing -->
+                    <xsl:choose>
+                        <xsl:when test="@rend = '6'"><span class="tei-pc tei-pc-rend-6">&#160;</span></xsl:when>
+                        <xsl:when test="@rend = '7'"><span class="tei-pc tei-pc-rend-7">&#160;</span></xsl:when>
+                    </xsl:choose>
                 </xsl:if>
             </xsl:when>
             <xsl:when test="$view = 'semi-diplomatic'">
@@ -334,6 +337,8 @@
                             <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
                             <xsl:when test="@rend = '4'">[/]</xsl:when>
                             <xsl:when test="@rend = '5'">[&#x2205;]</xsl:when>
+                            <xsl:when test="@rend = '6'">&#x002F;&#x002F;</xsl:when>
+                            <xsl:when test="@rend = '7'">&#x00B6;</xsl:when>
                         </xsl:choose>
                     </span>
                 </xsl:if>
@@ -427,19 +432,22 @@
     </xsl:template>
 
     <xsl:template match="tei:seg[substring(@type, 1, 1) = ('1', '2', '3', '4', '5', '6')]">
-        <span class="tei-seg-num">
-            <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/>.
-            <xsl:text> </xsl:text>
-        </span>
         <span>
             <xsl:apply-templates select="@*"/>
             <!-- PC 01 Mar 2017 : I'm checking on this because I don't think it's relevant any more -->
-            <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
-                <xsl:attribute name="class">first-letter-red</xsl:attribute>
-            </xsl:if>
-            <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">
-                <xsl:attribute name="class">first-letter-red</xsl:attribute>
-            </xsl:if>
+            <xsl:attribute name="class">
+                <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
+                    first-letter-red
+                </xsl:if>
+                <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">
+                    first-letter-red
+                </xsl:if>
+                <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6</xsl:if>
+            </xsl:attribute>
+            <span class="tei-seg-num">
+                <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/>.
+                <xsl:text> </xsl:text>
+            </span>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
