@@ -452,6 +452,13 @@
         </span>
     </xsl:template>
 
+    <xsl:template match="tei:seg[@type='explicit']">
+        <div class="seg-type-explicit">
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
     <xsl:template match="tei:seg[@type = 'textual-unit-2']">
         <span>
             <xsl:apply-templates select="@*"/>
@@ -486,18 +493,15 @@
     </xsl:template>
 
     <xsl:template match="tei:unclear">
-        <xsl:variable name="myID" select="generate-id()"/>
-        <xsl:apply-templates/>
-        <a data-toggle="{$myID}">
-            <sup class="tei-unclear"/>
-        </a>
-
-        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false"> text unclear
-                <xsl:if test="@reason">due to <xsl:value-of select="@reason"/></xsl:if>
-            <button class="close-button" data-close="" aria-label="Close note" type="button">
-                <span aria-hidden="true">&#215;</span>
-            </button>
-        </div>
+        <span class="tei-unclear">
+            <xsl:if test="@reason">
+                <xsl:attribute name="data-tei-reason"><xsl:value-of select="@reason"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@agent">
+                <xsl:attribute name="data-tei-agent"><xsl:value-of select="@agent"/></xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="@corresp">
