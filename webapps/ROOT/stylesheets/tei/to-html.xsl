@@ -285,11 +285,6 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:l">
-        <br/>
-        <xsl:apply-templates/>
-    </xsl:template>
-
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
@@ -436,12 +431,8 @@
             <xsl:apply-templates select="@*"/>
             <!-- PC 01 Mar 2017 : I'm checking on this because I don't think it's relevant any more -->
             <xsl:attribute name="class">
-                <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">
-                    first-letter-red
-                </xsl:if>
-                <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">
-                    first-letter-red
-                </xsl:if>
+                <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">first-letter-red</xsl:if>
+                <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">first-letter-red</xsl:if>
                 <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6</xsl:if>
             </xsl:attribute>
             <span class="tei-seg-num">
@@ -450,13 +441,6 @@
             </span>
             <xsl:apply-templates/>
         </span>
-    </xsl:template>
-
-    <xsl:template match="tei:seg[@type='explicit']">
-        <div class="seg-type-explicit">
-            <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates/>
-        </div>
     </xsl:template>
 
     <xsl:template match="tei:seg[@type = 'textual-unit-2']">
@@ -492,18 +476,6 @@
         <xsl:apply-templates mode="semi-diplomatic" />
     </xsl:template>
 
-    <xsl:template match="tei:unclear">
-        <span class="tei-unclear">
-            <xsl:if test="@reason">
-                <xsl:attribute name="data-tei-reason"><xsl:value-of select="@reason"/></xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@agent">
-                <xsl:attribute name="data-tei-agent"><xsl:value-of select="@agent"/></xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
     <xsl:template match="@corresp">
         <xsl:attribute name="data-corresp">
             <xsl:value-of select="."/>
@@ -523,8 +495,54 @@
     </xsl:template>
 
     <!-- Lines -->
+    <xsl:template match="tei:seg[@type='explicit']">
+        <xsl:call-template name="lossless"/>
+    </xsl:template>
+
+    <xsl:template match="tei:unclear">
+        <xsl:call-template name="lossless"/>
+    </xsl:template>
+
+    <xsl:template match="tei:quote">
+        <xsl:call-template name="lossless"/>
+    </xsl:template>
+
+    <xsl:template match="tei:note[@type='gloss']">
+        <!-- TODO: remove code duplication with 'lossless' template -->
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat('tei-', local-name())"/>
+                <xsl:if test="@type"> tei-type-<xsl:value-of select="@type"/></xsl:if>
+            </xsl:attribute>
+            <xsl:apply-templates select="@*" mode="data-tei" />
+            <span class="note-text"><xsl:apply-templates /></span>
+        </span>
+    </xsl:template>
+
     <xsl:template match="tei:lg/tei:l">
-        <span><xsl:apply-templates/></span>
+        <xsl:call-template name="lossless"/>
+    </xsl:template>
+    
+    <!-- GN: universal TEI -> HTML conversion
+    This is a systematic and lossless conversion into HTML.
+    Please use this instead of custom conversion.
+    The only exception is for TEI elements that have a better match in HTML.
+    E.g. <tei:lb/> -> <br> 
+    -->
+
+    <xsl:template name="lossless">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat('tei-', local-name())"/>
+                <xsl:if test="@type"> tei-type-<xsl:value-of select="@type"/></xsl:if>
+            </xsl:attribute>
+            <xsl:apply-templates select="@*" mode="data-tei" />
+            <xsl:apply-templates />
+        </span>
+    </xsl:template>
+
+    <xsl:template match="@*" mode="data-tei">
+        <xsl:attribute name="{concat('data-tei-', local-name())}"><xsl:value-of select="." /></xsl:attribute>
     </xsl:template>
 
 </xsl:stylesheet>
