@@ -46,20 +46,16 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="tei:add">
+    <!-- xsl:template match="tei:add">
         <xsl:if test="@hand != 'LH'">
             <span class="add">
-                <xsl:apply-templates select="@*" />
+                <xsl:apply-templates select="@*" mode="data-tei" />
                 <xsl:apply-templates/>
             </span>
         </xsl:if>
-    </xsl:template>
-
-    <xsl:template match="tei:add/@*">
-        <xsl:attribute name="{concat('data-teia-', name(.))}">
-            <xsl:value-of select="." />
-        </xsl:attribute>
-    </xsl:template>
+    </xsl:template -->
+    
+    
 
     <xsl:template match="tei:anchor">
         <xsl:param name="view" tunnel="yes"/>
@@ -71,9 +67,15 @@
                 <xsl:variable name="note-type-text">
                     <xsl:choose>
                         <xsl:when test="$note-type = 'source'">
-                            <xsl:text>Source: </xsl:text>
+                            <xsl:text>Sources</xsl:text>
                         </xsl:when>
-                        <xsl:otherwise><!-- do nothing --></xsl:otherwise>
+                        <xsl:when test="$note-type = 'trad'">
+                            <xsl:text>Tradition</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="$note-type = 'gen'">
+                            <xsl:text>Note</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise><xsl:value-of select="$note-type"/></xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
 
@@ -81,8 +83,10 @@
                     <sup class="{concat('note tei-', $note-type)}"> </sup>
                 </a>
                 <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-                    <xsl:value-of select="$note-type-text"/>
-                    <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]/tei:p"/>
+                    <h3><xsl:value-of select="$note-type-text"/></h3>
+                    <div class="body">
+                        <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]/tei:p"/>
+                    </div>
                     <button class="close-button" data-close="" aria-label="Close note" type="button">
                         <span aria-hidden="true">&#215;</span>
                     </button>
@@ -202,27 +206,6 @@
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
-
-    <xsl:template match="tei:corr" mode="interpretive">
-        <xsl:variable name="myID" select="generate-id()"/>
-        <span class="tei-corr-text">
-            <xsl:apply-templates/>
-        </span>
-        <a data-toggle="{$myID}">
-            <sup class="tei-corr-popup"/>
-        </a>
-
-        <div class="small reveal" id="{$myID}" data-reveal="" data-overlay="false">
-            <em>ms.</em>
-            <span class="tei-sic-text">
-                <xsl:text> </xsl:text>
-                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
-            </span>
-            <button class="close-button" data-close="" aria-label="Close note" type="button">
-                <span aria-hidden="true">&#215;</span>
-            </button>
-        </div>
     </xsl:template>
 
     <xsl:template match="tei:corr" mode="semi-diplomatic">
@@ -470,7 +453,7 @@
     <xsl:template match="tei:sic" mode="semi-diplomatic">
         <xsl:text> </xsl:text>
         <!-- GN: see TVOF 146, mode must be provided here, otherwise
-        reg is shown in the sic withint the reveal; we want of orig 
+        reg is shown in the sic within the reveal; we want of orig 
         Make sure you understand XSLT spec 5.7 and 5.8 about Modes!
         -->
         <xsl:apply-templates mode="semi-diplomatic" />
@@ -496,31 +479,42 @@
 
     <!-- Lines -->
     <xsl:template match="tei:seg[@type='explicit']">
-        <xsl:call-template name="lossless"/>
+        <xsl:call-template name="lossless-span"/>
     </xsl:template>
 
     <xsl:template match="tei:unclear">
-        <xsl:call-template name="lossless"/>
+        <xsl:call-template name="lossless-span"/>
     </xsl:template>
 
     <xsl:template match="tei:quote">
-        <xsl:call-template name="lossless"/>
+        <xsl:call-template name="lossless-span"/>
+    </xsl:template>
+
+    <xsl:template match="tei:add">
+        <!-- Override the template defined in to-html-amenment.xsl -->
+        <xsl:call-template name="lossless-span"/>
+    </xsl:template>
+
+    <xsl:template match="tei:corr" mode="interpretive">
+        <span>
+            <xsl:call-template name="lossless-attributes"/>
+            <xsl:attribute name="data-sic">
+                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+            </xsl:attribute>
+            <xsl:apply-templates />
+        </span>
     </xsl:template>
 
     <xsl:template match="tei:note[@type='gloss']">
         <!-- TODO: remove code duplication with 'lossless' template -->
         <span>
-            <xsl:attribute name="class">
-                <xsl:value-of select="concat('tei-', local-name())"/>
-                <xsl:if test="@type"> tei-type-<xsl:value-of select="@type"/></xsl:if>
-            </xsl:attribute>
-            <xsl:apply-templates select="@*" mode="data-tei" />
+            <xsl:call-template name="lossless-attributes"/>
             <span class="note-text"><xsl:apply-templates /></span>
         </span>
     </xsl:template>
 
     <xsl:template match="tei:lg/tei:l">
-        <xsl:call-template name="lossless"/>
+        <xsl:call-template name="lossless-span"/>
     </xsl:template>
     
     <!-- GN: universal TEI -> HTML conversion
@@ -530,15 +524,19 @@
     E.g. <tei:lb/> -> <br> 
     -->
 
-    <xsl:template name="lossless">
+    <xsl:template name="lossless-span">
         <span>
-            <xsl:attribute name="class">
-                <xsl:value-of select="concat('tei-', local-name())"/>
-                <xsl:if test="@type"> tei-type-<xsl:value-of select="@type"/></xsl:if>
-            </xsl:attribute>
-            <xsl:apply-templates select="@*" mode="data-tei" />
+            <xsl:call-template name="lossless-attributes"/>
             <xsl:apply-templates />
         </span>
+    </xsl:template>
+
+    <xsl:template name="lossless-attributes">
+        <xsl:attribute name="class">
+            <xsl:value-of select="concat('tei-', local-name())"/>
+            <xsl:if test="@type"> tei-type-<xsl:value-of select="@type"/></xsl:if>
+        </xsl:attribute>
+        <xsl:apply-templates select="@*" mode="data-tei" />
     </xsl:template>
 
     <xsl:template match="@*" mode="data-tei">
