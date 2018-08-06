@@ -517,6 +517,13 @@
         <xsl:call-template name="lossless-span"/>
     </xsl:template>
     
+    <xsl:template match="tei:supplied" mode="semi-diplomatic">
+        <!-- do nothing -->
+    </xsl:template>    
+    <xsl:template match="tei:supplied" mode="interpretive">
+        <xsl:call-template name="lossless-span"/>
+    </xsl:template>    
+    
     <!-- GN: universal TEI -> HTML conversion
     This is a systematic and lossless conversion into HTML.
     Please use this instead of custom conversion.
