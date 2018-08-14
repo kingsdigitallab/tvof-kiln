@@ -39,6 +39,12 @@ class ParseAll(XMLParser):
         print(command)
         os.system(command)
 
+        # validate conversion
+        print('-' * 20)
+        from validate import Validator
+        options = [outfiles[-1]] + ['-o', output_path + 'validation.log']
+        Validator.run(options)
+
         if self.convert_only:
             return
 
