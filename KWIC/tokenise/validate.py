@@ -76,7 +76,7 @@ class Validator(XMLParser):
 
     def write_errors(self, output_path):
         if self.validation_errors:
-            all_errors = '-' * 40 + '\n'
+            all_errors = '- ' * 10 + '\n'
             all_errors += u'\n'.join(self.validation_errors)
             print(all_errors)
             with open(output_path, 'w+b') as f:
