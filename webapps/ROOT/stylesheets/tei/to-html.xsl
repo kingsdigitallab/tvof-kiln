@@ -315,7 +315,7 @@
                             <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
                             <xsl:when test="@rend = '4'">[/]</xsl:when>
                             <xsl:when test="@rend = '5'">[&#x2205;]</xsl:when>
-                            <xsl:when test="@rend = '6'">&#x002F;&#x002F;</xsl:when>
+                            <xsl:when test="@rend = '6'"><span class="tei-pc tei-pc-rend-6">&#x002F;&#x002F;</span></xsl:when>
                             <xsl:when test="@rend = '7'">&#x00B6;</xsl:when>
                         </xsl:choose>
                     </span>
