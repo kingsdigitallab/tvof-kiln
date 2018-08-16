@@ -506,7 +506,6 @@
     </xsl:template>
 
     <xsl:template match="tei:note[@type='gloss']">
-        <!-- TODO: remove code duplication with 'lossless' template -->
         <span>
             <xsl:call-template name="lossless-attributes"/>
             <span class="note-text"><xsl:apply-templates /></span>
@@ -514,9 +513,13 @@
     </xsl:template>
 
     <xsl:template match="tei:lg/tei:l">
-        <xsl:call-template name="lossless-span"/>
+        <span>
+            <xsl:call-template name="lossless-attributes"/>
+            <xsl:apply-templates />
+            <xsl:if test="(number(@n) mod 4) = 0"><sup class="verse-number"><xsl:value-of select="number(@n)"/></sup></xsl:if>
+        </span>
     </xsl:template>
-    
+
     <xsl:template match="tei:supplied" mode="semi-diplomatic">
         <!-- do nothing -->
     </xsl:template>    
