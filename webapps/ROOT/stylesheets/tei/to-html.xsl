@@ -520,10 +520,11 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="tei:supplied" mode="semi-diplomatic">
-        <!-- do nothing -->
+    <xsl:template match="tei:supplied">
+        <xsl:call-template name="lossless-span"/>
     </xsl:template>    
-    <xsl:template match="tei:supplied" mode="interpretive">
+
+    <xsl:template match="tei:mod">
         <xsl:call-template name="lossless-span"/>
     </xsl:template>    
     
