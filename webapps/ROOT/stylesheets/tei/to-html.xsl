@@ -28,15 +28,6 @@
         </div>
     </xsl:template>
 
-    <!-- GN: convert graphic into html -->
-    <xsl:template match="tei:graphic">
-         <xsl:element name="a">
-            <xsl:attribute name="class">tei-graphic</xsl:attribute>
-            <xsl:attribute name="data-tei-url"><xsl:value-of select="@url" /></xsl:attribute>
-            <i class="fa fa-picture-o" aria-hidden="true"><xsl:text> </xsl:text></i>
-        </xsl:element>
-    </xsl:template>
-
     <xsl:template match="tei:div[@type = '1']">
     </xsl:template>
 
@@ -527,6 +518,66 @@
     <xsl:template match="tei:mod">
         <xsl:call-template name="lossless-span"/>
     </xsl:template>    
+
+    <!--
+        <figure>
+            <graphic url="img.jp2" />
+            <head>Figure One:  The View from the Bridge</head>
+            <p>a caption</p>
+            <figDesc>missing</figDesc>
+        </figure>
+
+        =>
+        
+        <figure>
+            <img src='img.jp2' alt='missing' title="Figure One: ..."/>
+            <figcaption>caption</figcaption>
+        </figure>        
+    -->
+
+    <xsl:template match="tei:div//tei:figure">
+        <figure>
+            <!-- xsl:call-template name="lossless-attributes"/ -->
+            <xsl:apply-templates />
+        </figure>
+    </xsl:template>    
+
+    <xsl:template match="tei:figure/tei:head">
+    </xsl:template>    
+
+    <xsl:template match="tei:figure/tei:p">
+        <figcaption>
+            <!-- xsl:call-template name="lossless-attributes"/ -->
+            <xsl:apply-templates />
+        </figcaption>
+    </xsl:template>    
+
+    <!-- GN: convert graphic into html -->
+    <xsl:template match="tei:graphic">
+        <img>
+            <xsl:attribute name="src"><xsl:value-of select="@url" /></xsl:attribute>
+            <xsl:attribute name="alt">
+                <xsl:choose>
+                    <xsl:when test="../tei:figDesc">
+                        <xsl:value-of select="../tei:figDesc" />
+                    </xsl:when>
+                    <xsl:when test="../tei:head">
+                        <xsl:value-of select="../tei:head" />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:attribute name="title">
+                <xsl:choose>
+                    <xsl:when test="../tei:head">
+                        <xsl:value-of select="../tei:head" />
+                    </xsl:when>
+                    <xsl:when test="../tei:figDesc">
+                        <xsl:value-of select="../tei:figDesc" />
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:attribute>
+        </img>
+    </xsl:template>
     
     <!-- GN: universal TEI -> HTML conversion
     This is a systematic and lossless conversion into HTML.
