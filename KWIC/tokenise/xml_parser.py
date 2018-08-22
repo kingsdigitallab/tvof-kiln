@@ -11,6 +11,8 @@ class XMLParser(object):
 
     suppressed_output = False
     default_output = u'parsed.xml'
+    # TODO: implement this, but not possible with ElementTree...
+    is_output_beautified = False
 
     def __init__(self):
         self.convert_only = False

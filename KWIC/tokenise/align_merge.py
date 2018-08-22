@@ -9,13 +9,16 @@ class AlignMerge(XMLParser):
 
     default_output = u'alignment_merged.xml'
     mandatory_files = ['Fr20125', 'Royal_20_D_1']
+    is_output_beautified = True
 
     help = '''
-    Merge mutliple single-MS alignment files into a single multi-MSS alignment file
+    Merge multiple single-MS alignment files into a single multi-MSS alignment file
     '''
 
     def run_custom(self, input_path_list, output_path):
 
+        # make sure mandatory files are in input files
+        # and place them at the beginning of input_path_list
         for suffix in self.mandatory_files:
             found = 0
             idx = 0
@@ -33,12 +36,15 @@ class AlignMerge(XMLParser):
 
         print input_path_list
 
+        self.parsed_ms_names = {}
+
+        # merge input files, one by one
         for input_path in input_path_list:
             if os.path.isfile(input_path):
                 self.merge_alignment_file(input_path)
 
     def merge_alignment_file(self, input_path):
-        ret = False
+        ret = True
 
         print '\t%s' % input_path
 
@@ -46,32 +52,47 @@ class AlignMerge(XMLParser):
 
         if not self.read_xml(input_path):
             print '\tWARNING: file is not valid XML'
-        else:
+            ret = False
+
+        if ret:
             edition = self.xml.find('.//editionStmt/edition')
+
             if edition is None:
                 print '\tWARNING: file does not contain the MS name <edition n="MS_NAME">'
+                ret = False
+
+        if ret:
+            ms_name = edition.attrib['n'].strip()
+
+            if ms_name in self.parsed_ms_names:
+                print '\tWARNING: edition n="%s" already processed in %s' % (
+                    ms_name,
+                    self.parsed_ms_names[ms_name]
+                )
+                ret = False
+
+        if ret:
+            self.parsed_ms_names[ms_name] = input_path
+
+            # get the body content
+            body = self.xml.find('.//body')
+
+            if body is None:
+                print '\tWARNING: TEI has no <body> element'
+                ret = False
+
+        if ret:
+            if xml_aggregated is None:
+                self.remove_other_mss(ms_name)
+                xml_aggregated = self.xml
             else:
-                ms_name = edition.attrib['n'].strip()
-
-                # get the body content
-                body = self.xml.find('.//body')
-
-                if body is None:
-                    print '\tWARNING: TEI has no <body> element'
-                else:
-                    if xml_aggregated is None:
-                        self.remove_other_mss(ms_name)
-                        xml_aggregated = self.xml
-                    else:
-                        self.merge_alignment_ms(xml_aggregated, body, ms_name)
-
-                    ret = True
+                self.merge_alignment_ms(xml_aggregated, body, ms_name)
 
         self.xml = xml_aggregated
 
         l = 0
         if self.xml is not None:
-            print(len(self.get_unicode_from_xml()))
+            print('\t%s' % len(self.get_unicode_from_xml()))
 
         return ret
 
@@ -96,7 +117,7 @@ class AlignMerge(XMLParser):
             if para_aggregated is None:
                 print '\tWARNING: alignment div not found in the reference file %s' % paraid
                 # create it after the last one we've found
-                #para_aggregated = para_aggregated_last.
+                # para_aggregated = para_aggregated_last.
                 continue
 
             for ab in para.findall('.//ab[@type="ms_instance"]'):

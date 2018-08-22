@@ -46,48 +46,65 @@
         </xsl:if>
     </xsl:template -->
     
-    
+    <!--
+            <div subtype="sourceNotes" type="notes" xml:id="edfr20125_sourceNotes">
+                <div subtype="source" type="note" xml:id="edfr20125_00935_peach">
+                    <head type="noteLabel" />
+                    <p xml:id="edfr20125_00935_peach_a">Orosius, Bk 4.13</p>
+                </div>
+      </div>
+    -->
 
+    <xsl:template match="tei:div[@type='note']">
+        <div>
+            <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
+            <xsl:attribute name="class">tei-note tei-type-note tei-subtype-<xsl:value-of select="@subtype" /></xsl:attribute>
+            <xsl:apply-templates select="tei:p" />
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:div[@type='note']/tei:p">
+        <xsl:apply-templates />
+    </xsl:template>
+    
     <xsl:template match="tei:anchor">
         <xsl:param name="view" tunnel="yes"/>
-        <xsl:choose>
-            <xsl:when test="$view = 'interpretive'">
-                <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
-                <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp][1]/tei:head"/>
-                <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp][1]/@subtype"/>
-                <xsl:variable name="note-type-text">
-                    <xsl:choose>
-                        <xsl:when test="$note-type = 'source'">
-                            <xsl:text>Sources</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="$note-type = 'trad'">
-                            <xsl:text>Tradition</xsl:text>
-                        </xsl:when>
-                        <xsl:when test="$note-type = 'gen'">
-                            <xsl:text>Note</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise><xsl:value-of select="$note-type"/></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
+        <xsl:if test="$view = 'interpretive'">
+            <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
+            <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]"/>
+            
+            <!--
+            <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp][1]/tei:head"/>
+            <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp][1]/@subtype"/>
+            
+            <xsl:variable name="note-type-text">
+                <xsl:choose>
+                    <xsl:when test="$note-type = 'source'">
+                        <xsl:text>Sources</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="$note-type = 'trad'">
+                        <xsl:text>Tradition</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="$note-type = 'gen'">
+                        <xsl:text>Note</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise><xsl:value-of select="$note-type"/></xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
 
-                <a data-toggle="{$corresp}">
-                    <sup class="{concat('note tei-', $note-type)}"> </sup>
-                </a>
-                <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
-                    <h3><xsl:value-of select="$note-type-text"/></h3>
-                    <div class="body">
-                        <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]/tei:p"/>
-                    </div>
-                    <button class="close-button" data-close="" aria-label="Close note" type="button">
-                        <span aria-hidden="true">&#215;</span>
-                    </button>
+            <a data-toggle="{$corresp}">
+                <sup class="{concat('note tei-', $note-type)}"> </sup>
+            </a>
+            <div class="small reveal" id="{$corresp}" data-reveal="" data-overlay="false">
+                <h3><xsl:value-of select="$note-type-text"/></h3>
+                <div class="body">
+                    <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]/tei:p"/>
                 </div>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- do nothing -->
-            </xsl:otherwise>
-        </xsl:choose>
-
+                <button class="close-button" data-close="" aria-label="Close note" type="button">
+                    <span aria-hidden="true">&#215;</span>
+                </button>
+            </div>
+            -->
+        </xsl:if>
     </xsl:template>
 
     <!-- PC 21 MAR 2017 TEST TEST TEST -->
