@@ -59,7 +59,10 @@
         <div>
             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
             <xsl:attribute name="class">tei-note tei-type-note tei-subtype-<xsl:value-of select="@subtype" /></xsl:attribute>
-            <xsl:apply-templates select="tei:p" />
+            <xsl:attribute name="data-tei-subtype"><xsl:value-of select="@subtype" /></xsl:attribute>
+            <div class="note-text">
+                <xsl:apply-templates select="tei:p" />
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="tei:div[@type='note']/tei:p">
