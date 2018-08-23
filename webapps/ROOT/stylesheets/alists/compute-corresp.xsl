@@ -5,7 +5,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!--
-  add /ab@computed-corresp = list of all seg ids in that MS
+  Add @computed-corresp to all <ab> manuscripts in the alignment file. 
+  That attribute is the expanded version of @corresp.
   
   Example:
   
@@ -80,4 +81,5 @@
         select="* | @* | text() | processing-instruction() | comment()" />
     </xsl:copy>
   </xsl:template>
+
 </xsl:stylesheet>
