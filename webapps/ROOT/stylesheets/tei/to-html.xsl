@@ -116,50 +116,53 @@
         <div class="tei body">
             <div id="text-conventions">
                 <ul>
-                    
                     <li>
                         <span class="notation">
                             <span class="tei-cb">[999ra]</span>
                         </span>
-                        <span class="description"> Folio number, side, and column information.</span>
+                        <span class="description">Feuillet, recto/verso, colonne</span>
                     </li>
                     <xsl:if test="$view = 'interpretive'">
                         
                         <li>
                             <span class="notation">
-                                <a data-toggle="xxx">
-                                    <sup class="note tei-source"/>
-                                </a>
+                                <span class="tei-corr">abc</span>
                             </span>
-                            <span class="description"> Note on sources.</span>
+                            <span class="description">Texte ajouté ou corrigé par l’éditeur moderne</span>
                         </li>
                         
                         <li>
                             <span class="notation">
-                                <a data-toggle="xxx">
-                                    <sup class="note tei-trad"/>
-                                </a>
+                                <span class="tei-l" data-tei-n="001">abc</span>
                             </span>
-                            <span class="description"> Note on the tradition with variant readings.</span>
+                            <span class="description">Texte en vers</span>
                         </li>
                         
                         <li>
                             <span class="notation">
-                                <a data-toggle="xxx">
-                                    <sup class="note tei-gen"/>
-                                </a>
+                                <div class="tei-note tei-type-note tei-subtype-source" data-tei-subtype="source">
+                                    <div class="note-text">abc</div>
+                                </div>
                             </span>
-                            <span class="description"> General note.</span>
+                            <span class="description">Note sur les sources</span>
                         </li>
                         
                         <li>
                             <span class="notation">
-                                <span class="tei-corr-text">abc</span>
-                                <a data-toggle="xxx">
-                                    <sup class="tei-corr-popup"/>
-                                </a>
+                                <div class="tei-note tei-type-note tei-subtype-gen" data-tei-subtype="gen">
+                                    <div class="note-text">abc</div>
+                                </div>
                             </span>
-                            <span class="description"> Orange text has been corrected; popup shows what the text is in the MS.</span>
+                            <span class="description">Note générale</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <div class="tei-note tei-type-note tei-subtype-trad" data-tei-subtype="trad">
+                                    <div class="note-text">abc</div>
+                                </div>
+                            </span>
+                            <span class="description">Note sur la tradition et la <i>varia lectio</i></span>
                         </li>
                         
                     </xsl:if>
@@ -167,16 +170,37 @@
                         
                         <li>
                             <span class="notation">
-                                <span>[abc]</span>
+                                [abc]
                             </span>
-                            <span class="description"> Expansion of abbreviation in MS.</span>
+                            <span class="description">Résolutions d’abréviations dans le ms</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <span class="tei-add" data-tei-hand="E" data-tei-place="inline">abc</span>
+                            </span>
+                            <span class="description">Texte ajouté à la transcription par une main médiévale</span>
                         </li>
                         
                         <li>
                             <span class="notation">
                                 <span class="tei-del">abc</span>
                             </span>
-                            <span class="description"> Text deleted in MS.</span>
+                            <span class="description">Texte effacé dans le ms</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <span class="tei-unclear">[...]</span>
+                            </span>
+                            <span class="description">Lacune textuelle/Texte gratté</span>
+                        </li>
+                        
+                        <li>
+                            <span class="notation">
+                                <span class="tei-l" data-tei-n="001">abc</span>
+                            </span>
+                            <span class="description">Texte en vers</span>
                         </li>
                         
                     </xsl:if>
