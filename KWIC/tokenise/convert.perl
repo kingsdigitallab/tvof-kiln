@@ -52,6 +52,13 @@ $file =~ s|(=[^>]+?)_|\1UNDERSCORESIGN|g;
 my ($before, $file, $after) = ($file =~ /(.+)(<body.+?)((?:body>|<div[^>]+type="notes").+)/s);
 #print join("\n------------\n", $before, $file, $after);
 
+# SUB all the comments so they are not converted
+
+my @comments = ();
+my $comment_number = 0;
+
+$file =~ s|<!--(.*?)-->|savecomment($1)|gse;
+
 # SHORTHAND EXPANSIONS
 
 $file =~ s|\*|<choice><orig></orig><reg>'</reg></choice>|g;
@@ -81,8 +88,9 @@ $file =~ s|§|<choice><orig></orig><reg>,</reg></choice>|g;
 $file =~ s|\+|<choice><orig></orig><reg>« </reg></choice>|g;
 $file =~ s|Ω|<choice><orig></orig><reg> »</reg></choice>|g;
 
-
 $file =~ s|a`|<choice><orig>a</orig><reg>ä</reg></choice>|g;
+# GN: aug 18
+$file =~ s|c,|<choice><orig>c</orig><reg>ç</reg></choice>|g;
 $file =~ s|e~|<choice><orig>e</orig><reg>é</reg></choice>|g;
 $file =~ s|e`|<choice><orig>e</orig><reg>ë</reg></choice>|g;
 $file =~ s|i`|<choice><orig>i</orig><reg>ï</reg></choice>|g;
@@ -94,6 +102,9 @@ $file =~ s|I_|<choice><orig>I</orig><reg>J</reg></choice>|g;
 $file =~ s|o`|<choice><orig>o</orig><reg>ö</reg></choice>|g;
 # GN: 30 jul 17
 $file =~ s|V_|<choice><orig>V</orig><reg>U</reg></choice>|g;
+$file =~ s|V~|<choice><orig>V</orig><reg>u</reg></choice>|g;
+# GN: aug 18
+$file =~ s|v_|<choice><orig>v</orig><reg>U</reg></choice>|g;
 # GN: 30 jul 17
 $file =~ s|v,|<choice><orig>v</orig><reg>u</reg></choice>|g;
 $file =~ s|u,|<choice><orig>u</orig><reg>v</reg></choice>|g;
@@ -104,6 +115,9 @@ $file =~ s|u`|<choice><orig>u</orig><reg>ü</reg></choice>|g;
 
 $file =~ s|%([^±]+)±([^≠]+)≠|<choice><seg type="semi-dip">\1\2</seg><seg type="crit">\1 \2</seg></choice>|g;
 $file =~ s|@([^€]+)€\s+([^≠]+)≠|<choice><seg type="semi-dip">\1 \2</seg><seg type="crit">\1\2</seg></choice>|g;
+
+# RESTORE THE COMMENTS
+$file =~ s|<!-- #(\d+) -->|restorecomment($1)|sge;
 
 # REINSERT THE EXPANDED PART
 $file = join('', $before, $file, $after);
@@ -118,6 +132,21 @@ $file =~ s|AMPERSAND(.*?)SEMICOLON|&\1;|gi;
 $file =~ s|MARYPOPPINS|?|g;
 
 print $file;			# print out the result
+
+sub savecomment() {
+    ($comment) = @_;
+    $comment_number++;
+    $comments[$comment_number] = $comment;
+    my $ret = "<!-- #$comment_number -->";
+    return $ret;
+}
+
+sub restorecomment() {
+    ($number) = @_;
+    my $comment = $comments[$number+0];
+    return "<!--$comment-->";
+}
+
 
 exit;
 

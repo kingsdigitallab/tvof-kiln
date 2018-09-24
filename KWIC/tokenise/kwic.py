@@ -38,6 +38,15 @@ class KWICList(XMLParser):
     # part of its context.
     context_radius = 7
     default_output = u'kwic.xml'
+    elements_to_remove = [
+        ur'note',
+        # no longer used
+        ur'add[@type="annotation"]',
+        'pb', 'cb',
+
+        # All below are SEMI-DIPLOMATIC version
+        'del', 'orig', 'seg[@type="semi-dip"]', 'sic',
+    ]
 
     def __init__(self):
         super(KWICList, self).__init__()
@@ -68,8 +77,8 @@ class KWICList(XMLParser):
         if version != 'critical':
             raise Exception('Unsupported version %s' % version)
 
-        filters = ['del', 'orig', 'seg[@type="semi-dip"]', 'sic', 'pb', 'cb']
-        self.remove_elements(filters)
+        self.remove_elements(self.elements_to_remove)
+        # self.remove_elements(filters)
 
         print '\t capitalise toUpper'
         for element in self.xml.findall('.//*[@subtype="toUpper"]'):

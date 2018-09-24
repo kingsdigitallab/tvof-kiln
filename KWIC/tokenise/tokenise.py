@@ -12,9 +12,13 @@ class TEITokeniser(XMLParser):
     token_end = u'#}#'
     tag_to_be_remove = u'TOBEREMOVED'
     default_output = u'tokenised.xml'
-    elements_to_remove = [
-        ur'add[@type="annotation"]',
-    ]
+    # DONT remove anything! tokenisation should be lossless so we
+    # can reverse the process.
+    elements_to_remove = []
+#     elements_to_remove = [
+#         ur'note',
+#         ur'add[@type="annotation"]',
+#     ]
 
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
@@ -162,6 +166,8 @@ class TEITokeniser(XMLParser):
                 continue
 
             for child in children:
+                # TODO: ignore annotation and note like here
+                # rather than removing them.
                 if (child.attrib.get('type', None) == 'notes'):
                     continue
                 last = self.tokenise_text(child, 'text', -1)

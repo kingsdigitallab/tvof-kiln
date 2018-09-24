@@ -21,8 +21,8 @@
 
     <texts>
       <xsl:for-each select="$text-names">
-        <xsl:variable name="position" select="position()" />
         <xsl:variable name="cur-text-name" select="." />
+        <xsl:variable name="position" select="position()" />
         <xsl:variable name="cur-version-name" select="$version-names[$position]" />
         <xsl:variable name="tei">
           <xsl:sequence select="$aggregation/tei:TEI[$position]/*" />
@@ -34,30 +34,38 @@
               select="$tei/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]"
              />
           </title>
+          <generated>
+            <date>
+                <xsl:value-of
+                  select="$tei/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date[1]"
+                 />
+            </date>
+          </generated>
           <version>
             <xsl:value-of select="$cur-version-name" />
           </version>
           <manuscripts>
             <xsl:for-each select="$aggregation/files/file">
               <xsl:variable name="manuscript-name" select="@name" />
-
-              <manuscript name="{$manuscript-name}">
-                <versions>
-                  <xsl:for-each select="versions/version">
-                    <xsl:variable name="version-name" select="@name" />
-
-                    <version name="{$version-name}">
-                      <xsl:if test="$manuscript-name = $cur-text-name">
-                        <xsl:if test="$version-name = $cur-version-name">
-                          <xsl:attribute name="active">
-                            <xsl:value-of select="true()" />
-                          </xsl:attribute>
-                        </xsl:if>
-                      </xsl:if>
-                    </version>
-                  </xsl:for-each>
-                </versions>
-              </manuscript>
+              <xsl:if test="versions/version[1]">
+                  <manuscript name="{$manuscript-name}">
+                    <versions>
+                      <xsl:for-each select="versions/version">
+                        <xsl:variable name="version-name" select="@name" />
+    
+                        <version name="{$version-name}">
+                          <xsl:if test="$manuscript-name = $cur-text-name">
+                            <xsl:if test="$version-name = $cur-version-name">
+                              <xsl:attribute name="active">
+                                <xsl:value-of select="true()" />
+                              </xsl:attribute>
+                            </xsl:if>
+                          </xsl:if>
+                        </version>
+                      </xsl:for-each>
+                    </versions>
+                  </manuscript>
+                </xsl:if>
             </xsl:for-each>
           </manuscripts>
           <!-- GN: 1 August 2017: commented out, no longer needed as the

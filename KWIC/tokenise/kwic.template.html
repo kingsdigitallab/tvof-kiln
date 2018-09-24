@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>KWIC list</title>
+        <style>
+            .rubric_item {
+                background-color: #F9C1C1;
+                text-align: left;
+                width: 20%;
+            }
+            .rubric_item:after {
+                content: ' (r)';
+            }
+            table{
+                width: 100%;
+            }
+            td{
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+            td.loc {
+                text-align: left;
+                width: 20%;
+            }
+            td.prec {
+                text-align: right;
+                width: 32%;
+            }
+            td.instance {
+                color: red;
+                text-align: left;
+                padding-left: 50px;
+                width: 16%;
+            }
+            td.foll {
+                text-align: left;
+                width: 32%;
+            }
+            th{
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            {{ sublists }}
+        </div>
+    </body>
+</html>

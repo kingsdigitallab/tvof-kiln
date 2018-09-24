@@ -4,6 +4,39 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <!--
+  Add @computed-corresp to all <ab> manuscripts in the alignment file. 
+  That attribute is the expanded version of @corresp.
+  
+  Example:
+  
+    <div type="alignment" xml:id="fr20125_00730">
+        <ab corresp="#edfr20125_00730" type="ms_instance">
+            <seg type="ms_name">Fr20125</seg>
+            <seg type="rubric">Q[ue] li rois daires couoita a auoir a feme
+                  la fille le roi de scithe·</seg>
+            <seg type="location">211ra</seg>
+            <seg type="note" />
+        </ab>
+        <ab corresp="#edRoyal20D1_00574_01 #edRoyal20D1_00574_05" type="ms_instance">
+            <seg type="ms_name">Royal_20_D_1</seg>
+            <seg type="rubric">Q[ue] lirois couuoita a auoir a fe[m]me le
+                  fille le roi de sice</seg>
+            <seg type="location">220rb</seg>
+            <seg type="note" />
+        </ab>  
+
+    =>
+    
+        <ab corresp="#edfr20125_00730" type="ms_instance" 
+            computed-corresp="#edfr20125_00730">
+            [...]
+        <ab corresp="#edRoyal20D1_00574_01 #edRoyal20D1_00574_05" type="ms_instance" 
+            computed-corresp="#edRoyal20D1_00574_01 #edRoyal20D1_00574_02 #edRoyal20D1_00574_03 #edRoyal20D1_00574_04 #edRoyal20D1_00574_05">
+            [...]
+  -->
+
+
   <xsl:template match="tei:ab[@type = 'ms_instance'][contains(@corresp, ' ')]"
     priority="1">
     <xsl:variable name="corresps" select="tokenize(@corresp, ' ')" />
@@ -48,4 +81,5 @@
         select="* | @* | text() | processing-instruction() | comment()" />
     </xsl:copy>
   </xsl:template>
+
 </xsl:stylesheet>
