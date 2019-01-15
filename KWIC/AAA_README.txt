@@ -1,3 +1,10 @@
+GN: 2019, the following process is no longer used, it has been replaced by /KWIC/tokenise/doall.sh for alignment html generation and aggregated TEI generation.
+Preview of the text is now done in teh Text Viewer on the staging site.
+
+----------------------
+
+###### DEPRECATED ######
+
 Required:
 
 -- JDK needed. To install JDK if you don't already have one,
