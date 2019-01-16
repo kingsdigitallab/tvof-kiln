@@ -9,5 +9,10 @@ webapps/ROOT/content/xml/epidoc
 webapps/ROOT/WEB-INF/logs
 webapps/solr/data
 docs/build
-KWIC/**/*.xml
 **/*.pyc
+
+# preprocessing
+/preprocess/download/data
+/preprocess/download/settings.py
+KWIC/**/*.xml
+
