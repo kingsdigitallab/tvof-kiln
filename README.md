@@ -21,8 +21,8 @@ Scripts:
 * download_and_publish.sh: download TEI from Dropbox, convert, aggregate, tokenise, and place full TEI files in Kiln content dir, then reload Kiln service and Django app
 * build.sh : starts kiln on your local machine (please don't use that on servers, as they have a permanent jetty service running)
 * preprocess
-** download/download.py: download from dropbox and unzip into data subdir
-** prepare/prepare_and_publish.sh: aggregate, convert, downloaded files and place results into kiln content dirs
-** prepare/doall.py: aggregate, convert, tokenise, generate Kwic for a single manucript from TEI fragments
+..* download/download.py: download from dropbox and unzip into data subdir
+..* prepare/prepare_and_publish.sh: aggregate, convert, downloaded files and place results into kiln content dirs
+..* prepare/doall.py: aggregate, convert, tokenise, generate Kwic for a single manucript from TEI fragments
 
 
