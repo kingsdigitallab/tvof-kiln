@@ -1,0 +1,372 @@
+[ {
+  "created" : 1509371461000,
+  "modified" : 1509371461000,
+  "id" : 54,
+  "version" : 0,
+  "name" : "0",
+  "source" : "USER"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 3,
+  "version" : 0,
+  "name" : "adj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 4,
+  "version" : 0,
+  "name" : "adj. f.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 5,
+  "version" : 0,
+  "name" : "adj. m.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 8,
+  "version" : 0,
+  "name" : "adj. num.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 6,
+  "version" : 0,
+  "name" : "adj. poss.",
+  "source" : "DEAF"
+}, {
+  "created" : 1508509377000,
+  "modified" : 1508509377000,
+  "id" : 52,
+  "version" : 0,
+  "name" : "adj. pron. dém.",
+  "source" : "USER"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 7,
+  "version" : 0,
+  "name" : "adj. substantivé",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 9,
+  "version" : 0,
+  "name" : "adv.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 10,
+  "version" : 0,
+  "name" : "art. déf.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 11,
+  "version" : 0,
+  "name" : "art. indéf.",
+  "source" : "DEAF"
+}, {
+  "created" : 1508152339000,
+  "modified" : 1508152339000,
+  "id" : 50,
+  "version" : 2,
+  "name" : "cas régime",
+  "source" : "USER"
+}, {
+  "created" : 1508152324000,
+  "modified" : 1508152324000,
+  "id" : 49,
+  "version" : 0,
+  "name" : "cas sujet",
+  "source" : "USER"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 14,
+  "version" : 0,
+  "name" : "conj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 26,
+  "version" : 0,
+  "name" : "emploi abs.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 1,
+  "version" : 0,
+  "name" : "f.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 27,
+  "version" : 0,
+  "name" : "inf. substantivé",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 13,
+  "version" : 0,
+  "name" : "interj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 41,
+  "version" : 0,
+  "name" : "loc.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 42,
+  "version" : 0,
+  "name" : "loc. adj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 43,
+  "version" : 0,
+  "name" : "loc. adv.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 46,
+  "version" : 0,
+  "name" : "loc. interj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 47,
+  "version" : 0,
+  "name" : "loc. prép.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 48,
+  "version" : 0,
+  "name" : "loc. pron.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 45,
+  "version" : 0,
+  "name" : "loc. subst.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 44,
+  "version" : 0,
+  "name" : "loc. verb.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421344000,
+  "modified" : 1506421344000,
+  "id" : 2,
+  "version" : 0,
+  "name" : "m.",
+  "source" : "DEAF"
+}, {
+  "created" : 1508238487000,
+  "modified" : 1508238487000,
+  "id" : 51,
+  "version" : 1,
+  "name" : "nom propre",
+  "source" : "USER"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 28,
+  "version" : 0,
+  "name" : "p.p.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 29,
+  "version" : 0,
+  "name" : "p.p. pris comme adj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 30,
+  "version" : 0,
+  "name" : "p.prés.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 31,
+  "version" : 0,
+  "name" : "p.prés. pris comme adj.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 12,
+  "version" : 0,
+  "name" : "prép.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 32,
+  "version" : 0,
+  "name" : "pron.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 39,
+  "version" : 0,
+  "name" : "pron. adv.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 34,
+  "version" : 0,
+  "name" : "pron. dém.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 35,
+  "version" : 0,
+  "name" : "pron. indéfini",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 36,
+  "version" : 0,
+  "name" : "pron. interrog.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 33,
+  "version" : 0,
+  "name" : "pron. pers.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 37,
+  "version" : 0,
+  "name" : "pron. poss.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 40,
+  "version" : 0,
+  "name" : "pron. refl.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 38,
+  "version" : 0,
+  "name" : "pron. rel.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 15,
+  "version" : 0,
+  "name" : "v.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 17,
+  "version" : 0,
+  "name" : "v.abs.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 18,
+  "version" : 0,
+  "name" : "v.intr.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 19,
+  "version" : 0,
+  "name" : "v.pron.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 20,
+  "version" : 0,
+  "name" : "v.pron. à valeur neutre",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 23,
+  "version" : 0,
+  "name" : "v.pron. à valeur passive",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 22,
+  "version" : 0,
+  "name" : "v.pron. à valeur réciproque",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 21,
+  "version" : 0,
+  "name" : "v.pron. à valeur réfléchie",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 16,
+  "version" : 0,
+  "name" : "v.tr.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 25,
+  "version" : 0,
+  "name" : "v.tr. + c.o.d.",
+  "source" : "DEAF"
+}, {
+  "created" : 1506421345000,
+  "modified" : 1506421345000,
+  "id" : 24,
+  "version" : 0,
+  "name" : "v.tr. + c.o.i.",
+  "source" : "DEAF"
+} ]

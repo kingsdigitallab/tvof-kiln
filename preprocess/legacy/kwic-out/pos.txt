@@ -1,0 +1,53 @@
+0
+adj.
+adj. f.
+adj. m.
+adj. num.
+adj. poss.
+adj. pron. dém.
+adj. substantivé
+adv.
+art. déf.
+art. indéf.
+cas régime
+cas sujet
+conj.
+emploi abs.
+f.
+inf. substantivé
+interj.
+loc.
+loc. adj.
+loc. adv.
+loc. interj.
+loc. prép.
+loc. pron.
+loc. subst.
+loc. verb.
+m.
+nom propre
+p.p.
+p.p. pris comme adj.
+p.prés.
+p.prés. pris comme adj.
+prép.
+pron.
+pron. adv.
+pron. dém.
+pron. indéfini
+pron. interrog.
+pron. pers.
+pron. poss.
+pron. refl.
+pron. rel.
+v.
+v.abs.
+v.intr.
+v.pron.
+v.pron. à valeur neutre
+v.pron. à valeur passive
+v.pron. à valeur réciproque
+v.pron. à valeur réfléchie
+v.tr.
+v.tr. + c.o.d.
+v.tr. + c.o.i.
