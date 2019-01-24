@@ -29,7 +29,7 @@ For development and testing purpose, instead of generating those files you can j
     * prepare/doall.py: aggregate, convert, tokenise, generate Kwic for a single manucript from TEI fragments (Python 2)
     * prepare/*py & *.perl: particular TEI operations used by doall.py (Python 2)
 
-Python 2 scripts are delibrately kept to that version so partners can run them from their laptop.
+Python 2 scripts are deliberately kept to that version so partners can run them from their laptop.
 
 ## Kwic in/out, Lemmatisation and search page
 
@@ -46,5 +46,4 @@ Clearing the kwic table:
 
 Importing the kwic file:
 ./manage.py textsearch import ../../tvof-kiln/prepare/legacy/kwic-out/kwic.xml
-
 
