@@ -46,6 +46,9 @@ class KWICList(XMLParser):
 
         # All below are SEMI-DIPLOMATIC version
         'del', 'orig', 'seg[@type="semi-dip"]', 'sic',
+
+        # ac-329
+        'figure',
     ]
 
     def __init__(self):
@@ -169,8 +172,8 @@ class KWICList(XMLParser):
         radius = self.context_radius + 1
         for i in range(len(kwics)):
             kwic = kwics[i]
-            #keyword = keywords[i]
-            #token = keyword_tokens[i]
+            # keyword = keywords[i]
+            # token = keyword_tokens[i]
 
             kwic.update({
                 'pr': ' '.join([kw['kw'] for kw in kwics[max(0, i - radius):i]]),
