@@ -32,6 +32,8 @@ class KWICList(XMLParser):
 
     # those elements will have the first letter capitalised in critical version
     elements_to_titles = ['persName', 'placeName', 'geogName', 'name']
+    # ac-276: spaces directly under those elements will be removed
+    elements_remove_spaces = ['mod']
     # stop words
     stop_words = ['de', 'le', 'o']
     # 'context' size: the number of words on each side of a keyword that are
@@ -56,7 +58,7 @@ class KWICList(XMLParser):
 
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
-            print 'ERROR: please provide a single input file'
+            print('ERROR: please provide a single input file')
         else:
             for input_path in input_path_list:
                 self.read_xml(input_path)
@@ -75,7 +77,7 @@ class KWICList(XMLParser):
         self.generate_xml()
 
     def make_version(self, version='critical'):
-        print 'Create version %s' % version
+        print('Create version %s' % version)
 
         if version != 'critical':
             raise Exception('Unsupported version %s' % version)
@@ -83,14 +85,14 @@ class KWICList(XMLParser):
         self.remove_elements(self.elements_to_remove)
         # self.remove_elements(filters)
 
-        print '\t capitalise toUpper'
+        print('\t capitalise toUpper')
         for element in self.xml.findall('.//*[@subtype="toUpper"]'):
             element.text = (element.text or ur'').upper()
             for el in element.findall('.//*'):
                 el.text = (el.text or ur'').upper()
                 el.tail = (el.tail or ur'').upper()
 
-        print '\t capitalise first letters of name elements'
+        print('\t capitalise first letters of name elements')
         # e.g. <persName><w
         # n="9"><choice><reg>J</reg></choice>anus</w></persName>
         for filter in self.elements_to_titles:
@@ -110,6 +112,34 @@ class KWICList(XMLParser):
                         desc.text = text2
                     break
                     # print self.get_unicode_from_xml(element)
+        
+        # remove spaces directly under control elements
+        # ac-276: 
+        # e.g. <w><mod>  <add>a</add> <del>b</del> <mod>c</w>
+        # => <w><mod><add>a</add><del>b</del><mod>c</w>
+        
+        def collapse_spaces(element, is_tail=False):
+            ''' this will remove element.text 
+            if element.text contains only spaces or line breaks;
+            
+            If is_tail= True, apply to element.tail instead
+            '''
+            part = 'tail' if is_tail else 'text'
+            val = getattr(element, part, None)
+            if val and not re.search(r'\S', val):
+                setattr(element, part, '')
+        
+        for tag in self.elements_remove_spaces:
+            for element in self.xml.findall('.//'+tag):
+                before = self.get_unicode_from_xml(element)
+                collapse_spaces(element)
+                for child in element:
+                    collapse_spaces(child, True)
+                after = self.get_unicode_from_xml(element)
+
+                # only enabled when debugging
+                if 0 and before != after:
+                    print(u'\t`{}` -> `{}`'.format(before, after))
 
     def collect_keywords(self):
         self.kwics = []
@@ -125,7 +155,8 @@ class KWICList(XMLParser):
             for filter in ['head[@type="rubric"]', './/seg[@type]']:
                 # add all <w> to the kwic list
                 self.collect_keywords_under_elements(
-                    div.findall(filter), paraid)
+                    div.findall(filter), paraid
+                )
 
     # Collect all the tokens
     def collect_keywords_under_elements(self, elements, paraid):
@@ -138,6 +169,7 @@ class KWICList(XMLParser):
             if element.tag == 'seg' and\
                     not re.match(ur'\d+[a-z]?$', element.attrib.get('type') or ur''):
                 continue
+            
             # get ID from element if available
             elementid = element.attrib.get(
                 self.expand_prefix('xml:id')) or paraid
@@ -146,6 +178,7 @@ class KWICList(XMLParser):
 
             # collect all the tokens under <element>
             for token in tokens:
+                
                 keyword = self.get_element_text(token, True)
                 # print parentid, token.attrib.get('n'), repr(self.get_unicode_from_xml(token))
                 # print repr(keyword)
@@ -163,9 +196,9 @@ class KWICList(XMLParser):
                     self.kwics.append(kwic)
                     kwics.append(kwic)
                 else:
-                    print 'NONE'
-                    print token.attrib.get('n')
-                    print paraid
+                    print('NONE')
+                    print(token.attrib.get('n'))
+                    print(paraid)
                     exit()
 
         # add context (prev/next words) to the new keywords in the list
@@ -200,7 +233,7 @@ class KWICList(XMLParser):
         return ret
 
     def generate_xml(self):
-        print 'Generate XML'
+        print('Generate XML')
 
         kwic_count = 0
 
@@ -211,11 +244,14 @@ class KWICList(XMLParser):
         parts = []
         invalids = {}
         for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
-            is_token_invalid = (re.search(ur'\s', kwic['kw']) or len(
-                kwic['kw']) > 20 or not(kwic['kw']))
+            is_token_invalid = (
+                re.search(ur'\s', kwic['kw']) 
+                or len(kwic['kw']) > 20 
+                or not(kwic['kw'])
+            )
             if is_token_invalid:
                 if kwic['kw'] not in invalids:
-                    print 'WARNING: probably invalid token in %s, "%s".' % (kwic['lc'], repr(kwic['kw']))
+                    print('WARNING: probably invalid token in %s, "%s".' % (kwic['lc'], repr(kwic['kw'])))
                     invalids[kwic['kw']] = 1
                 continue
 
@@ -266,7 +302,7 @@ class KWICList(XMLParser):
 
         self.set_xml_from_unicode(ret)
 
-        print '%s keywords' % kwic_count
+        print('%s keywords' % kwic_count)
 
         return ret
 
