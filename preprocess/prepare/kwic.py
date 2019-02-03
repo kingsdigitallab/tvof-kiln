@@ -31,7 +31,9 @@ from collections import OrderedDict
 class KWICList(XMLParser):
 
     # those elements will have the first letter capitalised in critical version
-    elements_to_titles = ['persName', 'placeName', 'geogName', 'name']
+    # ac-332.4 removed 'geogName' from that list
+    # see also: is_element_titalised()
+    elements_to_titles = ['persName', 'placeName', 'name']
     # ac-276: spaces directly under those elements will be removed
     elements_remove_spaces = ['mod']
     # stop words
@@ -55,6 +57,16 @@ class KWICList(XMLParser):
 
     def __init__(self):
         super(KWICList, self).__init__()
+
+    def is_element_titalised(self, element):
+        ret = True
+
+        # ac-332.4 removed <name type="building">
+        print(element.tag, element.attrib.get('type', ''))
+        if element.attrib.get('type', '').lower() in ['building']:
+            ret = False
+
+        return ret
 
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
@@ -96,41 +108,48 @@ class KWICList(XMLParser):
         # e.g. <persName><w
         # n="9"><choice><reg>J</reg></choice>anus</w></persName>
         for filter in self.elements_to_titles:
-            for element in self.xml.findall('.//%s//w' % filter):
-                # print self.get_unicode_from_xml(element)
-                # find the first piece of text
-                # for desc in element.iter():
-                for desc in element.iter():
-                    text = (desc.text or ur'')
-                    if not text:
-                        continue
-                    text2 = re.sub(
-                        ur'^(\W*)(\w)', lambda m: m.group(1) + m.group(2).upper(), text)
-                    # TODO: we should also check the .tail
-                    # but 90+% of the time, the first letter is in .text
-                    if text != text2:
-                        desc.text = text2
-                    break
+            for element in self.xml.findall('.//%s' % filter):
+                if not self.is_element_titalised(element): continue
+                word = element.findall('.//w')
+
+                if 1:
                     # print self.get_unicode_from_xml(element)
-        
+                    # find the first piece of text
+                    # for desc in element.iter():
+                    for desc in element.iter():
+                        text = (desc.text or ur'')
+                        if not text:
+                            continue
+                        text2 = re.sub(
+                            ur'^(\W*)(\w)',
+                            lambda m: m.group(1) + m.group(2).upper(),
+                            text
+                        )
+                        # TODO: we should also check the .tail
+                        # but 90+% of the time, the first letter is in .text
+                        if text != text2:
+                            desc.text = text2
+                        break
+                        # print self.get_unicode_from_xml(element)
+
         # remove spaces directly under control elements
-        # ac-276: 
+        # ac-276:
         # e.g. <w><mod>  <add>a</add> <del>b</del> <mod>c</w>
         # => <w><mod><add>a</add><del>b</del><mod>c</w>
-        
+
         def collapse_spaces(element, is_tail=False):
-            ''' this will remove element.text 
+            ''' this will remove element.text
             if element.text contains only spaces or line breaks;
-            
+
             If is_tail= True, apply to element.tail instead
             '''
             part = 'tail' if is_tail else 'text'
             val = getattr(element, part, None)
             if val and not re.search(r'\S', val):
                 setattr(element, part, '')
-        
+
         for tag in self.elements_remove_spaces:
-            for element in self.xml.findall('.//'+tag):
+            for element in self.xml.findall('.//' + tag):
                 before = self.get_unicode_from_xml(element)
                 collapse_spaces(element)
                 for child in element:
@@ -169,7 +188,7 @@ class KWICList(XMLParser):
             if element.tag == 'seg' and\
                     not re.match(ur'\d+[a-z]?$', element.attrib.get('type') or ur''):
                 continue
-            
+
             # get ID from element if available
             elementid = element.attrib.get(
                 self.expand_prefix('xml:id')) or paraid
@@ -178,7 +197,7 @@ class KWICList(XMLParser):
 
             # collect all the tokens under <element>
             for token in tokens:
-                
+
                 keyword = self.get_element_text(token, True)
                 # print parentid, token.attrib.get('n'), repr(self.get_unicode_from_xml(token))
                 # print repr(keyword)
@@ -245,8 +264,8 @@ class KWICList(XMLParser):
         invalids = {}
         for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
             is_token_invalid = (
-                re.search(ur'\s', kwic['kw']) 
-                or len(kwic['kw']) > 20 
+                re.search(ur'\s', kwic['kw'])
+                or len(kwic['kw']) > 20
                 or not(kwic['kw'])
             )
             if is_token_invalid:

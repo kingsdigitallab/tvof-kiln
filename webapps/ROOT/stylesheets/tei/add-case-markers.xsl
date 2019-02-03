@@ -19,10 +19,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="tei:persName//text() | tei:placeName//text() | tei:geogName//text() | tei:name//text()">
+    <xsl:template match="tei:persName//text() | tei:placeName//text() | tei:name[not(@type=('building'))]//text()">
         <xsl:choose>
-            <!-- CDT: first non-empty text anywhere under the <name>   AND   not already encoded with toUpper --> 
-            <xsl:when test="(. = (ancestor::*[local-name()=('persName','placeName','geogName','name')]//text()[string-length(normalize-space(.)) &gt; 0])[1]) and not(ancestor::*[@subtype='toUpper'])">
+            <!-- CDT: first non-empty text anywhere under the <name>   AND   not already encoded with toUpper -->
+            <xsl:when test="(. = (ancestor::*[local-name()=('persName','placeName','name')][1]//text()[string-length(normalize-space(.)) &gt; 0])[1]) and not(ancestor::*[@subtype='toUpper'])">
                 <tei:choice xsl:xpath-default-namespace="">
                     <tei:seg type="crit" subtype="toUpper">
                         <xsl:value-of select="substring(., 1, 1)"/>
@@ -38,5 +38,5 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-        
+
 </xsl:stylesheet>
