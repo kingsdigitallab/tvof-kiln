@@ -31,9 +31,9 @@ from collections import OrderedDict
 class KWICList(XMLParser):
 
     # those elements will have the first letter capitalised in critical version
-    # ac-332.4 removed 'geogName' from that list
+    # ac-332.4 & ac-337.3
     # see also: is_element_titalised()
-    elements_to_titles = ['persName', 'placeName', 'name']
+    elements_to_titles = ['persName', 'placeName', 'name', 'geogname']
     # ac-276: spaces directly under those elements will be removed
     elements_remove_spaces = ['mod']
     # stop words
@@ -62,7 +62,7 @@ class KWICList(XMLParser):
         ret = True
 
         # ac-332.4 removed <name type="building">
-        print(element.tag, element.attrib.get('type', ''))
+        # print(element.tag, element.attrib.get('type', ''))
         if element.attrib.get('type', '').lower() in ['building']:
             ret = False
 
@@ -109,7 +109,8 @@ class KWICList(XMLParser):
         # n="9"><choice><reg>J</reg></choice>anus</w></persName>
         for filter in self.elements_to_titles:
             for element in self.xml.findall('.//%s' % filter):
-                if not self.is_element_titalised(element): continue
+                if not self.is_element_titalised(element):
+                    continue
                 word = element.findall('.//w')
 
                 if 1:
@@ -270,7 +271,8 @@ class KWICList(XMLParser):
             )
             if is_token_invalid:
                 if kwic['kw'] not in invalids:
-                    print('WARNING: probably invalid token in %s, "%s".' % (kwic['lc'], repr(kwic['kw'])))
+                    print('WARNING: probably invalid token in %s, "%s".' %
+                          (kwic['lc'], repr(kwic['kw'])))
                     invalids[kwic['kw']] = 1
                 continue
 
