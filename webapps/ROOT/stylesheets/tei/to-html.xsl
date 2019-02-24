@@ -433,7 +433,7 @@
     <!-- end -->
     <!-- ********************************* -->
 
-    <xsl:template match="tei:seg[@type = 'stripFirstLetter']">
+    <xsl:template match="tei:seg[@type = 'stripFirstLetter']" mode="#all">
         <xsl:value-of select="translate(substring-after(., substring(., 1, 1)), '[]', '')"/>
     </xsl:template>
 
