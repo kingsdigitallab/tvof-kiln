@@ -56,16 +56,16 @@
     -->
 
     <xsl:template match="tei:div[@type='note']">
-        <div>
+        <span>
             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
             <xsl:attribute name="class">tei-note tei-type-note tei-subtype-<xsl:value-of select="@subtype" /></xsl:attribute>
             <xsl:attribute name="data-tei-subtype"><xsl:value-of select="@subtype" /></xsl:attribute>
-            <div class="note-text">
+            <span class="note-text">
                 <xsl:apply-templates select="tei:p" />
-            </div>
-        </div>
+            </span>
+        </span>
     </xsl:template>
-    <xsl:template match="tei:div[@type='note']/tei:p">
+    <xsl:template match="tei:*[@type='note']/tei:p">
         <xsl:apply-templates />
     </xsl:template>
 
