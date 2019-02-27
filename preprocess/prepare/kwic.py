@@ -58,16 +58,6 @@ class KWICList(XMLParser):
     def __init__(self):
         super(KWICList, self).__init__()
 
-    def is_element_titalised(self, element):
-        ret = True
-
-        # ac-332.4 removed <name type="building">
-        # print(element.tag, element.attrib.get('type', ''))
-        if element.attrib.get('type', '').lower() in ['building']:
-            ret = False
-
-        return ret
-
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
             print('ERROR: please provide a single input file')
@@ -77,16 +67,12 @@ class KWICList(XMLParser):
                 self.generate_list()
                 break
 
-    def is_stop_word(self, token):
-        '''Return True if <token> in self.stop_words or doesn't contain a letter'''
-        return not re.search(ur'(?musi)\w', token) or token in self.stop_words
-
     def generate_list(self):
         self.make_version('critical')
 
-        self.collect_keywords()
+        kwics = self.collect_keywords()
 
-        self.generate_xml()
+        self.generate_xml(kwics)
 
     def make_version(self, version='critical'):
         print('Create version %s' % version)
@@ -162,7 +148,7 @@ class KWICList(XMLParser):
                     print(u'\t`{}` -> `{}`'.format(before, after))
 
     def collect_keywords(self):
-        self.kwics = []
+        kwics = []
 
         for div in self.xml.findall('.//div[head]'):
             paraid = div.attrib.get(self.expand_prefix('xml:id'))
@@ -174,9 +160,13 @@ class KWICList(XMLParser):
             # './/seg[@type]'):
             for filter in ['head[@type="rubric"]', './/seg[@type]']:
                 # add all <w> to the kwic list
-                self.collect_keywords_under_elements(
-                    div.findall(filter), paraid
+                kwics.extend(
+                    self.collect_keywords_under_elements(
+                        div.findall(filter), paraid
+                    )
                 )
+
+        return kwics
 
     # Collect all the tokens
     def collect_keywords_under_elements(self, elements, paraid):
@@ -212,8 +202,8 @@ class KWICList(XMLParser):
                         'lc': elementid,
                         'nb': token.attrib.get('n'),
                         'tp': self.get_token_type_from_parent(element),
+                        'sp': self.get_speech_type_from_token(token),
                     }
-                    self.kwics.append(kwic)
                     kwics.append(kwic)
                 else:
                     print('NONE')
@@ -240,6 +230,27 @@ class KWICList(XMLParser):
             if (i + 1) < len(kwics) and re.match(ur'[\.,]', kwics[i + 1]['kw']):
                 kwic['pe'] = kwics[i + 1]['kw']
 
+        return kwics
+
+    def get_speech_type_from_token(self, token):
+        ret = ''
+
+        speech_elements = getattr(self, 'speech_elements', None)
+        if speech_elements is None:
+            # <said direct="false">de tout
+            speech_elements = {
+                'direct': {id(e): 1 for e in self.xml.findall(".//said[@direct='true']//w")},
+                'indirect': {id(e): 1 for e in self.xml.findall(".//said[@direct='false']//w")},
+            }
+            self.speech_elements = speech_elements
+        else:
+            if id(token) in speech_elements['direct']:
+                ret = 'direct'
+            elif id(token) in speech_elements['indirect']:
+                ret = 'indirect'
+
+        return ret
+
     def get_token_type_from_parent(self, parent):
         '''Returns the token type from the @type of the parent of the token'''
         ret = 'seg_item'
@@ -252,7 +263,7 @@ class KWICList(XMLParser):
 
         return ret
 
-    def generate_xml(self):
+    def generate_xml(self, kwics):
         print('Generate XML')
 
         kwic_count = 0
@@ -263,7 +274,7 @@ class KWICList(XMLParser):
         sublist = None
         parts = []
         invalids = {}
-        for kwic in sorted(self.kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
+        for kwic in sorted(kwics, key=lambda k: [k['kw'].lower(), k['tp'], k['lc'], int(k['nb'])]):
             is_token_invalid = (
                 re.search(ur'\s', kwic['kw'])
                 or len(kwic['kw']) > 20
@@ -289,7 +300,7 @@ class KWICList(XMLParser):
                 part += u'\n<sublist key="{}">'.format(kwic['sl'])
                 sublist = kwic['sl']
             if not self.is_stop_word(kwic['kw']):
-                part += u'\n\t<item type="{tp}" location="{lc}" n="{nb}" preceding="{pr}" following="{fo}">'.format(
+                part += u'\n\t<item type="{tp}" location="{lc}" n="{nb}" preceding="{pr}" following="{fo}" sp="{sp}">'.format(
                     **kwic)
                 part += u'\n\t\t<string>{kw}</string>'.format(**kwic)
                 if kwic.get('pe'):
@@ -326,6 +337,20 @@ class KWICList(XMLParser):
         print('%s keywords' % kwic_count)
 
         return ret
+
+    def is_element_titalised(self, element):
+        ret = True
+
+        # ac-332.4 removed <name type="building">
+        # print(element.tag, element.attrib.get('type', ''))
+        if element.attrib.get('type', '').lower() in ['building']:
+            ret = False
+
+        return ret
+
+    def is_stop_word(self, token):
+        '''Return True if <token> in self.stop_words or doesn't contain a letter'''
+        return not re.search(ur'(?musi)\w', token) or token in self.stop_words
 
 
 KWICList.run()
