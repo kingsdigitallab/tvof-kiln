@@ -89,7 +89,10 @@ class KwicHtml(XMLParser):
 
     def load_template(self, filepath):
         import codecs
-        with codecs.open(filepath, 'r', 'utf-8') as f:
+
+        path = os.path.dirname(__file__)
+
+        with codecs.open(os.path.join(path, filepath), 'r', 'utf-8') as f:
             ret = f.read()
         return ret
 

@@ -33,7 +33,7 @@ class KWICList(XMLParser):
     # those elements will have the first letter capitalised in critical version
     # ac-332.4 & ac-337.3
     # see also: is_element_titalised()
-    elements_to_titles = ['persName', 'placeName', 'name', 'geogname']
+    elements_to_titles = ['persName', 'placeName', 'name', 'geogName']
     # ac-276: spaces directly under those elements will be removed
     elements_remove_spaces = ['mod']
     # stop words
@@ -89,35 +89,6 @@ class KWICList(XMLParser):
             for el in element.findall('.//*'):
                 el.text = (el.text or ur'').upper()
                 el.tail = (el.tail or ur'').upper()
-
-        print('\t capitalise first letters of name elements')
-        # e.g. <persName><w
-        # n="9"><choice><reg>J</reg></choice>anus</w></persName>
-        for filter in self.elements_to_titles:
-            for element in self.xml.findall('.//%s' % filter):
-                if not self.is_element_titalised(element):
-                    continue
-                word = element.findall('.//w')
-
-                if 1:
-                    # print self.get_unicode_from_xml(element)
-                    # find the first piece of text
-                    # for desc in element.iter():
-                    for desc in element.iter():
-                        text = (desc.text or ur'')
-                        if not text:
-                            continue
-                        text2 = re.sub(
-                            ur'^(\W*)(\w)',
-                            lambda m: m.group(1) + m.group(2).upper(),
-                            text
-                        )
-                        # TODO: we should also check the .tail
-                        # but 90+% of the time, the first letter is in .text
-                        if text != text2:
-                            desc.text = text2
-                        break
-                        # print self.get_unicode_from_xml(element)
 
         # remove spaces directly under control elements
         # ac-276:
@@ -339,6 +310,9 @@ class KWICList(XMLParser):
         return ret
 
     def is_element_titalised(self, element):
+        # see ac-343
+        return True
+
         ret = True
 
         # ac-332.4 removed <name type="building">

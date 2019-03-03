@@ -7,6 +7,8 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> 22 Nov 2016</xd:p>
             <xd:p><xd:b>Authors:</xd:b> paul caton, geoffroy noel</xd:p>
+            <xd:p>NO LONGER NEEDED (March 2019), see ac-343:
+                capitalisation of names is done by convert.py</xd:p>
             <xd:p>This stylesheet takes as input a TVOF transcription file. It outputs a version
                 where the first letter of name-type elements is encoded with tei:choice. Everything
                 else is left unchanged.</xd:p>

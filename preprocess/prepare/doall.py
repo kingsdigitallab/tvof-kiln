@@ -31,13 +31,10 @@ class ParseAll(XMLParser):
 
         # convert shorthands
         print('-' * 20)
-        thisdir = os.path.dirname(os.path.relpath(__file__, '.'))
-        perlpath = os.path.join(thisdir, 'convert.perl')
         outfiles += [output_path + 'converted.xml']
-        command = 'perl "%s" < %s > %s' %\
-                  (perlpath, outfiles[-2], outfiles[-1])
-        print(command)
-        os.system(command)
+        from convert import Converter
+        options = [outfiles[-2]] + ['-o', outfiles[-1]]
+        Converter.run(options)
 
         # validate conversion
         print('-' * 20)
