@@ -11,7 +11,7 @@ class Converter(XMLParser):
     default_output = u'converted.xml'
     patterns = [
         re.compile(ur'\w¡?'),
-        re.compile(ur'\s')
+        re.compile(ur"[\s']")
     ]
 
     def run_custom(self, input_path_list, output_path):
@@ -53,7 +53,7 @@ class Converter(XMLParser):
             'name',
             'geogName',
             'placeName',
-            'perName',
+            'persName',
         ]
 
         unique_els = {}
@@ -190,7 +190,8 @@ class Converter(XMLParser):
         <geogName type="sea"><choice><orig>l</orig><reg>L</reg></choice>a <choice><orig>m</orig><reg>M</reg></choice>er <choice><orig>d</orig><reg>D</reg></choice>e                <placeName><choice><orig>g</orig><reg>G</reg></choice>resse</placeName></geogName>
         <geogName><c rend="R">G</c>yon</geogName>
         <geogName><c rend="R">G</c>yon</geogName>
-        '''
+        <persName><choice><orig>i</orig><reg>J</reg></choice>ehan l¡<choice><orig /><reg>'</reg></choice>ircanien</persName>
+        <persName><choice><orig>i</orig><reg>J</reg></choice>ehan l<choice><orig /><reg>'</reg></choice><choice><orig>i</orig><reg>I</reg></choice>rcanien</persName>        '''
         cases = cases.split('\n')
         while cases:
             input = cases.pop(0).strip()
