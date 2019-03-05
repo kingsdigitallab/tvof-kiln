@@ -6,8 +6,7 @@
 #
 
 SKIP_ALIGN_MERGE=0
-for var in "$@"
-do
+for var in "$@"; do
     if [ "$var" == "-sam" ]; then
         SKIP_ALIGN_MERGE=1
     fi
@@ -21,4 +20,4 @@ python2 doall.py $DOWNLOAD_DATA_PATH/royal/{1..100}[_,-]*.xml -c -o data/royal/ 
 if [ "$SKIP_ALIGN_MERGE" == 0 ]; then
     python2 align_merge.py $DOWNLOAD_DATA_PATH/alignments/TVOF_para_alignment_*.xml -o "$KILN_TEI_PATH/alists/TVOF_para_alignment.xml"
 fi
-pushd ../.. && ./reload_kiln.sh $1 && popd
+pushd ../.. && ./publish.sh $1 && popd
