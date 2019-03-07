@@ -19,7 +19,7 @@ class Converter(XMLParser):
 
         pre_out_path = output_path + '.pre.xml'
         for path in input_path_list:
-            cmd = 'perl {} < {} > {}'.format(
+            cmd = 'perl "{}" < "{}" > "{}"'.format(
                 os.path.join(script_path, 'convert.perl'),
                 path,
                 pre_out_path
