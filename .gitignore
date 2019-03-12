@@ -14,5 +14,8 @@ docs/build
 # preprocessing
 /preprocess/download/data
 /preprocess/download/settings.py
+/preprocess/prepare/data
+/preprocess/prepare/error.log
 KWIC/**/*.xml
-
+/kiln_out
+build.log
