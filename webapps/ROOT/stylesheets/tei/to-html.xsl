@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:key name="div_from_miletone" match="//tei:div[@type='1']" 
+    <xsl:key name="div_from_miletone" match="//tei:div[@type='1']"
         use="preceding-sibling::tei:milestone[1]/@n" />
 
     <!-- Project-specific XSLT for transforming TEI to
@@ -13,13 +13,13 @@
 
     <!-- GN: we turn milestones into divs which contain all the div type=1 -->
     <xsl:template match="tei:milestone[@unit = 'section']">
-        <xsl:variable name="section-number" 
+        <xsl:variable name="section-number"
             select="@n" />
-        <div class="section" 
-                id="{concat('section-', @n)}" 
+        <div class="section"
+                id="{concat('section-', @n)}"
                 data-n="{@n}" data-type="{@type}">
             <xsl:for-each select="key('div_from_miletone', @n)">
-                <div class="tei-div paragraph" 
+                <div class="tei-div paragraph"
                     data-type="1" data-section="{$section-number}">
                     <xsl:apply-templates select="@*"/>
                     <xsl:apply-templates/>
@@ -45,7 +45,7 @@
             </span>
         </xsl:if>
     </xsl:template -->
-    
+
     <!--
             <div subtype="sourceNotes" type="notes" xml:id="edfr20125_sourceNotes">
                 <div subtype="source" type="note" xml:id="edfr20125_00935_peach">
@@ -56,29 +56,29 @@
     -->
 
     <xsl:template match="tei:div[@type='note']">
-        <div>
+        <span>
             <xsl:attribute name="id"><xsl:value-of select="@xml:id" /></xsl:attribute>
             <xsl:attribute name="class">tei-note tei-type-note tei-subtype-<xsl:value-of select="@subtype" /></xsl:attribute>
             <xsl:attribute name="data-tei-subtype"><xsl:value-of select="@subtype" /></xsl:attribute>
-            <div class="note-text">
+            <span class="note-text">
                 <xsl:apply-templates select="tei:p" />
-            </div>
-        </div>
+            </span>
+        </span>
     </xsl:template>
-    <xsl:template match="tei:div[@type='note']/tei:p">
+    <xsl:template match="tei:*[@type='note']/tei:p">
         <xsl:apply-templates />
     </xsl:template>
-    
+
     <xsl:template match="tei:anchor">
         <xsl:param name="view" tunnel="yes"/>
         <xsl:if test="$view = 'interpretive'">
             <xsl:variable name="corresp" select="substring-after(@corresp, '#')"/>
             <xsl:apply-templates select="//tei:div[@xml:id = $corresp][1]"/>
-            
+
             <!--
             <xsl:variable name="note-head" select="//tei:div[@xml:id = $corresp][1]/tei:head"/>
             <xsl:variable name="note-type" select="//tei:div[@xml:id = $corresp][1]/@subtype"/>
-            
+
             <xsl:variable name="note-type-text">
                 <xsl:choose>
                     <xsl:when test="$note-type = 'source'">
@@ -123,21 +123,21 @@
                         <span class="description">Feuillet, recto/verso, colonne</span>
                     </li>
                     <xsl:if test="$view = 'interpretive'">
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-corr">abc</span>
                             </span>
                             <span class="description">Texte ajouté ou corrigé par l’éditeur moderne</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-l" data-tei-n="001">abc</span>
                             </span>
                             <span class="description">Texte en vers</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <div class="tei-note tei-type-note tei-subtype-source" data-tei-subtype="source">
@@ -146,7 +146,7 @@
                             </span>
                             <span class="description">Note sur les sources</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <div class="tei-note tei-type-note tei-subtype-gen" data-tei-subtype="gen">
@@ -155,7 +155,7 @@
                             </span>
                             <span class="description">Note générale</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <div class="tei-note tei-type-note tei-subtype-trad" data-tei-subtype="trad">
@@ -164,45 +164,45 @@
                             </span>
                             <span class="description">Note sur la tradition et la <i>varia lectio</i></span>
                         </li>
-                        
+
                     </xsl:if>
                     <xsl:if test="$view = 'semi-diplomatic'">
-                        
+
                         <li>
                             <span class="notation">
                                 [abc]
                             </span>
                             <span class="description">Résolutions d’abréviations dans le ms</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-add" data-tei-hand="E" data-tei-place="inline">abc</span>
                             </span>
                             <span class="description">Texte ajouté à la transcription par une main médiévale</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-del">abc</span>
                             </span>
                             <span class="description">Texte effacé dans le ms</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-unclear">[...]</span>
                             </span>
                             <span class="description">Lacune textuelle/Texte gratté</span>
                         </li>
-                        
+
                         <li>
                             <span class="notation">
                                 <span class="tei-l" data-tei-n="001">abc</span>
                             </span>
                             <span class="description">Texte en vers</span>
                         </li>
-                        
+
                     </xsl:if>
                 </ul>
             </div>
@@ -433,7 +433,7 @@
     <!-- end -->
     <!-- ********************************* -->
 
-    <xsl:template match="tei:seg[@type = 'stripFirstLetter']">
+    <xsl:template match="tei:seg[@type = 'stripFirstLetter']" mode="#all">
         <xsl:value-of select="translate(substring-after(., substring(., 1, 1)), '[]', '')"/>
     </xsl:template>
 
@@ -488,7 +488,7 @@
     <xsl:template match="tei:sic" mode="semi-diplomatic">
         <xsl:text> </xsl:text>
         <!-- GN: see TVOF 146, mode must be provided here, otherwise
-        reg is shown in the sic within the reveal; we want of orig 
+        reg is shown in the sic within the reveal; we want of orig
         Make sure you understand XSLT spec 5.7 and 5.8 about Modes!
         -->
         <xsl:apply-templates mode="semi-diplomatic" />
@@ -557,11 +557,11 @@
 
     <xsl:template match="tei:supplied">
         <xsl:call-template name="lossless-span"/>
-    </xsl:template>    
+    </xsl:template>
 
     <xsl:template match="tei:mod">
         <xsl:call-template name="lossless-span"/>
-    </xsl:template>    
+    </xsl:template>
 
     <!--
         <figure>
@@ -572,11 +572,11 @@
         </figure>
 
         =>
-        
+
         <figure>
             <img src='img.jp2' alt='missing' title="Figure One: ..."/>
             <figcaption>caption</figcaption>
-        </figure>        
+        </figure>
     -->
 
     <xsl:template match="tei:div//tei:figure">
@@ -584,22 +584,31 @@
             <!-- xsl:call-template name="lossless-attributes"/ -->
             <xsl:apply-templates />
         </figure>
-    </xsl:template>    
+    </xsl:template>
 
     <xsl:template match="tei:figure/tei:head">
-    </xsl:template>    
+    </xsl:template>
 
     <xsl:template match="tei:figure/tei:p">
         <figcaption>
             <!-- xsl:call-template name="lossless-attributes"/ -->
             <xsl:apply-templates />
         </figcaption>
-    </xsl:template>    
+    </xsl:template>
 
     <!-- GN: convert graphic into html -->
     <xsl:template match="tei:graphic">
         <img>
-            <xsl:attribute name="src"><xsl:value-of select="@url" /></xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="ends-with(@url, '.jp2')">
+                    <!-- 1x1 transparent gif b/c browser don't understand jp2 -->
+                    <xsl:attribute name="src">data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==</xsl:attribute>
+                    <xsl:attribute name="data-jp2"><xsl:value-of select="@url" /></xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="src"><xsl:value-of select="@url" /></xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:attribute name="alt">
                 <xsl:choose>
                     <xsl:when test="../tei:figDesc">
@@ -622,12 +631,12 @@
             </xsl:attribute>
         </img>
     </xsl:template>
-    
+
     <!-- GN: universal TEI -> HTML conversion
     This is a systematic and lossless conversion into HTML.
     Please use this instead of custom conversion.
     The only exception is for TEI elements that have a better match in HTML.
-    E.g. <tei:lb/> -> <br> 
+    E.g. <tei:lb/> -> <br>
     -->
 
     <xsl:template name="lossless-span">

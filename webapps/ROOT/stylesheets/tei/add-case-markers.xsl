@@ -7,6 +7,8 @@
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> 22 Nov 2016</xd:p>
             <xd:p><xd:b>Authors:</xd:b> paul caton, geoffroy noel</xd:p>
+            <xd:p>NO LONGER NEEDED (March 2019), see ac-343:
+                capitalisation of names is done by convert.py</xd:p>
             <xd:p>This stylesheet takes as input a TVOF transcription file. It outputs a version
                 where the first letter of name-type elements is encoded with tei:choice. Everything
                 else is left unchanged.</xd:p>
@@ -19,10 +21,10 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="tei:persName//text() | tei:placeName//text() | tei:geogName//text() | tei:name//text()">
+    <xsl:template match="tei:persName//text() | tei:geogName//text() | tei:placeName//text() | tei:name[not(@type=('building'))]//text()">
         <xsl:choose>
-            <!-- CDT: first non-empty text anywhere under the <name>   AND   not already encoded with toUpper --> 
-            <xsl:when test="(. = (ancestor::*[local-name()=('persName','placeName','geogName','name')]//text()[string-length(normalize-space(.)) &gt; 0])[1]) and not(ancestor::*[@subtype='toUpper'])">
+            <!-- CDT: first non-empty text anywhere under the <name>   AND   not already encoded with toUpper -->
+            <xsl:when test="(. = (ancestor::*[local-name()=('geogName','persName','placeName','name')][1]//text()[string-length(normalize-space(.)) &gt; 0])[1]) and not(ancestor::*[@subtype='toUpper'])">
                 <tei:choice xsl:xpath-default-namespace="">
                     <tei:seg type="crit" subtype="toUpper">
                         <xsl:value-of select="substring(., 1, 1)"/>
@@ -38,5 +40,5 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-        
+
 </xsl:stylesheet>

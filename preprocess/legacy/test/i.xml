@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Tester for add-case-marker.xsl
+
+java -jar ../../../preprocess/legacy/KWIC/shared_files/saxon9he.jar -s:i.xml -xsl:../../../webapps/ROOT/stylesheets/tei/add-case-markers.xsl -o:o.xml
+
+
+--><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <text>
+    <body>
+        <head type="rubric">
+            De la grant <choice><orig>i</orig><reg>j</reg></choice>oie qui a
+            <placeName>rome</placeName> fu demenee
+            dou concele
+        </head>
+
+        <ab>
+            <seg type="3" xml:id="edfr20125_01025_01">Quant li conceles <persName>paulus
+                    <seg type="crit" subtype="toUpper">e</seg>milius</persName>
+                    entra en <placeName>rome</placeName>
+            </seg>
+        </ab>
+
+        <l n="133">E qui funda <name type="building">la tor
+            <placeName>babel</placeName></name></l>
+
+        <geogName>durio</geogName>
+
+        <geogName> durio <name><w>first</w> <w>second</w></name></geogName>
+
+        <name type="building">te[m]ple
+          <persName>mart</persName></name>
+
+        <name type="people">wandele</name>
+
+        <name><w>first</w> <w>second</w></name>
+
+        <name> <w>first</w> <w>second</w></name>
+
+    </body>
+  </text>
+</TEI>

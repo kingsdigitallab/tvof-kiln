@@ -17,6 +17,8 @@ class AlignMerge(XMLParser):
 
     def run_custom(self, input_path_list, output_path):
 
+        self.merge_completed = False
+
         # make sure mandatory files are in input files
         # and place them at the beginning of input_path_list
         for suffix in self.mandatory_files:
@@ -42,6 +44,8 @@ class AlignMerge(XMLParser):
         for input_path in input_path_list:
             if os.path.isfile(input_path):
                 self.merge_alignment_file(input_path)
+
+        self.merge_completed = True
 
     def merge_alignment_file(self, input_path):
         ret = True
@@ -85,6 +89,10 @@ class AlignMerge(XMLParser):
             if xml_aggregated is None:
                 self.remove_other_mss(ms_name)
                 xml_aggregated = self.xml
+                self.paras = {
+                    para.attrib['{http://www.w3.org/XML/1998/namespace}id']: para
+                    for para in self.xml.findall('.//div[@type="alignment"]')
+                }
             else:
                 self.merge_alignment_ms(xml_aggregated, body, ms_name)
 
@@ -108,9 +116,38 @@ class AlignMerge(XMLParser):
         for para in input_body.findall('.//div[@type="alignment"]'):
             paraid = para.attrib['{http://www.w3.org/XML/1998/namespace}id']
 
+            for ab in para.findall('ab[@type="ms_instance"]'):
+                ab_ms_name = ab.find('seg[@type="ms_name"]')
+                if ab_ms_name is not None and ab_ms_name.text == ms_name:
+
+                    para_aggregated = self.paras.get(paraid, None)
+
+                    if para_aggregated is None:
+                        print '\tWARNING: alignment div not found in the reference file %s' % paraid
+                        # create it after the last one we've found
+                        # para_aggregated = para_aggregated_last.
+
+                    if para_aggregated is not None:
+                        para_aggregated_last = para_aggregated
+                        para_aggregated.append(ab)
+
+                    break
+
+    def merge_alignment_ms_old(self, xml_aggregated, input_body, ms_name):
+        '''
+        We copy all <ab type="ms_instance"> for ms name = ms_name
+        from input_body into the appropriate <div type="alignment">
+        in xml_aggregated.
+        '''
+
+        para_aggregated_last = None
+
+        for para in input_body.findall('.//div[@type="alignment"]'):
+            paraid = para.attrib['{http://www.w3.org/XML/1998/namespace}id']
+
             para_aggregated = xml_aggregated.find(
-                './/div[@{http://www.w3.org/XML/1998/namespace}id="%s"]' % format(
-                    paraid
+                './/div[@{http://www.w3.org/XML/1998/namespace}id="%s"]' % (
+                    paraid,
                 )
             )
 
@@ -132,7 +169,8 @@ class AlignMerge(XMLParser):
 
         ret = re.sub(r'(?musi)<editionStmt>.*</editionStmt>', r'', ret)
 
-        ret = re.sub('\n\s*\n', '\n', ret)
+        if self.merge_completed:
+            ret = re.sub(r'\n\s*\n', r'\n', ret)
 
         return ret
 

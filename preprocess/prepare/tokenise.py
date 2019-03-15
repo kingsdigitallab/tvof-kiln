@@ -22,7 +22,7 @@ class TEITokeniser(XMLParser):
 
     def run_custom(self, input_path_list, output_path):
         if len(input_path_list) != 1:
-            print 'ERROR: please provide a single input file'
+            print('ERROR: please provide a single input file')
         else:
             for input_path in input_path_list:
                 self.reset()
@@ -103,12 +103,12 @@ class TEITokeniser(XMLParser):
         text = getattr(el, part) or ur''
 
         # scind around punctuation
-        text = re.sub(ur"(?musi)([^'\s\w\[\]·])", self.token_end +
-                      self.token_start +
+        text = re.sub(ur"(?musi)([^'\s\w\[\]·])", self.token_end + 
+                      self.token_start + 
                       ur'\1' + self.token_end + self.token_start, text)
 
         # scind around spaces
-        text = re.sub(ur'(\s+)', self.token_end +
+        text = re.sub(ur'(\s+)', self.token_end + 
                       ur'\1' + self.token_start, text)
 
         if pos == -1:
@@ -200,7 +200,7 @@ class TEITokeniser(XMLParser):
         self.set_xml_from_unicode(xml_string)
 
         # self.find_corner_cases()
-        #body = self.xml.find('.//body')
+        # body = self.xml.find('.//body')
         # self.push_down_tokens(body)
         # self.convert_string_tokens_to_xml()
 

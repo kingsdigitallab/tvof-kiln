@@ -56,7 +56,7 @@ class XMLParser(object):
 
         parser = cls()
 
-        print('python %s %s' % (script_file, ' '.join(args)))
+        print('python2 %s %s' % (script_file, ' '.join(args)))
 
         if len(args) < 1:
             print(

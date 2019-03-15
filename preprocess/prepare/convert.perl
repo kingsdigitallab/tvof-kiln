@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 # Usage:
 #     change_stuff.perl
-# 
+#
 # IDEMPOTENT VERSION (GN - May 2017)
 #
 # Where input is from STDIN and output is to STDOUT. Thus, a typical
@@ -42,7 +42,7 @@ undef @in;			# don't need this anymore
 
 $file =~ s|<\?xml|<MARYPOPPINSxml|g;
 $file =~ s|8"\?>|8"MARYPOPPINS>|g;
-# GN: temporarly convert named entities, to avoid individual conversion of ; 
+# GN: temporarly convert named entities, to avoid individual conversion of ;
 $file =~ s|&([a-z]+);|AMPERSAND\1SEMICOLON|gi;
 # GN: + is being used within XML attributes, we temporarily convert it
 $file =~ s|(=[^>]+?)\+|\1PLUSSIGN|g;
@@ -74,14 +74,15 @@ $file =~ s|≤|<choice><orig></orig><reg>·</reg></choice>|g;
 $file =~ s|([a-z])£|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toUpper">\1</seg></choice>|g;
 $file =~ s|([A-Z])÷|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toLower">\1</seg></choice>|g;
 
+# GN: march 2019: where is ¡ ? See titalise_names() in convert.py
 
 #$file =~ s|\^([\d])|<choice><seg type="semi-dip">\1</seg><seg type="crit" subtype="toSup">\1</seg></choice>|g;
 $file =~ s|\^([ivxlcdm])|<hi rend="sup">\1</hi>|g;
 
-# GN: added negative lookbehind assertion to keep the conversion idempotent 
+# GN: added negative lookbehind assertion to keep the conversion idempotent
 $file =~ s|\?(?!</reg>)|<choice><orig></orig><reg> ?</reg></choice>|g;
 # GN: added negative lookbehind assertion to keep the conversion idempotent
-# Also avoid converting ; when it is part of a named entity, e.g. &gt; 
+# Also avoid converting ; when it is part of a named entity, e.g. &gt;
 $file =~ s|;(?!</reg>)|<choice><orig></orig><reg> ;</reg></choice>|g;
 $file =~ s|\{|<choice><orig></orig><reg> :</reg></choice>|g;
 $file =~ s|§|<choice><orig></orig><reg>,</reg></choice>|g;
@@ -124,10 +125,10 @@ $file = join('', $before, $file, $after);
 
 # POST-PROCESSING
 
-# GN: place plus signs back into the document 
+# GN: place plus signs back into the document
 $file =~ s|PLUSSIGN|+|g;
 $file =~ s|UNDERSCORESIGN|_|g;
-# GN: place named entities back into the document 
+# GN: place named entities back into the document
 $file =~ s|AMPERSAND(.*?)SEMICOLON|&\1;|gi;
 $file =~ s|MARYPOPPINS|?|g;
 
