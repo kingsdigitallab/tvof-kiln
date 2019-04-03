@@ -37,7 +37,8 @@ class KWICList(XMLParser):
     # ac-276: spaces directly under those elements will be removed
     elements_remove_spaces = ['mod']
     # stop words
-    stop_words = ['de', 'le', 'o']
+    # stop_words = ['de', 'le', 'o']
+    stop_words = []
     # 'context' size: the number of words on each side of a keyword that are
     # part of its context.
     context_radius = 7
