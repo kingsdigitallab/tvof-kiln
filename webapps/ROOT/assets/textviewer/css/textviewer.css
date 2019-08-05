@@ -6,7 +6,7 @@
 /* VIEWER PANEL */
 
 .viewer-panel {
-	min-height:400px;
+  min-height:400px;
 }
 
 #viewer-left-panel {
@@ -123,7 +123,7 @@
 }
 
 #text-viewer .viewer-text-box p, #text-viewer .viewer-text-box div {
-	margin-bottom:0;
+  margin-bottom:0;
 }
 
 #text-viewer .stageDirBetweenSpeechGroups {
@@ -176,7 +176,12 @@ div.lazy-image span {
     display:inline;
 }
 
+/* TODO: should probably use del. GN: "deleted" in MS,  */
 .tei-del {
+    text-decoration: line-through;
+}
+/* GN: strike through in for notes */
+del.struck-through {
     text-decoration: line-through;
 }
 
