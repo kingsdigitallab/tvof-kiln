@@ -41,7 +41,7 @@ if [ -n "$KILN_PORT" ]; then
         OK=0
     else
         cp "./preprocess/download/data/bibliography/Select Bibliography.xml" "./webapps/ROOT/content/xml/tei/bibliography.xml"
-        #download_from_kiln "backend/bibliography/"
+        download_from_kiln "backend/bibliography/"
         download_from_kiln "backend/texts/Fr20125/semi-diplomatic/"
         download_from_kiln "backend/texts/Fr20125/interpretive/"
         download_from_kiln "backend/texts/Royal/semi-diplomatic/"

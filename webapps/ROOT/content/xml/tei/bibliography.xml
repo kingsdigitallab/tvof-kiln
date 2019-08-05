@@ -1,113 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:my="http://www.oucs.ox.ac.uk/infodev/ns"
     xmlns:tei="http://www.tei-c.org/ns/1.0">
-<teiHeader>
-    <fileDesc>
-        <titleStmt>
-            <title type="main">TEI test file</title>
-        </titleStmt>
-        <publicationStmt>
-            <p>Published by KDL</p>
-        </publicationStmt>
-        <sourceDesc>
-            <ab>
-                <seg/>
-            </ab>
-            <ab/>
-        </sourceDesc>
-    </fileDesc>
-</teiHeader>
-<text>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">TVOF Bibliography</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Published by KDL</p>
+            </publicationStmt>
+            <sourceDesc>
+                <ab>
+                    <seg/>
+                </ab>
+                <ab/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        
 <body>
     <bibl>
         <msIdentifier xml:id="Fr20125_nickel">
             <settlement>Chantilly</settlement>
             <repository>Bibliothèque du Château (Musée Condé)</repository>
-            <idno>726</idno>
-        </msIdentifier>
+            <idno>726</idno> (Ch726) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_iron">
             <settlement>Dijon</settlement>
             <repository>Bibliothèque municipale</repository>
-            <idno>562</idno>
-        </msIdentifier>
+            <idno>562</idno> (Dijon) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_tin">
             <settlement>Florence</settlement>
             <repository>Biblioteca Riccardiana</repository>
-            <idno>3982</idno>
-        </msIdentifier>
+            <idno>3982</idno> (Ricc3982) </msIdentifier>
     </bibl>
+    <bibl>
+        <msIdentifier xml:id="Fr20125_copper">
+            <settlement>The Hague</settlement>
+            <repository>Koninklijke Bibliotheek</repository>
+            <idno>78 D 47</idno> (La Haye) </msIdentifier>
+    </bibl>
+
     <bibl>
         <msIdentifier xml:id="Fr20125_copper">
             <settlement>London</settlement>
             <repository>British Library</repository>
-            <idno>Additional 15268</idno>
-        </msIdentifier>
+            <idno>Additional 15268</idno> (BLAdd15268) </msIdentifier>
     </bibl>
 
     <bibl>
         <msIdentifier xml:id="Fr20125_sulphur">
             <settlement>London</settlement>
             <repository>British Library</repository>
-            <idno>Additional 19669</idno>
-        </msIdentifier>
+            <idno>Additional 19669</idno> (BLAdd19669) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_iridium">
             <settlement>London</settlement>
             <repository>British Library</repository>
-            <idno>Royal 20 D I</idno>
-        </msIdentifier>
+            <idno>Royal 20 D I</idno> (Royal) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_lead">
             <settlement>Paris</settlement>
             <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 168</idno>
-        </msIdentifier>
+            <idno>f. fr. 168</idno> (Fr168) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_silver">
             <settlement>Paris</settlement>
             <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 301</idno>
-        </msIdentifier>
+            <idno>f. fr. 250</idno> (Fr250) </msIdentifier>
+    </bibl>
+    <bibl>
+        <msIdentifier xml:id="Fr20125_silver">
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de  France</repository>
+            <idno>f. fr. 301</idno> (Fr301) </msIdentifier>
+    </bibl>
+    <bibl>
+        <msIdentifier xml:id="Fr20125_silver">
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de  France</repository>
+            <idno>f. fr. 686</idno> (Fr686) </msIdentifier>
+    </bibl>
+    <bibl>
+        <msIdentifier xml:id="Fr20125_silver">
+            <settlement>Paris</settlement>
+            <repository>Bibliothèque nationale de  France</repository>
+            <idno>f. fr. 17177</idno> (Fr17177) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_argon">
             <settlement>Paris</settlement>
             <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 20125</idno>
-        </msIdentifier>
+            <idno>f. fr. 20125</idno> (Fr20125) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_gold">
             <settlement>Paris</settlement>
             <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 22554</idno>
-        </msIdentifier>
+            <idno>f. fr. 22554</idno> (Fr22554) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_platinum">
             <settlement>Paris</settlement>
             <repository>Bibliothèque nationale de  France</repository>
-            <idno>nouv. acq. fr. 3576</idno>
-        </msIdentifier>
+            <idno>nouv. acq. fr. 3576</idno> (NAF3576) </msIdentifier>
     </bibl>
     <bibl>
         <msIdentifier xml:id="Fr20125_boron">
             <settlement>Rennes</settlement>
             <repository>Bibliothèque municipale</repository>
-            <idno>2331</idno>
-        </msIdentifier>
+            <idno>2331</idno> (Rennes) </msIdentifier>
     </bibl>
     <bibl xml:id="Atwood_Whitaker_1944" type="P"><editor><surname>Atwood</surname>, E. Bagby, and
             Virgil K. <surname>Whitaker</surname></editor> (eds). <date>1944</date>. <title
             level="m">Excidium Troiae</title>, (Cambridge, MA: The Medieval Academy of
         America)</bibl>
+    <bibl xml:id="Baker_2017" type="S"><author><surname>Baker</surname>, Craig</author>.
+            <date>2017</date>. <title level="a">'La version vulgate de l’<hi rend="i">Histoire
+                ancienne jusqu’à César</hi>'</title>, <title level="j">Revue belge de philologie et
+            d’histoire – Belgisch Tijdschrift voor Filologie en Geschiedenis</title>, 95:
+        745-72</bibl>
     <bibl xml:id="Barbieri_2002" type="S"><author><surname>Barbieri</surname>, Luca</author>.
             <date>2002</date>. <title level="a">'Entre mythe et histoire: quelques sources de la
             version en prose "napolitaine" du <hi rend="i">Roman de Troie</hi> en prose (Prose
@@ -120,14 +139,18 @@
                 >Roman de Troie</hi> in prosa. La prima traduzione francese delle <hi rend="i"
                 >Eroidi</hi> di Ovidio</title>, <title level="s">Romanica Helvetica, 123</title>
         (Tübingen: A. Francke Verlag)</bibl>
+    <bibl xml:id="Barbieri_forth" type="S"><author><surname>Barbieri</surname>, Luca</author>.
+            <date>[forthcoming]</date>. <title level="a">'La solitude d’un manuscrit et l’histoire
+            d’un texte: la deuxième rédaction de l’<hi rend="i">Histoire ancienne jusqu’à
+            César</hi>'</title>, <title level="j">Romania</title></bibl>
     <bibl xml:id="Bianciotto_1994" type="P"><editor><surname>Bianciotto</surname>, Gabriel</editor>
         (ed.). <date>1994</date>. <title level="m">Le Roman de Troyle</title> (Rouen: Publications
         de l’Université de Rouen)</bibl>
-    <bibl xml:id="Blumfeld-Kosinski_1981" type="S"><author><surname>Blumenfeld-Kosinski</surname>,
+    <bibl xml:id="Blumenfeld-Kosinski_1981" type="S"><author><surname>Blumenfeld-Kosinski</surname>,
             Renate Elisabeth</author>. <date>1981</date>. <title level="a">'Moralization and
-            history: verse and prose in the <hi rend="i">Histoire ancienne jusqu'à César</hi> (in BN
-            f. fr. 20125)'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
-        97: 41-46</bibl>
+            History: Verse and Prose in the <hi rend="i">Histoire ancienne jusqu'à César</hi> (in
+            B.N. f.fr. 20125)'</title>, <title level="j">Zeitschrift für romanische
+            Philologie</title>, 97: 41-46</bibl>
     <bibl xml:id="Coker_Joslin_1980" type="P"><editor><surname>Coker Joslin</surname>,
         Mary</editor>. <date>1980</date>. <title level="m">'A Critical Edition of the Genesis of
             Rogier's "Histoire ancienne" Based on Paris, Bibliothèque Nationale, Ms. Fr.
@@ -167,6 +190,9 @@
     <bibl xml:id="Derolez_1968" type="P"><editor><surname>Albert</surname>, Derolez</editor> (ed.).
             <date>1968</date>. <title level="m">Lamberti S. Audomari Canonici, Liber
             Floridus</title>, (Ghent: In aedibus Story-Scientia)</bibl>
+    <bibl xml:id="Foerster_1878" type="S"><author><surname>Foerster</surname>, Wendelin</author>.
+            <date>1878</date>. <title level="a">'Französische Etymologien'</title>, <title level="j"
+            >Zeitschrift für romanische Philologie</title>, 2: 84-89</bibl>
     <bibl xml:id="Gaullier-Bougassas_2007" type="S"><author><surname>Gaullier-Bougassas</surname>,
             Catherine</author>. <date>2007</date>. <title level="a">'Histoires universelles et
             variations sur deux figures du pouvoir. Alexandre et César dans l’<hi rend="i">Histoire
@@ -183,6 +209,12 @@
             translatio imperii et studii y la <hi rend="i">Histoire ancienne jusqu'à
             César</hi>'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
         122: 17-27</bibl>
+    <bibl xml:id="Hammer_1944" type="S"><author><surname>Hammer</surname>, William</author>.
+            <date>1944</date>. <title level="a">'The Concept of the New or Second Rome in the Middle
+            Ages'</title>, <title level="j">Speculum</title>, 19.1: 50-62</bibl>
+    <bibl xml:id="Helm_1956" type="P"><editor><surname>Helm</surname>, Rudolf</editor> (ed.).
+            <date>1956</date>. <title level="m">Eusebius Werke 7: Die Chronik des
+        Hieronymus</title>, <title level="s"/>, 4 (XXXX)</bibl>
     <bibl xml:id="Huber_2000" type="S"><author><surname>Huber</surname>, Franziska</author>.
             <date>2000</date>. <title level="a">'L'<hi rend="i">Histoire ancienne jusqu'à
             César</hi>, source du <hi rend="i">Livre de la mutacion de Fortune</hi> de Christine de
@@ -215,6 +247,18 @@
             nationale (histoire universelle; Brut en prose; poésies et chroniques
         diverses)'</title>, <title level="j">Bulletin de la Société des anciens textes
             français</title>, 21: 80-118</bibl>
+    <bibl xml:id="Minervini_2010" type="S"><author><surname>Minervini</surname>, Laura</author>.
+            <date>2010</date>. <title level="a">‘Le français dans l'Orient latin (XIIIe-XIVe
+            siècles). Élements pour la caractérisation d'une <hi rend="i">scripta</hi> du
+            Levant’</title>, <title level="j">Revue de linguistique romane</title>, 293-294:
+        119-198</bibl>
+    <bibl xml:id="Minervini_2016" type="S"><author><surname>Minervini</surname>, Laura</author>.
+            <date>2016</date>. <title level="a">'La variation lexicale en fonction du contact
+            linguistique: le français dans l'Orient latin'</title>, in <title level="m">La
+            Régionalité lexicale du français au Moyen Âge</title>, ed. by <editor>Martin
+                <surname>Glessgen</surname></editor> and <editor>David
+            <surname>Trotter</surname></editor> (Strasbourg: ELiPhi (Éditions de Linguistique et de
+        Philologie)), pp. 195-206</bibl>
     <bibl xml:id="Monfrin_1985" type="S">
         <author><surname>Monfrin</surname>, Jacques</author>. <date>1985</date>. <title level="a"
             >'Les translations vernaculaires de Virgile au Moyen Âge'</title>, in <title level="m"
@@ -231,9 +275,8 @@
             datation de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>’</title>, <title
             level="j">Romania</title>, 134: 148-65</bibl>
     <bibl xml:id="Mynors_1969" type="P"><editor><surname>Mynors</surname>, R. A. B.</editor> (ed.).
-            <date>1969</date>
-        <title level="m">P. Vergili Maronis Opera</title>, <title level="s">Oxford Classical
-            Texts</title> (Oxford: Oxford University Press)</bibl>
+            <date>1969</date>. <title level="m">P. Vergili Maronis Opera</title>, <title level="s"
+            >Oxford Classical Texts</title> (Oxford: Oxford University Press)</bibl>
     <bibl xml:id="Oltrogge_1989" type="S"><author><surname>Oltrogge</surname>, Doris</author>.
             <date>1989</date>. <title level="m">Die Illustrationszyklen zur "Histoire ancienne
             jusqu'à César" (1250-1400)</title>, <title level="s">Europäische
@@ -244,6 +287,10 @@
             le manuscrit OUL 1 de la bibliothèque de l'Université Otemae (ancien Phillips
             23240)</title>, <title level="s">Medievalia, 88</title>, 2 vols (Orléans:
         Paradigme)</bibl>
+    <bibl xml:id="Pavlidès_1989"><editor><surname>Pavlidès</surname>, Christophe</editor> (ed.).
+            <date>1989</date>. <title level="m">L’Histoire ancienne jusqu’à César (première
+            rédaction): étude de la tradition manuscrite, étude et édition partielle de la section
+            d’histoire romaine</title> (Thesis, École des chartes, Paris) </bibl>
     <bibl xml:id="Perriccioli_Saggese_et_al_1979" type="S"><author><surname>Perriccioli
                 Saggese</surname>, Alessandra</author>, <author>Catello
             <surname>Salviati</surname></author> and <author>Vittorio
@@ -265,6 +312,10 @@
             <title level="m">Image et mémoire du Hainaut médiéval</title>, ed. by
             <editor>Jean-Charles <surname>Herbin</surname></editor> (Valenciennes: Presses
         universitaires de Valenciennes), pp. 183-92</bibl>
+    <bibl xml:id="Rachetta_forth" type="S"><author><surname>Rachetta</surname>, Maria
+        Teresa</author>. <date>[forthcoming]</date>. <title level="a">'Sull’<hi rend="i">Histoire ancienne
+            jusqu’à César</hi>: le origini della versione abbreviata; il codice Wien ÖNB cod. 2576. Per
+            la storia di una tradizione'</title>, <title level="j">Francigena</title></bibl>
     <bibl xml:id="Raynaud_de_Lage_1948" type="S"><author><surname>Raynaud de Lage</surname>,
             Guy</author>. <date>1948</date>. <title level="a">'L'<hi rend="i">Historia Britonum</hi>
             source de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j"
@@ -284,7 +335,7 @@
             romans français et autres études littéraires et linguistiques</title>, <title level="s"
             >Publications romanes et françaises</title>, 138 (Geneva: Droz), pp. 5-13</bibl>
     <bibl xml:id="Raynaud_de_Lage_1976b" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1976b</date>. <title level="a">'La Morale de l'histoire'</title>, in
+            Guy</author>. <date>1976b</date>. <title level="a">'La morale de l'Histoire'</title>, in
             <title level="m">Les premiers romans français et autres études littéraires et
             linguistiques</title>, <title level="s">Publications romanes et françaises</title>, 138
         (Geneva: Droz), pp. 171-74</bibl>
@@ -313,14 +364,16 @@
                 <surname>Harf-Lancner</surname></editor> (Paris: Presses de la Sorbonne Nouvelle),
         pp. 207–35</bibl>
     <bibl xml:id="Visser_van_Terwisga_1995" type="P"><editor><surname>de Visser van
-                Terwisga</surname>, Marjike</editor> (ed.). <date>1995</date>. <title level="m"
+                Terwisga</surname>, Marijke</editor> (ed.). <date>1995</date>. <title level="m"
             >Histoire ancienne jusqu'à César, Estoires Rogier. Tome I: Assyrie, Thèbes, Le
             Minotaure, les Amazones, Hercule</title>, <title level="s">Medievalia</title>, 19,
         (Orléans: Paradigme)</bibl>
     <bibl xml:id="Visser_van_Terwisga_1999" type="P"><editor><surname>de Visser van
-                Terwisga</surname>, Marjike</editor> (ed.). <date>1999</date>. <title level="m"
+                Terwisga</surname>, Marijke</editor> (ed.). <date>1999</date>. <title level="m"
             >Histoire ancienne jusqu'à César, Estoires Rogier. Tome II</title>, <title level="s"
             >Medievalia</title>, 30 (Orléans: Paradigme)</bibl>
+    <bibl xml:id="Zinelli_2013b" type="S"><author><surname>Zinelli</surname>, Fabio</author>.
+            <date>2013</date>. <title level="a">'Les històries franceses de Troia i d'Alexandre a
+            Catalunya i a ultramar'</title>, <title level="j">Mot so razo</title>, 12: 7-18</bibl>
 </body>
-</text>
-</TEI>
+    </text></TEI>
