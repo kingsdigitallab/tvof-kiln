@@ -91,6 +91,13 @@ class KWICList(XMLParser):
                 el.text = (el.text or ur'').upper()
                 el.tail = (el.tail or ur'').upper()
 
+        print('\t lowercase toLower')
+        for element in self.xml.findall('.//*[@subtype="toLower"]'):
+            element.text = (element.text or ur'').lower()
+            for el in element.findall('.//*'):
+                el.text = (el.text or ur'').lower()
+                el.tail = (el.tail or ur'').lower()
+
         # remove spaces directly under control elements
         # ac-276:
         # e.g. <w><mod>  <add>a</add> <del>b</del> <mod>c</w>

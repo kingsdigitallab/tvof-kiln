@@ -8,6 +8,9 @@ import io
 
 
 class Validator(XMLParser):
+    '''
+    validate a converted.xml (output of convert.py)
+    '''
 
     default_output = u'validation.log'
     suppressed_output = True
@@ -24,7 +27,7 @@ class Validator(XMLParser):
                     content = f.read()
 
                 try:
-                    ET.fromstring(content.encode('utf-8'))
+                    self.set_xml_from_unicode(content)
                 except ET.ParseError as e:
                     # xml.etree.ElementTree.ParseError:
                     # mismatched tag: line 40825, column 18
@@ -35,6 +38,7 @@ class Validator(XMLParser):
 
                 # 1. erase the comments
                 # (so we know there won't be special chars there)
+
                 def sub_comment(match):
                     safe_comment = re.sub(r'[^\n]', 'X', match.group(1))
                     ret = '<!--' + safe_comment + '-->'
@@ -53,7 +57,7 @@ class Validator(XMLParser):
                     r'(?musi)<\s*(\w+)\s+[^>]+id="([^"]+)"')
 
                 for match_char in re.finditer(pattern_char, content):
-                    #print(match_char.start(), match_char.group(0))
+                    # print(match_char.start(), match_char.group(0))
                     line_number = len(pattern_cr.findall(
                         content, 0, match_char.start()
                     )) + 1
