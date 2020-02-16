@@ -5,6 +5,12 @@ import re
 from xml_parser import XMLParser
 import xml.etree.ElementTree as ET
 
+# how deep the tokenisation has to go
+MAX_TOKENISATION_DEPTH = 15
+# 1 for debugging only, easy to compare 2 tokenised files
+# b/c word numbers are all set to 0
+DEBUG_SAME_WORD_NUMBER = 0
+
 
 class TEITokeniser(XMLParser):
 
@@ -35,7 +41,10 @@ class TEITokeniser(XMLParser):
                     self.assign_tokenids()
                     # print tokeniser.get_unicode_from_xml()
 
-                    self._report_tokenisation_errors()
+                    if 0:
+                        # disabled as this validation is verbose and already
+                        # done by kwic.py
+                        self._report_tokenisation_errors()
 
             self.forget_xml_comments()
 
@@ -62,7 +71,7 @@ class TEITokeniser(XMLParser):
             changed = self.push_down_tokens()
             if not changed:
                 break
-            if pass_count > 15:
+            if pass_count > MAX_TOKENISATION_DEPTH:
                 break
 
         return ret
@@ -86,10 +95,41 @@ class TEITokeniser(XMLParser):
             if re.search(ur'(?musi)\S', self.get_element_text(word)):
                 continue
 
+            children = list(word)
+
+            if 1:
+                # TODO: skip if more than one child with text
+                # AC-376
+                # <a>v1</a><b>v2</b> <c>v3</c>
+                # =>
+                # <w><a>v1</a><b>v2</b></w> <c><w>v3</w></c>
+                # Basically we don't want to split v1 and v2
+                # TODO:
+                # <a>v1 </a>v2 => <a>v1</a> v2
+                # And other direction
+                children_with_text = len([
+                    c
+                    for c
+                    in children
+                    if self.get_element_text(c, True)
+                    and c.tag not in ['figure']
+                ])
+
+                if children_with_text == 2 and (
+                    children[0].tag in ['orig', 'reg', 'sic', 'corr']
+                    or children[0].attrib.get('type', '') in ['semi-dip', 'crit']
+                ):
+                    # exception, in some cases the choice constructs two
+                    # alternative (sets of) tokens
+                    # e.g. <choice><orig>a</orig><reg>A</reg></choice>
+                    # <choice><seg type="semi-dip">porce</seg><seg type="crit">por ce</seg></choice>
+                    pass
+                else:
+                    if children_with_text > 1:
+                        continue
+
             word.tag = self.tag_to_be_remove
             ret = True
-
-            children = list(word)
 
             # remove empty <w>
             if not children and not self.get_element_text(word):
@@ -160,6 +200,14 @@ class TEITokeniser(XMLParser):
                             text_prev += self.token_end + self.token_start
                             setattr(el_prev, part_prev, text_prev)
 
+        # split around tei punctuation
+        if el.tag == 'pc' and part == 'tail':
+            # e.g. <a>x<b><pc rend="1">xy
+            # => <a>x<b></w><pc rend="1"><w>xy
+            text_prev = getattr(el_prev, part_prev) or ur''
+            setattr(el_prev, part_prev, text_prev + self.token_end)
+            text = self.token_start + text
+
         setattr(el, part, text)
 
         el_txt.append(text)
@@ -191,7 +239,8 @@ class TEITokeniser(XMLParser):
         for parent in self.xml.findall(self.expand_prefix('.//*[@xml:id]')):
             relativeid = 0
             for child in parent.findall('.//w'):
-                relativeid += 1
+                if not DEBUG_SAME_WORD_NUMBER:
+                    relativeid += 1
                 child.attrib['n'] = unicode(relativeid)
 
     def find_corner_cases(self):
@@ -248,7 +297,7 @@ class TEITokeniser(XMLParser):
             for seg in div.findall('.//seg'):
                 location = seg.attrib.get(self.expand_prefix('xml:id'), '')
                 if location:
-                    check_child_words(location, div.findall('.//w'))
+                    check_child_words(location, seg.findall('.//w'))
 
 
 TEITokeniser.run()
