@@ -300,6 +300,11 @@
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
+            <xsl:when test="@rend = 'RH'">
+                <span class="tei-hi red-highlight">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
             <xsl:when test="@rend = 'st'">
                 <del class="struck-through">
                     <xsl:apply-templates/>
