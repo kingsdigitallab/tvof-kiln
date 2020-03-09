@@ -6,7 +6,7 @@ from xml_parser import XMLParser
 import xml.etree.ElementTree as ET
 
 # how deep the tokenisation has to go
-MAX_TOKENISATION_DEPTH = 15
+MAX_TOKENISATION_DEPTH = 20
 # 1 for debugging only, easy to compare 2 tokenised files
 # b/c word numbers are all set to 0
 DEBUG_SAME_WORD_NUMBER = 0
@@ -59,6 +59,9 @@ class TEITokeniser(XMLParser):
         xml_string = self.get_unicode_from_xml()
         xml_string = re.sub(ur'<\s*body\s*>', ur'<w><body>', xml_string)
         xml_string = re.sub(ur'<\s*/\s*body\s*>', ur'</body></w>', xml_string)
+        # [...]
+        xml_string = xml_string.replace('...', 'DOTDOTDOT')
+
         self.set_xml_from_unicode(xml_string)
 
         # self.find_corner_cases()
@@ -73,6 +76,10 @@ class TEITokeniser(XMLParser):
                 break
             if pass_count > MAX_TOKENISATION_DEPTH:
                 break
+
+        xml_string = self.get_unicode_from_xml()
+        xml_string = xml_string.replace('DOTDOTDOT', '...')
+        self.set_xml_from_unicode(xml_string)
 
         return ret
 
@@ -95,7 +102,8 @@ class TEITokeniser(XMLParser):
             if re.search(ur'(?musi)\S', self.get_element_text(word)):
                 continue
 
-            children = list(word)
+            # children = list(word)
+            children = [c for c in list(word) if c.tag not in ['comment']]
 
             if 1:
                 # TODO: skip if more than one child with text
@@ -116,7 +124,8 @@ class TEITokeniser(XMLParser):
                 ])
 
                 if children_with_text == 2 and (
-                    children[0].tag in ['orig', 'reg', 'sic', 'corr']
+                    children[0].tag in ['orig', 'reg',
+                                        'sic', 'corr', 'add', 'del']
                     or children[0].attrib.get('type', '') in ['semi-dip', 'crit']
                 ):
                     # exception, in some cases the choice constructs two
@@ -167,7 +176,7 @@ class TEITokeniser(XMLParser):
                       ur'\1' + self.token_end + self.token_start, text)
 
         # split around spaces
-        text = re.sub(ur'(?u)(\s+)', self.token_end +
+        text = re.sub(ur'(?musi)(\s+)', self.token_end +
                       ur'\1' + self.token_start, text)
 
         if pos == -1:
