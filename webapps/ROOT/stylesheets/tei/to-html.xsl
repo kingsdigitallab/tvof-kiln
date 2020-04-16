@@ -156,15 +156,6 @@
                             <span class="description">Note générale</span>
                         </li>
 
-                        <li>
-                            <span class="notation">
-                                <div class="tei-note tei-type-note tei-subtype-trad" data-tei-subtype="trad">
-                                    <div class="note-text">abc</div>
-                                </div>
-                            </span>
-                            <span class="description">Note sur la tradition et la <i>varia lectio</i></span>
-                        </li>
-
                     </xsl:if>
                     <xsl:if test="$view = 'semi-diplomatic'">
 
