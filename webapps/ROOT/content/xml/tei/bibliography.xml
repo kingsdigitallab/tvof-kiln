@@ -18,362 +18,1530 @@
         </fileDesc>
     </teiHeader>
     <text>
-        
-<body>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_nickel">
-            <settlement>Chantilly</settlement>
-            <repository>Bibliothèque du Château (Musée Condé)</repository>
-            <idno>726</idno> (Ch726) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_iron">
-            <settlement>Dijon</settlement>
-            <repository>Bibliothèque municipale</repository>
-            <idno>562</idno> (Dijon) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_tin">
-            <settlement>Florence</settlement>
-            <repository>Biblioteca Riccardiana</repository>
-            <idno>3982</idno> (Ricc3982) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_copper">
-            <settlement>The Hague</settlement>
-            <repository>Koninklijke Bibliotheek</repository>
-            <idno>78 D 47</idno> (La Haye) </msIdentifier>
-    </bibl>
-
-    <bibl>
-        <msIdentifier xml:id="Fr20125_copper">
-            <settlement>London</settlement>
-            <repository>British Library</repository>
-            <idno>Additional 15268</idno> (BLAdd15268) </msIdentifier>
-    </bibl>
-
-    <bibl>
-        <msIdentifier xml:id="Fr20125_sulphur">
-            <settlement>London</settlement>
-            <repository>British Library</repository>
-            <idno>Additional 19669</idno> (BLAdd19669) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_iridium">
-            <settlement>London</settlement>
-            <repository>British Library</repository>
-            <idno>Royal 20 D I</idno> (Royal) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_lead">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 168</idno> (Fr168) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_silver">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 250</idno> (Fr250) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_silver">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 301</idno> (Fr301) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_silver">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 686</idno> (Fr686) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_silver">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 17177</idno> (Fr17177) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_argon">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 20125</idno> (Fr20125) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_gold">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>f. fr. 22554</idno> (Fr22554) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_platinum">
-            <settlement>Paris</settlement>
-            <repository>Bibliothèque nationale de  France</repository>
-            <idno>nouv. acq. fr. 3576</idno> (NAF3576) </msIdentifier>
-    </bibl>
-    <bibl>
-        <msIdentifier xml:id="Fr20125_boron">
-            <settlement>Rennes</settlement>
-            <repository>Bibliothèque municipale</repository>
-            <idno>2331</idno> (Rennes) </msIdentifier>
-    </bibl>
-    <bibl xml:id="Atwood_Whitaker_1944" type="P"><editor><surname>Atwood</surname>, E. Bagby, and
-            Virgil K. <surname>Whitaker</surname></editor> (eds). <date>1944</date>. <title
-            level="m">Excidium Troiae</title>, (Cambridge, MA: The Medieval Academy of
-        America)</bibl>
-    <bibl xml:id="Baker_2017" type="S"><author><surname>Baker</surname>, Craig</author>.
-            <date>2017</date>. <title level="a">'La version vulgate de l’<hi rend="i">Histoire
-                ancienne jusqu’à César</hi>'</title>, <title level="j">Revue belge de philologie et
-            d’histoire – Belgisch Tijdschrift voor Filologie en Geschiedenis</title>, 95:
-        745-72</bibl>
-    <bibl xml:id="Barbieri_2002" type="S"><author><surname>Barbieri</surname>, Luca</author>.
-            <date>2002</date>. <title level="a">'Entre mythe et histoire: quelques sources de la
-            version en prose "napolitaine" du <hi rend="i">Roman de Troie</hi> en prose (Prose
-            5)'</title>, in <title level="m">'Ce est li fruis selonc la letre': mélanges offerts à
-            Charles Méla</title>, ed. by <editor>Olivier <surname>Collet</surname></editor>,
-            <editor>Yasmina <surname>Foehr-Jansens</surname></editor>, <editor>Sylviane
-                <surname>Messerli</surname></editor> (Paris: Champion), pp. 111-23</bibl>
-    <bibl xml:id="Barbieri_2005" type="P"><editor><surname>Barbieri</surname>, Luca</editor> (ed.).
-            <date>2005</date>. <title level="m">Le "epistole dell dame di Grecia" nel <hi rend="i"
-                >Roman de Troie</hi> in prosa. La prima traduzione francese delle <hi rend="i"
-                >Eroidi</hi> di Ovidio</title>, <title level="s">Romanica Helvetica, 123</title>
-        (Tübingen: A. Francke Verlag)</bibl>
-    <bibl xml:id="Barbieri_forth" type="S"><author><surname>Barbieri</surname>, Luca</author>.
-            <date>[forthcoming]</date>. <title level="a">'La solitude d’un manuscrit et l’histoire
-            d’un texte: la deuxième rédaction de l’<hi rend="i">Histoire ancienne jusqu’à
-            César</hi>'</title>, <title level="j">Romania</title></bibl>
-    <bibl xml:id="Bianciotto_1994" type="P"><editor><surname>Bianciotto</surname>, Gabriel</editor>
-        (ed.). <date>1994</date>. <title level="m">Le Roman de Troyle</title> (Rouen: Publications
-        de l’Université de Rouen)</bibl>
-    <bibl xml:id="Blumenfeld-Kosinski_1981" type="S"><author><surname>Blumenfeld-Kosinski</surname>,
-            Renate Elisabeth</author>. <date>1981</date>. <title level="a">'Moralization and
-            History: Verse and Prose in the <hi rend="i">Histoire ancienne jusqu'à César</hi> (in
-            B.N. f.fr. 20125)'</title>, <title level="j">Zeitschrift für romanische
-            Philologie</title>, 97: 41-46</bibl>
-    <bibl xml:id="Coker_Joslin_1980" type="P"><editor><surname>Coker Joslin</surname>,
-        Mary</editor>. <date>1980</date>. <title level="m">'A Critical Edition of the Genesis of
-            Rogier's "Histoire ancienne" Based on Paris, Bibliothèque Nationale, Ms. Fr.
-            20125'</title>, doctoral dissertation, University of North Carolina</bibl>
-    <bibl xml:id="Coker_Joslin_1986" type="P"><editor><surname>Coker Joslin</surname>, Mary</editor>
-        (ed.). <date>1986</date>. <title level="m">The Heard Word: A Moralized History. The Genesis
-            Section of the "Histoire ancienne" in a Text from Saint-Jean d'Acre</title>, <title
-            level="s">Romance Monographs, 45</title> (Lafayette: University of Mississipi
-        Press)</bibl>
-    <bibl xml:id="Croizy-Naquet_1999" type="S"><author><surname>Croizy-Naquet</surname>,
-            Catherine</author>. <date>1999</date>. <title level="m">Écrire l'histoire romaine au
-            début du XIIIe siècle: l'"Histoire ancienne jusqu'à César" et les "Faits des
-            Romains"</title> (Paris: Champion)</bibl>
-    <bibl xml:id="Croizy-Naquet_2000" type="S"><author><surname>Croizy-Naquet</surname>,
-            Catherine</author>. <date>2000</date>. <title level="a">'Écrire l'histoire: la choix du
-            vers ou de la prose aux XIIe et XIII siècles'</title>, <title level="j"
-            >Médiévales</title>, 39: 71-85</bibl>
-    <bibl xml:id="Croizy-Naquet_2004" type="S"><author><surname>Croizy-Naquet</surname>,
-            Catherine</author>. <date>2004</date>. <title level="a">'L'<hi rend="i">Histoire
-                ancienne jusqu'à César</hi>, les <hi rend="i">Faits des Romains</hi>. Entre sermon
-            et chronique, entre histoire et roman'</title>, in <title level="m">Textes et cultures:
-            réception, modèles, interférences. Volume 1: Réception de l'Antiquité</title>, ed. by
-            <editor>Pierre <surname>Nobel</surname></editor> (Besançon: Presses universitaires de
-        Franche-Comté), pp. 103-18</bibl>
-    <bibl xml:id="Croizy-Naquet_2015" type="S"><author><surname>Croizy-Naquet</surname>,
-            Catherine</author>. <date>2015</date>. <title level="a">'Wauchier de Denain ou
-            l'experience de l'histoire dans l'Histoire ancienne jusqu'à César'</title>, in <title
-            level="m">Wauchier de Denain polygraphe du XIIIe siècle</title>, ed. by
-            <editor>Sébastien <surname>Douchet</surname></editor> (Aix-en-Provence: Presses
-        universitaires de Provence), pp. 75-92</bibl>
-    <bibl xml:id="Croizy-Naquet_2016" type="S"><author><surname>Croizy-Naquet</surname>,
-            Catherine</author>. <date>2016</date>. <title level="a">'Introduction
-            littéraire'</title>, in <editor>Yorio <surname>Otaka</surname></editor> (ed.), <title
-            level="m">L'Histoire ancienne jusqu'à César. Édition d'après le manuscrit OUL 1 de la
-            bibliothèque de l'Université Otemae (ancien Phillips 23240)</title> (Orléans:
-        Paradigme), vol. 1, pp. 9-65</bibl>
-    <bibl xml:id="Derolez_1968" type="P"><editor><surname>Albert</surname>, Derolez</editor> (ed.).
-            <date>1968</date>. <title level="m">Lamberti S. Audomari Canonici, Liber
-            Floridus</title>, (Ghent: In aedibus Story-Scientia)</bibl>
-    <bibl xml:id="Foerster_1878" type="S"><author><surname>Foerster</surname>, Wendelin</author>.
-            <date>1878</date>. <title level="a">'Französische Etymologien'</title>, <title level="j"
-            >Zeitschrift für romanische Philologie</title>, 2: 84-89</bibl>
-    <bibl xml:id="Gaullier-Bougassas_2007" type="S"><author><surname>Gaullier-Bougassas</surname>,
-            Catherine</author>. <date>2007</date>. <title level="a">'Histoires universelles et
-            variations sur deux figures du pouvoir. Alexandre et César dans l’<hi rend="i">Histoire
-                ancienne jusqu’à César</hi>, <hi rend="i">Renart le Contrefait</hi> et le <hi
-                rend="i">Livre de la Mutacion de Fortune</hi> de Christine de Pizan'</title>, <title
-            level="j">Cahiers de recherches médiévales</title>, 14: 7-28</bibl>
-    <bibl xml:id="Gaullier-Bougassas_2012" type="P"><editor><surname>Gaullier-Bougassas</surname>,
-            Catherine</editor> (ed.). <date>2012</date>. <title level="m">L'Histoire ancienne
-            jusqu'à César, ou, Histoires pour Roger, châtelain de Lille de Wauchier de Denain;
-            L'Histoire de la Macédoine et d'Alexandre le Grand</title>, <title level="s">Alexander
-            redivivus</title>, 4 (Turnhout: Brepols)</bibl>
-    <bibl xml:id="Gracia_2006" type="S"><author><surname>Gracia</surname>, Paloma</author>.
-            <date>2006</date>. <title level="a">'Hacia el modelo de la General estoria. París, la
-            translatio imperii et studii y la <hi rend="i">Histoire ancienne jusqu'à
-            César</hi>'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
-        122: 17-27</bibl>
-    <bibl xml:id="Hammer_1944" type="S"><author><surname>Hammer</surname>, William</author>.
-            <date>1944</date>. <title level="a">'The Concept of the New or Second Rome in the Middle
-            Ages'</title>, <title level="j">Speculum</title>, 19.1: 50-62</bibl>
-    <bibl xml:id="Helm_1956" type="P"><editor><surname>Helm</surname>, Rudolf</editor> (ed.).
-            <date>1956</date>. <title level="m">Eusebius Werke 7: Die Chronik des
-        Hieronymus</title>, <title level="s"/>, 4 (XXXX)</bibl>
-    <bibl xml:id="Huber_2000" type="S"><author><surname>Huber</surname>, Franziska</author>.
-            <date>2000</date>. <title level="a">'L'<hi rend="i">Histoire ancienne jusqu'à
-            César</hi>, source du <hi rend="i">Livre de la mutacion de Fortune</hi> de Christine de
-            Pizan: étude comparative des récits sur Cyrus'</title>, in <title level="m">Au champ des
-            escriptures. IIIe Colloque international sur Christine de Pizan, Lausanne, 18-22 juillet
-            1998</title>, ed. by <editor>Eric <surname>Hicks</surname></editor> et al., <title
-            level="s">Études christiniennes</title>, 6 (Paris: Champion), pp. 161-74</bibl>
-    <bibl xml:id="Jung_1996" type="S"><author><surname>Jung</surname>, Marc-René</author>.
-            <date>1996</date>. <title level="m">La Légende de Troie en France au moyen âge</title>
-        (Basel-Tübingen: Francke Verlag)</bibl>
-    <bibl xml:id="Longobardi_1994" type="S"><author><surname>Longobardi</surname>, Monica</author>.
-            <date>1994</date>. <title level="a">'Nuovi frammenti dell'Histoire ancienne jusqu'à
-            César'</title>, <title level="j">Cultura neolatina</title>, 54: 213-61</bibl>
-    <bibl xml:id="Lynde-Recchia_2000" type="P"><editor><surname>Lynde-Recchia</surname>,
-            Molly</editor>. <date>2000</date>. <title level="m">Prose, Verse, and Truth-Telling in
-            the Thirteenth Century: An Essay on Form and Function in Selected Texts, Accompanied by
-            an Edition of the Prose "Thèbes" as Found in the "Histoire ancienne jusqu'à
-            César"</title>, <title level="s">The Edward C. Armstrong Monographs on Medieval
-            Literature</title>, 10 (Lexington: French Forum) </bibl>
-    <bibl xml:id="Mazzoni_and_Jeanroy_1898" type="S"><author><surname>Mazzoni</surname>,
-            Guido</author>, and <author>Alfred <surname>Jeanroy</surname></author>.
-            <date>1989</date>. <title level="a">'Un nouveau manuscrit du <hi rend="i">Roman de
-                Troie</hi> et de l'<hi rend="i">Histoire ancienne avant César</hi>'</title>, <title
-            level="j">Romania</title>, 27: 574-81</bibl>
-    <bibl xml:id="Meyer_1885" type="S"><author><surname>Meyer</surname>, Paul</author>.
-            <date>1885</date>. <title level="a">'Les premières compilations françaises d'histoire
-            ancienne'</title>, <title level="j">Romania</title>, 14: 1-8</bibl>
-    <bibl xml:id="Meyer_1895" type="S"><author><surname>Meyer</surname>, Paul</author>.
-            <date>1895</date>. <title level="a">'Notice du manuscrit fr. 17177 de la Bibliothèque
-            nationale (histoire universelle; Brut en prose; poésies et chroniques
-        diverses)'</title>, <title level="j">Bulletin de la Société des anciens textes
-            français</title>, 21: 80-118</bibl>
-    <bibl xml:id="Minervini_2010" type="S"><author><surname>Minervini</surname>, Laura</author>.
-            <date>2010</date>. <title level="a">‘Le français dans l'Orient latin (XIIIe-XIVe
-            siècles). Élements pour la caractérisation d'une <hi rend="i">scripta</hi> du
-            Levant’</title>, <title level="j">Revue de linguistique romane</title>, 293-294:
-        119-198</bibl>
-    <bibl xml:id="Minervini_2016" type="S"><author><surname>Minervini</surname>, Laura</author>.
-            <date>2016</date>. <title level="a">'La variation lexicale en fonction du contact
-            linguistique: le français dans l'Orient latin'</title>, in <title level="m">La
-            Régionalité lexicale du français au Moyen Âge</title>, ed. by <editor>Martin
-                <surname>Glessgen</surname></editor> and <editor>David
-            <surname>Trotter</surname></editor> (Strasbourg: ELiPhi (Éditions de Linguistique et de
-        Philologie)), pp. 195-206</bibl>
-    <bibl xml:id="Monfrin_1985" type="S">
-        <author><surname>Monfrin</surname>, Jacques</author>. <date>1985</date>. <title level="a"
-            >'Les translations vernaculaires de Virgile au Moyen Âge'</title>, in <title level="m"
-            >Lectures médiévales de Virgile. Actes du colloque organisé par l'École française de
-            Rome, Rome, École française de Rome</title>, <title level="s">Collection de l'École
-            française de Rome</title>, 80 (Rome: École française de Rome), pp. 189-249</bibl>
-    <bibl xml:id="Montorsi_2016a" type="S"><author><surname>Montorsi</surname>, Francesco</author>.
-            <date>2016</date>. <title level="a">‘Les origines des Francs dans l'<hi rend="i"
-                >Histoire ancienne jusqu'à César</hi>. Sur une source inconnue de la première
-            chronique universelle en français’</title>, <title level="j">Medioevo Romanzo</title>,
-        40.2: 415-26</bibl>
-    <bibl xml:id="Montorsi_2016b" type="S"><author><surname>Montorsi</surname>, Francesco</author>.
-            <date>2016</date>. <title level="a">‘Sur l'<hi rend="i">intentio auctoris</hi> et la
-            datation de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>’</title>, <title
-            level="j">Romania</title>, 134: 148-65</bibl>
-    <bibl xml:id="Mynors_1969" type="P"><editor><surname>Mynors</surname>, R. A. B.</editor> (ed.).
-            <date>1969</date>. <title level="m">P. Vergili Maronis Opera</title>, <title level="s"
-            >Oxford Classical Texts</title> (Oxford: Oxford University Press)</bibl>
-    <bibl xml:id="Oltrogge_1989" type="S"><author><surname>Oltrogge</surname>, Doris</author>.
-            <date>1989</date>. <title level="m">Die Illustrationszyklen zur "Histoire ancienne
-            jusqu'à César" (1250-1400)</title>, <title level="s">Europäische
-            Hochschulschriften</title>, Reihe XXVIII: Kunstgeschichte, 94 (Frankfurt am Main:
-        Lang)</bibl>
-    <bibl xml:id="Otaka_2016" type="P"><editor><surname>Otaka</surname>, Yorio</editor> (ed.).
-            <date>2016</date>. <title level="m">L'Histoire ancienne jusqu'à César. Édition d'après
-            le manuscrit OUL 1 de la bibliothèque de l'Université Otemae (ancien Phillips
-            23240)</title>, <title level="s">Medievalia, 88</title>, 2 vols (Orléans:
-        Paradigme)</bibl>
-    <bibl xml:id="Pavlidès_1989"><editor><surname>Pavlidès</surname>, Christophe</editor> (ed.).
-            <date>1989</date>. <title level="m">L’Histoire ancienne jusqu’à César (première
-            rédaction): étude de la tradition manuscrite, étude et édition partielle de la section
-            d’histoire romaine</title> (Thesis, École des chartes, Paris) </bibl>
-    <bibl xml:id="Perriccioli_Saggese_et_al_1979" type="S"><author><surname>Perriccioli
-                Saggese</surname>, Alessandra</author>, <author>Catello
-            <surname>Salviati</surname></author> and <author>Vittorio
-            <surname>Marino</surname></author>. <date>1979</date>. <title level="m">I romanzi
-            cavallereschi miniati a Napoli</title> (Naples: Società editrice napoletana)</bibl>
-    <bibl xml:id="Petit_2001" type="S"><author><surname>Petit</surname>, Aimé</author>.
-            <date>2001</date>. <title level="a">'Le <hi rend="i">Roman de Thèbes</hi> dans l'<hi
-                rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j">Le Moyen
-            Âge</title>, 107: 113-21</bibl>
-    <bibl xml:id="Petit_2002" type="S"><author><surname>Petit</surname>, Aimé</author>.
-            <date>2002</date>. <title level="a">'Wauchier de Denain et la matière du <hi rend="i"
-                >Roman de Thèbes</hi> dans l'<hi rend="i">Histoire ancienne jusqu'à
-            César</hi>'</title>, in <title level="m">Richesses médiévales du Nord et du
-            Hainaut</title>, ed. by <editor>Jean-Charles <surname>Herbin</surname></editor>
-        (Valenciennes: Presses universitaires de Valenciennes), pp. 243-52</bibl>
-    <bibl xml:id="Petit_2004" type="S"><author><surname>Petit</surname>, Aimé</author>.
-            <date>2004</date>. <title level="a">'Le traitement du personnage d'Amphiaraüs par
-            Wauchier de Denain dans l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, in
-            <title level="m">Image et mémoire du Hainaut médiéval</title>, ed. by
-            <editor>Jean-Charles <surname>Herbin</surname></editor> (Valenciennes: Presses
-        universitaires de Valenciennes), pp. 183-92</bibl>
-    <bibl xml:id="Rachetta_forth" type="S"><author><surname>Rachetta</surname>, Maria
-        Teresa</author>. <date>[forthcoming]</date>. <title level="a">'Sull’<hi rend="i">Histoire ancienne
-            jusqu’à César</hi>: le origini della versione abbreviata; il codice Wien ÖNB cod. 2576. Per
-            la storia di una tradizione'</title>, <title level="j">Francigena</title></bibl>
-    <bibl xml:id="Raynaud_de_Lage_1948" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1948</date>. <title level="a">'L'<hi rend="i">Historia Britonum</hi>
-            source de l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j"
-            >Revue du moyen âge latin</title>, 4: 275-78</bibl>
-    <bibl xml:id="Raynaud_de_Lage_1949" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1949</date>. <title level="a">'L'<hi rend="i">Histoire ancienne
-                jusqu'à César</hi> et les <hi rend="i">Faits des Romains</hi>'</title>, <title
-            level="j">Le Moyen Âge</title>, 55: 5-16</bibl>
-    <bibl xml:id="Raynaud_de_Lage_1957" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1957</date>. <title level="a">'Les "romans antiques" dans l'<hi
-                rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title level="j">Le Moyen
-            Âge</title>, 63: 267-309</bibl>
-    <bibl xml:id="Raynaud_de_Lage_1976a" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1976a</date>. <title level="a">'L'<hi rend="i">Histoire ancienne
-                jusqu'à César</hi> et les <hi rend="i">Faits des Romains</hi>'</title>, in
-            <author>Guy <surname>Raynaud de Lage</surname></author>, <title level="m">Les premiers
-            romans français et autres études littéraires et linguistiques</title>, <title level="s"
-            >Publications romanes et françaises</title>, 138 (Geneva: Droz), pp. 5-13</bibl>
-    <bibl xml:id="Raynaud_de_Lage_1976b" type="S"><author><surname>Raynaud de Lage</surname>,
-            Guy</author>. <date>1976b</date>. <title level="a">'La morale de l'Histoire'</title>, in
-            <title level="m">Les premiers romans français et autres études littéraires et
-            linguistiques</title>, <title level="s">Publications romanes et françaises</title>, 138
-        (Geneva: Droz), pp. 171-74</bibl>
-    <bibl xml:id="Rochebouet_2015" type="P"><editor><surname>Rochebouet</surname>, Anne</editor>
-        (ed.). <date>2015</date>. <title level="m">L'Histoire ancienne jusqu'à César ou Histoires
-            pour Roger, châtelain de Lille, de Wauchier de Denain; L'Histoire de la Perse, de Cyrus
-            à Assuérus</title>, <title level="s">Alexander redivivus</title>, 8 (Turnhout:
-        Brepols)</bibl>
-    <bibl xml:id="Rochebouet_2016" type="S"><author><surname>Rochebouet</surname>, Anne</author>.
-            <date>2016</date>. <title level="a">'De la Terre sainte au val de Loire: diffusion et
-            remaniement de l'<hi rend="i">Histoire ancienne jusqu'à César</hi> au XVe siècle'
-        </title>, <title level="j">Romania</title>, 134: 169-203</bibl>
-    <bibl xml:id="Trachsler_2013" type="S"><author><surname>Trachsler</surname>, Richard</author>.
-            <date>2013</date>. <title level="a">'L’Histoire au fil des siècles. Les différentes
-            rédactions de l’<hi rend="i">Histoire ancienne jusqu’à César</hi>'</title>, in <title
-            level="m">Transcrire et/ou traduire. Variation et changement linguistique dans la
-            tradition manuscrite des textes médiévaux. Actes du congrès international, Klagenfurt
-            15–16 novembre 2012</title>, ed. by <editor>Raymund <surname>Wilhelm</surname></editor>
-        (Heidelberg: Winter), pp. 77-95</bibl>
-    <bibl xml:id="Vieilliard_1997" type="S">
-        <author><surname>Vielliard</surname>, Françoise</author>. <date>1997</date>. <title
-            level="a">‘En marge de l’<hi rend="i">Histoire ancienne jusq’à César</hi>: deux
-            traductions françaises d’Eutrope’</title>, in <title level="m">Entre fiction et
-            histoire: Troie et Rome au Moyen Âge</title>, ed. by <editor>Emmanuèle
-                <surname>Baumgartner</surname></editor> and <editor>Laurence
-                <surname>Harf-Lancner</surname></editor> (Paris: Presses de la Sorbonne Nouvelle),
-        pp. 207–35</bibl>
-    <bibl xml:id="Visser_van_Terwisga_1995" type="P"><editor><surname>de Visser van
-                Terwisga</surname>, Marijke</editor> (ed.). <date>1995</date>. <title level="m"
-            >Histoire ancienne jusqu'à César, Estoires Rogier. Tome I: Assyrie, Thèbes, Le
-            Minotaure, les Amazones, Hercule</title>, <title level="s">Medievalia</title>, 19,
-        (Orléans: Paradigme)</bibl>
-    <bibl xml:id="Visser_van_Terwisga_1999" type="P"><editor><surname>de Visser van
-                Terwisga</surname>, Marijke</editor> (ed.). <date>1999</date>. <title level="m"
-            >Histoire ancienne jusqu'à César, Estoires Rogier. Tome II</title>, <title level="s"
-            >Medievalia</title>, 30 (Orléans: Paradigme)</bibl>
-    <bibl xml:id="Zinelli_2013b" type="S"><author><surname>Zinelli</surname>, Fabio</author>.
-            <date>2013</date>. <title level="a">'Les històries franceses de Troia i d'Alexandre a
-            Catalunya i a ultramar'</title>, <title level="j">Mot so razo</title>, 12: 7-18</bibl>
-</body>
-    </text></TEI>
+        <body>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieS2">
+                    <settlement>Barcelona</settlement>
+                    <repository>Bibliotheca de Catalunya</repository>
+                    <idno>146</idno> (S2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB1">
+                    <settlement>Basel et Brussels</settlement>
+                    <repository>Universitätsbibliothek et Bibliothèque royale de
+                        Belgique/Koninklijke Bibliotheek van Belgie</repository>
+                    <idno>N I 2, nr. 83, et II 139, fragment 3</idno> (B1) [Roman de
+                    Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB3">
+                    <settlement>Besançon</settlement>
+                    <repository>Archives du Doubs</repository>
+                    <idno>[lost]</idno> (B3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB2">
+                    <settlement>Bordeaux</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>674</idno> (B2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB4">
+                    <settlement>Brussels</settlement>
+                    <repository>Archives générales</repository>
+                    <idno>[none]</idno> (B4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB5">
+                    <settlement>Brussels</settlement>
+                    <repository>Bibliothèque royale de Belgique/Koninklijke Bibliotheek van
+                        Belgie</repository>
+                    <idno>II 5606, vol. II, fragment 3</idno> (B5) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieN2">
+                    <settlement>Brussels</settlement>
+                    <repository>Bibliothèque royale de Belgique/Koninklijke Bibliotheek van
+                        Belgie</repository>
+                    <idno>IV 852, fragments 6-8</idno> (N2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_bruss10175">
+                    <settlement>Brussels</settlement>
+                    <repository>Bibliothèque royale de Belgique/Koninklijke Bibliotheek van
+                        Belgie</repository>
+                    <idno>10175</idno> (Bruss10175) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_brussIV555">
+                    <settlement>Brussels</settlement>
+                    <repository>Bibliothèque royale de Belgique/Koninklijke Bibliotheek van
+                        Belgie</repository>
+                    <idno>IV-555</idno> [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieC2">
+                    <settlement>Cambridge</settlement>
+                    <repository>University Library</repository>
+                    <idno>additional 2751 (2)</idno> (C2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieC3">
+                    <settlement>Châlons-sur-Marne</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>35 (37)</idno> (C3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_ch726">
+                    <settlement>Chantilly</settlement>
+                    <repository>Bibliothèque du Château (Musée Condé)</repository>
+                    <idno>726</idno> (Ch726) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_ch727">
+                    <settlement>Chantilly</settlement>
+                    <repository>Bibliothèque du Château (Musée Condé)</repository>
+                    <idno>727</idno> [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieC1">
+                    <settlement>Cologny</settlement>
+                    <repository>Bibliotheca Bodmeriana</repository>
+                    <idno>cod. Bodmer 18</idno> (C1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieC4">
+                    <settlement>Cuneo</settlement>
+                    <repository>Biblioteca civica</repository>
+                    <idno>[none]</idno> (C4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_dijon">
+                    <settlement>Dijon</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>562</idno> (Dijon) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_ricc3982">
+                    <settlement>Florence</settlement>
+                    <repository>Biblioteca Riccardiana</repository>
+                    <idno>3982</idno> (Ricc3982) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieF1">
+                    <settlement>Florence</settlement>
+                    <repository>Biblioteca Riccardiana</repository>
+                    <idno>2433</idno> (F1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_grenoble">
+                    <settlement>Grenoble</settlement>
+                    <repository>Bibliothèque Municipale</repository>
+                    <idno>284 Rés. (860)</idno> [Prose 5 et Landomata]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieG1">
+                    <settlement>The Hague</settlement>
+                    <repository>Koninklijke Bibliotheek</repository>
+                    <idno>75 G 68</idno> (G1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_lahaye">
+                    <settlement>The Hague</settlement>
+                    <repository>Koninklijke Bibliotheek</repository>
+                    <idno>78 D 47</idno> (La Haye) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieG2">
+                    <settlement>The Hague</settlement>
+                    <repository>Koninklijke Bibliotheek</repository>
+                    <idno>131 D 1</idno> (G2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_add15268">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Additional 15268</idno> (Add15268) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_add19669">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Additional 19669</idno> (Add19669) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_add25884">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Additional 25884</idno> [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieL2">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Additional 30863</idno> (L2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieL1">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Harley 4482</idno> (L1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_lansdowne229">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Lansdowne 229</idno> (Lansdowne229) [Prose 3]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_Royal">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Royal 20 D I</idno> (Royal) [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_stowe54">
+                    <settlement>London</settlement>
+                    <repository>British Library</repository>
+                    <idno>Stowe 54</idno> (Stowe54) [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_losangeles">
+                    <settlement>Los Angeles</settlement>
+                    <repository>J. P. Getty Museum</repository>
+                    <idno>Ms Ludwig XIII-3</idno> [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieL4">
+                    <settlement>Lyon</settlement>
+                    <repository>Bibliothèque de l'Institut catholique</repository>
+                    <idno>[none]</idno> (L4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieM2">
+                    <settlement>Milan</settlement>
+                    <repository>Biblioteca ambrosiana</repository>
+                    <idno>D 55 sup.</idno> (M2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieM1">
+                    <settlement>Montpellier</settlement>
+                    <repository>Bibliothèque interuniversitaire. Section médecine</repository>
+                    <idno>H/251</idno> (M1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieM4">
+                    <settlement>Monticello d'Alba</settlement>
+                    <repository>Unknown owner</repository>
+                    <idno>[none]</idno> (M4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieM3">
+                    <settlement>Münster</settlement>
+                    <repository>Universitätsbibliothek</repository>
+                    <idno>[none]</idno> (M3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieN3">
+                    <settlement>Nantes</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>2067</idno> (N3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieN">
+                    <settlement>Napoli</settlement>
+                    <repository>Biblioteca nazionale</repository>
+                    <idno>XIII.C.38</idno> (N) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieN4">
+                    <settlement>Nottingham</settlement>
+                    <repository>University Library</repository>
+                    <idno>Mi LM 6</idno> (N4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_newyork">
+                    <settlement>New York</settlement>
+                    <repository>Morgan Library</repository>
+                    <idno>M-516</idno> [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieO">
+                    <settlement>Oxford</settlement>
+                    <repository>Bodleian Librry</repository>
+                    <idno>Douce 381</idno> (O) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_oxford">
+                    <settlement>Oxford</settlement>
+                    <repository>Queen’s College</repository>
+                    <idno>160</idno> (Oxford) [Prose 3] </msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_osaka">
+                    <settlement>Osaka</settlement>
+                    <repository>University Otemae</repository>
+                    <idno>1</idno> [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieN1">
+                    <settlement>Paris</settlement>
+                    <repository>Archives nationales</repository>
+                    <idno>AB XIX 1734</idno> (N1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tovf_ms_arsenal">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque de  l'Arsenal</repository>
+                    <idno>3685</idno> [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieA1">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque de  l'Arsenal</repository>
+                    <idno>3340</idno> (A1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieA2">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque de  l'Arsenal</repository>
+                    <idno>3342</idno> (A2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieA">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 60</idno> (A) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tovf_ms_fr168">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 168</idno> (Fr168) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr250">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 250</idno> (Fr250) [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr254">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 254</idno> (Fr250) [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr301">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 301</idno> (Fr301) [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieB">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 375</idno> (B) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr686">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 686</idno> (Fr686) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieC">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de France</repository>
+                    <idno>f. fr. 782</idno> (Fr728) (C) [Roman de Troie] </msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieD">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 783</idno> (D) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieE">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 794</idno> (E) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieF">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de France</repository>
+                    <idno>f. fr. 821</idno> (Fr821) (F) [Roman de Troie, H1 et
+                    Landomata]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieG">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 903</idno> (G) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP3">
+                    <settlement>Paris</settlement>
+                    <repository>ibliothèque nationale de  France</repository>
+                    <idno>f. fr. 1420</idno> (P3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieH">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 1450</idno> (H) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieI">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 1553</idno> (I) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieJ">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 1610</idno> (J) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieK">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 2181</idno> (K) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr9682">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 9682</idno> (Fr9682) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieL">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 12600</idno> (L) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr15455">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 15455</idno> [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr17177">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 17177</idno> (Fr17177) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieM">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 19159</idno> (M) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr20125">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 20125</idno> (Fr20125) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr22554">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 22554</idno> (Fr22554) [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_fr24396">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>f. fr. 24396</idno> [HA2]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_naf3576">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>nouv. acq. fr. 3576</idno> (NAF3576) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP1">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>nouv. acq. fr. 5094</idno> (P1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP2">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>nouv. acq. fr. 6534</idno> (P2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>nouv. acq. fr. 6774</idno> (P) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_lat6002">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de France</repository>
+                    <idno>f. lat. 6002</idno> (Lat6002) [Prose 3]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP4">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque Sainte-Geneviève</repository>
+                    <idno>3563, f. 29</idno> (P4) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP2">
+                    <settlement>Paris</settlement>
+                    <repository>Bibliothèque nationale de  France</repository>
+                    <idno>nouv. acq. fr. 6534</idno> (P2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieP5">
+                    <settlement>Philadelphia</settlement>
+                    <repository>University of Pennsylvania Libraries</repository>
+                    <idno>MS. fr. 4</idno> (P5) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_porrentruy">
+                    <settlement>Porrentruy</settlement>
+                    <repository>Archive ancien Évêché de Bâle</repository>
+                    <idno>Divers 4</idno> [Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieR1">
+                    <settlement>Reggio Emilia</settlement>
+                    <repository>collezione M. Mussini</repository>
+                    <idno>[none]</idno> (R1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_rennes">
+                    <settlement>Rennes</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>2331</idno> (Rennes) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_rouenO33">
+                    <settlement>Rouen</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>O.33 (1049)</idno> (Rouen) [Prose 3]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_rosenthal">
+                    <settlement>Location unknown</settlement>
+                    <repository>Owner unknown</repository>
+                    <idno>ex-Rosenthal 82/3</idno> [HA1 et Prose 5?]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieS">
+                    <settlement>Saint Petersburg</settlement>
+                    <repository>Rossijskaja Nacional'naja Biblioteka</repository>
+                    <idno>fr. F. v. XIV. 3</idno> (S) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieS1">
+                    <settlement>Saint Petersburg</settlement>
+                    <repository>Rossijskaja Nacional'naja Biblioteka</repository>
+                    <idno>fr. F. v. XIV. 6</idno> (S1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieS3">
+                    <settlement>Strasbourg</settlement>
+                    <repository>Bibliothèque nationale et universitaire</repository>
+                    <idno>Ms 350</idno> (S3) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieT">
+                    <settlement>Turin</settlement>
+                    <repository>collezione Morselli</repository>
+                    <idno>[none]</idno> (T) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_tours">
+                    <settlement>Tours</settlement>
+                    <repository>Bibliothèque municipale</repository>
+                    <idno>1859</idno> (Rouen) [HA1 et Prose 5]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieR">
+                    <settlement>Vatican City</settlement>
+                    <repository>Biblioteca apostolica vaticana </repository>
+                    <idno>Reg. Lar. 1505</idno> (R) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieV1">
+                    <settlement>Venice</settlement>
+                    <repository>Biblioteca nazionale marciana</repository>
+                    <idno>fr. XVII</idno> (V1) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieV2">
+                    <settlement>Venice</settlement>
+                    <repository>Biblioteca nazionale marciana</repository>
+                    <idno>fr. XVIII</idno> (V2) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieV">
+                    <settlement>Vevey</settlement>
+                    <repository>Archives</repository>
+                    <idno>[None]</idno> (V) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_troieW">
+                    <settlement>Vienna</settlement>
+                    <repository>Österreichische Nationalbibliothek</repository>
+                    <idno>cod. 2571</idno> (W) [Roman de Troie]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_vienna">
+                    <settlement>Vienna</settlement>
+                    <repository>Österreichische Nationalbibliothek</repository>
+                    <idno>cod. 2576</idno> (Vienna) [HA1]</msIdentifier>
+            </bibl>
+            <bibl>
+                <msIdentifier xml:id="tvof_ms_wolfenbüttel">
+                    <settlement>Wolfenbüttel</settlement>
+                    <repository>Herzog August Bibliothek</repository>
+                    <idno>Guelf. 81. 29 Aug. fol. (2819)</idno> [Prose 5 et
+                    Landomata]</msIdentifier>
+            </bibl>
+            <bibl xml:id="André_1968" type="P"><editor><surname>André</surname>, Jaques</editor>
+                (ed.). <date>1968</date>. <title level="m">Ovide, Tristes</title> (Paris: Les Belles
+                Lettres)</bibl>
+            <bibl xml:id="AND" type="S"><title level="m">Anglo-Norman Dictionary</title>,
+                http://www.anglo-norman.net/</bibl>
+            <bibl xml:id="Andreose_Ménard_2010"><editor><surname>Andreose</surname>, Alvise</editor>
+                and <editor><surname>Ménard</surname>, Philippe</editor> (eds). <date>2010</date>.
+                    <title level="m">Le voyage en Asie d'Odoric de Pordenone traduit par Jean le
+                    Long OSB: Iteneraire de la peregrinacion et du voyaige (1351)</title> (Genève:
+                Droz)</bibl>
+            <bibl xml:id="Antonelli_1989" type="S"><author><surname>Antonelli</surname>,
+                    Roberto</author>. <date>1989</date>. <title level="a">‘The birth of Criseyde –
+                    an exemplary triangle: ‘classical’ Troilus and the question of love at the
+                    anglo-norman court’</title>, in <title level="m">The european tragedy of
+                    Troilus</title>, ed. by <editor>Piero <surname>Boitani</surname></editor>
+                (Oxford: Clarendon), pp. 21-48</bibl>
+            <bibl xml:id="Antonelli_DiGirolamo_Coluccia_2008" type="P"
+                        ><editor><surname>Antonelli</surname>, Roberto</editor> and
+                        <editor><surname>Di Girolamo</surname>, Costanzo</editor> and
+                        <editor><surname>Coluccia</surname>, Rosario</editor> (eds).
+                    <date>2008</date>. <title level="m">I poeti della scuola siciliana</title>, 3
+                vol. (Milano: Mondadori)</bibl>
+            <bibl xml:id="Arnaud-Lindet_1990" type="P"><editor><surname>Arnaud-Lindet</surname>,
+                    Marie-Pierre</editor> (ed.). <date>1990-1991</date>. <title level="m">Orose,
+                    Histoires (Contre les Païens)</title>, 3 vols (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Atwood_Whitaker_1944" type="P"><editor><surname>Atwood</surname>, E.
+                    Bagby, and Virgil K. <surname>Whitaker</surname></editor> (eds).
+                    <date>1944</date>. <title level="m">Excidium Troiae</title> (Cambridge, MA: The
+                Medieval Academy of America)</bibl>
+            <bibl xml:id="Babbi_1982" type="S"><author><surname>Babbi</surname>, Anna
+                Maria</author>. <date>1982</date>. <title level="a">‘Appunti sulla lingua della
+                    “storia di Landomata” (Parigi, Biblioteca Nazionale, ms. 821 del fondo
+                    francese)’</title>, <title level="j">Quaderni di Lingue e Letterature</title>,
+                7: 125-144</bibl>
+            <bibl xml:id="Badel_1995" type="P"><editor><surname>Badel</surname>,
+                    Pierre-Yves</editor> (ed.). <date>1995</date>. <title level="m">Adam de la
+                    Halle, Œuvres complètes</title> (Paris: Le Livre de poche)</bibl>
+            <bibl xml:id="Baker_2017" type="S"><author><surname>Baker</surname>, Craig</author>.
+                    <date>2017</date>. <title level="a">'La version vulgate de l’<hi rend="i"
+                        >Histoire ancienne jusqu’à César</hi>'</title>, <title level="j">Revue belge
+                    de philologie et d’histoire – Belgisch Tijdschrift voor Filologie en
+                    Geschiedenis</title>, 95: 745-72</bibl>
+            <bibl xml:id="Ballor_2000" type="S"><author><surname>Ballor</surname>,
+                    Alessandro</author>. <date>2000</date>. <title level="a">‘Il mito di Giasone e
+                    Medea nel Medioevo francese (XII-XIV secolo)’</title>, <title level="j">Studi
+                    francesi</title>, 44: 455-471</bibl>
+            <bibl xml:id="Bancourt_1982" type="S"><author><surname>Bancourt</surname>,
+                Paul</author>. <date>1982</date>. <title level="m">Les Musulmans dans les chansons
+                    de geste du cycle du roi</title>, 2 vols (Aix-en-Provence – Marseille:
+                Publications de l’Université de Provence)</bibl>
+            <bibl xml:id="Barbieri_2002" type="S"><author><surname>Barbieri</surname>,
+                Luca</author>. <date>2002</date>. <title level="a">'Entre mythe et histoire:
+                    quelques sources de la version en prose "napolitaine" du <hi rend="i">Roman de
+                        Troie</hi> en prose (Prose 5)'</title>, in <title level="m">'Ce est li fruis
+                    selonc la letre': mélanges offerts à Charles Méla</title>, ed. by
+                    <editor>Olivier <surname>Collet</surname></editor>, <editor>Yasmina
+                        <surname>Foehr-Jansens</surname></editor>, <editor>Sylviane
+                        <surname>Messerli</surname></editor> (Paris: Champion), pp. 111-23</bibl>
+            <bibl xml:id="Barbieri_2005a" type="P"><editor><surname>Barbieri</surname>,
+                    Luca</editor> (ed.). <date>2005</date>. <title level="m">Le "epistole dell dame
+                    di Grecia" nel <hi rend="i">Roman de Troie</hi> in prosa. La prima traduzione
+                    francese delle <hi rend="i">Eroidi</hi> di Ovidio</title>, <title level="s"
+                    >Romanica Helvetica, 123</title> (Tübingen: A. Francke Verlag)</bibl>
+            <bibl xml:id="Barbieri_2005b" type="S"><author><surname>Barbieri</surname>,
+                    Luca</author>. <date>2005</date>. <title level="a">‘Qui a tué Ajax, fils de
+                    Télamon ? : de la double mort d’un héros et d’autres incohérences dans la
+                    tradition troyenne’</title>, <title level="j">Romania</title>, 123:
+                321-359</bibl>
+            <bibl xml:id="Barbieri_2007" type="S"><editor><surname>Barbieri</surname>, Luca</editor>
+                (ed.). <date>2007</date>. <title level="m">« Les epistres des dames de Grece », une
+                    version médiévale des Héroïdes d’Ovide</title> (Paris: Champion) [Classiques
+                français du Moyen Âge, 152]</bibl>
+            <bibl xml:id="Barbieri_2008" type="S"><author><surname>Barbieri</surname>,
+                Luca</author>. <date>2008</date>. <title level="a">‘Achille et Ulysse dans le Roman
+                    de Troie : deux héros ambigus’</title>, <title level="j">Vox romanica</title>,
+                67: 57-83</bibl>
+            <bibl xml:id="Barbieri_2011" type="S"><author><surname>Barbieri</surname>,
+                Luca</author>. <date>2011</date>. <title level="a">‘Les Héroïdes dans l’Ovide
+                    moralisé : Léandre-Héro, Pâris-Hélène, Jason-Médée’</title>, in <title level="m"
+                    >Les translations d’Ovide au Moyen Âge</title>, Actes de la journée d’études
+                internationale à la Bibliothèque royale de Belgique le 4 décembre 2008, ed. by
+                    <editor>An <surname>Faems</surname></editor>, <editor>Virginie
+                        <surname>Minet-Mahy</surname></editor>, <editor>Colette Van
+                        <surname>Coolput-Storms</surname></editor> (Louvain-la-Neuve: Institut
+                d’études médiévales), pp. 235-268</bibl>
+            <bibl xml:id="Barbieri_2013" type="S"><author><surname>Barbieri</surname>,
+                Luca</author>. <date>2013</date>. <title level="a">‘De Grèce à Troie et retour : les
+                    chemins opposés d’Hélène et Briséida dans le Roman de Troie’</title>, in <title
+                    level="m">« Philologia ancilla litteraturae », Mélanges de philologie et de
+                    littérature françaises du Moyen Âge offerts au Professeur Gilles Eckard par ses
+                    collègues et anciens élèves</title>, ed. by <editor>Alain
+                        <surname>Corbellari</surname></editor>, <editor>Yan
+                    <surname>Greub</surname></editor>, <editor>Marion
+                    <surname>Uhlig</surname></editor> (Genève: Droz), pp. 15-44</bibl>
+            <bibl xml:id="Barbieri_2014a" type="S"><author><surname>Barbieri</surname>,
+                    Luca</author>. <date>2014</date>. <title level="a">‘Les versions en prose du
+                    Roman de Troie : état des recherches et perspectives’</title>, in <title
+                    level="m">Pour un nouveau répertoire des mises en prose. Roman, chanson de
+                    geste, autres genres</title>, ed. by <editor>Maria Colombo
+                        <surname>Timelli</surname></editor>, <editor>Barbara
+                        <surname>Ferrari</surname></editor> et <editor>Anne
+                        <surname>Schoysman</surname></editor> (Paris: Garnier), pp. 33-67</bibl>
+            <bibl xml:id="Barbieri_2014b" type="S"><author><surname>Barbieri</surname>,
+                    Luca</author>. <date>2014</date>. <title level="a">‘Roman de Troie’</title>, in
+                    <title level="m">Nouveau Répertoire de mises en prose (XIVe-XVIe
+                siècle)</title>, ed. by <editor>Maria <surname>Colombo Timelli</surname></editor>,
+                    <editor>Barbara <surname>Ferrari</surname></editor>, <editor>Anne
+                        <surname>Schoysman</surname></editor>, <editor>François
+                        <surname>Suard</surname></editor> (Paris: Garnier), pp. 773-848</bibl>
+            <bibl xml:id="Barbieri_2015" type="P"><editor><surname>Barbieri</surname>, Luca</editor>
+                (ed.). <date>2015</date>. <title level="a">Hugues de Berzé, S’onques nuns hons por
+                    dure departie (RS 1126)</title>,
+                warwick.ac.uk/crusadelyrics/texts/of/rs1126/</bibl>
+            <bibl xml:id="Barbieri_2020" type="S"><author><surname>Barbieri</surname>,
+                Luca</author>. <date>2020</date>. <title level="a">'La solitude d’un manuscrit et
+                    l’histoire d’un texte: la deuxième rédaction de l’<hi rend="i">Histoire ancienne
+                        jusqu’à César</hi>'</title>, <title level="j">Romania</title></bibl>
+            <bibl xml:id="Barbieri_forth" type="S">
+                <editor><surname>Barbieri</surname>, Luca</editor> (ed.). 2020. <title level="m">Le
+                    Roman de Troie en prose. Version du ms. O.33 (1049) de la Bibliothèque
+                    municipale de Rouen (Prose 3)</title> in progress</bibl>
+            <bibl xml:id="Baumgartner_1994" type="S"><author><surname>Baumgartner</surname>,
+                    Emmanuèle</author>. <date>1994</date>. <title level="m">De l’histoire de Troie
+                    au livre du Graal: le temps, le récit (XIIe-XIIIe siècles)</title> (Orléans:
+                Paradigme)</bibl>
+            <bibl xml:id="Baumgartner_1995" type="S"><author><surname>Baumgartner</surname>,
+                    Emmanuèle</author>. <date>1995</date>. <title level="a">'Romans antiques,
+                    histoires anciennes et transmission du savoir aux XIe et XIIe siècles'</title>,
+                in <title level="m">Mediaeval Antiquity</title>, ed. by <editor>Andries
+                        <surname>Welkenhuysen</surname></editor>, <editor>Herman
+                        <surname>Braet</surname></editor>, <editor>Werner
+                    <surname>Verbeke</surname></editor> (Leuven: Leuven University Press), pp.
+                219-235</bibl>
+            <bibl xml:id="Baumgartner_1996" type="S"><author><surname>Baumgartner</surname>,
+                    Emmanuèle</author>. <date>1996</date>. <title level="a">‘Benoît de Sainte-Maure
+                    et l’art de la mosaïque’</title>, in <title level="m">Ensi firent li ancesor.
+                    Mélanges de philologie médiévale offerts à Marc-René Jung</title>, ed. by
+                    <editor>Luciano <surname>Rossi</surname></editor> (Alessandria: Edizioni
+                dell’Orso), I, pp. 295-307</bibl>
+            <bibl xml:id="Baumgartner_Vielliard_1998"><editor><surname>Baumgartner</surname>,
+                    Emmanuèle</editor> and <editor><surname>Vielliard</surname>, Françoise</editor>
+                (eds). <date>1998</date>. <title level="m">Benoît de Sainte-Maure, Le roman de Troie
+                    : extraits du manuscrit Milan, Bibliothèque ambrosienne, D55</title> (Paris:
+                Librairie générale française)</bibl>
+            <bibl xml:id="Beltrami_2004" type="P"><editor><surname>Beltrami</surname>, Pietro
+                    G</editor>. (ed.). <date>2004</date>. <title level="m">Chrétien de Troyes –
+                    Godefroy de Leigni, Il Cavaliere della carretta (Lancillotto)</title>
+                (Alessandria: Edizioni dell’Orso)</bibl>
+            <bibl xml:id="Beltrami_Squillacioti_Torri_Vatteroni_2007" type="P"
+                        ><editor><surname>Beltrami</surname>, Pietro G.</editor>,
+                        <editor><surname>Squillacioti</surname>, Paolo</editor>,
+                        <editor><surname>Torri</surname>, Plinio</editor> and
+                        <editor><surname>Vatteroni</surname>, Sergio</editor> (eds).
+                    <date>2007</date>. <title level="m">Brunetto Latini, Tresor</title> (Torino:
+                Einaudi)</bibl>
+            <bibl xml:id="Bérard_Milenzi_Cantarella_2012"><editor><surname>Bérard</surname>,
+                    Victor</editor>,<editor>
+                    <surname>Milenzi</surname>, Silvia</editor> and
+                        <editor><surname>Cantarella</surname>, Eva</editor> (eds).
+                <date>2012</date>. <title level="m">Homère, Odyssée</title>, 3 vols (Paris: Les
+                Belles Lettres).</bibl>
+            <bibl xml:id="Berisso_2000" type="P"><editor><surname>Berisso</surname>, Marco</editor>
+                (ed.). <date>2000</date>. <title level="m">L'intelligenza: poemetto anonimo del
+                    secolo XIII</title> (Milano: Fondazione Pietro Bembo, Parma: Guanda) </bibl>
+            <bibl xml:id="Bertolini_1976" type="P"><editor><surname>Bertolini</surname>,
+                    Virginio</editor> (ed.). <date>1976</date>. <title level="m">Estoire d’Atile en
+                    Ytaire, testo in lingua francese del XIV secolo</title> (Povegliano: Ed.
+                Gutenberg)</bibl>
+            <bibl xml:id="Besnardeau_Mora-Lebrun_2018" type="P"
+                        ><editor><surname>Besnardeau</surname>, Wilfrid</editor> and
+                        <editor><surname>Mora-Lebrun</surname>, Francine</editor> (eds).
+                    <date>2018</date>. <title level="m">Le roman d'Énéas</title> (Paris:
+                Champion)</bibl>
+            <bibl xml:id="Bianciotto_1994" type="P"><editor><surname>Bianciotto</surname>,
+                    Gabriel</editor> (ed.). <date>1994</date>. <title level="m">Le Roman de
+                    Troyle</title> (Rouen: Publications de l’Université de Rouen)</bibl>
+            <bibl xml:id="Blatt_1958" type="P"><editor><surname>Blatt</surname>, Franz</editor>
+                (ed.). <date>1958</date>.<title level="m"> The Latin Josephus, I. Introduction and
+                    Text. The Antiquities: Books I-V (Kobenhavn: Universitetsforlaget i
+                    Aarhus)</title> (new ed. online sites.google.com/site/latinjosephus/)</bibl>
+            <bibl xml:id="Blumenfeld-Kosinski_1981" type="S"
+                        ><author><surname>Blumenfeld-Kosinski</surname>, Renate Elisabeth</author>.
+                    <date>1981</date>. <title level="a">'Moralization and History: Verse and Prose
+                    in the <hi rend="i">Histoire ancienne jusqu'à César</hi> (in B.N. f.fr.
+                    20125)'</title>, <title level="j">Zeitschrift für romanische Philologie</title>,
+                97: 41-46</bibl>
+            <bibl xml:id="Boer_1915_1938" type="P"><editor>de <surname>Boer</surname>,
+                    Cornelius</editor> (ed.). <date>1915-193</date>8. <title level="m">“Ovide
+                    moralisé”. Poème du commencement du quatorzième siècle</title>, 5 vols
+                (Amsterdam: Noord-Holland = Vaduz: Sändig, 1984)</bibl>
+            <bibl xml:id="Boriaud_1977" type="P"><editor><surname>Boriaud</surname>,
+                    Jean-Yves</editor> (ed.). <date>1997</date>. <title level="m">Hygin,
+                    Fables</title> (Paris: Les belles Lettres)</bibl>
+            <bibl xml:id="Bornecque_1930" type="P"><editor><surname>Bornecque</surname>,
+                    Henri</editor> (ed.). <date>1930</date>. <title level="m">Ovide, Les
+                    Amours</title> (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Bourciez_1955" type="S"><author><surname>Bourciez</surname>,
+                    Édouard</author>. <date>1955</date>. <title level="m">Précis historique de
+                    phonétique française</title> (Paris: Klincksieck)</bibl>
+            <bibl xml:id="Brasseur_1989" type="P"><editor><surname>Brasseur</surname>,
+                    Annette</editor> (ed.). <date>1989</date>. <title level="m">Jehan Bodel, La
+                    chanson des Saisnes</title>, 2 vols (Genève: Droz)</bibl>
+            <bibl xml:id="Brayer_Leurquin-Labie_2008"><editor><surname>Brayer</surname>,
+                    Édith</editor> and <editor><surname>Leurquin-Labie</surname>,
+                    Anne-Françoise</editor> (eds). <date>2008</date>. <title level="m">La "Somme le
+                    roi" par frère Laurent</title> (Paris: Société des anciens textes
+                français)</bibl>
+            <bibl xml:id="Brown_1972" type="P"><editor><surname>Brown</surname>, Virginia</editor>.
+                    <date>1972</date>. <title level="a">‘An Anonymous Twelfth-Century De Natura
+                    Deorum in the Bodleian Library’</title>, <title level="j">Mediaeval
+                    Studies</title>, 34: 1-70</bibl>
+            <bibl xml:id="Buridant_2000" type="S"><author><surname>Buridant</surname>,
+                    Claude</author>. <date>2000</date>. <title level="m">Grammaire nouvelle de
+                    l'ancien français</title> (Paris: SEDES)</bibl>
+            <bibl xml:id="Coker_Joslin_1980" type="P"><editor><surname>Coker Joslin</surname>,
+                    Mary</editor>. <date>1980</date>. <title level="m">'A Critical Edition of the
+                    Genesis of Rogier's "Histoire ancienne" Based on Paris, Bibliothèque Nationale,
+                    Ms. Fr. 20125'</title> (doctoral dissertation, University of North
+                Carolina)</bibl>
+            <bibl xml:id="Coker_Joslin_1986" type="P"><editor><surname>Coker Joslin</surname>,
+                    Mary</editor> (ed.). <date>1986</date>. <title level="m">The Heard Word: A
+                    Moralized History. The Genesis Section of the "Histoire ancienne" in a Text from
+                    Saint-Jean d'Acre</title>, <title level="s">Romance Monographs, 45</title>
+                (Lafayette: University of Mississipi Press)</bibl>
+            <bibl xml:id="Constans_1904_1912" type="P"><editor><surname>Constans</surname>,
+                    Léopold</editor> (ed.). <date>1904-1912</date>. <title level="m">Le Roman de
+                    Troie par Benoît de Sainte-Maure, publié d’après tous les manuscrits
+                    connus</title>, 6 vols (Paris: Didot = New York-London: Johnson, 1968)</bibl>
+            <bibl xml:id="Constans_Faral_1922" type="P"><editor><surname>Constans</surname>,
+                    Léopold</editor> and <editor><surname>Faral</surname>, Edmond</editor> (eds).
+                    <date>1922</date>. <title level="m">Le Roman de Troie en prose</title>, I
+                (Paris: Champion)</bibl>
+            <bibl xml:id="Costantini_2004" type="S"><author><surname>Costantini</surname>,
+                    Fabrizio</author>. <date>2004</date>. <title level="a">‘Prosa 3 di Roman de
+                    Troie: analisi sinottica fra tradizione e traduzione’</title>, <title level="j"
+                    >Critica del Testo</title>, 7: 1045-1089</bibl>
+            <bibl xml:id="Crivellucci_1912" type="P"><editor><surname>Crivellucci</surname>,
+                    Amedeo</editor> (ed.). <date>1912/1913</date>. <title level="m">Landolfi Sagacis
+                    Historia Romana</title> (Rome: Tipografia del Senato)</bibl>
+            <bibl xml:id="Crivellucci_1914" type="P"><editor><surname>Crivellucci</surname>,
+                    Amedeo</editor> (ed.). <date>1914</date>. <title level="m">Pauli Diaconi,
+                    Historia Romana</title> (Rome: Tipografia del Senato)</bibl>
+            <bibl xml:id="Croizy-Naquet_1999" type="S"><author><surname>Croizy-Naquet</surname>,
+                    Catherine</author>. <date>1999</date>. <title level="m">Écrire l'histoire
+                    romaine au début du XIIIe siècle: l'"Histoire ancienne jusqu'à César" et les
+                    "Faits des Romains"</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Croizy-Naquet_2000" type="S"><author><surname>Croizy-Naquet</surname>,
+                    Catherine</author>. <date>2000</date>. <title level="a">'Écrire l'histoire: la
+                    choix du vers ou de la prose aux XIIe et XIII siècles'</title>, <title level="j"
+                    >Médiévales</title>, 39: 71-85</bibl>
+            <bibl xml:id="Croizy-Naquet_2004" type="S"><author><surname>Croizy-Naquet</surname>,
+                    Catherine</author>. <date>2004</date>. <title level="a">'L'<hi rend="i">Histoire
+                        ancienne jusqu'à César</hi>, les <hi rend="i">Faits des Romains</hi>. Entre
+                    sermon et chronique, entre histoire et roman'</title>, in <title level="m"
+                    >Textes et cultures: réception, modèles, interférences. Volume 1: Réception de
+                    l'Antiquité</title>, ed. by <editor>Pierre <surname>Nobel</surname></editor>
+                (Besançon: Presses universitaires de Franche-Comté), pp. 103-18</bibl>
+            <bibl xml:id="Croizy-Naquet_2015" type="S"><author><surname>Croizy-Naquet</surname>,
+                    Catherine</author>. <date>2015</date>. <title level="a">'Wauchier de Denain ou
+                    l'experience de l'histoire dans l'Histoire ancienne jusqu'à César'</title>, in
+                    <title level="m">Wauchier de Denain polygraphe du XIIIe siècle</title>, ed. by
+                    <editor>Sébastien <surname>Douchet</surname></editor> (Aix-en-Provence: Presses
+                universitaires de Provence), pp. 75-92</bibl>
+            <bibl xml:id="Croizy-Naquet_2016" type="S"><author><surname>Croizy-Naquet</surname>,
+                    Catherine</author>. <date>2016</date>. <title level="a">'Introduction
+                    littéraire'</title>, in <editor>Yorio <surname>Otaka</surname></editor> (ed.),
+                    <title level="m">L'Histoire ancienne jusqu'à César. Édition d'après le manuscrit
+                    OUL 1 de la bibliothèque de l'Université Otemae (ancien Phillips 23240)</title>
+                (Orléans: Paradigme), vol. 1, pp. 9-65</bibl>
+            <bibl xml:id="Cross_1974" type="P"><editor><surname>Cross</surname>, J. W.</editor>
+                (ed.). <date>1974</date>. <title level="m">Le Roman de Landomata: A Critical Edition
+                    and Study</title> (Ph. D. Diss., University of Connecticut)</bibl>
+            <bibl xml:id="Curtis_1985" type="P"><editor><surname>Curtis</surname>, Renée L</editor>.
+                (ed.). <date>1985</date>. <title level="m">Le roman de Tristan en prose</title>, 3
+                vols (Cambridge: Brewer)</bibl>
+            <bibl xml:id="D_Agostino_Barbieri_2017" type="P"><editor><surname>D’Agostino</surname>,
+                    Alfonso</editor> and <surname>Barbieri</surname>, Luca (eds). <date>2017</date>.
+                    <title level="m">Istorietta troiana con le Eroidi italiane glossate, studio,
+                    edizione critica e glossario</title> (Milano: Ledizioni)</bibl>
+            <bibl xml:id="Dalens-Marekovic_2009" type="P"
+                        ><editor><surname>Dalens-Marekovic</surname>, Delphine</editor> (ed.).
+                    <date>2009</date>. <title level="m">Enfances Renier, chanson de geste du XIII<hi
+                        rend="sup">e</hi> siècle</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Deluz_2000" type="P"><editor><surname>Deluz</surname>, Christiane</editor>
+                (ed.). <date>2000</date>. <title level="m">Jean de Mandeville, Le livre des
+                    merveilles du monde</title> (Paris: CNRS Éditions)</bibl>
+            <bibl xml:id="Dembowski_1986" type="P"><editor><surname>Dembowski</surname>, Peter
+                    F</editor>. (ed.). <date>1986</date>. <title level="m">Jean Froissart, Le
+                    paradis d'amour. L'orloge amoureus</title> (Genève: Droz)</bibl>
+            <bibl xml:id="Derolez_1968" type="P"><editor><surname>Derolez</surname>, Albert</editor>
+                (ed.). <date>1968</date>. <title level="m">Lamberti S. Audomari Canonici, Liber
+                    Floridus</title> (Ghent: In aedibus Story-Scientia)</bibl>
+            <bibl xml:id="Desmond_2018" type="S"><author><surname>Desmond</surname>,
+                    Marilynn</author>. <date>2018</date>. <title level="a">‘Magna Graecia and the
+                    Matter of Troy in the Francophone Mediterranean’</title>, in <title level="m"
+                    >Medieval Francophone Literary Culture Outside France: Studies in the Moving
+                    Word</title>, ed. by <editor>Nicola <surname>Morato</surname></editor> and
+                    <editor>Dirk <surname>Schoenaers</surname></editor> (Turnhout: Brepols), pp.
+                411-431</bibl>
+            <bibl xml:id="DEAF" type="P"><title level="m">Dictionnaire étymologique de l'ancien
+                    français</title>, http://www.deaf-page.de/fr/index.php</bibl>
+            <bibl xml:id="Dörrie_1971" type="P"><editor><surname>Dörrie</surname>, Heinrich</editor>
+                (ed.). <date>1971</date>. <title level="m">Epistulae Heroidum: P. Ovidii Nasonis
+                    Epistulae Heroidum</title> (Berlin - New York: De Gruyter)</bibl>
+            <bibl xml:id="Dufournet_Dulac_1994" type="P"><editor><surname>Dufournet</surname>,
+                    Jean</editor> and <editor><surname>Dulac</surname>, Liliane</editor> (eds).
+                    <date>1994</date>. <title level="m">La Châtelaine de Vergy</title> (Paris:
+                Gallimard)</bibl>
+            <bibl xml:id="Dufournet_2004" type="P"><editor><surname>Dufournet</surname>,
+                    Jean</editor> (ed.). <date>2004</date>. <title level="m">Robert de Clari, La
+                    conquête de Constantinople</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Ehrhart_1987" type="S"><author><surname>Ehrhart</surname>, Margaret
+                    J</author>. <date>1987</date>. <title level="m">The Judgment of the Trojan
+                    Prince Paris in Medieval Literature</title> (Philadelphia: University of
+                Pennsylvania Press)</bibl>
+            <bibl xml:id="Eisenhut_1973"><editor><surname>Eisenhut</surname>, Werner</editor> (ed.).
+                        <date>1973<hi rend="sup">2</hi></date>. <title level="m">Dictys Cretensis
+                    Ephemeridos belli Troiani libri: a Lucio Septimio ex graeco in latinum sermonem
+                    translati</title> (Leipzig: Teubner)</bibl>
+            <bibl xml:id="Faral_1924" type="P"><editor><surname>Faral</surname>, Edmond</editor>.
+                    <date>1924</date>. <title level="m">Les arts poétiques du XII<hi rend="sup"
+                        >e</hi> et du XIII<hi rend="sup">e</hi> siècle</title> (Paris: Champion),
+                pp. 194-262</bibl>
+            <bibl xml:id="Faral_1972"><editor><surname>Faral</surname>, Edmond</editor>(ed.).
+                        <date>1972<hi rend="sup">3</hi></date>. <title type="m">Villehardouin, La
+                    conquête de Constantinople</title>, 2 vols (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Foerster_1876" type="P"><author><surname>Foerster</surname>,
+                    Wendelin</author> (ed.). <date>1876</date>. <title level="m">Li Dialoge Gregoire
+                    lo Pape</title> (Halle: Nippert, Paris: Champion)</bibl>
+            <bibl xml:id="Foerster_1878" type="S"><author><surname>Foerster</surname>,
+                    Wendelin</author>. <date>1878</date>. <title level="a">'Französische
+                    Etymologien'</title>, <title level="j">Zeitschrift für romanische
+                    Philologie</title>, 2: 84-89</bibl>
+            <bibl xml:id="Formisano_Lee_1993" type="S"><author><surname>Formisano</surname>,
+                    Luciano</author> and <author><surname>Lee</surname>, Charmaine</author>.
+                    <date>1993</date>. <title level="a">‘Il “francese di Napoli” in opere di autori
+                    italiani dell’età angioina’</title>, in <title level="m">Lingue e culture
+                    dell’Italia meridionale (1200-1600)</title>, ed. by <editor>Paolo
+                        <surname>Trovato</surname></editor> (Roma: Bonacci), pp. 133-162</bibl>
+            <bibl xml:id="Foster_1919" type="P"><editor><surname>Foster</surname>, B. O.</editor>
+                (trans.). <date>1919</date>. <title level="m">Livy, with an English translation in
+                    thirteen volumes. Vol. I: Books I-II</title>, Loeb Classical Library (London:
+                William Heinemann; New York: G. P. Putnam's sons)</bibl>
+            <bibl xml:id="Foster_1929" type="P"><editor><surname>Foster</surname>, B. O.</editor>
+                (trans.). <date>1929</date>. <title level="m">Livy, with an English translation in
+                    thirteen volumes. Vol. V: Books XXI-XXII</title>, Loeb Classical Library
+                (London: William Heinemann; New York: G. P. Putnam's sons)</bibl>
+            <bibl xml:id="Fouché_1967" type="S"><author><surname>Fouché</surname>, Pierre</author>.
+                    <date>1967</date>. <title level="m">Le verbe français : étude
+                    morphologique</title> (Paris: Klincksieck)</bibl>
+            <bibl xml:id="FEW" type="P"><title level="m">Französisches Etymologisches
+                    Wörterbuch</title>, https://apps.atilf.fr/lecteurFEW/</bibl>
+            <bibl xml:id="Gaullier-Bougassas_2007" type="S"
+                        ><author><surname>Gaullier-Bougassas</surname>, Catherine</author>.
+                    <date>2007</date>. <title level="a">'Histoires universelles et variations sur
+                    deux figures du pouvoir. Alexandre et César dans l’<hi rend="i">Histoire
+                        ancienne jusqu’à César</hi>, <hi rend="i">Renart le Contrefait</hi> et le
+                        <hi rend="i">Livre de la Mutacion de Fortune</hi> de Christine de
+                    Pizan'</title>, <title level="j">Cahiers de recherches médiévales</title>, 14:
+                7-28</bibl>
+            <bibl xml:id="Gaullier-Bougassas_2012" type="P"
+                        ><editor><surname>Gaullier-Bougassas</surname>, Catherine</editor> (ed.).
+                    <date>2012</date>. <title level="m">L'Histoire ancienne jusqu'à César, ou,
+                    Histoires pour Roger, châtelain de Lille de Wauchier de Denain; L'Histoire de la
+                    Macédoine et d'Alexandre le Grand</title>, <title level="s">Alexander
+                    redivivus</title>, 4 (Turnhout: Brepols)</bibl>
+            <bibl xml:id="Georges_1905-1906" type="P"><editor><surname>Georges</surname>,
+                    Heinrich</editor> (ed.). <date>1905-1906</date>. <title level="m">Tiberi Claudi
+                    Donati Interpretationes Vergilianae</title>, 2 vols (Leipzig: Teubner)</bibl>
+            <bibl xml:id="Godefroy" type="P"><author><surname>Godefroy</surname>, Frédéric</author>.
+                    <date>1881-1902</date>. <title level="m">Dictionnaire de l'ancienne langue
+                    française, et de tous ses dialectes du IX<hi rend="sup">e</hi> au XV<hi
+                        rend="sup">e</hi> siècle</title>, 10 vols (Paris : F. Vieweg,
+                1881-1902)</bibl>
+            <bibl xml:id="Gracia_2006" type="S"><author><surname>Gracia</surname>, Paloma</author>.
+                    <date>2006</date>. <title level="a">'Hacia el modelo de la General estoria.
+                    París, la translatio imperii et studii y la <hi rend="i">Histoire ancienne
+                        jusqu'à César</hi>'</title>, <title level="j">Zeitschrift für romanische
+                    Philologie</title>, 122: 17-27</bibl>
+            <bibl xml:id="Graverini_Nicolini_2019" type="P"><editor><surname>Graverini</surname>,
+                    Luca</editor> and <editor><surname>Nicolini</surname>, Lara</editor> (eds).
+                    <date>2019</date>. <title level="m">Apuleio, Metamorfosi</title> (Milano:
+                Mondadori)</bibl>
+            <bibl xml:id="Griffin_1936" type="P"><editor><surname>Griffin</surname>, Nathaniel
+                    E.</editor> (ed.). <date>1936</date>. <title level="m">Guido de Columnis,
+                    Historia destructionis Troiae</title> (Cambridge MA: The Mediaeval Academy of
+                America)</bibl>
+            <bibl xml:id="Guéret-Laferté_2011" type="P"><editor><surname>Guéret-Laferté</surname>,
+                    Michèle</editor> (ed.). <date>2011</date>. <title level="m">Ystoire de li
+                    Normant</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Guidot_2011" type="P"><editor><surname>Guidot</surname>, Bernard</editor>.
+                    <date>2011</date>. <title level="m">La chanson d’Antioche : chanson de geste du
+                    dernier quart du XII<hi rend="sup">e</hi> siècle</title> (Paris:
+                Champion)</bibl>
+            <bibl xml:id="Joüon_des_Longrais_1880" type="P"><editor><surname>Joüon des
+                        Longrais</surname>, Frédéric</editor> (ed.). <date>1880</date>. <title
+                    level="m">Le roman d’Aquin ou La conqueste de la Bretaigne par le roy
+                    Charlemaigne</title> (Nantes: Société des Bibliophiles Bretons et de l’Histoire
+                de Bretagne)</bibl>
+            <bibl xml:id="Hamm_1933" type="S">
+                <author><surname>Hamm</surname>, Frédérique</author>. <date>1933</date>. <title
+                    level="m">La traduction du "De eruditione filiorum nobilium" de Vincent de
+                    Beauvais par Jean Daudin</title>, diplôme d'archiviste paléographe, École
+                nationale des chartes, Paris</bibl>
+            <bibl xml:id="Hammer_1944" type="S"><author><surname>Hammer</surname>, William</author>.
+                    <date>1944</date>. <title level="a">'The Concept of the New or Second Rome in
+                    the Middle Ages'</title>, <title level="j">Speculum</title>, 19.1: 50-62</bibl>
+            <bibl xml:id="Hasenohr_Bordier_2017" type="P"><editor><surname>Hasenohr</surname>,
+                    Geneviève</editor> and <editor><surname>Bordier</surname>, Jean-Pierre</editor>
+                (eds). <date>2017</date>. <title level="m">Le jeu d'Adam</title> (Genève:
+                Droz)</bibl>
+            <bibl xml:id="Helm_1956" type="P"><editor><surname>Helm</surname>, Rudolf</editor>
+                (ed.). <date>1956</date>. <title level="m">Die Chronik des Hieronymus/Hieronymi
+                    Chronicon</title> (Berlin : Akademie-Verlag 1956)</bibl>
+            <bibl xml:id="Helm_1970" type="P"><editor><surname>Helm</surname>, Rudolf</editor>
+                (ed.). <date>1970</date>. <title level="m">Fabii Planciadis Fulgentii V. C. Opera;
+                    Accedunt Fabii Claudii Gordiani Fulgentii V. C. De aetatibus mundi et hominis et
+                    S. Fulgentii episcopi super Thebaiden, addenda adiecit Jean Preaux. Ed.
+                    stereotypa ed. anni 1898</title> (Stuttgart: Teubner)</bibl>
+            <bibl xml:id="Henry_1956" type="P"><editor><surname>Henry</surname>, Albert</editor>
+                (ed.). <date>1956</date>. <title level="m">Les œuvres d'Adenet le Roi, 2, Buevon de
+                    Conmarchis</title> (Bruges: De Tempel)</bibl>
+            <bibl xml:id="Heuzé_Bornecque_1924" type="P"><editor><surname>Heuzé</surname>,
+                    Philippe</editor> and <editor><surname>Bornecque</surname>, Henri</editor>
+                (eds). <date>1924</date>. <title level="m">Ovide, L'art d'aimer</title> (Paris: Les
+                Belles letteres)</bibl>
+            <bibl xml:id="Hilka_1933" type="P"><editor><surname>Hilka</surname>, Alfons
+                    (ed.)</editor>. <date>1933</date>. <title level="m">Aimon von Varennes,
+                    Florimont</title> (Halle: Niemeyer)</bibl>
+            <bibl xml:id="Huber_2000" type="S"><author><surname>Huber</surname>, Franziska</author>.
+                    <date>2000</date>. <title level="a">'L'<hi rend="i">Histoire ancienne jusqu'à
+                        César</hi>, source du <hi rend="i">Livre de la mutacion de Fortune</hi> de
+                    Christine de Pizan: étude comparative des récits sur Cyrus'</title>, in <title
+                    level="m">Au champ des escriptures. IIIe Colloque international sur Christine de
+                    Pizan, Lausanne, 18-22 juillet 1998</title>, ed. by <editor>Eric
+                        <surname>Hicks</surname></editor> et al., <title level="s">Études
+                    christiniennes</title>, 6 (Paris: Champion), pp. 161-74</bibl>
+            <bibl xml:id="Improta_Zinelli_2014" type="S"><author><surname>Improta</surname>,
+                    Andrea</author> and <author><surname>Zinelli</surname>, Fabio</author>.
+                    <date>2014</date>. <title level="a">‘Frammenti di una nuova Bibbia napoletana,
+                    con alcune riflessioni sul ms. fr. 688 della Bibliothèque nationale de
+                    France’</title>, in <title level="m">Boccaccio e Napoli. Nuovi materiali per la
+                    storia culturale di Napoli nel Trecento</title>, Atti del Convegno “Boccaccio
+                angioino. Per il VII centenario della nascita di Giovanni Boccaccio”,
+                Napoli-Salerno, 23-25 ottobre 2013, ed. by <editor>Giancarlo
+                        <surname>Alfano</surname></editor>, <editor>Emma
+                    <surname>Grimaldi</surname></editor>, <editor>Sebastiano
+                        <surname>Martelli</surname></editor>, <editor>Andrea
+                        <surname>Mazzucchi</surname></editor>, <editor>Matteo
+                        <surname>Palumbo</surname></editor>, <editor>Alessandra <surname>Perriccioli
+                        Saggese</surname></editor>, <editor>Carlo <surname>Vecce</surname></editor>
+                (Firenze: Cesati), pp. 81-106</bibl>
+            <bibl xml:id="Infurna_1999" type="P"><editor><surname>Infurna</surname>, Marco</editor>
+                (ed.). <date>1999</date>. <title level="m">La storia del San Gradale.
+                    Volgarizzamento toscano dell’Estoire del Saint Graal</title> (Padova:
+                Antenore)</bibl>
+            <bibl xml:id="Jensen_1990" type="P"><author><surname>Jensen</surname>, Frede</author>.
+                    <date>1990</date>. <title level="m">Old French and Comparative Gallo-Romance
+                    Syntax</title> (Tübingen: Niemeyer) </bibl>
+            <bibl xml:id="Jones_1997" type="P"><editor><surname>Jones</surname>, Charles W.</editor>
+                (ed.). <date>1997</date>. <title level="m">Bedae Venerabilis opera. Pars VI. Opera
+                    didascalica, 2, De temporum ratione liber</title> (Turnhout: Brepols)</bibl>
+            <bibl xml:id="Jung_1985" type="S"><author><surname>Jung</surname>, Marc-René</author>.
+                    <date>1985</date>. <title level="a">‘De Lamedonta filio Hectoris’</title>, in
+                    <title level="m">Variorum munera florum: Latinität als prägende Kraft
+                    mittelalterliche Kultur: Festschrift für Hans F. Haefelezu seinem sechzigsten
+                    Geburtstag</title>, ed. by <editor>Adolf <surname>Reinle</surname></editor>
+                (Sigmaringen: Thorbecke), pp. 219-229</bibl>
+            <bibl xml:id="Jung_1987a" type="S"><author><surname>Jung</surname>, Marc-René</author>.
+                    <date>1987</date>. <title level="a">‘Le Roman de Troie en prose du manuscrit de
+                    Rouen, Bibl. Mun. O. 33’</title>, <title level="j">Romania</title>, 108:
+                433-60</bibl>
+            <bibl xml:id="Jung_1987b" type="S"><author><surname>Jung</surname>, Marc-René</author>.
+                    <date>1987</date>. <title level="a">‘Hector assis’</title>, in <title level="m"
+                    >"Romania ingeniosa": Festschrift für Prof. Dr. Gerold Hilty zum 60.
+                    Geburtstag</title>, ed. by <editor>Georges <surname>Lüdi</surname></editor>,
+                    <editor>Hans <surname>Stricker</surname></editor>, <editor>Jakob Th.
+                        <surname>Wüest</surname></editor> (Bern – Frankfurt – New York – Paris:
+                Lang), pp. 153-169</bibl>
+            <bibl xml:id="Jung_1996" type="S"><author><surname>Jung</surname>, Marc-René</author>.
+                    <date>1996</date>. <title level="m">La Légende de Troie en France au moyen
+                    âge</title> (Basel-Tübingen: Francke Verlag)</bibl>
+            <bibl xml:id="Kelly_1995" type="S"><author><surname>Kelly</surname>, Douglas</author>.
+                    <date>1995</date>. <title level="a">‘The Invention of Briseida’s Story in Benoît
+                    de Sainte-Maure’s Troy’</title>,<title level="j"> Romance Philology</title>, 48:
+                221-241</bibl>
+            <bibl xml:id="Kujawiński_2010" type="S"><author><surname>Kujawiński</surname>,
+                    Jakub</author>. <date>2010</date>. <title level="a">‘Alla ricerca del contesto
+                    del volgarizzamento della Historia Normannorum di Amato di Montecassino: il
+                    manoscritto francese 688 della Bibliothèque nationale de France’</title>, <title
+                    level="j">Bullettino dell'Istituto storico italiano per il Medio Evo</title>,
+                112: 91-136</bibl>
+            <bibl xml:id="Kulcsár_1987_Bode_1834" type="P"><editor><surname>Kulcsár</surname>,
+                    Peter</editor> (ed.). <date>1987</date>. <title level="m">Mythographi vaticani I
+                    et II</title> (Turnhout: Brepols) [I and II], and
+                        <editor><surname>Bode</surname>, Georgius H.</editor> (ed.). 1834. <title
+                    level="m">Scriptores rerum mythicarum latini tres Romae nuper reperti</title>
+                (Celle: Schulze) [III and IV]</bibl>
+            <bibl xml:id="Lafaye_1925-1928" type="P"><editor><surname>Lafaye</surname>,
+                    Georges</editor> (ed.). <date>1925-1928</date>. <title level="m">Ovide, Les
+                    Métamorphoses</title>, 2 vols (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Langlois_1914_1924" type="P"><editor><surname>Langlois</surname>,
+                    Ernest</editor> (ed.).<date> 1914-1924</date>. <title level="m">Le Roman de la
+                    Rose par Guillaume de Lorris et Jean de Meun, publié d’après les
+                    manuscrits</title>, 5 vols (Paris: Didot-Champion = New York-London, Johnson,
+                1965)</bibl>
+            <bibl xml:id="Lecoy_1965_1970" type="P"><editor><surname>Lecoy</surname>, Félix</editor>
+                    (ed.).<date> 1965-1970</date>. <title level="m">Guillaume de Lorris et Jean de
+                    Meun, Le Roman de la Rose</title>, 3 vols (Paris: Champion)</bibl>
+            <bibl xml:id="Léonce_de_Montille_1880" type="P"><editor><surname>Léonce de
+                        Montille</surname>, Étienne Joseph Marie </editor>(ed.). <date>1880</date>.
+                    <title level="m">Cronicques des faiz de feurent monseign[eu]r Girart de
+                    Rossillon, a son vivant duc de Bourgoingne, et de dame Berthe, sa femme, fille
+                    du conte de Sans, que Martin Besancon fist esc[ri]pre, en l'an M CCCC L
+                    XIX</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Le_Bœuffle_1983"><editor><surname>Le Bœuffle</surname>, André</editor>
+                (ed.). <date>1983</date>. <title level="m">Hygin, L’astronomie</title> (Paris: Les
+                Belles Lettres)</bibl>
+            <bibl xml:id="Longonon_1972" type="S"><author><surname>Longnon</surname>, Jean</author>.
+                    <date>1972</date>. <title level="a">'Estive (Samit d’), Estrelis'</title>,
+                    <title level="j">Romania</title>, 93: 123-128 (126).</bibl>
+            <bibl xml:id="Longobardi_1994" type="S"><author><surname>Longobardi</surname>,
+                    Monica</author>. <date>1994</date>. <title level="a">'Nuovi frammenti
+                    dell'Histoire ancienne jusqu'à César'</title>, <title level="j">Cultura
+                    neolatina</title>, 54: 213-61</bibl>
+            <bibl xml:id="Lumiansky_1954" type="S"><author><surname>Lumiansky</surname>, Robert
+                    M</author>. <date>1954</date>.<title level="a">‘The story of Troilus and
+                    Briseida according to Benoit and Guido’</title>, <title level="j"
+                    >Speculum</title>, 29: 727-733</bibl>
+            <bibl xml:id="Lynde-Recchia_2000" type="P"><editor><surname>Lynde-Recchia</surname>,
+                    Molly</editor>. <date>2000</date>. <title level="m">Prose, Verse, and
+                    Truth-Telling in the Thirteenth Century: An Essay on Form and Function in
+                    Selected Texts, Accompanied by an Edition of the Prose "Thèbes" as Found in the
+                    "Histoire ancienne jusqu'à César"</title>, <title level="s">The Edward C.
+                    Armstrong Monographs on Medieval Literature</title>, 10 (Lexington: French
+                Forum)</bibl>
+            <bibl xml:id="Maggioni_2013" type="P"><editor><surname>Maggioni</surname>,
+                    Francesca</editor> (ed.). <date>2013</date>. <title level="m">La redazione C9
+                    della Relatio di Odorico da Pordenone</title>,
+                http://ecodicibus.sismelfirenze.it/uploads/5/3/536/odorico_maggioni.pdf.</bibl>
+            <bibl xml:id="Marchisio_2016" type="P"><editor><surname>Marchisio</surname>,
+                    Annalia</editor> (ed.). <date>2016</date>. <title level="m">Odorico da
+                    Pordenone, Relatio de mirabilibus orientalium Tatarorum</title> (Firenze: SISMEL
+                – Edizioni del Galluzzo) </bibl>
+            <bibl xml:id="Masse_2003" type="S"><author><surname>Masse</surname>,
+                    Marie-Sophie</author>. <date>2003</date>. <title level="a">‘Quelques
+                    concordances entre le Liet von Troye et le manuscrit A1 du Roman de
+                    Troie’</title>, <title level="j">Romania</title>, 121: 218-236</bibl>
+            <bibl xml:id="Mazon_1937_1938" type="P"><editor><surname>Meazon</surname>, Paul</editor>
+                (ed.). 1937-1937. <title level="m">Homère, Iliade</title>, 4 vols, (Paris: Les
+                Belles Lettres)</bibl>
+            <bibl xml:id="Mazzoni_and_Jeanroy_1898" type="S"><author><surname>Mazzoni</surname>,
+                    Guido</author>, and <author>Alfred <surname>Jeanroy</surname></author>.
+                    <date>1989</date>. <title level="a">'Un nouveau manuscrit du <hi rend="i">Roman
+                        de Troie</hi> et de l'<hi rend="i">Histoire ancienne avant
+                    César</hi>'</title>, <title level="j">Romania</title>, 27: 574-81</bibl>
+            <bibl xml:id="Meister_1873" type="P"><editor><surname>Meister</surname>,
+                    Ferdinand</editor> (ed.). <date>1873</date>. <title level="m">Daretis Phrygii de
+                    excidio Troiae historia</title> (Leipzig: Teubner)</bibl>
+            <bibl xml:id="Ménard_1970" type="P"><editor><surname>Ménard</surname>, Philippe</editor>
+                (ed.). <date>1970</date>. <title xml:id="m">Les poésies de Guillaume le
+                    Vinier</title> (Genève: Droz)</bibl>
+            <bibl xml:id="Ménard_1987-1997" type="P"><editor><surname>Ménard</surname>,
+                    Philippe</editor> (ed.). <date>1987-1997</date>. <title level="m">Le roman de
+                    Tristan en prose</title>, 9 vols (Genève: Droz)</bibl>
+            <bibl xml:id="Ménard_1994"><author><surname>Ménard</surname>, Philippe</author>.
+                        <date>1994<hi rend="sup">4</hi></date>. <title level="m">Syntaxe de l’ancien
+                    français</title> (Bordeaux: Bière)</bibl>
+            <bibl xml:id="Messelaar_1963" type="S"><author><surname>Messelaar</surname>, Petrus
+                    A</author>. <date>1963</date>. <title level="m">Le vocabulaire des idées dans le
+                    ‘Tresor’ de Brunet Latin</title> (Assen: Van Gorcum)</bibl>
+            <bibl xml:id="Meyer_1885" type="S"><author><surname>Meyer</surname>, Paul</author>.
+                    <date>1885</date>. <title level="a">'Les premières compilations françaises
+                    d'histoire ancienne'</title>, <title level="j">Romania</title>, 14: 1-8</bibl>
+            <bibl xml:id="Meyer_1895" type="S"><author><surname>Meyer</surname>, Paul</author>.
+                    <date>1895</date>. <title level="a">'Notice du manuscrit fr. 17177 de la
+                    Bibliothèque nationale (histoire universelle; Brut en prose; poésies et
+                    chroniques diverses)'</title>, <title level="j">Bulletin de la Société des
+                    anciens textes français</title>, 21: 80-118</bibl>
+            <bibl xml:id="Michel_1864" type="P"><editor><surname>Michel</surname>,
+                    Francisque</editor> (ed.). <date>1864</date>. <title level="m">Le roman de la
+                    rose par Guillaume de Lorris et Jean de Meung</title>, 2 vols (Paris: Firmin
+                Didot)</bibl>
+            <bibl xml:id="Minervini_2010" type="S"><author><surname>Minervini</surname>,
+                    Laura</author>. <date>2010</date>. <title level="a">‘Le français dans l'Orient
+                    latin (XIIIe-XIVe siècles). Élements pour la caractérisation d'une <hi rend="i"
+                        >scripta</hi> du Levant’</title>, <title level="j">Revue de linguistique
+                    romane</title>, 293-294: 119-198</bibl>
+            <bibl xml:id="Minervini_2016" type="S"><author><surname>Minervini</surname>,
+                    Laura</author>. <date>2016</date>. <title level="a">'La variation lexicale en
+                    fonction du contact linguistique: le français dans l'Orient latin'</title>, in
+                    <title level="m">La Régionalité lexicale du français au Moyen Âge</title>, ed.
+                by <editor>Martin <surname>Glessgen</surname></editor> and <editor>David
+                        <surname>Trotter</surname></editor> (Strasbourg: ELiPhi (Éditions de
+                Linguistique et de Philologie)), pp. 195-206</bibl>
+            <bibl xml:id="Mommsen_1894" type="P"><editor><surname>Mommsen</surname>,
+                    Theodor</editor> (ed.). <date>1894</date>. <title level="a">Chronica minora
+                    saec. IV. V. VI. VII, vol. 2</title> (Berlin: Weidmann), pp. 424-481 (MGH, AA
+                XI)</bibl>
+            <bibl xml:id="Monfrin_1985" type="S">
+                <author><surname>Monfrin</surname>, Jacques</author>. <date>1985</date>. <title
+                    level="a">'Les translations vernaculaires de Virgile au Moyen Âge'</title>, in
+                    <title level="m">Lectures médiévales de Virgile. Actes du colloque organisé par
+                    l'École française de Rome, Rome, École française de Rome</title>, <title
+                    level="s">Collection de l'École française de Rome</title>, 80 (Rome: École
+                française de Rome), pp. 189-249</bibl>
+            <bibl xml:id="Montorsi_2016a" type="S"><author><surname>Montorsi</surname>,
+                    Francesco</author>. <date>2016</date>. <title level="a">‘Les origines des Francs
+                    dans l'<hi rend="i">Histoire ancienne jusqu'à César</hi>. Sur une source
+                    inconnue de la première chronique universelle en français’</title>, <title
+                    level="j">Medioevo Romanzo</title>, 40.2: 415-26</bibl>
+            <bibl xml:id="Montorsi_2016b" type="S"><author><surname>Montorsi</surname>,
+                    Francesco</author>. <date>2016</date>. <title level="a">‘Sur l'<hi rend="i"
+                        >intentio auctoris</hi> et la datation de l'<hi rend="i">Histoire ancienne
+                        jusqu'à César</hi>’</title>, <title level="j">Romania</title>, 134:
+                148-65</bibl>
+            <bibl xml:id="Moore_1949" type="P"><editor><surname>Moore</surname>, Frank
+                    Gardner</editor> (trans.). <date>1949</date>. <title level="m">Livy, with an
+                    English translation in fourrteen volumes. Vol. VIII: Books XXVIII-XXX</title>,
+                Loeb Classical Library (London: William Heinemann; Cambridge, M.A.: Harvard
+                University Press)</bibl>
+            <bibl xml:id="Mora-Lebrun_1994" type="S"><author><surname>Mora-Lebrun</surname>,
+                    Francine</author>. <date>1994</date>. <title level="m">L’«Énéide» médiévale et
+                    la naissance du roman</title> (Paris: Presses Universitaires de France)</bibl>
+            <bibl xml:id="Morawski_1925" type="S"><author><surname>Morawski</surname>,
+                    Joseph</author>. <date>1925</date>. <title level="m">Proverbes français
+                    antérieurs au XV<hi rend="sup">e</hi> siècle</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Mühlethaler_1992" type="S"><editor><surname>Mühlethaler</surname>,
+                    Jean-Claude</editor> (ed.). <date>1992</date>. <title level="m">Charles
+                    d'Orléans, Ballades et rondeaux. Édition du manuscrit 25458 du fonds français de
+                    la Bibliothèque nationale de Paris</title> (Paris: Librairie générale
+                française)</bibl>
+            <bibl xml:id="Mühlethaler_2016" type="S"><author><surname>Mühlethaler</surname>,
+                    Jean-Claude</author>. <date>2016</date>. <title level="m">Énée le mal-aimé. Du
+                    roman médiéval à la bande dessinée</title> (Paris: Les Belles Lettres) </bibl>
+            <bibl xml:id="Mynors_1969" type="P"><editor><surname>Mynors</surname>, R. A. B.</editor>
+                (ed.). <date>1969</date>. <title level="m">P. Vergili Maronis Opera</title>, <title
+                    level="s">Oxford Classical Texts</title> (Oxford: Oxford University
+                Press)</bibl>
+            <bibl xml:id="Oltrogge_1989" type="S"><author><surname>Oltrogge</surname>,
+                    Doris</author>. <date>1989</date>. <title level="m">Die Illustrationszyklen zur
+                    "Histoire ancienne jusqu'à César" (1250-1400)</title>, <title level="s"
+                    >Europäische Hochschulschriften</title>, Reihe XXVIII: Kunstgeschichte, 94
+                (Frankfurt am Main: Lang)</bibl>
+            <bibl xml:id="Otaka_2016" type="P"><editor><surname>Otaka</surname>, Yorio</editor>
+                (ed.). <date>2016</date>. <title level="m">L'Histoire ancienne jusqu'à César.
+                    Édition d'après le manuscrit OUL 1 de la bibliothèque de l'Université Otemae
+                    (ancien Phillips 23240)</title>, <title level="s">Medievalia, 88</title>, 2 vols
+                (Orléans: Paradigme)</bibl>
+            <bibl xml:id="Pagel_1892" type="P"><editor><surname>Pagel</surname>, Julius L</editor>.
+                (ed.). <date>1892</date>. <title level="m">Die Chirurgie des Heinrich von
+                    Mondeville</title> (Berlin: Hirschwald)</bibl>
+            <bibl xml:id="Palermo_1975" type="P"><editor><surname>Palermo</surname>, Joseph</editor>
+                (ed.). <date>1972</date>. <title level="m">Le roman d'Hector et Hercule, chant
+                    épique en octosyllabes italo-français édité d'après le manuscrit français 821 de
+                    la Bibliothèque nationale de Paris avec les variantes des autres manuscrits
+                    connus</title> (Genève: Droz)</bibl>
+            <bibl xml:id="Paris_1873" type="S"><author><surname>Paris</surname>, Gaston</author>.
+                    <date>1873</date>. <title level="a">‘Noms de peuples païens dans la Chanson de
+                    Roland’</title>, <title level="j">Romania</title>, 2: 329-334</bibl>
+            <bibl xml:id="Pavlidès_1989" type="P"><editor><surname>Pavlidès</surname>,
+                    Christophe</editor> (ed.). <date>1989</date>. <title level="m">L’Histoire
+                    ancienne jusqu’à César (première rédaction): étude de la tradition manuscrite,
+                    étude et édition partielle de la section d’histoire romaine</title> (Thesis,
+                École des chartes, Paris) </bibl>
+            <bibl xml:id="Perret_1977-1980" type="P"><editor><surname>Perret</surname>,
+                    Jacques</editor> (ed.). <date>1977-1980</date>. <title level="m">Virgile,
+                    Énéide</title>, 3 vols, (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Perriccioli_Saggese_et_al_1979" type="S"><author><surname>Perriccioli
+                        Saggese</surname>, Alessandra</author>, <author>Catello
+                        <surname>Salviati</surname></author> and <author>Vittorio
+                        <surname>Marino</surname></author>. <date>1979</date>. <title level="m">I
+                    romanzi cavallereschi miniati a Napoli</title> (Naples: Società editrice
+                napoletana)</bibl>
+            <bibl xml:id="Petersen_Dyggve_1951" type="P"><editor><surname>Petersen Dyggve</surname>,
+                    Holger</editor> (ed.). <date>1951</date>. <title level="m">Gace Brulé, trouvère
+                    champenois</title> (Helsinki: Imprimerie de la Société de la littérature
+                finnoise)</bibl>
+            <bibl xml:id="Petit_1867-1869" type="P"><editor><surname>Petit</surname>, Jules</editor>
+                (ed.). <date>1867-1869</date>. <title level="m">Li ars d'amour, de vertu et de
+                    boneurté par Jehan le Bel</title>, 2 vols(Bruxelles: Devaux)</bibl>
+            <bibl xml:id="Petit_2001" type="S"><author><surname>Petit</surname>, Aimé</author>.
+                    <date>2001</date>. <title level="a">'Le <hi rend="i">Roman de Thèbes</hi> dans
+                        l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title
+                    level="j">Le Moyen Âge</title>, 107: 113-21</bibl>
+            <bibl xml:id="Petit_2002" type="S"><author><surname>Petit</surname>, Aimé</author>.
+                    <date>2002</date>. <title level="a">'Wauchier de Denain et la matière du <hi
+                        rend="i">Roman de Thèbes</hi> dans l'<hi rend="i">Histoire ancienne jusqu'à
+                        César</hi>'</title>, in <title level="m">Richesses médiévales du Nord et du
+                    Hainaut</title>, ed. by <editor>Jean-Charles <surname>Herbin</surname></editor>
+                (Valenciennes: Presses universitaires de Valenciennes), pp. 243-52</bibl>
+            <bibl xml:id="Petit_2004" type="S"><author><surname>Petit</surname>, Aimé</author>.
+                    <date>2004</date>. <title level="a">'Le traitement du personnage d'Amphiaraüs
+                    par Wauchier de Denain dans l'<hi rend="i">Histoire ancienne jusqu'à
+                    César</hi>'</title>, in <title level="m">Image et mémoire du Hainaut
+                    médiéval</title>, ed. by <editor>Jean-Charles <surname>Herbin</surname></editor>
+                (Valenciennes: Presses universitaires de Valenciennes), pp. 183-92</bibl>
+            <bibl xml:id="PL_198" type="P"><title level="m">Petrus Comestor, Historia
+                    scholastica</title>, in <title level="s">Patrologia Latina</title>, 198, coll.
+                1053-1644</bibl>
+            <bibl xml:id="Pope_1952" type="S"><author><surname>Pope</surname>, Mildred K.</author>
+                <date>1952</date>. <title level="m">From latin to modern french, with especial
+                    consideration of anglo-norman</title> (Manchester: Manchester University
+                Press)</bibl>
+            <bibl xml:id="Rachetta_2019" type="S"><author><surname>Rachetta</surname>, Maria
+                    Teresa</author>. <date>2019</date>. <title level="a">'Sull’<hi rend="i">Histoire
+                        ancienne jusqu’à César</hi>: le origini della versione abbreviata; il codice
+                    Wien ÖNB cod. 2576. Per la storia di una tradizione'</title>, <title level="j"
+                    >Francigena</title>, 5: 27-57.</bibl>
+            <bibl xml:id="Raynaud_1883" type="S"><editor><surname>Raynaud</surname>,
+                Gaston</editor>. <date>1883</date>. <title level="a">‘Des avocas, De la jument au
+                    deable, De Luque la maudite, trois dits tirés d’un nouveau manuscrit de
+                    fabliaux’</title>, <title level="j">Romania</title>, 12: 209-229. </bibl>
+            <bibl xml:id="Raynaud_de_Lage_1948" type="S"><author><surname>Raynaud de Lage</surname>,
+                    Guy</author>. <date>1948</date>. <title level="a">'L'<hi rend="i">Historia
+                        Britonum</hi> source de l'<hi rend="i">Histoire ancienne jusqu'à
+                    César</hi>'</title>, <title level="j">Revue du moyen âge latin</title>, 4:
+                275-78</bibl>
+            <bibl xml:id="Raynaud_de_Lage_1949" type="S"><author><surname>Raynaud de Lage</surname>,
+                    Guy</author>. <date>1949</date>. <title level="a">'L'<hi rend="i">Histoire
+                        ancienne jusqu'à César</hi> et les <hi rend="i">Faits des
+                    Romains</hi>'</title>, <title level="j">Le Moyen Âge</title>, 55: 5-16</bibl>
+            <bibl xml:id="Raynaud_de_Lage_1957" type="S"><author><surname>Raynaud de Lage</surname>,
+                    Guy</author>. <date>1957</date>. <title level="a">'Les "romans antiques" dans
+                        l'<hi rend="i">Histoire ancienne jusqu'à César</hi>'</title>, <title
+                    level="j">Le Moyen Âge</title>, 63: 267-309</bibl>
+            <bibl xml:id="Raynaud_de_Lage_1976a" type="S"><author><surname>Raynaud de
+                    Lage</surname>, Guy</author>. <date>1976a</date>. <title level="a">'L'<hi
+                        rend="i">Histoire ancienne jusqu'à César</hi> et les <hi rend="i">Faits des
+                        Romains</hi>'</title>, in <author>Guy <surname>Raynaud de
+                    Lage</surname></author>, <title level="m">Les premiers romans français et autres
+                    études littéraires et linguistiques</title>, <title level="s">Publications
+                    romanes et françaises</title>, 138 (Geneva: Droz), pp. 5-13</bibl>
+            <bibl xml:id="Raynaud_de_Lage_1976b" type="S"><author><surname>Raynaud de
+                    Lage</surname>, Guy</author>. <date>1976b</date>. <title level="a">'La morale de
+                    l'Histoire'</title>, in <title level="m">Les premiers romans français et autres
+                    études littéraires et linguistiques</title>, <title level="s">Publications
+                    romanes et françaises</title>, 138 (Geneva: Droz), pp. 171-74</bibl>
+            <bibl xml:id="Roach_Ivy_1950" type="P"><editor><surname>Roach</surname>,
+                    William</editor> and <editor><surname>Ivy</surname>, Robert H., Jr.</editor>
+                (eds). 1950. The continuations of the Old French "Perceval" of Chretien de Troyes,
+                II, The first continuation: redaction of Mss E M Q U (Philadelphia: University of
+                Pennsylvania Press)</bibl>
+            <bibl xml:id="Rochebouet_2009a" type="P"><author><surname>Rochebouet</surname>,
+                    Anne</author>. <date>2009</date>. <title level="m">“D’une pel toute entiere sans
+                    nulle cousture” : la cinquième mise en prose du Roman de Troie, édition critique
+                    et commentaire</title>, thèse de doctorat de l’Université de
+                Paris-Sorbonne</bibl>
+            <bibl xml:id="Rochebouet_2009b" type="S"><author><surname>Rochebouet</surname>,
+                    Anne</author>. <date>2009</date>. <title level="a">‘Variations sur une liste
+                    d’amants malheureux dans les Romans de Troie : vers un timide reflet de la
+                    thématique des Hommes illustres ?’</title>, <title level="j">Questes</title>,
+                17: 89-98</bibl>
+            <bibl xml:id="Rochebouet_2010" type="S"><author><surname>Rochebouet</surname>,
+                    Anne</author>. <date>2010</date>. <title level="a">‘Les deux destructions de la
+                    ville de Troie: de la dérimation à la compilation dans les première, troisième
+                    et cinquième mises en prose du Roman de Troie’</title>, in <title level="m"
+                    >Mettre en prose aux XIVe-XVIe siècles</title>,ed. by <editor>Maria
+                        <surname>Colombo Timelli</surname></editor>, <editor>Barbara
+                        <surname>Ferrari</surname></editor> et <editor>Anne
+                        <surname>Schoysman</surname></editor> (Turnhout: Brepols), pp.
+                225-233</bibl>
+            <bibl xml:id="Rochebouet_2015" type="P"><editor><surname>Rochebouet</surname>,
+                    Anne</editor> (ed.). <date>2015</date>. <title level="m">L'Histoire ancienne
+                    jusqu'à César ou Histoires pour Roger, châtelain de Lille, de Wauchier de
+                    Denain; L'Histoire de la Perse, de Cyrus à Assuérus</title>, <title level="s"
+                    >Alexander redivivus</title>, 8 (Turnhout: Brepols)</bibl>
+            <bibl xml:id="Rochebouet_2016" type="S"><author><surname>Rochebouet</surname>,
+                    Anne</author>. <date>2016</date>. <title level="a">'De la Terre sainte au val de
+                    Loire: diffusion et remaniement de l'<hi rend="i">Histoire ancienne jusqu'à
+                        César</hi> au XV<hi rend="sup">e</hi> siècle' </title>, <title level="j"
+                    >Romania</title>, 134: 169-203</bibl>
+            <bibl xml:id="Roques_1948" type="P"><editor><surname>Roques</surname>, Mario</editor>
+                (ed.). <date>1948</date>. <title level="m">Le Roman de Renart. Première branche,
+                    éditée d’après le manuscrit de Cangé</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Roques_1952" type="P"><editor><surname>Roques</surname>, Mario</editor>
+                (ed.). <date>1952</date>. <title level="m">Les romans de Chrétien de Troyes édités
+                    d'après la copie de Guiot (Bibl. nat. n. 794). I. Erec et Enide</title> (Paris:
+                Champion)</bibl>
+            <bibl xml:id="Roques_1955" type="P"><editor><surname>Roques</surname>, Mario</editor>
+                (ed.). <date>1955</date>. <title level="m">Le Roman de Renart. Branches VII-IX,
+                    éditées d’après le manuscrit de Cangé</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Roth_2000" type="P"><editor><surname>Roth</surname>, Paul</editor> (ed.).
+                    <date>2000</date>. <title level="m">Histoire de la première destruction de
+                    Troie</title> (Tübingen-Basel: Francke)</bibl>
+            <bibl xml:id="Roy_1886" type="P"><editor><surname>Roy</surname>, Maurice</editor> (ed.).
+                    <date>1886</date>. <title level="m">Œuvres poétiques de Christine de
+                    Pisan</title>, I (Paris: Firmin Didot), pp. 207-269</bibl>
+            <bibl xml:id="de_Saint-Denis_1926" type="P"><editor><surname>Saint-Denis</surname>,
+                    Eugène de</editor> (ed.). 1926. <title level="m">Virgile, Géorgiques</title>
+                (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Salverda_de_Grave_1925-1929"><editor><surname>Salverda de Grave</surname>,
+                    Jean-Jacques</editor> (ed.). <date>1925-1929</date>. <title level="m">Eneas.
+                    Roman du XII<hi rend="sup">e</hi> siècle</title>, 2 vols (Paris: Champion) </bibl>
+            <bibl xml:id="Sánchez-Prieto_Borja_2001_2009"><editor>Sánchez-Prieto Borja,
+                    Pedro</editor> (ed.). <date>2001-2009</date>. <title level="m">Alfonso X el
+                    Sabio, General estoria</title>, 10 vols (Madrid: Fondación José Antonio de
+                Castro)</bibl>
+            <bibl xml:id="Santini_1979" type="P"><editor><surname>Santini</surname>,
+                    Carolus</editor> (ed.). <date>1979</date>. <title level="m">Eutropii Breviarium
+                    ab urbe condita</title> (Leipzig: B. G. Teubner)</bibl>
+            <bibl xml:id="Schilling_1993" type="P"><editor><surname>Schilling</surname>,
+                    Robert</editor> (ed.). <date>1993</date>. <title level="m">Ovide. Les
+                    Fastes</title>, 2 vols (Paris: Les Belles Lettres)</bibl>
+            <bibl xml:id="Schlesinger_1951" type="P"><editor><surname>Schlesinger</surname>, Alfred
+                    C.</editor> (trans.). <date>1951</date>. <title level="m">Livy, with an English
+                    translation in fourrteen volumes. Vol. XIII: Books XLIII-XLV</title>, Loeb
+                Classical Library (London: William Heinemann; Cambridge, M.A.: Harvard University
+                Press)</bibl>
+            <bibl xml:id="Schulze-Busacker_1985" type="S"
+                        ><author><surname>Schulze-Busacker</surname>, Elisabeth</author>.
+                    <date>1985</date>. <title level="m">Proverbes et expressions proverbiales dans
+                    la littérature narrative du moyen âge français: recueil et analyse</title>
+                (Genève: Slatkine)</bibl>
+            <bibl xml:id="Segre_1989" type="P"><author><surname>Segre</surname>, Cesare</author>
+                (ed.). <date>1989</date>. <title level="m">La chanson de Roland</title>, nouvelle
+                édition revue, traduite de l’italien par Madeleine Tyssens, 2 vols (Genève:
+                Droz)</bibl>
+            <bibl xml:id="Short_2013"><author><surname>Short</surname>, Ian</author>.
+                    <date>2013</date>. <title level="m">Manual of Anglo-Norman. 2<hi rend="sup"
+                        >nd</hi></title> (Oxford: Anglo-Norman Text Society)</bibl>
+            <bibl xml:id="Studer_Evans_1924" type="P"><editor><surname>Studer</surname>,
+                    Paul</editor> and <editor><surname>Evans</surname>, Joan</editor>.
+                    <date>1924</date>. <title level="m">Anglo-Norman Lapidaries</title> (Paris:
+                Champion)</bibl>
+            <bibl xml:id="Suard_2008" type="P"><editor><surname>Suard</surname>, François</editor>
+                (ed.). <date>2008</date>. <title level="m">Aspremont : chanson de geste du XII<hi
+                        rend="sup">e</hi> siècle</title> (Paris: Champion)</bibl>
+            <bibl xml:id="Tanniou_2008" type="S"><author><surname>Tanniou</surname>,
+                    Florence</author>. <date>2009</date>. <title level="a">‘De l’Orient rêvé à
+                    l’Orient révélé : les mutations de l’exotisme du Roman de Troie de Benoît de
+                    Sainte-Maure au Roman de Troie en prose (Prose 1)’</title>, <title level="j"
+                    >Bien dire et bien aprandre</title>, 26: 213-226</bibl>
+            <bibl xml:id="Tanniou_2009" type="S"><author><surname>Tanniou</surname>,
+                    Florence</author>. <date>2009</date>. <title level="m">Raconter la vraie estoire
+                    de Troye. Histoire et édification dans le Roman de Troie en prose (Prose 1,
+                    version commune)</title>, thèse de doctorat, Université de Paris
+                X-Nanterre</bibl>
+            <bibl xml:id="Tanniou_2010" type="S"><author><surname>Tanniou</surname>,
+                    Florence</author>. <date>2010</date>. <title level="a">‘Landomata ou le Festin
+                    de pierres, La figure d’un roi exemplaire’</title>, in <title level="m">Mythes à
+                    la cour, mythes pour la cour</title>. Actes du XIIe Congrès de la Société
+                Internationale de Littérature Courtoise, 29 juillet-4 août 2007 (Universités de
+                Lausanne et Genève), ed. by <editor>Alain <surname>Corbellari</surname></editor>,
+                    <editor>Yasmina <surname>Foehr-Janssens</surname></editor>, <editor>Jean-Claude
+                        <surname>Mühlethaler</surname></editor>, <editor>Jean-Yves
+                        <surname>Tilliette</surname></editor>, <editor>Barbara
+                        <surname>Wahlen</surname></editor> (Genève: Droz), pp. 267-277</bibl>
+            <bibl xml:id="Tanniou_2014" type="S"><author><surname>Tanniou</surname>,
+                    Florence</author>. <date>2014</date>. <title level="a">‘Troie, sur le chemin des
+                    croisades (XIIe-XIVe siècles)’</title>, in <title level="m">La légende de Troie
+                    de l’Antiquité Tardive au Moyen Âge. Variations, innovations, modifications et
+                    réécritures</title>, ed. by <editor>Eugenio <surname>Amato</surname>,</editor>
+                <editor>Élisabeth <surname>Gaucher-Rémond</surname></editor>, <editor>Giampiero
+                        <surname>Scafoglio</surname></editor>, <title level="j">Atlantide</title>,
+                2, pp. 3-9</bibl>
+            <bibl xml:id="Thomas_1989" type="P"><editor><surname>Thomas</surname>, Jacques</editor>
+                (ed.). <date>1989</date>. <title level="m">Renaut de Montauba</title>n (Genève:
+                Droz)</bibl>
+            <bibl xml:id="Thomas_2002" type="P"><editor><surname>Thomas</surname>, Jacques
+                    T.E.</editor> (ed.). <date>2002</date>.<title level="m"> Guernes de
+                    Pont-Sainte-Maxence, La vie de Saint Thomas de Canterbury</title>, 2 vols
+                (Louvain-Paris: Peeters)</bibl>
+            <bibl xml:id="Tobler_Lommatzsch_1925-"><author><surname>Tobler</surname>, Adolf</author>
+                and <author><surname>Lommatzsch</surname>, Ehrard</author>. <date>1925-</date>.
+                    <title level="m">Altfranzösisches wörterbuch</title> (Berlin : Weidmann)</bibl>
+            <bibl xml:id="Trachsler_2013" type="S"><author><surname>Trachsler</surname>,
+                    Richard</author>. <date>2013</date>. <title level="a">'L’Histoire au fil des
+                    siècles. Les différentes rédactions de l’<hi rend="i">Histoire ancienne jusqu’à
+                        César</hi>'</title>, in <title level="m">Transcrire et/ou traduire.
+                    Variation et changement linguistique dans la tradition manuscrite des textes
+                    médiévaux. Actes du congrès international, Klagenfurt 15–16 novembre
+                    2012</title>, ed. by <editor>Raymund <surname>Wilhelm</surname></editor>
+                (Heidelberg: Winter), pp. 77-95</bibl>
+            <bibl xml:id="Tyssens_2002" type="P"><author><surname>Tyssens</surname>,
+                    Madeleine</author>. <date>2002</date>. <title level="a">‘Amors, tençon et
+                    bataille (R.-S. 121)’</title>, <title level="j">Cultura neolatina</title>, 67:
+                19-41 </bibl>
+            <bibl xml:id="Ventura_2017" type="S"><author><surname>Ventura</surname>,
+                Simone</author>. <date>2017</date>. <title level="a">'The manuscripts of the First
+                    Redaction of the the Histoire ancienne jusqu’à César (13th century): Textual
+                    Variation and Linguistic Coding'</title>, <title level="j">Medioevo
+                    Romanzo</title>, 41: 316-363</bibl>
+            <bibl xml:id="Vieilliard_1997" type="S">
+                <author><surname>Vielliard</surname>, Françoise</author>. <date>1997</date>. <title
+                    level="a">‘En marge de l’<hi rend="i">Histoire ancienne jusq’à César</hi>: deux
+                    traductions françaises d’Eutrope’</title>, in <title level="m">Entre fiction et
+                    histoire: Troie et Rome au Moyen Âge</title>, ed. by <editor>Emmanuèle
+                        <surname>Baumgartner</surname></editor> and <editor>Laurence
+                        <surname>Harf-Lancner</surname></editor> (Paris: Presses de la Sorbonne
+                Nouvelle), pp. 207–35</bibl>
+            <bibl xml:id="Visser_van_Terwisga_1995" type="P"><editor><surname>de Visser van
+                        Terwisga</surname>, Marijke</editor> (ed.). <date>1995</date>. <title
+                    level="m">Histoire ancienne jusqu'à César, Estoires Rogier. Tome I: Assyrie,
+                    Thèbes, Le Minotaure, les Amazones, Hercule</title>, <title level="s"
+                    >Medievalia</title>, 19, (Orléans: Paradigme)</bibl>
+            <bibl xml:id="Visser_van_Terwisga_1999" type="P"><editor><surname>de Visser van
+                        Terwisga</surname>, Marijke</editor> (ed.). <date>1999</date>. <title
+                    level="m">Histoire ancienne jusqu'à César, Estoires Rogier. Tome II</title>,
+                    <title level="s">Medievalia</title>, 30 (Orléans: Paradigme)</bibl>
+            <bibl xml:id="Williams_1953_1954" type="S"><author><surname>Williams</surname>, Harry
+                    F</author>. <date>1953/1954</date>. <title level="a">‘Laodamas in the Prose
+                    Roman de Troie’</title>, <title level="j">Romance Philology</title>, 7:
+                143-155</bibl>
+            <bibl xml:id="Young_Wallace_1983" type="P"><editor><surname>Young Wallace</surname>,
+                    Kathryn</editor> (ed.). <date>1983</date>. <title level="m">La Estoire de seint
+                    Aedward le Rei, attributed to Matthew Paris</title> (London: Anglo-Norman Text
+                Society) </bibl>
+            <bibl xml:id="Zaccaria_1988" type="P"><editor><surname>Zaccaria</surname>,
+                    Vittorio</editor> (ed.). <date>1988</date>. <title level="m">Giovanni Boccaccio,
+                    Genealogie deorum gentilium</title>, in <editor><surname>Branca</surname>,
+                    Vittore</editor> (ed.) <title level="s">Giovanni Boccaccio, Tutte le
+                    opere</title>, vol. VII-VIII, tt. 1-2 (Milano: Mondadori)</bibl>
+            <bibl xml:id="Zinelli_2012" type="S"><author><surname>Zinelli</surname>, Fabio</author>.
+                    <date>2012</date>. <title level="a">‘“je qui li livre escrive de letre en
+                    vulgal”: scrivere il francese a Napoli in età angioina’</title>, in <title
+                    level="m">Boccaccio angioino. Materiali per la storia culturale di Napoli nel
+                    Trecento</title>, ed. by <editor>Giancarlo <surname>Alfano</surname></editor>,
+                Teresa <surname>d’Urso</surname>, Alessandra <surname>Perriccioli Saggese</surname>
+                (Bruxelles: Lang), pp. 149-173 </bibl>
+            <bibl xml:id="Zinelli_2013b" type="S"><author><surname>Zinelli</surname>,
+                Fabio</author>. <date>2013</date>. <title level="a">'Les històries franceses de
+                    Troia i d'Alexandre a Catalunya i a ultramar'</title>, <title level="j">Mot so
+                    razo</title>, 12: 7-18</bibl>
+            <bibl xml:id="Zinelli_2016" type="S"><author><surname>Zinelli</surname>, Fabio</author>.
+                    <date>2016</date>. <title level="a">'Il francese di Martin da Canal'</title> ,
+                in <title level="m">Francofonie Medievali. Lingue e letterature gallo-romanze fuori
+                    di Francia (sec. XII-XV)</title>, ed. by <editor>Anna Maria
+                        <surname>Babbi</surname></editor> et <editor>Chiara
+                        <surname>Concina</surname></editor> (Verona: Fiorini 2016), pp. 1-79.</bibl>
+            <bibl xml:id="Zink_1994" type="S"><author><surname>Zink</surname>, Gaston</author>.
+                        <date>1994<hi rend="sup">3</hi></date>. <title level="m">Morphologie du
+                    français médiéval</title> (Paris: P.U.F.)</bibl>
+        </body>
+    </text>
+</TEI>
