@@ -347,7 +347,7 @@
                     <span>
                         <xsl:choose>
                             <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
-                            <xsl:when test="@rend = '2'">&#x061B;</xsl:when>
+                            <xsl:when test="@rend = '2'">&#x2E35;</xsl:when>
                             <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
                             <xsl:when test="@rend = '4'">[/]</xsl:when>
                             <xsl:when test="@rend = '5'">[&#x2205;]</xsl:when>
