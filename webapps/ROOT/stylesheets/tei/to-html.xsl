@@ -316,7 +316,14 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:pb">
+    <xsl:template match="tei:pb" mode="semi-diplomatic">
+        <xsl:param name="inattribute" select="0" tunnel="yes"/>
+        <xsl:if test="$inattribute = 0">
+            <xsl:call-template name="page-break"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="tei:pb" name="page-break">
         <xsl:choose>
             <xsl:when test="ends-with(preceding::text()[1], ' ')">
                 <span class="tei-pb">[<xsl:value-of select="@n"/><xsl:if
@@ -535,7 +542,9 @@
         <span>
             <xsl:call-template name="lossless-attributes"/>
             <xsl:attribute name="data-sic">
-                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic">
+                    <xsl:with-param name="inattribute" select="1" tunnel="yes"/>
+                </xsl:apply-templates>
             </xsl:attribute>
             <xsl:apply-templates />
         </span>
