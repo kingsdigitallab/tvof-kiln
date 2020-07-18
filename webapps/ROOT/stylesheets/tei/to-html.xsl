@@ -352,13 +352,14 @@
             <xsl:when test="$view = 'semi-diplomatic'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
                     <span>
+                        <xsl:attribute name="class">tei-pc tei-pc-rend-<xsl:value-of select="@rend"/></xsl:attribute>
                         <xsl:choose>
                             <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
-                            <xsl:when test="@rend = '2'">&#x2E35;</xsl:when>
+                            <xsl:when test="@rend = '2'">&#x61b;</xsl:when>
                             <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
                             <xsl:when test="@rend = '4'">[/]</xsl:when>
                             <xsl:when test="@rend = '5'">[&#x2205;]</xsl:when>
-                            <xsl:when test="@rend = '6'"><span class="tei-pc tei-pc-rend-6">&#x002F;&#x002F;</span></xsl:when>
+                            <xsl:when test="@rend = '6'">&#x002F;&#x002F;</xsl:when>
                             <xsl:when test="@rend = '7'">&#x00B6;</xsl:when>
                         </xsl:choose>
                     </span>
