@@ -461,7 +461,8 @@
                 <xsl:text>tei-seg </xsl:text>
                 <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">first-letter-red</xsl:if>
                 <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">first-letter-red</xsl:if>
-                <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6</xsl:if>
+                <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6 </xsl:if>
+                <xsl:if test="(*/*)[1][@type='lineated']"> seg-lineated </xsl:if>
             </xsl:attribute>
             <span class="tei-seg-num">
                 <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/><xsl:text>. </xsl:text>
