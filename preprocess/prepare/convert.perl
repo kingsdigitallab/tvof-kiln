@@ -45,8 +45,17 @@ $file =~ s|8"\?>|8"MARYPOPPINS>|g;
 # GN: temporarly convert named entities, to avoid individual conversion of ;
 $file =~ s|&([a-z]+);|AMPERSAND\1SEMICOLON|gi;
 # GN: + is being used within XML attributes, we temporarily convert it
-$file =~ s|(=[^>]+?)\+|\1PLUSSIGN|g;
-$file =~ s|(=[^>]+?)_|\1UNDERSCORESIGN|g;
+
+sub convert_attribute {
+    my @values = @_;
+    # print "@values";
+    my $ret = $values[0];
+    $ret =~ s|_|UNDERSCORESIGN|g;
+    $ret =~ s|\+|PLUSSIGN|g;
+    # print "$ret";
+    return $ret
+}
+$file =~ s|(=\s*"[^"]+)|convert_attribute($1)|eg;
 
 # EXTRACT ONLY THE PART THAT NEEDS EXPANSION
 my ($before, $file, $after) = ($file =~ /(.+)(<body.+?)((?:body>|<div[^>]+type="notes").+)/s);
