@@ -47,12 +47,25 @@
         
         =>
         
-        <seg xml:id="edRoyal20D1_00002_07" data-corresp="#edfr20125_00395">                
-        
+        <seg xml:id="edRoyal20D1_00002_07" data-corresp="#edfr20125_00395">
+
+
+        OR # this is a real case where @corresp in alignment file not a seg, see ac-392
+
+        <seg xml:id="edRoyal20D1_00543_01">
+
+        =>
+
+        <seg xml:id="edRoyal20D1_00543_01" data-corresp="#edfr20125_00620">
+
     -->
 
-    <xsl:key name="ab_from_ref_id" match="/aggregation/alignments//tei:div[@type = 'alignment']/tei:ab[not(contains(@computed-corresp, ../@xml:id))]" use="concat('ed', ../@xml:id)"/>
-    <xsl:key name="alignment_from_computed_corresp" match="/aggregation/alignments//tei:div[@type = 'alignment']/tei:ab" use="tokenize(@computed-corresp, ' ')"/>
+    <xsl:key name="ab_from_ref_id"
+             match="/aggregation/alignments//tei:div[@type = 'alignment']/tei:ab[not(contains(@computed-corresp, ../@xml:id))]"
+             use="concat('ed', ../@xml:id)"/>
+    <xsl:key name="alignment_from_computed_corresp"
+             match="/aggregation/alignments//tei:div[@type = 'alignment']/tei:ab"
+             use="tokenize(@computed-corresp, ' ')"/>
 
     <xsl:template match="/aggregation/alignments" />
 
@@ -72,12 +85,24 @@
     <xsl:template match="tei:seg">
         <!-- TODO: review the assumption about tei:seg only -->
         <xsl:variable name="corresp" select="key('alignment_from_computed_corresp', concat('#', @xml:id))"/>
+        <!-- See ac-392, some alignment don't contain the seg range -->
+        <xsl:variable name="corresp2" select="key('alignment_from_computed_corresp', concat('#', replace(@xml:id, '_\d\d$', '')))"/>
         <xsl:copy>
-            <xsl:if test="$corresp">
-                <xsl:attribute name="corresp">
-                    <xsl:for-each select="$corresp/../@xml:id"><xsl:value-of select="concat('#ed', .)"/></xsl:for-each>
-                </xsl:attribute>
-            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="$corresp">
+                    <xsl:attribute name="corresp">
+                        <xsl:for-each select="$corresp/../@xml:id"><xsl:value-of select="concat('#ed', .)"/></xsl:for-each>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- Test to avoid useless self-reference -->
+                    <xsl:if test="$corresp2/../@xml:id and not(contains(@xml:id, ($corresp2/../@xml:id)[1]))">
+                        <xsl:attribute name="corresp">
+                            <xsl:for-each select="$corresp2/../@xml:id"><xsl:value-of select="concat('#ed', .)"/></xsl:for-each>
+                        </xsl:attribute>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:apply-templates select="@*|node()" />
         </xsl:copy>
     </xsl:template>

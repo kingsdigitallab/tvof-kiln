@@ -330,35 +330,25 @@ class XMLParser(object):
             matches = re.findall('^([^\[]*)(\[.*\])?', filter)
             tag, condition = matches[0]
             for parent in self.xml.findall(ur'.//*[' + tag + ur']'):
-                if 0:
-                    # simple version that only empties the element
-                    for element in parent.findall(filter):
-                        # We DO NOT use remove as it also delete the tail!
-                        # parent.remove(element)
-                        tail = element.tail
-                        element.clear()
-                        element.tail = tail
-                        c += 1
-                else:
-                    # slower version that completely removes the elements
-                    elements = parent.findall(filter)
-                    if len(elements):
-                        previous = None
-                        for element in list(parent):
-                            if element in elements and condition_function(
-                                    parent, element):
-                                # make sure we keep the tail
-                                tail = element.tail
-                                parent.remove(element)
-                                c += 1
-                                if tail:
-                                    if previous is not None:
-                                        previous.tail = (
-                                            previous.tail or ur'') + tail
-                                    else:
-                                        parent.text = (
-                                            parent.text or ur'') + tail
-                            else:
-                                previous = element
+                # slower version that completely removes the elements
+                elements = parent.findall(filter)
+                if len(elements):
+                    previous = None
+                    for element in list(parent):
+                        if element in elements and condition_function(
+                                parent, element):
+                            # make sure we keep the tail
+                            tail = element.tail
+                            parent.remove(element)
+                            c += 1
+                            if tail:
+                                if previous is not None:
+                                    previous.tail = (
+                                        previous.tail or ur'') + tail
+                                else:
+                                    parent.text = (
+                                        parent.text or ur'') + tail
+                        else:
+                            previous = element
 
             print('\t removed %s %s' % (c, filter))

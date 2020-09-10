@@ -316,7 +316,14 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:pb">
+    <xsl:template match="tei:pb" mode="semi-diplomatic">
+        <xsl:param name="inattribute" select="0" tunnel="yes"/>
+        <xsl:if test="$inattribute = 0">
+            <xsl:call-template name="page-break"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="tei:pb" name="page-break">
         <xsl:choose>
             <xsl:when test="ends-with(preceding::text()[1], ' ')">
                 <span class="tei-pb">[<xsl:value-of select="@n"/><xsl:if
@@ -345,13 +352,14 @@
             <xsl:when test="$view = 'semi-diplomatic'">
                 <xsl:if test="@rend and contains('123456789', @rend)">
                     <span>
+                        <xsl:attribute name="class">tei-pc tei-pc-rend-<xsl:value-of select="@rend"/></xsl:attribute>
                         <xsl:choose>
                             <xsl:when test="@rend = '1'">&#x00B7;</xsl:when>
-                            <xsl:when test="@rend = '2'">&#x061B;</xsl:when>
+                            <xsl:when test="@rend = '2'">&#x61b;</xsl:when>
                             <xsl:when test="@rend = '3'">&#x003F;</xsl:when>
                             <xsl:when test="@rend = '4'">[/]</xsl:when>
                             <xsl:when test="@rend = '5'">[&#x2205;]</xsl:when>
-                            <xsl:when test="@rend = '6'"><span class="tei-pc tei-pc-rend-6">&#x002F;&#x002F;</span></xsl:when>
+                            <xsl:when test="@rend = '6'">&#x002F;&#x002F;</xsl:when>
                             <xsl:when test="@rend = '7'">&#x00B6;</xsl:when>
                         </xsl:choose>
                     </span>
@@ -453,7 +461,8 @@
                 <xsl:text>tei-seg </xsl:text>
                 <xsl:if test="(starts-with(@xml:id, 'edfr20125')) and (not(@rend = 'NR'))">first-letter-red</xsl:if>
                 <xsl:if test="not(starts-with(@xml:id, 'edfr20125')) and (@rend = 'R')">first-letter-red</xsl:if>
-                <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6</xsl:if>
+                <xsl:if test="./tei:pc[@rend='6']"> pc-rend-6 </xsl:if>
+                <xsl:if test="(*/*)[1][@type='lineated']"> seg-lineated </xsl:if>
             </xsl:attribute>
             <span class="tei-seg-num">
                 <xsl:value-of select="number(substring-after(substring-after(@xml:id, '_'), '_'))"/><xsl:text>. </xsl:text>
@@ -535,7 +544,9 @@
         <span>
             <xsl:call-template name="lossless-attributes"/>
             <xsl:attribute name="data-sic">
-                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic"/>
+                <xsl:apply-templates select="preceding-sibling::tei:sic" mode="semi-diplomatic">
+                    <xsl:with-param name="inattribute" select="1" tunnel="yes"/>
+                </xsl:apply-templates>
             </xsl:attribute>
             <xsl:apply-templates />
         </span>
