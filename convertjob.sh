@@ -39,7 +39,7 @@ function run() {
   # and run the job (and redirect to log file)
   echo "Job is scheduled. Starting execution..."
   ###
-  date &> $LOG_PATH
+  bash download_and_publish.sh &> $LOG_PATH
   # then we clear the status
   # status=$STATUS_RESET
   let status="0 - $?"
