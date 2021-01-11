@@ -7,9 +7,7 @@
 
   <xsl:template match="tei:TEI">
     <div id="bibliography">
-      
-      <div><p style="font-size:smaller">(This is a provisional bibliography, a more complete version will be published soon.)</p></div>
-      
+	    
       <div id="mss">
         <h4>Manuscripts</h4>
         <xsl:for-each select="//tei:bibl[tei:msIdentifier]">
